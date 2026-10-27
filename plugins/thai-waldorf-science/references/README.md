@@ -20,8 +20,9 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 | Output template: Waldorf | `waldorf-plan-template-week.th.md` | Planning one block week day by day (Mon–Fri, E→R→C→A cycles) |
 | Output template: Waldorf | `waldorf-plan-template-day.th.md` | Planning one main-lesson day segment by segment (Rhythmic Time → Recall → Practice → New Content) |
 | Output template: Thai | `thai-core-plan-template.th.md` | Writing the school's statutory แผนการจัดการเรียนรู้ (K–P–A, สมรรถนะ, rubrics, sign-off) |
-| Course: layout | `course-layout.md` | Before reading or writing any file in a course folder: read the README's "Plugin layout" mapping, or detect, confirm and record one |
+| Course: layout | `course-layout.md` | Before reading or writing any file in a course folder: read the README's "Plugin layout" mapping, or detect, confirm and record one; before filling any plan template, prefer the course's own |
 | Course: class | `class-profile.md` | Reading or writing a class profile: fields, defaults, file format, academic year in CE and ปีการศึกษา, what to do without one |
+| Course: year | `year-plan.md` | Reading or writing the year plan (teaching sequences per grade and term, indicators claimed), which lives outside the course |
 
 **Default chain for generating a G9–G12 science block:**
 1. **Grade mode:** read the macro file.
@@ -30,6 +31,6 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 4. **Justification:** state the domain(s) and potentialities they serve (goals file, §5 template).
 5. **Design:** apply the Rawson principles and run the §5 checklist.
 6. **Document:** when a Thai-facing write-up is needed, use the IPST three-column format with official skill and attitude names.
-7. **Plan output:** fill block → week → day templates. Produce the Thai core plan when the school requires a statutory write-up.
+7. **Plan output:** fill block → week → day templates, using the course's own template for a kind when it has one (`course-layout.md`). Produce the Thai core plan when the school requires a statutory write-up.
 
 **Sources:** each file's header cites the document it was drawn from (the IPST PDFs, Rawson 2021, the school's original plan forms). Those source documents, and the originals of these files before the agent-facing rewrite (2026-10-27), are kept for verification in the source repository (github.com/wathan/thai-waldorf-teacher-skills, folders sources and archive) and do not ship with the plugin. A "sources/…" path in a file header refers to that repository.
