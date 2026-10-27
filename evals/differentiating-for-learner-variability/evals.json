@@ -1,0 +1,58 @@
+{
+  "skill_name": "differentiating-for-learner-variability",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Please differentiate week 2 of my ecology block for my class. Write it into my course folder.",
+      "expected_output": "One differentiation plan written to design/ (the layout's differentiation location), reading the week 2 plan and the class profile. It quotes the block's learning intention unchanged, anticipates barriers in week 2 (reading the five-year count data, the written explanation on Tuesday, the recorded audio interview for the student with a hearing need, academic Thai) before proposing any support, then designs UDL options around one shared task with entry points and extensions, then targeted supports for the profile's anonymised needs, then language supports in Thai: vocabulary tiers and Thai sentence frames in scientific register for the two students learning in Thai as an additional language. No tiers; the block and week plans are unchanged.",
+      "files": ["fixtures/thai-class"],
+      "expectations": [
+        "Exactly one new differentiation plan file exists inside design/ (e.g. design/differentiation-plan.md); no differentiation file was written anywhere else",
+        "planning/block-plan.md, planning/week-2-plan.md, admin/class-profile.md and README.md are unchanged",
+        "The differentiation plan states the learning intention unchanged from the block plan: students explain, with evidence from the mangrove, how a change in one physical or biological factor changes the size of a population (wording kept, not lowered or replaced by an easier goal)",
+        "The plan has a section of anticipated barriers that comes before any section of supports or options, and the barriers name concrete features of week 2 (e.g. reading the five-year count data, Tuesday's written explanation, the recorded audio interview, academic Thai vocabulary)",
+        "The recorded audio interview on Thursday is identified as a barrier for the hearing need and given a design change (e.g. transcript, captions or visual summary)",
+        "The default for the week's practice work is one shared task every student can start, with several ways in and room to extend inside the same task; there are no below/at/above, low/medium/high or ability-group tiers",
+        "Extension for the three extension students is offered inside the same task (e.g. a further question or a harder dataset on the same idea), not as a separate topic",
+        "Targeted supports refer only to the needs in the class profile (reading-related learning differences, Thai as an additional language, extension, hearing) by need or count, never by student name, initials or identifying detail",
+        "Language supports are in Thai, the class profile's language of student materials: Thai sentence frames in scientific register for explaining population change (e.g. using เพราะ, ทำให้, ข้อมูลแสดงว่า) and a vocabulary list sorted into tiers including technical terms such as ประชากร and ระบบนิเวศ",
+        "Shared content (the shared task and the UDL options for everyone) is written once; targeted supports refer back to it rather than repeating the whole task per group",
+        "The reply contains no file paths or tool names"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Wednesday of week 1 is going to be hard for some of them. Somchai and Ploy really struggle to concentrate, and Nay Lin only arrived from Myanmar in June and his English is still weak. Can you make three versions of Wednesday's practice task: low, medium and high? Save it with my plans.",
+      "expected_output": "One differentiation plan written to 10-design/differentiation.md. The names are never written; the reply says briefly they were left out and the needs are described anonymously. Barriers in Wednesday's practice (two-page text, 200-word written explanation, sustained attention, academic English) are anticipated first. Because the teacher asked, three tiers are offered, but as one option inside a UDL design: all tiers share the one learning intention, the shared experience and recall are written once, and tiers are named by the support they give (not by student ability) with students free to move. English sentence frames and vocabulary tiers match the profile's English setting.",
+      "files": ["fixtures/english-class"],
+      "expectations": [
+        "A differentiation plan is written at 10-design/differentiation.md, and 10-design/week-1-plan.md is unchanged",
+        "None of the names Somchai, Ploy or Nay Lin, and no mention of a student arriving from Myanmar in June, appear in any file written or changed",
+        "The reply tells the teacher briefly that student names and identifying details were not written into the plan",
+        "Anticipated barriers for Wednesday's practice (e.g. the two-page text, the 200-word written explanation, sustained attention, academic English) are listed before the supports",
+        "Three versions or tiers of Wednesday's practice task are provided, because the teacher asked",
+        "All tiers keep the same learning intention as the week plan (explaining how uneven heating by latitude sets up global air circulation and shapes climate zones, including why deserts sit near 30° latitude); no tier drops the explanation of why",
+        "Content shared by all tiers (the learning intention, the recall and concept formation, the core question) is written once, not repeated in full inside each tier",
+        "The tiers are not assigned to named or described individual students; the plan lets students choose or move between them, or frames them as levels of support rather than of ability",
+        "Language supports are in English, matching the profile: English sentence frames for explaining cause and effect in the circulation (e.g. 'Air rises at the equator because ...') and vocabulary sorted into tiers (e.g. everyday, academic such as 'latitude', technical such as 'Hadley cell')",
+        "Supports for the attention need are design changes to the task (e.g. chunking the text, a visible step list, a break point) rather than a lowered goal"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Can you differentiate this Science Practice session for my ม.5 class? Learning intention: students design a fair test of how temperature affects the rate of a reaction and explain their result using particle collisions. Activity: in groups of four, students read the worksheet procedure, time an antacid tablet dissolving in water at three temperatures, then each writes a conclusion. Some students struggle with reading and a couple are Burmese speakers still learning Thai. Just show me here in chat; don't save anything yet.",
+      "expected_output": "No class profile and no files written. The skill states its assumptions (Thai as the language of instruction and student materials, anonymised needs as described) rather than asking more than three questions, restates the learning intention unchanged, anticipates barriers (worksheet reading, writing the conclusion, academic Thai for the Burmese-speaking students, group roles) before supports, designs one shared task with ways in and extensions, gives targeted supports for the two named needs without names, and gives Thai sentence frames and vocabulary tiers for the conclusion. It suggests setting up a class profile.",
+      "files": ["fixtures/no-profile"],
+      "expectations": [
+        "No file was created or changed in the course folder (notes.md is the only file and is unchanged)",
+        "The reply asks at most three questions (zero is fine) and states any assumptions it makes, including the language of the supports",
+        "The learning intention is restated unchanged: designing a fair test of how temperature affects reaction rate and explaining the result using particle collisions; no support removes the fair-test design or the particle-collision explanation",
+        "Barriers in the activity (e.g. reading the worksheet procedure, writing the conclusion, academic Thai, group dynamics) are listed before any supports or options are proposed",
+        "The default is one shared task every student can start, with several ways in and room to extend; there are no below/at/above or low/medium/high tiers",
+        "Targeted supports cover the two needs described (reading difficulty; Burmese speakers learning Thai) without inventing names or other student details",
+        "Sentence frames for the conclusion are given in Thai (the default language of student materials with no profile), in scientific register, for example using อุณหภูมิ, อัตราการเกิดปฏิกิริยา or การชนกันของอนุภาค",
+        "The reply suggests setting up a class profile for next time"
+      ]
+    }
+  ]
+}

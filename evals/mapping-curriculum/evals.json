@@ -56,6 +56,63 @@
         "The map names the G11 Why? grade mode and keeps it separate from the Thai indicators and PISA-adapted competencies",
         "The reply tells the teacher about the code that was not found"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Please check year-level coverage for our whole science year plan. It's the file year-plan-2569.md in the folder above this course (../year-plan-2569.md). I accept whatever layout you propose for my folders, so write it now without asking me again.",
+      "expected_output": "A year coverage report in the planning area (e.g. planning/year-coverage.md), with the standards map row recorded in README's Plugin layout. Covered indicators per grade and term for G9 (ม.3) and G10 (ม.4); missing ม.3 and ม.4 indicators listed; ว 1.1 ม.3/1 reported as duplicated (Ecology block and Science Practice: food webs, both G9 term 1); ว 3.2 ม.6/8 and ม.6/9 reported as sequencing differences (ม.6 indicators taught in ม.4), each with the official code and Thai wording verbatim and a grade-mode justification line naming G10 How? against ม.6 / G12 Who?.",
+      "files": [
+        "fixtures/year-g10-meteorology"
+      ],
+      "teacher_files": [
+        "fixtures/teacher-year-g9-g10"
+      ],
+      "expectations": [
+        "A year coverage report file exists inside the course's planning folder, and README.md has a 'Plugin layout' section whose standards map row points into that folder; the year plan (outside the course), the class profile and the block outline are unchanged and nothing was renamed, moved or deleted",
+        "The report shows covered indicators separately for G9 (ม.3) and G10 (ม.4), and within each grade by term (term 1 and term 2)",
+        "The report lists missing indicators for ม.3 (for example ว 1.1 ม.3/5, ว 1.1 ม.3/6 or ว 1.3 ม.3/1 appear as not claimed by any teaching sequence) and for ม.4 (for example ว 1.1 ม.4/1 or ว 1.3 ม.4/1)",
+        "ว 1.1 ม.3/1 is reported as duplicated, naming both the Ecology main lesson block and the Science Practice food webs subject lesson",
+        "ว 3.2 ม.6/8 is reported as a sequencing difference (a ม.6 indicator taught in ม.4) with its wording given exactly as: อธิบายการหมุนเวียนของอากาศ ที่เป็นผลมาจากความแตกต่างของความกดอากาศ",
+        "ว 3.2 ม.6/9 is reported as a sequencing difference with its wording given exactly as: อธิบายทิศทางการเคลื่อนที่ของอากาศ ที่เป็นผลมาจากการหมุนรอบตัวเองของโลก",
+        "Each sequencing difference carries a justification line that refers to the grade mode of the class it is taught in (G10 How?, e.g. polarity of high and low pressure) and to the indicator's own grade (ม.6 / G12)",
+        "The year plan's English glosses do not replace the Thai wording of any indicator",
+        "The reply to the teacher contains no file paths or tool names and mentions the sequencing differences"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Can you check what my year plan covers across the whole year? Show me what's covered, missing and doubled up.",
+      "expected_output": "The year plan is read from the path recorded in the class profile (../year-plan-2569.md, outside the course). A year coverage report is written beside the standards map location (00-admin/coverage/). Ranges ว 3.2 ม.6/7–ม.6/12 and ว 3.1 ม.6/1–ม.6/4 are expanded; ว 3.1 ม.6/15 reported as not found; ว 2.1 ม.5/19 given in official Thai, not the English paraphrase; ว 3.2 ม.6/13 reported as both duplicated and a sequencing difference in G11 with a grade-mode justification.",
+      "files": [
+        "fixtures/year-g12-custom"
+      ],
+      "teacher_files": [
+        "fixtures/teacher-year-g11-g12"
+      ],
+      "expectations": [
+        "A year coverage report file exists inside 00-admin/coverage/, and no coverage report was written elsewhere (in particular not in a new planning/ folder); README.md, the class profile and the year plan (outside the course) are unchanged",
+        "The report shows coverage separately for G11 (ม.5) and G12 (ม.6), each by term",
+        "The range ว 3.2 ม.6/7–ม.6/12 is expanded so that ว 3.2 ม.6/7 through ว 3.2 ม.6/12 each appear as covered by the G12 Meteorology block",
+        "ว 3.1 ม.6/15 is reported as not found in the Thai core indicators, and no wording is invented for it",
+        "ว 2.1 ม.5/19 is given as exactly: สืบค้นข้อมูลและนำเสนอผลกระทบของการใช้ผลิตภัณฑ์พอลิเมอร์ที่มีต่อสิ่งมีชีวิตและสิ่งแวดล้อม พร้อมแนวทางป้องกันหรือแก้ไข (the English paraphrase is not used as its wording)",
+        "ว 3.2 ม.6/13 is reported as a sequencing difference (a ม.6 indicator taught in ม.5, Climate and society) with its full official Thai wording beginning อธิบายปัจจัยที่มีผลต่อการเปลี่ยนแปลงภูมิอากาศของโลก, and a justification line referring to the G11 Why? grade mode",
+        "ว 3.2 ม.6/13 is also reported as duplicated (claimed in G11 Climate and society and G12 Earth systems synthesis)",
+        "Missing ม.6 indicators are listed, including ว 3.1 ม.6/5 through ว 3.1 ม.6/10",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Can you check my whole year's coverage across all my classes? I want to see which indicators are missing.",
+      "expected_output": "No year plan is recorded in the class profile and the teacher gave no path, so the skill asks the teacher where their year plan is (one question) and writes nothing. It does not search outside the course folder or invent a year plan or coverage figures.",
+      "files": [
+        "fixtures/default-template"
+      ],
+      "expectations": [
+        "The reply asks the teacher where their year plan is (or to share it), as a single clear question",
+        "The reply reports no coverage figures and invents no teaching sequences or indicators for other grades",
+        "No year coverage report or standards map was written, and no files in the course folder were created, changed or deleted"
+      ]
     }
   ]
 }
