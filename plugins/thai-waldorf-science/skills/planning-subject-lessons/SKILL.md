@@ -87,6 +87,10 @@ Run this against the files you wrote, and fix any miss before replying:
 - [ ] No Waldorf plans and no Thai core plans written; no student names or identifying details.
 - [ ] Files sit where the layout says; nothing renamed, moved or deleted.
 
+## Then the audit
+
+After writing any plan files, run `auditing-epistemic-agency` on what you wrote, unless the teacher switched it off for this request ("no audit", "skip the audit", "quick draft").
+
 ## Reply
 
-A few sentences: what was written and where in teacher terms, which form was used, the cycles and how they fall across the week, any assumption made, and the next steps (Thai core plans per cycle through `writing-thai-core-plans`; targeted supports through `differentiating-for-learner-variability`; the epistemic agency audit once available).
+A few sentences: what was written and where in teacher terms, which form was used, the cycles and how they fall across the week, any assumption made, the audit's short summary (unless switched off), and the next steps (Thai core plans per cycle through `writing-thai-core-plans`; targeted supports through `differentiating-for-learner-variability`).
