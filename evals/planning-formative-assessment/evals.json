@@ -1,0 +1,58 @@
+{
+  "skill_name": "planning-formative-assessment",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Can you plan the formative assessment for week 3 of my mechanics block? It's the last week. Save it with my assessment files.",
+      "expected_output": "One formative assessment plan for week 3, written in English to 40-assessment/ (the layout's assessments location), reading the block plan, the week 3 plan, the class profile and the block sheet. Every item is labelled assessment for learning or assessment as learning. Assessment for learning: Recall planned as open questions (Monday's recall quiz flagged and replaced), at least one hinge question with misconception-derived options (e.g. heavier things fall faster, a moving body needs a force to keep moving) where each likely response is routed to a next step, and main lesson book work named as evidence. Assessment as learning: short reflections right after recall and concept formation, private and written first, never scored; Wednesday's end-of-day reflection accepted because Practice follows New Content; Thursday's reflection directly after New Content flagged and moved; Friday's block reflection at Recall with Rawson's three steps; self-assessment against the block sheet's criteria with a single-point rubric and no score; peer assessment only after the shared criteria. The week plan is unchanged.",
+      "files": ["fixtures/mechanics-block"],
+      "expectations": [
+        "Exactly one new formative assessment plan file exists inside 40-assessment/ (block-sheet.md is unchanged), and no assessment plan was written anywhere else",
+        "10-design/week-3-plan.md, 10-design/block-plan.md, 00-admin/class-profile.md and README.md are unchanged",
+        "The plan is written in English, and every planned item is labelled as assessment for learning or assessment as learning (both purposes appear)",
+        "Monday's recall quiz is flagged (in the plan or the reply) and Recall is planned as open questions (e.g. 'What did you notice when...?'), not as a quiz, test or questions with one right answer, on every day of the week",
+        "At least one hinge question or misconception-based check gives answer options or likely responses that come from named misconceptions (e.g. heavier bodies fall faster, a moving body needs a continuing force, the lighter cart moves less because it has less force), and each likely response is routed to a specific next step for the teacher",
+        "Main lesson book work (entries, drawings, tables or write-ups) is named as evidence the teacher reads for assessment for learning",
+        "Thursday's reflection placed directly after the new experience of the colliding carts is flagged as breaking the rule (reflection never directly after New Content, the experience stays un-analysed) and a placement after the next day's recall and concept formation, or right after Thursday's own recall and concept formation, is proposed instead",
+        "Wednesday's end-of-day reflection is accepted (not flagged), because Practice follows the new experience that day",
+        "Friday's end-of-block reflection is placed at or right after Recall and uses Rawson's three steps: what happened compared with what should have happened, differences and surprises, and what I will do better next time",
+        "Self-assessment and reflections are private and written first (e.g. main lesson book margin, exit card); peer assessment, if any, comes only after the shared criteria (the block sheet's criteria) have been shared; any public signal (hands, thumbs, cards) is used only for a low-stakes check",
+        "Assessment-as-learning items (reflections, self-assessment, peer assessment, any single-point rubric) carry no score, points, marks or grade; the block self-assessment uses criteria students understand (e.g. the block sheet's) without levels or points",
+        "The reply contains no file paths or tool names"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "ช่วยวางแผนการประเมินระหว่างเรียนสำหรับหน่วยที่ 1 วงจรที่ 2 ให้หน่อยครับ อยากได้คำถามจุดเปลี่ยน (hinge question) ก่อนขั้น Elaborate กับ exit slip ตอนจบคาบ และอยากให้นักเรียนให้คะแนนรายงานของเพื่อนด้วย บันทึกลงโฟลเดอร์ได้เลย",
+      "expected_output": "One formative assessment plan for unit 1 cycle 2, written to assessment/ in English (teacher-and-agent file, ADR-0004) with all student-facing wording (hinge question, exit slip, criteria, prompts) in Thai, the profile's language of student materials. A hinge question before Elaborate with options drawn from misconceptions about temperature and reaction rate, each routed to a next step. An exit slip at session end as assessment as learning, private and written, not scored. Peer feedback on the lab report only after shared criteria are set, with a single-point rubric and no scores, telling the teacher kindly why peer scoring is not planned. The cycle plan's scored self-assessment is flagged, and the plan notes that the Thai core plan names it as assessment as learning without a score. The cycle plan is unchanged.",
+      "files": ["fixtures/rates-subject-lesson"],
+      "expectations": [
+        "Exactly one new formative assessment plan file exists inside assessment/ (assessment/README.md unchanged), and design/unit-01-cycle-02.md, admin/class-profile.md and README.md are unchanged",
+        "Both purposes are planned and labelled: assessment for learning (the hinge question) and assessment as learning (the exit slip, self- or peer assessment)",
+        "A hinge question is placed before Elaborate (after Explain), in Thai, with options that each come from a stated misconception about temperature and reaction rate or particle collisions (e.g. heat makes particles bigger, temperature changes only how much product forms, more collisions alone without enough energy), and each option is routed to a next step (move on, reteach briefly, revisit the data)",
+        "An exit slip is planned at the end of a session, as assessment as learning, private and written, with its prompt in Thai",
+        "Peer assessment of the lab report comes only after shared criteria are set with or given to the class (e.g. criteria agreed or shown before reports are exchanged), and it gives feedback against the criteria rather than scores",
+        "No assessment-as-learning item carries a score: peer assessment, self-assessment and the exit slip have no points, marks or grades; any single-point rubric has one column of criteria with blank columns for notes, no levels and no points",
+        "The cycle plan's scored self-assessment ('แบบประเมินตนเอง 5 คะแนน') is flagged as conflicting with assessment as learning being unscored, and the plan or reply says the Thai core plan should name it as assessment as learning (การประเมินเพื่อการเรียนรู้ของตนเอง) without a score",
+        "The reply explains briefly why students will give each other feedback rather than scores, without refusing the peer assessment outright",
+        "Student-facing wording (hinge question, exit slip prompt, criteria) is in Thai; the reply contains no file paths"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Quick one for my G10 mechanics main lesson tomorrow. Plan: recall yesterday's pendulum experiment, practice graphing period against length, then the new experience: dropping a ball and a feather in a vacuum tube. Right after the drop I want students to write a reflection on why they think the feather fell as fast. Then tomorrow I'll open with a five-question quiz on the pendulum, and I'd like everyone to hold up thumbs to show how well they understood. What formative assessment would you plan? Just tell me here, don't save anything.",
+      "expected_output": "No files written. Without a class profile, the skill states assumptions and asks at most three questions. It flags the reflection right after the vacuum-tube drop (directly after New Content: the experience stays un-analysed) and moves it after recall and concept formation the next day; it flags the recall quiz and replaces it with open recall questions; it keeps thumbs as a low-stakes public signal only and makes self-assessment private and written first. It plans a hinge question or misconception-based check on the pendulum (mass versus length) with each response routed to a next step, names main lesson book work as evidence, labels both purposes, and keeps assessment as learning unscored. It suggests setting up a class profile.",
+      "files": ["fixtures/no-profile"],
+      "expectations": [
+        "No file was created or changed in the course folder (notes.md is the only file and is unchanged)",
+        "The reply asks at most three questions (zero is fine) and states any assumption it makes",
+        "The reflection right after the ball-and-feather drop is flagged as a reflection directly after New Content (today's new experience stays un-analysed) and is moved to after the next day's recall and concept formation",
+        "The five-question quiz at Recall is flagged; Recall is planned as open questions about what students noticed, not a quiz",
+        "Thumbs (or any other public signal) are kept only for a low-stakes check, not for students to show publicly how well they understood; self-assessment of understanding goes to a private written channel first",
+        "A hinge question or misconception-based check on the pendulum is given whose options come from misconceptions (e.g. a heavier bob swings faster, a wider swing takes longer), with each likely response routed to a next step",
+        "Both purposes are named: assessment for learning and assessment as learning, and assessment-as-learning items are said to carry no score",
+        "The reply suggests setting up a class profile for next time"
+      ]
+    }
+  ]
+}
