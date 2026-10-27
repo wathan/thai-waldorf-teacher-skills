@@ -60,6 +60,58 @@
         "The reply suggests setting up a class profile next time",
         "No student names appear anywhere"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "I'd like my meteorology block to follow the class's questions this time: plan it as an anticipated route from my draft. Write the block plan and whatever week plans make sense now.",
+      "expected_output": "The draft block plan in 10-design/ updated in place as an anticipated route: every unit listed in an expected order and marked fixed or interchangeable (the anchor unit, the station visit on Wednesday of week 3 and putting it together fixed; air on the move, ocean currents and reading the weather map interchangeable), each interchangeable unit with its own complete preparation (new experiences, equipment, sources) that does not depend on where it falls. Only the week 1 plan (the fixed anchor unit) is written; later week plans wait for the driving question board's choice, and the plan says when the board chooses. The two-day rhythm holds in week 1.",
+      "files": ["fixtures/anticipated-route-draft"],
+      "expectations": [
+        "The block plan is written in 10-design/block-plan.md (the existing draft, updated in place); no second block plan exists, and README.md and the class profile are unchanged",
+        "The block plan lists all the teacher's units (the first storm, air on the move, ocean currents, reading the sky and the weather map, the visit to the meteorological center, putting it together) in an expected order",
+        "Each unit is marked fixed or interchangeable: the anchor unit (the first storm) and putting it together are fixed, and air on the move, ocean currents and reading the sky and the weather map are interchangeable",
+        "The visit to the Northern Meteorological Center is fixed to Wednesday of week 3 (a calendar-bound segment), whichever interchangeable unit is running then",
+        "Each interchangeable unit has its own preparation (its new experiences plus the equipment and sources they need) written in full in the plan, not deferred until the unit is chosen",
+        "No interchangeable unit's preparation or opening depends on another interchangeable unit having come before it (each starts from the anchor or the class's own observations)",
+        "The plan says the driving question board chooses the next interchangeable unit, and when (e.g. at Recall at the end of a unit)",
+        "A week 1 plan for the anchor unit exists in 10-design/ and follows the two-day rhythm: day 1 links to the previous G11 block, the anchoring phenomenon is the new experience left un-analysed, and later days open with open-question Recall flowing into concept formation",
+        "No week plan is filled in for weeks whose interchangeable units the board has not chosen yet; any such week is marked as to be written once the board has chosen",
+        "The Thai indicators appear verbatim, including ว 3.2 ม.6/11 as exactly: อธิบายปัจจัยที่ทำให้เกิดการหมุนเวียนของน้ำผิวหน้าในมหาสมุทร และรูปแบบการหมุนเวียนของน้ำผิวหน้าในมหาสมุทร",
+        "The reply tells the teacher that the next week plan is written once the class has chosen the next unit at the board, and that the teacher can come back with that choice",
+        "No day plans or Thai core plans are written",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Week 1 of the meteorology block is done. At the board on Friday the class chose to go after their questions about the warm sea before the rain, so ocean currents comes next instead of air on the move. Please write the plan for it.",
+      "expected_output": "Rolling generation: the week 2 plan is written for Ocean currents from that unit's prepared experiences, in the two-day rhythm (Monday recalls Friday's rain recording and bridges into the board's choice). The block plan's route record is updated in place to show ocean currents chosen by the board as the second unit; statuses, expected order of the remaining units and the fixed visit stay. Days of week 2 beyond the unit are left for the board's next choice. The week 1 plan is unchanged; no plans for other interchangeable units, no day plans or Thai core plans.",
+      "files": ["fixtures/anticipated-route-week-1-taught"],
+      "expectations": [
+        "A week 2 plan exists in 10-design/ and its days teach Ocean currents, using that unit's prepared new experiences (the warm and cold water tank with a fan, sea-surface temperature maps)",
+        "The week 2 plan does not teach Air on the move or Reading the sky and the weather map; any day of week 2 after Ocean currents ends is marked as waiting for the board's next choice rather than filled with another interchangeable unit",
+        "Monday of week 2 opens with open-question Recall of Friday's experience (the rain on the roof) flowing into concept formation, and links to the board's choice of ocean currents",
+        "From the second day on, each day's new experience comes last and is left un-analysed until the next day's Recall",
+        "The block plan (10-design/block-plan.md) is updated in place to record that the board chose Ocean currents as the second unit; no second block plan exists",
+        "The block plan still marks every unit fixed or interchangeable, keeps the remaining interchangeable units with their preparation, and keeps the visit fixed on Wednesday of week 3",
+        "10-design/week-1-plan.md is unchanged",
+        "No day plans or Thai core plans are written; the reply offers or names them as the next step for this unit rather than writing them",
+        "Every session in the week 2 plan carries light universal UDL options rather than ability tiers",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Please plan my meteorology main lesson block: the block plan and the week plans. The anchor and the units are in my draft.",
+      "expected_output": "Without a request for an anticipated route, the fixed sequence stays the default: the draft block plan updated in place with every unit marked fixed in the teacher's order, and all three week plans written now. The anticipated route may be mentioned as an option but is not used.",
+      "files": ["fixtures/custom-layout"],
+      "expectations": [
+        "The block plan is written in 10-design/block-plan.md (updated in place) and week plans for weeks 1, 2 and 3 exist in 10-design/",
+        "The units run in the teacher's order (air on the move, ocean currents, putting it together: the monsoon) and each is marked or described as fixed",
+        "No unit is marked interchangeable, and the plan does not say the driving question board chooses the order of units",
+        "All three week plans are fully written now, none left waiting for a board choice",
+        "No student names appear anywhere"
+      ]
     }
   ]
 }
