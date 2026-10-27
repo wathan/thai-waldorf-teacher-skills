@@ -68,13 +68,13 @@ Reply in two or three sentences: where the map is, how many indicators it lists,
 The year plan lives outside the course and is the only file outside it you may read. Read it only from a path the teacher has given:
 
 1. a path in this request; otherwise
-2. the path recorded in the class profile's Year plan section, or the `year plan` row of the README's Plugin layout (both were given by the teacher at setup).
+2. the path in the class profile's Year plan section (`- Path:`), which the teacher gave at setup. Find the class profile through the course layout (`${CLAUDE_PLUGIN_ROOT}/references/course-layout.md`), as in Step 2.
 
-Never search for a year plan, inside or outside the course, and never treat another file as one. With no path, ask one question ("Where is your year plan? Point me to the file, or paste it here.") and stop: write nothing and report no figures. A path that does not open: say so plainly and ask again. Read the course layout (`${CLAUDE_PLUGIN_ROOT}/references/course-layout.md`) for the README and class profile, as in Step 2.
+A relative path is relative to the course folder (`../year-plan-2569.md` sits beside it). Never search for a year plan, inside or outside the course, and never treat another file as one. With no path, ask one question ("Where is your year plan? Point me to the file, or paste it here.") and stop: write nothing and report no figures. A path that does not open: say so plainly and ask again. Never edit the year plan here; changes to it belong to `setting-up-class-profiles`.
 
 ## Step 6 — Work out coverage
 
-Read `${CLAUDE_SKILL_DIR}/references/year-coverage.md` NOW and follow it to read the year plan and work out covered, missing and duplicated indicators per grade and term, and every sequencing difference. Match codes and wording only through the crosswalk (Step 1).
+Read `${CLAUDE_PLUGIN_ROOT}/references/year-plan.md` NOW for the year plan's format, then `${CLAUDE_SKILL_DIR}/references/year-coverage.md` and follow it to read the year plan and work out covered, missing and duplicated indicators per grade and term, and every sequencing difference. Match codes and wording only through the crosswalk (Step 1).
 
 ## Step 7 — Write the year coverage report
 
@@ -86,4 +86,4 @@ The report sits beside the course's standards map: in the same folder as the `st
 - [ ] Not-found codes and unreadable entries listed, never guessed; nothing invented for a grade or term the year plan does not list.
 - [ ] The year plan file is unchanged; no student names or other personal details.
 
-Reply in three or four sentences: where the report is, how many indicators are covered and missing per grade, the duplicates, and each sequencing difference by code, plus any not-found code or question about the year plan.
+Reply in three or four sentences, in everyday words with no file or folder paths (not even the year plan's or the standards map's): where the report is, how many indicators are covered and missing per grade, the duplicates, and each sequencing difference by code, plus any not-found code or question about the year plan.

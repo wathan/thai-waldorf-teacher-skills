@@ -4,10 +4,10 @@ Year-level coverage across every teaching sequence in the teacher's year plan. A
 
 ## Reading the year plan
 
-The year plan contract: teaching sequences per grade and term, each with the Thai indicators it claims. The file may be a table, a list or prose; read it as written and never rewrite it.
+The year plan follows the plugin's year plan format (one section per grade, one subsection per term, a table of teaching sequences with the indicators each claims). A teacher may have edited it by hand: read tables, lists or prose as written, and never rewrite the file.
 
 - **Per teaching sequence, take:** grade (G9–G12, with ม.3–ม.6), term, the sequence's name, its kind (main lesson block or subject lesson, if given) and each indicator it claims.
-- **Codes.** Normalise spacing only (`ว3.2 ม.6/8` → `ว 3.2 ม.6/8`). Expand a range within one standard and grade (`ว 3.2 ม.6/7–ม.6/12`, `ว 3.2 ม.6/7-12`) into each code. A range across standards or grades, or a code you cannot read, is listed under "Could not read" and asked about; never guess.
+- **Codes.** Normalise spacing only (`ว3.2 ม.6/8` → `ว 3.2 ม.6/8`). Expand a range within one standard and grade (`ว 3.2 ม.6/7–ม.6/12`, `` `ว 3.2 ม.6/7`–`ม.6/12` ``, `ว 3.2 ม.6/7-12`) into each code. `none yet` claims nothing. A range across standards or grades, or a code you cannot read, is listed under "Could not read" and asked about; never guess.
 - **Wording.** Take every indicator's Thai wording from the crosswalk, never from the year plan. An English gloss or paraphrase in the year plan stays a gloss.
 - **Not found.** A code that is not in the indicators file goes under "Not found" and counts toward nothing.
 - **Gaps in the plan.** A sequence without a grade or term is listed with "grade not given" / "term not given"; ask about it in the reply rather than assigning one.

@@ -25,4 +25,4 @@ Recorded by setting-up-class-profiles. Anonymised: no student names or identifyi
 
 ## Year plan
 
-- Path: year-plan/2569-science.md
+- Path: `../year-plan-2569.md`

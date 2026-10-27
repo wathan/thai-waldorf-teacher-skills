@@ -17,8 +17,9 @@ directory of a `claude -p` run with the plugin loaded via --plugin-dir. A
 skill not in the plugin is looked up in --repo-skills-dir (.claude/skills,
 repo-only) and loaded through a throwaway wrapper plugin. An optional
 top-level "allowed_tools" list adds executor tools (e.g. "Bash") for that
-skill's cases. The course folder sits in an otherwise empty teacher folder
-that the run may also write to (a year plan lives outside the course). A
+skill's cases. The course folder sits in a teacher folder that the run may
+also write to (a year plan lives outside the course); a case's optional
+"teacher_files" are copied into that teacher folder, beside the course. A
 second `claude -p` call grades the reply and the files left in both folders
 against the expectations. The runner adds one deterministic
 expectation: the skill under test was invoked.
@@ -80,7 +81,7 @@ def load_suite(skill_evals_dir: Path) -> tuple:
         exp = case.get("expectations")
         if not isinstance(exp, list) or not exp or not all(isinstance(e, str) for e in exp):
             raise CaseError(f"{path}: case {cid} needs a non-empty list of expectations")
-        for rel in case.get("files", []):
+        for rel in [*case.get("files", []), *case.get("teacher_files", [])]:
             if not (skill_evals_dir / rel).exists():
                 raise CaseError(f"{path}: case {cid} file {rel} does not exist")
     tools = data.get("allowed_tools", [])
@@ -89,15 +90,21 @@ def load_suite(skill_evals_dir: Path) -> tuple:
     return cases, tools
 
 
-def prepare_course(skill_evals_dir: Path, case: dict, course: Path) -> None:
-    course.mkdir(parents=True)
-    for rel in case.get("files", []):
+def copy_in(skill_evals_dir: Path, rels: list, dest: Path) -> None:
+    for rel in rels:
         src = skill_evals_dir / rel
         if src.is_dir():
-            shutil.copytree(src, course, dirs_exist_ok=True)
+            shutil.copytree(src, dest, dirs_exist_ok=True)
         else:
-            shutil.copy2(src, course / src.name)
-    for keep in course.rglob(".gitkeep"):
+            shutil.copy2(src, dest / src.name)
+
+
+def prepare_course(skill_evals_dir: Path, case: dict, course: Path) -> None:
+    """Fill the course from `files` and the teacher folder around it from `teacher_files`."""
+    course.mkdir(parents=True)
+    copy_in(skill_evals_dir, case.get("files", []), course)
+    copy_in(skill_evals_dir, case.get("teacher_files", []), course.parent)
+    for keep in course.parent.rglob(".gitkeep"):
         keep.unlink()
 
 
