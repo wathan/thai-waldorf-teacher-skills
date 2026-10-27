@@ -8,7 +8,8 @@ description: >
   gives a walkthrough of the whole process from class profile to preparing
   each session (the fixed walkthrough when the course folder is empty). Use
   whenever the teacher asks which skill does X or which skill to use for a
-  job, how the process works, where to start, where they are, what comes
+  job (including which skill gets them a named document, such as the
+  แผนการจัดการเรียนรู้ or a block plan), how the process works, where to start, where they are, what comes
   next, or "what now?". Do not use to plan, write or audit anything itself;
   hand off to the named skill instead.
 license: CC-BY-SA-4.0
