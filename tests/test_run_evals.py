@@ -133,6 +133,25 @@ class RunEvalsTest(unittest.TestCase):
         fixture = self.evals / "doing-things/fixtures/with-profile"
         self.assertEqual(sorted(p.name for p in fixture.iterdir()), ["class-profile.md"])
 
+    def test_teacher_files_are_placed_beside_the_course(self):
+        # A year plan the teacher already keeps outside the course folder.
+        write(self.evals / "doing-things/fixtures/teacher/year-plan-2569.md", "Year plan\n")
+        self.write_cases([{
+            "id": 1, "prompt": "Check my year.", "files": ["fixtures/with-profile"],
+            "teacher_files": ["fixtures/teacher"],
+            "expectations": ["The reply gives the walkthrough"]}])
+        self.assertEqual(self.run_runner(), 0)
+        teacher = next(self.out.rglob("eval-1/teacher"))
+        self.assertEqual((teacher / "year-plan-2569.md").read_text(), "Year plan\n")
+        seen = (teacher / "course/seen-files.txt").read_text().split("\n")
+        self.assertNotIn("year-plan-2569.md", seen)
+
+    def test_missing_teacher_file_is_rejected(self):
+        self.write_cases([{
+            "id": 1, "prompt": "Check my year.", "teacher_files": ["fixtures/nope"],
+            "expectations": ["The reply gives the walkthrough"]}])
+        self.assertEqual(self.run_runner(), 2)
+
     def test_files_written_just_outside_the_course_are_graded(self):
         # A year plan lives outside the course folder, at a path the teacher gives.
         os.environ["FAKE_WRITE_OUTSIDE"] = "1"

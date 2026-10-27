@@ -5,16 +5,19 @@ description: >
   PISA-adapted competencies for a Thai Waldorf upper-school science teacher
   using the plugin's curriculum crosswalk, and writes a course's standards map:
   the Thai indicators a teaching sequence claims, codes and Thai wording
-  verbatim, verbs read through the official glossary. Use when the teacher asks
-  which indicators, competencies or grade mode fit a topic or grade, or asks to
+  verbatim, verbs read through the official glossary. Also checks a year plan
+  for covered, missing and duplicated indicators per grade and term, with
+  sequencing differences justified by grade mode. Use when the teacher asks
+  which indicators, competencies or grade mode fit a topic or grade, asks to
   map, list or check the indicators a main lesson block or subject lesson
-  covers. Do not use to plan sessions or write Thai core plans.
+  covers, or asks what a whole year plan covers. Do not use to plan sessions
+  or write Thai core plans.
 license: CC-BY-SA-4.0
 ---
 
 # Mapping the curriculum
 
-You relate three frameworks without merging them and record what one teaching sequence claims. You never plan sessions here.
+You relate three frameworks without merging them and record what one teaching sequence, or a whole year plan, claims. You never plan sessions here.
 
 ## Keeping the teacher posted
 
@@ -24,7 +27,7 @@ Talk as a colleague in plain teacher language: no file paths, tool names or plug
 
 - **Crosswalk question** ("which indicators fit monsoon in ม.6?", "what does G10 ask of S2?"): answer from the crosswalk. Write no files.
 - **Course-level coverage** ("write / update the standards map", "which indicators does this block cover?"): follow Steps 1–4 and write the standards map.
-- **Year-level coverage** (a year plan across several teaching sequences): not available in this version. Say so in one sentence and offer the course-level standards map instead.
+- **Year-level coverage** ("check my year plan", "what's missing across the year?", several teaching sequences or grades): follow Steps 1 and 5–7 and write the year coverage report.
 
 ## Step 1 — Read the sources, never match by hand
 
@@ -59,3 +62,28 @@ If the course's templates area has a standards map template, follow it. Otherwis
 - [ ] No student names or other personal details.
 
 Reply in two or three sentences: where the map is, how many indicators it lists, and any gap, not-found code or sequencing difference the teacher should look at.
+
+## Step 5 — Find the year plan (year-level coverage)
+
+The year plan lives outside the course and is the only file outside it you may read. Read it only from a path the teacher has given:
+
+1. a path in this request; otherwise
+2. the path in the class profile's Year plan section (`- Path:`), which the teacher gave at setup. Find the class profile through the course layout (`${CLAUDE_PLUGIN_ROOT}/references/course-layout.md`), as in Step 2.
+
+A relative path is relative to the course folder (`../year-plan-2569.md` sits beside it). Never search for a year plan, inside or outside the course, and never treat another file as one. With no path, ask one question ("Where is your year plan? Point me to the file, or paste it here.") and stop: write nothing and report no figures. A path that does not open: say so plainly and ask again. Never edit the year plan here; changes to it belong to `setting-up-class-profiles`.
+
+## Step 6 — Work out coverage
+
+Read `${CLAUDE_PLUGIN_ROOT}/references/year-plan.md` NOW for the year plan's format, then `${CLAUDE_SKILL_DIR}/references/year-coverage.md` and follow it to read the year plan and work out covered, missing and duplicated indicators per grade and term, and every sequencing difference. Match codes and wording only through the crosswalk (Step 1).
+
+## Step 7 — Write the year coverage report
+
+The report sits beside the course's standards map: in the same folder as the `standards map` location (or that folder itself, if the location is a folder), as `year-coverage.md`. With no standards map row, place the standards map first as in Step 3 (propose, confirm, record the row), then write the report beside where the map will go; do not write the map itself unless asked. Update an existing report for the same school year in place. Write the report file directly, copying each code and its wording from the crosswalk rows you read; it needs no scripts or commands, even when the missing lists are long. Follow the template in the year coverage reference, then check before replying:
+
+- [ ] Covered indicators shown per grade and per term; missing per grade; duplicates name every sequence.
+- [ ] Every indicator: official code and Thai wording copied character for character from the crosswalk; year plan glosses never replace it.
+- [ ] Every sequencing difference: code and wording verbatim, the class it is taught in, and a grade-mode justification line (drafts marked for the teacher to confirm).
+- [ ] Not-found codes and unreadable entries listed, never guessed; nothing invented for a grade or term the year plan does not list.
+- [ ] The year plan file is unchanged; no student names or other personal details.
+
+Reply in three or four sentences, in everyday words with no file or folder paths (not even the year plan's or the standards map's): where the report is, how many indicators are covered and missing per grade, the duplicates, and each sequencing difference by code, plus any not-found code or question about the year plan.

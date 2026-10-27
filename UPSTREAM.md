@@ -77,23 +77,23 @@ No upstream sources: written fresh from spec #1 and the plugin's own skill set. 
 | Repo | Path | Commit last reviewed | Role | Status |
 |---|---|---|---|---|
 | gareth | skills/curriculum-assessment/competency-unpacker | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (K-P-A unpacking) | firm |
-| gareth | skills/curriculum-assessment/criterion-referenced-rubric-generator | 5edef15c5f905a09cef002a2608748c4a44c3f5b | content | firm |
-| gareth | skills/original-frameworks/single-point-rubric-designer | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content | firm |
+| gareth | skills/curriculum-assessment/criterion-referenced-rubric-generator | 5edef15c5f905a09cef002a2608748c4a44c3f5b | content (4-level rubrics) | firm |
+| gareth | skills/original-frameworks/single-point-rubric-designer | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content (unscored self-check for assessment as learning) | firm |
 
 ## differentiating-for-learner-variability
 
 | Repo | Path | Commit last reviewed | Role | Status |
 |---|---|---|---|---|
 | k12 | plugin/skills/k12-lesson-differentiation | 31fd6dbb0c07cb50bb3ce7f62a4135a393bd0e8c | structural (single plan, shared content written once; no tiering) | firm |
-| gareth | skills/inclusive-design/udl-barrier-anticipator | 129d5842b2045e268e0abb6ba7acf7a0b93b0ba6 | content | proposed |
-| gareth | skills/inclusive-design/udl-options-designer | 129d5842b2045e268e0abb6ba7acf7a0b93b0ba6 | content | proposed |
-| gareth | skills/inclusive-design/udl-lesson-auditor | 129d5842b2045e268e0abb6ba7acf7a0b93b0ba6 | content | proposed |
-| gareth | skills/eal-language-development/language-demand-analyser | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content | proposed |
-| gareth | skills/eal-language-development/academic-language-sentence-frame-generator | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content | proposed |
-| gareth | skills/eal-language-development/vocabulary-tiering-tool | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content | proposed |
-| gareth | skills/eal-language-development/scaffolded-task-modifier | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content | proposed |
-| gareth | skills/original-frameworks/inclusive-design-orchestrator | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content (alternate) | proposed |
-| gareth | skills/curriculum-assessment/differentiation-adapter | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content (alternate) | proposed |
+| gareth | skills/inclusive-design/udl-barrier-anticipator | 129d5842b2045e268e0abb6ba7acf7a0b93b0ba6 | content (barriers before supports; design versus specialist support) | proposed |
+| gareth | skills/inclusive-design/udl-options-designer | 129d5842b2045e268e0abb6ba7acf7a0b93b0ba6 | content (specific options, goal integrity, few options) | proposed |
+| gareth | skills/inclusive-design/udl-lesson-auditor | 129d5842b2045e268e0abb6ba7acf7a0b93b0ba6 | content (checklist) | proposed |
+| gareth | skills/eal-language-development/language-demand-analyser | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (language demands) | proposed |
+| gareth | skills/eal-language-development/academic-language-sentence-frame-generator | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (graded frames that carry the thinking) | proposed |
+| gareth | skills/eal-language-development/vocabulary-tiering-tool | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (vocabulary tiers) | proposed |
+| gareth | skills/eal-language-development/scaffolded-task-modifier | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (cognitive demand kept) | proposed |
+| gareth | skills/original-frameworks/inclusive-design-orchestrator | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content (alternate; not drawn on, candidate to drop) | proposed |
+| gareth | skills/curriculum-assessment/differentiation-adapter | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content (alternate; not drawn on, candidate to drop) | proposed |
 
 ## planning-formative-assessment
 
