@@ -32,7 +32,7 @@ Talk as a colleague in plain teacher language ("your week 2 plan", "your design 
 3. Decide what is asked:
    - **Adapt an existing plan** (block plan, week plan, day plan, subject lesson session, or a session the teacher describes in the request): Steps 1–7.
    - **No plan yet:** a main lesson block is planned by `planning-main-lesson-blocks`, a subject lesson by `planning-subject-lessons`. Say so in one sentence; differentiation follows once a plan exists.
-   - **Thai core plan:** `writing-thai-core-plans` writes it; you may adapt the block or session it is written from.
+   - **Thai core plan:** `writing-thai-core-plans` writes it; you may adapt the main lesson block or session it is written from.
 
 ## Step 1 — Read the plan, the profile and the core learning intention
 

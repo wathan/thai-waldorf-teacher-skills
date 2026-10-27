@@ -13,7 +13,7 @@ description: >
   asks for an agency audit, who decides what in a plan, or how to open a
   plan up, and after planning-main-lesson-blocks or planning-subject-lessons
   write plans (unless switched off). Do not use to plan, to write Thai core
-  plans or to judge a taught lesson.
+  plans or to judge a taught session.
 license: CC-BY-SA-4.0
 ---
 

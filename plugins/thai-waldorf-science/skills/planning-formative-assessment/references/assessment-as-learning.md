@@ -19,7 +19,7 @@ After metacognitive-prompt-library: short prompts that turn students' attention 
 | After recall and concept formation (main lesson default) | "What do I now think is going on, and what am I still unsure of?" · "What changed in my idea today, and what changed it?" |
 | On Practice (end of day only when Practice follows New Content) | "Which step of today's work was hardest, and how did I get past it?" |
 | Working process (at Recall) | Rawson's three steps: "What happened, and what should have happened?" → "What surprised me, what was different?" → "What will I do better next time?" |
-| End of block (last day, at Recall) | The three steps on the whole block, with the block's criteria in view |
+| End of block (last day, at Recall) | The three steps on the whole main lesson block, with the main lesson block's criteria in view |
 | Exit slip (subject lessons, session end) | "What I can now explain… / What is still unclear…" · "One question I still have" |
 
 Grade mode can tune the prompt: G9 (What) on what was observed; G10 (How) on how the work was done; G11 (Why) on reasons and evidence; G12 (Who) on the student's own stance and responsibility.

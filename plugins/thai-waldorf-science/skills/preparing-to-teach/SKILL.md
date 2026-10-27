@@ -8,7 +8,7 @@ description: >
   experiments, built from the session's day plan (or 5E session plan) and placed
   where the course layout puts preparation notes. Use when the teacher asks to
   prepare for, get ready for or run through tomorrow's or a named session. Do
-  not use to plan or change a session, block or lesson, or to write assessments.
+  not use to plan or change a session, main lesson block or subject lesson, or to write assessments.
 license: CC-BY-SA-4.0
 ---
 

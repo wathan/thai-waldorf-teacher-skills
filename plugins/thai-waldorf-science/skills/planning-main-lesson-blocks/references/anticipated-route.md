@@ -1,6 +1,6 @@
 # Anticipated route
 
-An anticipated route plans a storyline-based main lesson block as a set of units in an expected order, most of them interchangeable, arranged during the block as the driving question board directs. Only a few anchor points are fixed. Use it only when the teacher asks for it, by name or by asking for the class's questions to decide the order of units. The fixed sequence stays the default.
+An anticipated route plans a storyline-based main lesson block as a set of units in an expected order, most of them interchangeable, arranged during the main lesson block as the driving question board directs. Only a few anchor points are fixed. Use it only when the teacher asks for it, by name or by asking for the class's questions to decide the order of units. The fixed sequence stays the default.
 
 Everything in the storyline-design and two-day-rhythm references still holds. This file replaces only their fixed-sequence parts: units in a fixed order, the board framing ideas but not order, and New Content chosen in the fixed unit order.
 
@@ -108,7 +108,7 @@ If the course layout has a `unit plans` row, the preparation of each unit goes t
 
 Use these in place of the main checklist's fixed-order item; every other item still holds.
 
-- [ ] The teacher asked for an anticipated route; otherwise the block is a fixed sequence.
+- [ ] The teacher asked for an anticipated route; otherwise the main lesson block is a fixed sequence.
 - [ ] Every unit is listed in an expected order and marked fixed (anchor, calendar-bound or putting pieces together) or interchangeable.
 - [ ] Calendar-bound segments are pinned to their dates.
 - [ ] Every interchangeable unit has complete preparation (new experiences, equipment, sources, lead times) that works in any open position.

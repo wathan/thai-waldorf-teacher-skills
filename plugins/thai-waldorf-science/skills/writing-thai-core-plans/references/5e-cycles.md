@@ -37,7 +37,7 @@ The design decides where each phase falls; there is no fixed 5E-to-stage mapping
 5. **Explicit instruction and graded practice** go where the cycle plan puts them (inside Explain or Elaborate), described as they run (teacher models, class does together, students practise).
 6. **ชิ้นงาน/ภาระงาน:** the products the cycle makes (data tables, graphs, written explanations, practice sheets, the Evaluate task).
 7. **Measurement:** the cycle's scored Evaluate work gets rubrics as `filling-the-form.md` describes; retrieval practice and hinge questions are named as assessment for learning without a score; exit slips and self-assessment as assessment as learning (การประเมินเพื่อการเรียนรู้ของตนเอง, ไม่ให้คะแนน).
-8. **Hour-by-hour detail:** one block per session (คาบที่ n, its day and length), with its timed rows from the cycle plan.
+8. **Hour-by-hour detail:** one section per session (คาบที่ n, its day and length), with its timed rows from the cycle plan.
 
 ## Consistency check
 

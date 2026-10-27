@@ -70,5 +70,5 @@ Write frames for this task's content (the actual variables and phenomenon), and 
 - A frame leaves the reasoning to the student: never fill in the cause, the evidence or the conclusion.
 - Do not turn frames into a gap-fill worksheet; offer them on a card or the board, used by choice.
 - Talk before writing: rehearse the explanation aloud with a partner, then write.
-- Fade over the block: fewer and lighter frames as the weeks go on; say in the plan when they fade.
+- Fade over the main lesson block: fewer and lighter frames as the weeks go on; say in the plan when they fade.
 - Scaffolds change the route, not the destination: no simpler question, fewer steps of reasoning, multiple-choice replacement of an explanation, or a different goal for students learning in an additional language.

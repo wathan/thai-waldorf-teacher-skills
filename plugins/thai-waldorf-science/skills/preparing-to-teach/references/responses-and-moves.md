@@ -16,7 +16,7 @@ Work from the plan, not from a generic topic list:
 
 - **What students met:** yesterday's experience (for Recall) and today's (for New Content), exactly as the plans describe them.
 - **What the class is working toward:** the target idea named in the Recall cell and the block plan. Likely responses sit between what students already hold and that idea.
-- **What the block assumes:** the prerequisite ideas. A response that shows a prerequisite idea missing is worth a move of its own.
+- **What the main lesson block assumes:** the prerequisite ideas. A response that shows a prerequisite idea missing is worth a move of its own.
 - **Known misconceptions for this science content**, phrased as a student would say them (e.g. "plants get their food from the soil", "heavier things fall faster", "the dissolved salt is gone"). Prefer two or three likely ones to a long list.
 - **Students' own questions** on the driving question board record; the session may be where some of them come back.
 - **Learner variability:** students learning in an additional language may give a correct idea in few or everyday words; plan a move that takes the idea seriously before the wording.

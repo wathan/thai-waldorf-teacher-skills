@@ -12,7 +12,7 @@ description: >
   Recall, and keeps self-assessment in private written channels first. Use
   when the teacher asks to plan formative assessment, checks for
   understanding, hinge questions, exit slips, reflection, self- or peer
-  assessment or rubrics for students' own use. Do not use to plan the lessons
+  assessment or rubrics for students' own use. Do not use to plan the sessions
   themselves, to write Thai core plans, or for scored summative assessment.
 license: CC-BY-SA-4.0
 ---
@@ -39,7 +39,7 @@ Talk as a colleague in plain teacher language ("your week 3 plan", "your assessm
 ## Step 1 — Read the plan and the profile
 
 1. Read the class profile where the layout places it: grade and grade mode, kind of teaching sequence, learner variability, language of student materials.
-2. Read the plan the teacher names at the layout's `block and week plans`, `session plans` or `unit plans` location (or as given in the request), and the block or unit plan above it for the learning intention and target ideas. Read anything already at the `assessments` location (a block sheet's criteria are the criteria students know). Read only; never edit the teacher's plans.
+2. Read the plan the teacher names at the layout's `block and week plans`, `session plans` or `unit plans` location (or as given in the request), and the block plan or unit plan above it for the learning intention and target ideas. Read anything already at the `assessments` location (a block sheet's criteria are the criteria students know). Read only; never edit the teacher's plans.
 3. **Without a class profile:** follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults). The questions you may ask, only where the plan leaves them open: the grade and the kind of teaching sequence. The language of student materials is the class profile default, Thai, stated as an assumption, unless the request or the plan's student-facing wording shows another.
 
 ## Step 2 — Check the plan against the placement rules
