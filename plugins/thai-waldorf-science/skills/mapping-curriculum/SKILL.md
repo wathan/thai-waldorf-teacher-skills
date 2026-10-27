@@ -32,16 +32,17 @@ Read `${CLAUDE_PLUGIN_ROOT}/references/curriculum-crosswalk.md` NOW. It is the o
 
 ## Step 2 — Establish the teaching sequence
 
-1. **Layout first.** If the course README has a "Plugin layout" section, read it: it says where the class profile, plans and standards map live. Never read meaning into, or change, the course folder's own name.
-2. **Class profile.** Read it where the layout places it (or an obvious class profile file) for grade, grade mode and kind of teaching sequence.
+1. **Layout first.** Read `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md` NOW and follow it for every file you read or write in the course: it says where the class profile, plans and the standards map live, and how to detect, confirm and record a layout when none is recorded.
+2. **Class profile.** Read it where the layout places it, for grade, grade mode and kind of teaching sequence (format: `${CLAUDE_PLUGIN_ROOT}/references/class-profile.md`).
 3. **What the sequence claims.** Take the indicators from the teacher's request and from the course's existing plans (block plan, unit plans). If only a topic is given, offer candidates from the crosswalk for the class's ม. grade and list them as *proposed* in the map until the teacher confirms.
 4. **Missing context.** Without a class profile and without the grade in the request, ask at most three questions (grade; main lesson block or subject lesson; the topic or indicators) and state everything else as an assumption.
 
 ## Step 3 — Decide where the standards map goes
 
-1. The Plugin layout names a location for the course standards map → write exactly there, creating folders as needed.
-2. No mapping, but the course follows the default course template (admin, planning, design, resources, delivery, assessment, evaluation, templates areas) or is empty → write `planning/standards-map.md`.
-3. A different structure with no mapping → propose a fitting location in one sentence, write there, and tell the teacher that `setting-up-class-profiles` can record the course layout.
+The concept is **standards map** in the course layout.
+
+1. The Plugin layout has a standards map row → write exactly there (a folder location gets `standards-map.md` inside it).
+2. No such row → run the course layout's detect, confirm and record steps for the standards map only. Its usual area is planning, so the default is `planning/standards-map.md`, or `standards-map.md` in the course's own planning area. Write only after the teacher confirms (or has already accepted your proposal), and record the row in the README.
 
 Never create a second standards map: update the existing one in place.
 

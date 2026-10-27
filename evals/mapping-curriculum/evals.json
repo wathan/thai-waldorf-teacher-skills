@@ -5,7 +5,9 @@
       "id": 1,
       "prompt": "Can you write the standards map for this meteorology block? Use the indicators in my block plan.",
       "expected_output": "A standards map written at 00-admin/coverage/indicators.md (the location the README's Plugin layout gives), listing ว 3.2 ม.6/10, ม.6/11 and ม.6/12 with their official Thai wording verbatim, verbs read through the glossary, the G12 grade mode and PISA-adapted links in separate sections, and gaps shown.",
-      "files": ["fixtures/custom-layout"],
+      "files": [
+        "fixtures/custom-layout"
+      ],
       "expectations": [
         "A standards map file exists at 00-admin/coverage/indicators.md",
         "No standards map was written anywhere else (in particular no planning/standards-map.md), and README.md, the class profile and the block plan are unchanged",
@@ -21,12 +23,14 @@
     },
     {
       "id": 2,
-      "prompt": "This term my G9 Science Practice lessons are on ecosystems. They claim ว 1.1 ม.3/1, ว 1.1 ม.3/3 and ว 1.1 ม.3/6. Please write the course standards map.",
-      "expected_output": "A standards map at planning/standards-map.md (default course template, no Plugin layout section) listing the three indicators verbatim, with glossary verb meanings, the G9 grade mode, PISA-adapted links, and the crosswalk's note that สร้างแบบจำลอง sits above G9's mode.",
-      "files": ["fixtures/default-template"],
+      "prompt": "This term my G9 Science Practice lessons are on ecosystems. They claim ว 1.1 ม.3/1, ว 1.1 ม.3/3 and ว 1.1 ม.3/6. Please write the course standards map. I accept whatever layout you propose for my folders, so write it now without asking me again.",
+      "expected_output": "A standards map in the planning area (planning/standards-map.md), with the layout row recorded in a new README 'Plugin layout' section, listing the three indicators verbatim, with glossary verb meanings, the G9 grade mode, PISA-adapted links, and the crosswalk's note that สร้างแบบจำลอง sits above G9's mode.",
+      "files": [
+        "fixtures/default-template"
+      ],
       "expectations": [
-        "A standards map file exists at planning/standards-map.md",
-        "No other new files were written except, optionally, a README recording the layout",
+        "A standards map file exists in the planning folder (e.g. planning/standards-map.md)",
+        "README.md has a 'Plugin layout' section whose standards map row points to the file that was written; none of the existing files were renamed, moved or deleted",
         "The standards map gives ว 1.1 ม.3/1 as exactly: อธิบายปฏิสัมพันธ์ขององค์ประกอบของระบบนิเวศที่ได้จากการสำรวจ",
         "The standards map gives ว 1.1 ม.3/3 as exactly: สร้างแบบจำลองในการอธิบายการถ่ายทอดพลังงานในสายใยอาหาร",
         "The standards map gives ว 1.1 ม.3/6 with its full official wording, beginning ตระหนักถึงความสัมพันธ์ของสิ่งมีชีวิต และสิ่งแวดล้อมในระบบนิเวศ",
@@ -38,11 +42,13 @@
     },
     {
       "id": 3,
-      "prompt": "I'm starting a polymers block with my G11 (ม.5) class. Put ว 2.1 ม.5/19 and ว 2.1 ม.5/40 in the standards map. For reference, 5/19 is basically 'research polymer impacts on the environment'.",
-      "expected_output": "A standards map at planning/standards-map.md (empty folder, so the default template location) with ว 2.1 ม.5/19 in its official Thai wording verbatim; ว 2.1 ม.5/40 reported as not found rather than invented.",
-      "files": ["fixtures/empty"],
+      "prompt": "I'm starting a polymers block with my G11 (ม.5) class. Put ว 2.1 ม.5/19 and ว 2.1 ม.5/40 in the standards map. For reference, 5/19 is basically 'research polymer impacts on the environment'. I accept whatever layout you propose for my folders, so write it now without asking me again.",
+      "expected_output": "A standards map at planning/standards-map.md (empty folder, so the default course template's planning area), recorded in README's Plugin layout, with ว 2.1 ม.5/19 in its official Thai wording verbatim; ว 2.1 ม.5/40 reported as not found rather than invented.",
+      "files": [
+        "fixtures/empty"
+      ],
       "expectations": [
-        "A standards map file exists at planning/standards-map.md",
+        "A standards map file exists at planning/standards-map.md, and README.md has a 'Plugin layout' section whose standards map row points to it",
         "The standards map gives ว 2.1 ม.5/19 as exactly: สืบค้นข้อมูลและนำเสนอผลกระทบของการใช้ผลิตภัณฑ์พอลิเมอร์ที่มีต่อสิ่งมีชีวิตและสิ่งแวดล้อม พร้อมแนวทางป้องกันหรือแก้ไข",
         "The teacher's English paraphrase is not used as the indicator's wording",
         "ว 2.1 ม.5/40 is reported (in the map or the reply) as not found in the Thai core indicators, and no wording is invented for it",
