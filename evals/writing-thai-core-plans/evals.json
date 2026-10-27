@@ -59,6 +59,37 @@
         "The block plan, the week 1 plan, README.md and the course template are unchanged",
         "No student names appear anywhere"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Please write the Thai core plans for unit 1 of Science Practice (electric circuits) for the supervisors.",
+      "expected_output": "Two แผนการจัดการเรียนรู้ in 30-thai-plans/, one per 5E cycle of unit 1 (no plan per session and no Waldorf plans), on the plugin's form. Each plan's stages follow its own cycle plan's stated mapping: cycle 1 has Engage in ขั้นนำ, Explore, Explain, the hinge question and Elaborate in ขั้นสอน, and the students' summary and exit slip in ขั้นสรุป; cycle 2 has retrieval practice and Engage in ขั้นนำ, Explore, Explain and Elaborate in ขั้นสอน, and Evaluate with the exit slip in ขั้นสรุป. Time is the cycle's sessions added up (250 minutes = 4 ชั่วโมง 10 นาที; 200 minutes = 3 ชั่วโมง 20 นาที). Indicators verbatim; retrieval practice, hinge question and exit slips not scored. The reply reports that session 5's timings add up to 110 minutes against a 100-minute session and offers to fix the cycle plan without changing it.",
+      "files": ["fixtures/cycles-written"],
+      "expectations": [
+        "Exactly two Thai core plans were written inside 30-thai-plans/, one for cycle 1 (measuring a circuit) and one for cycle 2 (Ohm's law), and no plans per session",
+        "Each plan's Section 7 names the 5E phases (in English or by Thai names such as ขั้นสร้างความสนใจ, ขั้นสำรวจและค้นหา, ขั้นอธิบายและลงข้อสรุป, ขั้นขยายความรู้, ขั้นประเมิน) under the three stage headings",
+        "In the cycle 1 plan, ขั้นนำ holds Engage (the two bulbs), ขั้นสอน holds Explore, Explain, the hinge question and Elaborate, and ขั้นสรุป holds the students' own summary and the exit slip",
+        "In the cycle 2 plan, ขั้นนำ holds the retrieval practice and Engage (the prediction challenge), ขั้นสอน holds Explore, Explain and Elaborate, and ขั้นสรุป holds Evaluate (the practical task on the unknown resistor) and the exit slip",
+        "The cycle 1 plan's time is 250 minutes (4 ชั่วโมง 10 นาที) and the cycle 2 plan's time is 200 minutes (3 ชั่วโมง 20 นาที), or the plans give each session's length so that they add up to these",
+        "The Thai indicators appear with their codes and Thai wording verbatim, including ว 2.3 ม.3/3 as exactly: ใช้โวลต์มิเตอร์ แอมมิเตอร์ในการวัดปริมาณทางไฟฟ้า",
+        "Retrieval practice, the hinge question and the exit slips are not scored in the measurement section or the scoring tables; the exit slips are named as assessment as learning",
+        "The reply reports that session 5 adds up to 110 minutes against its 100-minute length, and the cycle plan files are unchanged",
+        "No Waldorf block plan, week plan or day plan was written",
+        "The class level is ม.3, the academic year is ปีการศึกษา 2569, and the scoring tables carry no student names or scores",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Now the Thai core plans for unit 2 of Science Practice, please.",
+      "expected_output": "Unit 2 has no unit plan or cycle plans. The skill writes no Thai core plan, says in plain words that unit 2 needs designing first, and points to planning-subject-lessons (not planning-main-lesson-blocks).",
+      "files": ["fixtures/cycles-written"],
+      "expectations": [
+        "No Thai core plan was written anywhere in the course folder",
+        "The reply says unit 2 has not been planned yet and points to planning the subject lesson (planning-subject-lessons) first",
+        "The reply does not send the teacher to plan a main lesson block",
+        "No file in the course folder was changed"
+      ]
     }
   ]
 }

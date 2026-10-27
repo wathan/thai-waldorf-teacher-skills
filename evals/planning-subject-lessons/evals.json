@@ -1,0 +1,58 @@
+{
+  "skill_name": "planning-subject-lessons",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Can you plan unit 1 of my Science Practice lessons, electric circuits? About three weeks.",
+      "expected_output": "A unit plan in 20-design/units/ and one cycle plan per 5E cycle in 20-design/sessions/, for a G9 (ม.3) subject lesson with a 100-minute Tuesday and a 50-minute Friday session (six sessions over three weeks). The unit is one topic made of one or more 5E cycles; phases are placed across the long and short sessions for stated design reasons (hands-on Explore in long sessions, not one fixed split repeated every week), explicit instruction and graded practice for using the voltmeter and ammeter and for V = IR calculations sit inside Explain or Elaborate, and short sessions used for consolidation carry low-stakes retrieval practice that is not scored. Indicators ว 2.3 ม.3/1–3 from the standards map, verbatim. Each cycle plan says how its phases fall on ขั้นนำ / ขั้นสอน / ขั้นสรุป for its Thai core plan. No Waldorf block, week or day plans and no Thai core plans are written.",
+      "files": ["fixtures/science-practice"],
+      "expectations": [
+        "A unit plan for unit 1 (electric circuits) exists inside 20-design/units/, and the 5E cycle or session plans are inside 20-design/sessions/",
+        "The unit is organised as one or more 5E cycles, each running the phases Engage, Explore, Explain, Elaborate and Evaluate (or their Thai names) in that order",
+        "Every session is either a 100-minute Tuesday session or a 50-minute Friday session, over about three weeks (about six sessions), and each session's timings add up to its length",
+        "The plan places phases across the long and short sessions with reasons tied to the design (for example hands-on measurement in the long session); the same phase split is not simply repeated for every week",
+        "Explicit instruction (for example a demonstration or worked example of reading a voltmeter and ammeter, or of a V = IR calculation) and graded practice (from guided to independent, or increasing difficulty) appear inside Explain or Elaborate",
+        "At least one short session used for consolidation includes retrieval practice (recalling earlier ideas or skills from memory), described as low-stakes and not scored",
+        "The Thai indicators ว 2.3 ม.3/1, ว 2.3 ม.3/2 and ว 2.3 ม.3/3 appear with their Thai wording verbatim, including: ใช้โวลต์มิเตอร์ แอมมิเตอร์ในการวัดปริมาณทางไฟฟ้า",
+        "For each 5E cycle the plans state how its phases map onto the Thai core plan stages ขั้นนำ, ขั้นสอน and ขั้นสรุป",
+        "Every session carries universal options for learner variability (UDL), with one shared task rather than ability tiers",
+        "No Waldorf block plan, week plan or day plan and no Thai core plan was written",
+        "README.md, the class profile and the standards map are unchanged",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Plan unit 2 of Ecology Practice as a storyline this time. I've already picked the anchoring phenomenon: our school pond turns bright green every March and some of the fish die. Three weeks.",
+      "expected_output": "A storyline design for unit 2 of a G10 (ม.4) subject lesson with sessions of 50 minutes (Monday), 50 minutes (Wednesday) and 100 minutes (Thursday): the anchoring phenomenon stated as the teacher's choice, a driving question with its authorship stated, target and prerequisite ideas listed separately, the driving question board built from students' questions and revisited, and the unit still made of 5E cycles whose phases fall across the three-session week as the design needs. Indicators ว 1.1 ม.4/3 and ม.4/4 verbatim. Files in design/units/ and design/sessions/; no Waldorf plans; unit 1's plan untouched.",
+      "files": ["fixtures/pond-storyline"],
+      "expectations": [
+        "A plan for unit 2 exists inside design/units/, with its cycle or session plans inside design/sessions/",
+        "The anchoring phenomenon is the pond turning green in March with fish dying, stated as chosen by the teacher",
+        "A driving question is given and its authorship is stated (for example teacher-drafted and provisional, or to be written by the class)",
+        "Target ideas and prerequisite ideas are listed separately",
+        "The plan includes a driving question board built from students' own questions (not questions invented for them in the plan) and says when the class returns to it",
+        "The unit is made of one or more 5E cycles (Engage, Explore, Explain, Elaborate, Evaluate or their Thai names)",
+        "Sessions follow the class's weekly pattern of 50 minutes on Monday, 50 minutes on Wednesday and 100 minutes on Thursday, and each session's timings add up to its length",
+        "The Thai indicators ว 1.1 ม.4/3 and ว 1.1 ม.4/4 appear with their Thai wording verbatim",
+        "No Waldorf block plan, week plan or day plan was written, and the unit 1 plan is unchanged",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I want a 5E lesson sequence on density for my class.",
+      "expected_output": "The folder has no class profile and only a notes file. The skill asks at most three questions in one numbered round, each with a recommended answer (the grade, and the sessions per week with their lengths if not assumed), states other values as assumptions from the class profile defaults (one 100-minute and one 50-minute session a week, Thai), and suggests setting up a class profile. It does not ask for the kind of teaching sequence (a subject lesson is implied by 5E). If it proceeds, any plan is 5E and fits the stated schedule; no Waldorf plans.",
+      "files": ["fixtures/no-profile"],
+      "expectations": [
+        "The reply asks no more than three questions, numbered, each with a recommended answer, or proceeds on stated assumptions",
+        "The reply asks for or states an assumption about the grade",
+        "Any schedule assumed or recommended is the subject lesson default of one long (100-minute) and one short (50-minute) session a week, unless the teacher's answer is awaited",
+        "The reply does not ask whether this is a main lesson block or a subject lesson",
+        "The reply suggests setting up a class profile for next time",
+        "No Waldorf block plan, week plan or day plan was written, and notes.md is unchanged",
+        "No student names appear anywhere"
+      ]
+    }
+  ]
+}
