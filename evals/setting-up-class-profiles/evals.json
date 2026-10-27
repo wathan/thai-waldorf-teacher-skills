@@ -4,7 +4,7 @@
     {
       "id": 1,
       "prompt": "Set up a class profile for my G11 class.",
-      "expected_output": "The first interview round: numbered questions, each with a recommended answer, with grade mode Why, 100-minute main lesson sessions and the academic year in CE and ปีการศึกษา pre-filled; nothing written yet.",
+      "expected_output": "The first interview round: numbered questions, each with a recommended answer, with grade mode Why, 100-minute main lesson sessions and the academic year in CE and ปีการศึกษา pre-filled, and the default course template offered for confirmation; nothing written yet.",
       "files": ["fixtures/empty"],
       "expectations": [
         "The reply asks numbered questions, and each question comes with a recommended answer the teacher can accept",
@@ -12,7 +12,8 @@
         "The reply recommends 100-minute sessions for a main lesson block, or a week of one long and one short session for a subject lesson (at least one of these defaults appears)",
         "The reply gives the academic year both as a CE year and as a Buddhist-era ปีการศึกษา (e.g. 2026–2027 and 2569)",
         "The reply asks about only one class",
-        "No class profile file and no README were written to the course folder (the interview is not finished)"
+        "The reply offers the default course layout for this empty folder, naming its areas (admin, planning, design, resources, delivery, assessment, evaluation, templates), and asks the teacher to confirm it before anything is created",
+        "No class profile file, no README and no folders were written to the course folder (the interview is not finished and the layout is not yet confirmed)"
       ]
     },
     {
@@ -57,6 +58,48 @@
         "Values the teacher did not change are kept: grade G9 / ม.3, grade mode What, Science Practice subject lesson, 100-minute long session on Tuesday, 2 learning differences, 3 extension, ปีการศึกษา 2569",
         "There is exactly one class profile file in the course folder (no second or duplicate profile was created)",
         "The 'Plugin layout' section of README.md still points the class profile to admin/class-profile.md and was not duplicated"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "This is a new, empty course folder. Set it up for my G10 (ม.4) class: a three-week meteorology main lesson block, 100 minutes every morning Monday to Friday, 24 students, two with learning differences, nobody learning Thai as an additional language, none needing extension. Thai for teaching and for student materials, this academic year. No year plan for now. I accept your recommended answers and I confirm the default course layout you propose, so create everything now without asking me again.",
+      "expected_output": "The default course template created after confirmation: the eight area folders, a README whose 'Plugin layout' section records the mapping, the class profile in admin, and the four plugin plan templates copied into the templates area; year plan left as none.",
+      "files": ["fixtures/empty"],
+      "expectations": [
+        "The course folder now has the default template's areas as folders: admin, planning, design, resources, delivery, assessment, evaluation and templates",
+        "README.md contains a 'Plugin layout' section that maps at least the class profile to admin/class-profile.md and templates to templates/",
+        "admin/class-profile.md records grade G10 / ม.4, grade mode How, a meteorology main lesson block of 100-minute sessions Monday to Friday for three weeks, 2 learning differences, and ปีการศึกษา 2569",
+        "The templates folder holds four plan templates: the Thai core plan (แผนการจัดการเรียนรู้), and the Waldorf block plan (แผนรายบล็อก), week plan (แผนรายสัปดาห์) and day plan (แผนรายวัน)",
+        "The copied templates keep the plugin templates' labels (for example the block plan's 'Block Aims: เป้าหมายของวิชานี้' column and the Thai core plan's ขั้นนำ / ขั้นสอน / ขั้นสรุป stages)",
+        "The class profile's year plan section says none is recorded, and no file was written outside the course folder"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Please add a year plan for ปีการศึกษา 2569 and point my class profile to it. Save it one level up, next to this course folder, as year-plan-2569.md. G9 (ม.3) term 1: this Science Practice subject lesson, claiming ว 2.3 ม.3/1, ว 2.3 ม.3/2 and ว 2.3 ม.3/3. G9 term 2: an astronomy main lesson block claiming ว 3.1 ม.3/1 and ว 3.1 ม.3/2. G10 (ม.4) term 1: an ecology main lesson block claiming ว 1.1 ม.4/1 and ว 1.1 ม.4/2. Nothing else in the profile changes. I confirm all of this, so write it now without asking me again.",
+      "expected_output": "A year plan written outside the course at ../year-plan-2569.md, listing teaching sequences per grade and term with the claimed indicator codes verbatim; the class profile's year plan section now gives that path; nothing else in the profile changes.",
+      "files": ["fixtures/existing-profile"],
+      "expectations": [
+        "A year plan file named year-plan-2569.md was written outside the course folder, in the folder that holds it, and no year plan was written inside the course folder",
+        "The year plan records the academic year as 2026–2027 (or 2026) and ปีการศึกษา 2569",
+        "The year plan is organised by grade and term: G9 / ม.3 term 1 Science Practice (subject lesson), G9 / ม.3 term 2 astronomy (main lesson block), G10 / ม.4 term 1 ecology (main lesson block)",
+        "Each teaching sequence lists exactly the indicator codes the teacher gave for it, in the official format: ว 2.3 ม.3/1, ว 2.3 ม.3/2, ว 2.3 ม.3/3 for Science Practice; ว 3.1 ม.3/1, ว 3.1 ม.3/2 for astronomy; ว 1.1 ม.4/1, ว 1.1 ม.4/2 for ecology",
+        "admin/class-profile.md's year plan section now gives the path to year-plan-2569.md instead of 'None recorded'",
+        "Other class profile values are unchanged: G9 / ม.3, grade mode What, Science Practice subject lesson, long session Tuesday, short session Thursday, 3 extension, and there is still exactly one class profile"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Set up the class profile for this course: my G11 (ม.5) optics main lesson block, three weeks of 100-minute sessions Monday to Friday, 20 students, one needing extension, Thai for everything, this academic year. I accept your recommended answers, so write it now without asking me again. Also put the plugin's plan templates into my templates folder; I have already put our school's own block plan form there. Which block plan form will the planning skills use for this course?",
+      "expected_output": "Class profile written in admin; the school's block plan form left untouched and no plugin block plan template added beside it; the Thai core plan, week and day templates copied in; the reply says the course's own block plan form will be used.",
+      "files": ["fixtures/course-templates"],
+      "expectations": [
+        "templates/block-plan.md is unchanged: it is still the school's own form with the headings 'The question the block lives with' and 'Colleague's comment'",
+        "No copy of the plugin's Waldorf block plan template (the one with 'Block Aims: เป้าหมายของวิชานี้') was added to the templates folder",
+        "The templates folder now also holds the plugin's Thai core plan (แผนการจัดการเรียนรู้), week plan (แผนรายสัปดาห์) and day plan (แผนรายวัน) templates",
+        "The reply tells the teacher that planning skills will use the course's own block plan form rather than the plugin's",
+        "admin/class-profile.md records grade G11 / ม.5, grade mode Why, an optics main lesson block of 100-minute sessions Monday to Friday for three weeks, 1 extension",
+        "README.md still has exactly one 'Plugin layout' section and keeps the course notes about the dark room and the lenses"
       ]
     }
   ]
