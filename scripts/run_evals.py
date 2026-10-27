@@ -14,6 +14,10 @@ Cases live in evals/<skill>/evals.json in skill-creator's format:
 `files` are relative to evals/<skill>/; each is copied into an empty course
 folder (a directory's contents, or a single file) that becomes the working
 directory of a `claude -p` run with the plugin loaded via --plugin-dir. A
+skill not in the plugin is looked up in --repo-skills-dir (.claude/skills,
+repo-only) and loaded through a throwaway wrapper plugin. An optional
+top-level "allowed_tools" list adds executor tools (e.g. "Bash") for that
+skill's cases. A
 second `claude -p` call grades the reply and the files left in the course
 folder against the expectations. The runner adds one deterministic
 expectation: the skill under test was invoked.
@@ -38,6 +42,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_PLUGIN = REPO / "plugins/thai-waldorf-science"
+DEFAULT_REPO_SKILLS = REPO / ".claude/skills"
 EXECUTOR_TOOLS = "Read,Glob,Grep,Write,Edit,Skill"
 MAX_FILE_CHARS = 20000
 
@@ -48,6 +53,11 @@ class CaseError(ValueError):
 
 def load_cases(skill_evals_dir: Path) -> list:
     """Load and check evals.json; raise CaseError on any schema problem."""
+    return load_suite(skill_evals_dir)[0]
+
+
+def load_suite(skill_evals_dir: Path) -> tuple:
+    """Return (cases, extra executor tools) from evals.json, checked."""
     path = skill_evals_dir / "evals.json"
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -72,7 +82,10 @@ def load_cases(skill_evals_dir: Path) -> list:
         for rel in case.get("files", []):
             if not (skill_evals_dir / rel).exists():
                 raise CaseError(f"{path}: case {cid} file {rel} does not exist")
-    return cases
+    tools = data.get("allowed_tools", [])
+    if not isinstance(tools, list) or not all(isinstance(t, str) and t for t in tools):
+        raise CaseError(f"{path}: allowed_tools must be a list of tool names")
+    return cases, tools
 
 
 def prepare_course(skill_evals_dir: Path, case: dict, course: Path) -> None:
@@ -96,10 +109,10 @@ def child_env() -> dict:
 def run_executor(args, case: dict, course: Path, run_dir: Path) -> list:
     cmd = [
         args.claude, "-p", case["prompt"],
-        "--plugin-dir", str(Path(args.plugin_dir).resolve()),
+        "--plugin-dir", str(Path(args.skill_plugin_dir).resolve()),
         "--output-format", "stream-json", "--verbose",
         "--max-turns", str(args.max_turns),
-        "--allowedTools", EXECUTOR_TOOLS,
+        "--allowedTools", ",".join([EXECUTOR_TOOLS, *args.extra_tools]),
         "--setting-sources", "project",
         "--strict-mcp-config",
     ]
@@ -259,12 +272,33 @@ def run_case(args, skill_evals_dir: Path, case: dict, batch_dir: Path) -> dict:
     return grading
 
 
+def resolve_plugin(args, batch_dir: Path) -> Path:
+    """The plugin to load: --plugin-dir if it has the skill, else a wrapper
+    plugin around a repo-only skill from --repo-skills-dir (never shipped)."""
+    plugin = Path(args.plugin_dir)
+    if (plugin / "skills" / args.skill).is_dir():
+        return plugin
+    repo_skill = Path(args.repo_skills_dir) / args.skill
+    if not (repo_skill / "SKILL.md").is_file():
+        raise CaseError(f"skill {args.skill!r} not found in {plugin}/skills or {args.repo_skills_dir}")
+    wrapper = batch_dir / "plugin"
+    manifest = {"name": "repo-only-skills", "version": "0.0.0",
+                "description": "Wrapper for evaluating a repo-only skill"}
+    (wrapper / ".claude-plugin").mkdir(parents=True)
+    (wrapper / ".claude-plugin/plugin.json").write_text(json.dumps(manifest), encoding="utf-8")
+    shutil.copytree(repo_skill, wrapper / "skills" / args.skill,
+                    ignore=shutil.ignore_patterns("__pycache__"))
+    return wrapper
+
+
 def parse_args(argv):
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("skill")
     parser.add_argument("--case", type=int, action="append", help="run only these ids")
     parser.add_argument("--evals-dir", default=str(REPO / "evals"))
     parser.add_argument("--plugin-dir", default=str(DEFAULT_PLUGIN))
+    parser.add_argument("--repo-skills-dir", default=str(DEFAULT_REPO_SKILLS),
+                        help="repo-only skills, used when the plugin lacks the skill")
     parser.add_argument("--out", default=str(REPO / "evals-workspace"))
     parser.add_argument("--claude", default="claude", help="claude executable")
     parser.add_argument("--model", help="model for the run under test")
@@ -278,7 +312,7 @@ def main(argv) -> int:
     args = parse_args(argv)
     skill_evals_dir = Path(args.evals_dir) / args.skill
     try:
-        cases = load_cases(skill_evals_dir)
+        cases, args.extra_tools = load_suite(skill_evals_dir)
     except CaseError as exc:
         print(f"ERROR {exc}", file=sys.stderr)
         return 2
@@ -288,6 +322,11 @@ def main(argv) -> int:
             print(f"ERROR no case with id in {args.case}", file=sys.stderr)
             return 2
     batch_dir = Path(args.out) / args.skill / time.strftime("%Y%m%d-%H%M%S")
+    try:
+        args.skill_plugin_dir = resolve_plugin(args, batch_dir)
+    except (CaseError, OSError) as exc:
+        print(f"ERROR {exc}", file=sys.stderr)
+        return 2
     all_passed = True
     for case in cases:
         try:

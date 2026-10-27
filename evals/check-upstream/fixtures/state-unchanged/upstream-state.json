@@ -1,0 +1,103 @@
+{
+  "recorded_at": "2027-01-15",
+  "note": "Recorded upstream state for check-upstream evals: branch history per repo, newest first. Not live GitHub.",
+  "repos": {
+    "anthropics/k12-teacher-skills": {
+      "branch": "main",
+      "commits": [
+        {
+          "sha": "e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2",
+          "files": [
+            "README.md",
+            "plugin/skills/k12-lesson-prep/SKILL.md"
+          ]
+        },
+        {
+          "sha": "31fd6dbb0c07cb50bb3ce7f62a4135a393bd0e8c",
+          "files": [
+            "plugin/skills/k12-lesson-plan-creation/SKILL.md",
+            "plugin/skills/k12-lesson-differentiation/SKILL.md"
+          ]
+        },
+        {
+          "sha": "281eb8d41fe2837d911541c9bbb870b58add804c",
+          "files": [
+            "plugin/skills/k12-lesson-prep/SKILL.md"
+          ]
+        }
+      ]
+    },
+    "GarethManning/education-agent-skills": {
+      "branch": "main",
+      "commits": [
+        {
+          "sha": "f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2",
+          "files": [
+            "registry.json",
+            "skills/questioning-discussion/hinge-question-designer/SKILL.md"
+          ]
+        },
+        {
+          "sha": "135d6275e7db0657d70b147f46d3191c5430677d",
+          "files": [
+            "registry.json",
+            "README.md"
+          ]
+        },
+        {
+          "sha": "952cc158791caae0e34ee42f2b5a0a72ce837558",
+          "files": [
+            "skills/curriculum-alignment/curriculum-crosswalk/SKILL.md"
+          ]
+        },
+        {
+          "sha": "5edef15c5f905a09cef002a2608748c4a44c3f5b",
+          "files": [
+            "skills/curriculum-assessment/criterion-referenced-rubric-generator/SKILL.md"
+          ]
+        },
+        {
+          "sha": "b4d93ab2f203c8b7d92488abc6917e01b049e148",
+          "files": [
+            "skills/curriculum-alignment/coverage-audit/SKILL.md"
+          ]
+        },
+        {
+          "sha": "99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a",
+          "files": [
+            "skills/original-frameworks/single-point-rubric-designer/SKILL.md"
+          ]
+        },
+        {
+          "sha": "b8efa77fe34cc0c7206086a6acc3303bd4045da4",
+          "files": [
+            "skills/environmental-experiential-learning/ecological-inquiry-anchor-designer/SKILL.md"
+          ]
+        }
+      ]
+    },
+    "mattpocock/skills": {
+      "branch": "main",
+      "commits": [
+        {
+          "sha": "d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1",
+          "files": [
+            "skills/engineering/code-review/SKILL.md"
+          ]
+        },
+        {
+          "sha": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+          "files": [
+            "skills/engineering/tdd/SKILL.md"
+          ]
+        },
+        {
+          "sha": "95249b0b49782349740fd9b8c6ce32b4e59e497a",
+          "files": [
+            "skills/productivity/grilling/SKILL.md"
+          ]
+        }
+      ]
+    }
+  }
+}

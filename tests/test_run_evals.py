@@ -26,6 +26,7 @@ from pathlib import Path
 args = sys.argv[1:]
 prompt = args[args.index("-p") + 1]
 if "--plugin-dir" in args:
+    Path("../executor-args.json").write_text(json.dumps(args))
     Path("produced.md").write_text("FAKE-OUTPUT-MARKER\n")
     Path("seen-files.txt").write_text("\n".join(sorted(os.listdir("."))))
     events = [{{"type": "system", "subtype": "init"}}]
@@ -141,6 +142,43 @@ class RunEvalsTest(unittest.TestCase):
         self.assertEqual(self.run_runner("--case", "2"), 0)
         self.assertEqual(list(self.out.rglob("eval-1")), [])
         self.assertEqual(len(list(self.out.rglob("eval-2/grading.json"))), 1)
+
+    def executor_args(self) -> list:
+        return json.loads(next(self.out.rglob("eval-1/executor-args.json")).read_text())
+
+    def test_repo_only_skill_is_loaded_through_a_wrapper_plugin(self):
+        shutil.rmtree(self.plugin / "skills/doing-things")
+        repo_skills = self.tmp / "repo-skills"
+        write(repo_skills / "doing-things/SKILL.md", "---\nname: doing-things\n---\n")
+        write(repo_skills / "doing-things/scripts/tool.py", "print(1)\n")
+        self.assertEqual(self.run_runner("--repo-skills-dir", str(repo_skills)), 0)
+        args = self.executor_args()
+        plugin = Path(args[args.index("--plugin-dir") + 1])
+        self.assertTrue((plugin / "skills/doing-things/SKILL.md").is_file())
+        self.assertTrue((plugin / "skills/doing-things/scripts/tool.py").is_file())
+        manifest = json.loads((plugin / ".claude-plugin/plugin.json").read_text())
+        self.assertTrue(manifest["name"])
+        seen = next(self.out.rglob("eval-1/course/seen-files.txt")).read_text().split("\n")
+        self.assertNotIn("skills", seen)
+
+    def test_unknown_skill_is_a_run_error(self):
+        shutil.rmtree(self.plugin / "skills/doing-things")
+        self.assertEqual(self.run_runner("--repo-skills-dir", str(self.tmp / "none")), 2)
+
+    def test_case_file_can_allow_extra_executor_tools(self):
+        data = json.loads((self.evals / "doing-things/evals.json").read_text())
+        data["allowed_tools"] = ["Bash"]
+        write(self.evals / "doing-things/evals.json", json.dumps(data))
+        self.run_runner()
+        args = self.executor_args()
+        tools = args[args.index("--allowedTools") + 1].split(",")
+        self.assertIn("Bash", tools)
+        self.assertIn("Read", tools)
+
+    def test_executor_tools_default_to_no_bash(self):
+        self.run_runner()
+        args = self.executor_args()
+        self.assertNotIn("Bash", args[args.index("--allowedTools") + 1].split(","))
 
     def test_invalid_case_file_is_rejected_before_running(self):
         for bad in (

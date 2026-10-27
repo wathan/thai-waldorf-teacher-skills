@@ -209,6 +209,41 @@ class LiveModeTest(unittest.TestCase):
         self.assertEqual(len(calls), len(set(calls)), "each comparison is fetched once")
 
 
+class EvalFixturesTest(unittest.TestCase):
+    """The recorded states behind evals/check-upstream give the outcomes its cases grade."""
+
+    FIXTURES = ROOT / "evals/check-upstream/fixtures"
+
+    def report(self, state_dir):
+        out = io.StringIO()
+        code = main(["--record", str(self.FIXTURES / "record/UPSTREAM.md"),
+                     "--state", str(self.FIXTURES / state_dir / "upstream-state.json")], out=out)
+        return code, out.getvalue()
+
+    def test_changed_state(self):
+        code, report = self.report("state-changed")
+        self.assertEqual(code, 1)
+        changes = report.split("## Changes worth reviewing")[1].split("\n## ")[0]
+        for text in ("### planning-main-lesson-blocks", "### mapping-curriculum",
+                     "k12-lesson-plan-creation/references/science.md",
+                     "coverage-audit/references/worked-examples.md"):
+            self.assertIn(text, changes)
+        for text in ("README.md", "crosswalk-v2", "code-review", "writing-thai-core-plans"):
+            self.assertNotIn(text, changes)
+
+    def test_unchanged_state(self):
+        code, report = self.report("state-unchanged")
+        self.assertEqual(code, 0)
+        self.assertNotIn("## Changes worth reviewing", report)
+
+    def test_rewritten_state(self):
+        code, report = self.report("state-rewritten")
+        self.assertEqual(code, 1)
+        self.assertIn("### writing-thai-core-plans", report)
+        problems = report.split("## Could not compare")[1].split("\n## ")[0]
+        self.assertIn("k12-lesson-plan-creation` at `31fd6db`", problems)
+
+
 class RealRecordTest(unittest.TestCase):
     """The committed UPSTREAM.md must parse: every row has a known repo and a full SHA."""
 
