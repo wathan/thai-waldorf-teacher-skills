@@ -1,6 +1,6 @@
 # Year coverage: reading a year plan and the report template
 
-Year-level coverage across every teaching sequence in the teacher's year plan. A course-local year coverage template overrides the report layout below. Write in English with Thai official terms verbatim.
+Year-level coverage across every teaching sequence in the teacher's year plan. A course-local year coverage template overrides the report layout below. Write in Thai by default (it is shared with supervisors), English when the teacher asks; Thai official terms verbatim either way.
 
 ## Reading the year plan
 

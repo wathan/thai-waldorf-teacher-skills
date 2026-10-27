@@ -1,6 +1,6 @@
 # Standards map template
 
-The default layout of a course standards map. A course-local template overrides it. Fill every `<…>`; keep section order. Write in English with Thai official terms verbatim.
+The default layout of a course standards map. A course-local template overrides it. Fill every `<…>`; keep section order. Write in Thai by default (it is shared with supervisors), English when the teacher asks; Thai official terms verbatim either way.
 
 ```markdown
 # Standards map: <teaching sequence, e.g. Meteorology main lesson block>
@@ -19,7 +19,7 @@ The default layout of a course standards map. A course-local template overrides 
 
 | Verb | ความหมาย (glossary, verbatim) | What it asks of students |
 |---|---|---|
-| <Thai verb> | <official meaning> | <one plain-English line> |
+| <Thai verb> | <official meaning> | <one plain-language line> |
 
 ## Waldorf grade mode
 
