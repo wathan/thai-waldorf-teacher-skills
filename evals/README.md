@@ -8,6 +8,8 @@ Repo-only (never shipped). One folder per plugin skill: `evals/<skill>/evals.jso
             "files": ["fixtures/empty"], "expectations": ["..."]}]}
 ```
 
+Repo-only skills (in `.claude/skills/`, such as `check-upstream`) are evaluated the same way: when the plugin has no skill of that name, the runner loads it from `.claude/skills/<skill>` through a throwaway wrapper plugin. An optional top-level `"allowed_tools": ["Bash"]` adds executor tools for a skill whose cases need them (by default the executor gets Read, Glob, Grep, Write, Edit and Skill only). `check-upstream` cases run against a recorded upstream state (`upstream-state.json` in the fixture), never live GitHub.
+
 Write expectations about external behaviour only: what the reply says, which files are written where, and whether the agreed rules hold in them (spec #1, Testing Decisions). The runner adds one expectation itself: the skill under test was invoked.
 
 ## Run

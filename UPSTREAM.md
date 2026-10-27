@@ -1,6 +1,6 @@
 # Upstream record
 
-The plugin's skills are written fresh, not forked (ADR-0001). This record lists, per skill, the upstream skills each one draws on and the upstream commit last reviewed for that path. The repo-only `check-upstream` tool compares these commits with upstream and reports changes; merging stays manual.
+The plugin's skills are written fresh, not forked (ADR-0001). This record lists, per skill, the upstream skills each one draws on and the upstream commit last reviewed for that path. The repo-only `check-upstream` skill (`.claude/skills/check-upstream/`, not shipped) compares these commits with upstream and reports changes; merging stays manual. After reviewing a path by hand, update its commit here.
 
 ## Contents
 
@@ -8,6 +8,7 @@ The plugin's skills are written fresh, not forked (ADR-0001). This record lists,
 - [Upstream repositories](#upstream-repositories)
 - [Plugin-wide](#plugin-wide)
 - Skills: [setting-up-class-profiles](#setting-up-class-profiles) · [guiding-the-workflow](#guiding-the-workflow) · [mapping-curriculum](#mapping-curriculum) · [planning-main-lesson-blocks](#planning-main-lesson-blocks) · [planning-subject-lessons](#planning-subject-lessons) · [writing-thai-core-plans](#writing-thai-core-plans) · [differentiating-for-learner-variability](#differentiating-for-learner-variability) · [planning-formative-assessment](#planning-formative-assessment) · [auditing-epistemic-agency](#auditing-epistemic-agency) · [preparing-to-teach](#preparing-to-teach)
+- Repo-only: [check-upstream](#check-upstream)
 - [Pending confirmation](#pending-confirmation)
 
 ## Format
@@ -118,6 +119,10 @@ No upstream sources: written fresh from spec #1 and the plugin's own skill set. 
 |---|---|---|---|---|
 | k12 | plugin/skills/k12-lesson-prep | 281eb8d41fe2837d911541c9bbb870b58add804c | content | firm |
 | gareth | skills/questioning-discussion/dialogic-teaching-move-generator | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content | firm |
+
+## check-upstream
+
+Repo-only maintainer skill, not shipped. No upstream sources: written fresh from spec #1 and issue #17.
 
 ## Pending confirmation
 
