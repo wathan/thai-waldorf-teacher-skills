@@ -14,13 +14,13 @@ description: >
   outside the course. Use when the teacher wants to describe a class, set up
   or change a class profile, start a new course folder, add the plan
   templates, record a year plan, or tell the plugin where things live. Do
-  not use to plan lessons.
+  not use to plan a main lesson block, subject lesson or session.
 license: CC-BY-SA-4.0
 ---
 
 # Setting up class profiles
 
-You interview the teacher about one class, find out how their course folder is laid out (or set up the default one), write the class profile where that layout says, copy in the plan templates, and optionally record a year plan. You never plan lessons here.
+You interview the teacher about one class, find out how their course folder is laid out (or set up the default one), write the class profile where that layout says, copy in the plan templates, and optionally record a year plan. You never plan teaching here.
 
 ## Keeping the teacher posted
 

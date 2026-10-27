@@ -30,7 +30,7 @@ Talk as a colleague in plain teacher language: "your design folder", "your unit 
 2. Read `${CLAUDE_SKILL_DIR}/references/5e-design.md` NOW: cycles, phase placement, explicit instruction, graded practice, retrieval practice and the two plan formats. It applies to every route below.
 3. Decide what is asked:
    - **A unit as 5E inquiry** (the default, also for "plan my next unit" or "a 5E lesson on …"): Steps 1–5.
-   - **A unit as a storyline design** (only when the teacher asks for a storyline, an anchoring phenomenon or a driving question board): also read `${CLAUDE_PLUGIN_ROOT}/skills/planning-main-lesson-blocks/references/storyline-design.md` (anchor, driving question, ideas, board) and `${CLAUDE_SKILL_DIR}/references/storyline-units.md` (how they fit a subject lesson's cycles and weekly pattern) NOW. Steps 1–5 still apply.
+   - **A unit as a storyline design** (only when the teacher asks for a storyline, an anchoring phenomenon or a driving question board): also read `${CLAUDE_PLUGIN_ROOT}/references/storyline-design.md` (the anchor rule, driving question, ideas, board) and `${CLAUDE_SKILL_DIR}/references/storyline-units.md` (how they fit a subject lesson's cycles and weekly pattern) NOW. Steps 1–5 still apply.
    - **One more cycle or a reworked cycle** in a unit already planned: Steps 1, 4 and 5 for that cycle; keep the unit plan's decisions.
    - **Thai core plans:** belong to `writing-thai-core-plans`, after the cycle plans exist. **A main lesson block:** belongs to `planning-main-lesson-blocks`.
 
@@ -39,7 +39,7 @@ Talk as a colleague in plain teacher language: "your design folder", "your unit 
 1. Read the class profile where the layout places it: grade, grade mode, schedule (sessions per week, each session's length and day, length of the sequence), learner variability, languages, academic year.
 2. Read what the course already holds: the standards map (the indicators each unit claims), earlier unit plans (what students met before), and any plan or notes for this unit. The teacher's decisions there stand unless they ask to change them.
 3. **Scope.** Plan exactly the unit asked for, over the weeks the request or the course gives; otherwise propose a length from the indicators (usually two to four weeks) and state it.
-4. **Without a class profile:** ask at most three questions in one numbered round, each with a recommended answer (the grade too: recommend the likeliest from the topic's indicators in the crosswalk), and only for what the request leaves open: the grade; the sessions per week with their lengths and days; and, with a storyline design, the anchor if none is chosen. The kind of teaching sequence is already known: a subject lesson. State every other value as an assumption using the class profile defaults (one long 100-minute and one short 50-minute session a week, for one term; Thai for instruction and student materials; the academic year in progress), and end that same reply, whether it asks or proceeds, with one line suggesting a class profile for next time (e.g. "Setting up a class profile for this class with `setting-up-class-profiles` saves these questions next time."). When the teacher says to go ahead with defaults, ask nothing that has a default.
+4. **Without a class profile:** follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults; the one-line suggestion at the end). The questions you may ask: the grade (recommend the likeliest from the topic's indicators in the crosswalk); the sessions per week with their lengths and days; and, with a storyline design, the anchor if none is chosen. The kind of teaching sequence is already known: a subject lesson.
 
 Never read the course folder's name for meaning.
 
@@ -55,7 +55,7 @@ Keep the three frameworks in their own wording; never merge them into one statem
 
 ## Step 3 — Design the unit
 
-Follow `5e-design.md`: one topic; target ideas and prerequisite ideas listed separately; one or more 5E cycles, each with its own question in students' terms, its indicators and its target ideas. With a storyline design, follow `storyline-units.md` too: the anchoring phenomenon is the teacher's (offer candidates if none is chosen, never choose, write no plan files while it is open), the driving question's authorship is stated, and the driving question board frames the cycles.
+Follow `5e-design.md`: one topic; target ideas and prerequisite ideas listed separately; one or more 5E cycles, each with its own question in students' terms, its indicators and its target ideas. With a storyline design, follow `storyline-units.md` too: storyline-design.md's anchor rule holds (offer candidates if none is chosen, never choose, write no plan files while it is open), the driving question's authorship is stated, and the driving question board frames the cycles.
 
 ## Step 4 — Place each cycle's phases on the weekly pattern
 

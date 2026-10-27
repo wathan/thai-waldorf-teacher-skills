@@ -19,7 +19,7 @@ Where each assessment item may sit in a session, and what to flag in the teacher
 | Practice | Main lesson book work as evidence (entries, drawings, tables, write-ups), read against criteria students know; a check before letting go of a new skill | Self-assessment of main lesson book work with a single-point rubric |
 | New Content | Nothing: students observe, record, draw and wonder; nothing about today's experience is assessed or discussed | Nothing. **Never a reflection directly after New Content** |
 | End of day | — | Only when Practice follows New Content that day, and only on the Practice (never on the new experience) |
-| Last day of the block | The class's summary of key ideas in its own words as evidence | End-of-block reflection at Recall, with Rawson's three steps |
+| Last day of the main lesson block | The class's summary of key ideas in its own words as evidence | End-of-block reflection at Recall, with Rawson's three steps |
 
 **Rawson's three steps** (Rawson 2021, p. 91), for working-process and end-of-block reflection, with criteria students understand and aimed at the will to do better:
 
@@ -27,7 +27,7 @@ Where each assessment item may sit in a session, and what to flag in the teacher
 2. What differences and surprises were there?
 3. What will I do better next time?
 
-**Block day 1** has no recall; its open look back at the previous block in this subject is not assessed. **Four-day cycle** (only when the teacher chose it): the same rules apply by role; reflection follows the day's concept phase, never the new experience.
+**Block day 1** has no recall; its open look back at the previous main lesson block in this subject is not assessed. **Four-day cycle** (only when the teacher chose it): the same rules apply by role; reflection follows the day's concept phase, never the new experience.
 
 ## Subject lessons
 

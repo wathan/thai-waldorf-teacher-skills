@@ -92,7 +92,7 @@ Audited from: <plans, in plain words> · Kind: <main lesson block, two-day rhyth
 
 | Session | Investigation aim | Investigation method | Explanatory model |
 |---|---|---|---|
-| Day 2 (Tue) | Opened: students' questions cluster into the driving question board (reach: rest of the block) | Not in this session | Opened: individual sketch models compared as a class (reach: revised day 3 onward) |
+| Day 2 (Tue) | Opened: students' questions cluster into the driving question board (reach: rest of the main lesson block) | Not in this session | Opened: individual sketch models compared as a class (reach: revised day 3 onward) |
 | Day 3 (Wed) | … | Closed: … — reason: … (inferred) | **Flag: scripted concept** — "…" |
 
 ## Flags

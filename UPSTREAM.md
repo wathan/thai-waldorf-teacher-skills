@@ -133,4 +133,4 @@ Repo-only maintainer skill, not shipped. No upstream sources: written fresh from
 
 ## Pending confirmation
 
-ADR-0001 counts 29 education-agent-skills sources but names only 12. This record lists 12 firm and 18 proposed distinct paths (two of them alternates for differentiation), so at least one proposed path must be dropped when the count is confirmed. `awe-wonder-experience-designer` sits in the wellbeing-motivation-agency domain; ADR-0001 excludes wellbeing programmes, so confirm it is not one.
+ADR-0001 counts 29 education-agent-skills sources but names only 12. This record lists 12 firm and 18 proposed distinct paths (two of them alternates for differentiation), so at least one proposed path must be dropped when the count is confirmed; for now the maintainer keeps every proposed source as `proposed` (2026-10-27). `awe-wonder-experience-designer` sits in the wellbeing-motivation-agency domain, but the maintainer confirmed (2026-10-27) it is not a wellbeing programme, so ADR-0001's exclusion does not apply and it stays.

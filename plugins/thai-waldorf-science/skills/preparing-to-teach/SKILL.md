@@ -8,7 +8,7 @@ description: >
   experiments, built from the session's day plan (or 5E session plan) and placed
   where the course layout puts preparation notes. Use when the teacher asks to
   prepare for, get ready for or run through tomorrow's or a named session. Do
-  not use to plan or change a session, block or lesson, or to write assessments.
+  not use to plan or change a session, main lesson block or subject lesson, or to write assessments.
 license: CC-BY-SA-4.0
 ---
 
@@ -27,13 +27,14 @@ Talk as a colleague in plain teacher language: "your day plan", "your delivery f
 3. Decide what kind of plan it is:
    - **A Waldorf day plan** of a main lesson block (two-day rhythm, or Rawson's four-day cycle when the plan uses it): the default.
    - **A 5E session** of a subject lesson: the same note; parts follow the session's phases.
-   - **No plan for that session:** go to Step 1, item 3.
+   - **No plan for that session:** go to Step 1, item 4.
 
 ## Step 1 — Read the plan and what surrounds it
 
 1. Read the session plan at the layout's `session plans` location. Read with it: the week plan row for that day; the previous session's plan (its new experience is today's Recall); the block plan's target ideas and prerequisite ideas; the driving question board record if the layout maps one; the class profile (session length, learner variability counts, language of student materials).
 2. Never read the course folder's name for meaning.
-3. **No plan for the session:** say plainly that the session has no plan yet, and offer two ways on: writing the day plan first (`planning-main-lesson-blocks`; `planning-subject-lessons` for a 5E session), or the teacher telling you what happens in it. Write no note. When the teacher's request itself describes the session (its parts and any demonstration), prepare from that, say so, and mark the note "from your description".
+3. **Without a class profile:** follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults). Ask only what the plan leaves open and the note needs, usually nothing: the session length comes from the plan's timings (else the 100-minute default), and the moves are in Thai, the default language of student materials, unless the plan's student-facing wording shows another. Say the assumptions in the reply.
+4. **No plan for the session:** say plainly that the session has no plan yet, and offer two ways on: writing the day plan first (`planning-main-lesson-blocks`; `planning-subject-lessons` for a 5E session), or the teacher telling you what happens in it. Write no note. When the teacher's request itself describes the session (its parts and any demonstration), prepare from that, say so, and mark the note "from your description".
 
 ## Step 2 — Check the plan, read-only
 
@@ -71,4 +72,4 @@ Run this against the note you wrote, and fix any miss before replying:
 
 ## Reply
 
-A few sentences: which session the note is for and where it is in teacher terms ("in your delivery folder"; never a file name or path), the one thing most worth rehearsing (usually the key Recall question or the riskiest step of a demonstration), and any Step 2 findings with their proposed fixes. Offer to adjust the note.
+A few sentences: which session the note is for and where it is in teacher terms ("in your delivery folder"; never a file name or path), the one thing most worth rehearsing (usually the key Recall question or the riskiest step of a demonstration), any Step 2 findings with their proposed fixes, and any assumption made without a class profile (with the one-line suggestion class-profile.md gives). Offer to adjust the note.

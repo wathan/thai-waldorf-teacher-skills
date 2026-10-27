@@ -1,4 +1,4 @@
-# The two-day rhythm across a block's weeks
+# The two-day rhythm across a main lesson block's weeks
 
 The plugin's default main-lesson rhythm for the upper school, after Zech (ADR-0003; Rawson §2.2 and §2.4, p. 97): an experience is taken in on one day and left un-analysed; the next day its recall flows straight into discussion and concept formation (about 40–50 minutes); later days apply the concept. A 2–4-week block cannot afford the four-day cycle's three-day lag before any concept forms, so the four-day cycle (experience → recall → concept → apply) is not used unless the teacher asks for it.
 
@@ -6,7 +6,7 @@ The plugin's default main-lesson rhythm for the upper school, after Zech (ADR-00
 
 - [The steady-state day](#the-steady-state-day)
 - [Block day 1](#block-day-1)
-- [The last day of the block](#the-last-day-of-the-block)
+- [The last day of the main lesson block](#the-last-day-of-the-main-lesson-block)
 - [Across weekends and unit boundaries](#across-weekends-and-unit-boundaries)
 - [Storyline routines in the rhythm](#storyline-routines-in-the-rhythm)
 - [Light universal UDL options](#light-universal-udl-options)
@@ -17,7 +17,7 @@ The plugin's default main-lesson rhythm for the upper school, after Zech (ADR-00
 
 From day 2 on, every day runs in this order (about 100 minutes; shorter sessions scale each part):
 
-1. **Rhythmic Time** (กิจกรรมวงกลม): attunement, linked to the block where possible.
+1. **Rhythmic Time** (กิจกรรมวงกลม): attunement, linked to the main lesson block where possible.
 2. **Recall flowing into concept formation** (about 40–50 minutes), on *yesterday's* experience:
    - **Recall:** students reconstruct yesterday's experience in their own words, first individually (writing or sketching), then in pairs, then as a class. Open questions only: "What did you notice when…?", "What happened first, and then?", "What surprised you?". Never a quiz, a test, or closed questions with one right answer.
    - **Discussion and concept formation:** each student takes an individual position on what was going on (a claim, a sketch model, an explanation in their own words), then the class compares positions and integrates them into its shared understanding. The teacher characterises rather than defines and adds technical terms only afterwards. Concept formation is never a predetermined concept handed over as the answer; the plan names the target idea the class is working toward, not the sentence students must arrive at.
@@ -30,17 +30,17 @@ The day-plan form's Recall row covers recall and concept formation together. Row
 
 ## Block day 1
 
-There is nothing to recall yet, so day 1 connects to the previous block in this subject instead (the class's last block in this science, named if the course shows it; otherwise "the previous block in this subject, teacher to name"): an open look back at what the class saw and figured out there, and how it leads here. Then a short preview of the journey (not of the answers), Practice if any (main lesson book set-up), and the **anchoring phenomenon as New Content, last, left un-analysed**. The close tells students that tomorrow starts from what they experienced.
+There is nothing to recall yet, so day 1 connects to the previous main lesson block in this subject instead (the class's last main lesson block in this science, named if the course shows it; otherwise "the previous main lesson block in this subject, teacher to name"): an open look back at what the class saw and figured out there, and how it leads here. Then a short preview of the journey (not of the answers), Practice if any (main lesson book set-up), and the **anchoring phenomenon as New Content, last, left un-analysed**. The close tells students that tomorrow starts from what they experienced.
 
-## The last day of the block
+## The last day of the main lesson block
 
-No new experience: it could never be recalled. Recall and concept formation on yesterday's experience, then putting the pieces together: the class returns to the anchoring phenomenon and the driving question with what it has figured out, closes the driving question board, and reflects on the block (Rawson's three steps: what happened and what should have happened → differences and surprises → what I will do better next time). End with a summary of key ideas in students' own words.
+No new experience: it could never be recalled. Recall and concept formation on yesterday's experience, then putting the pieces together: the class returns to the anchoring phenomenon and the driving question with what it has figured out, closes the driving question board, and reflects on the main lesson block (Rawson's three steps: what happened and what should have happened → differences and surprises → what I will do better next time). End with a summary of key ideas in students' own words.
 
 ## Across weekends and unit boundaries
 
 - Monday recalls Friday's experience (two nights of sleep do no harm).
 - A unit's last new experience is recalled on the next unit's first day; that recall can bridge into the new unit's question on the driving question board.
-- Never put a new experience on a day that is followed by no session of this block.
+- Never put a new experience on a day that is followed by no session of this main lesson block.
 
 ## Storyline routines in the rhythm
 
@@ -65,7 +65,7 @@ Each day row of the week form:
 
 - **Objectives:** what the class works toward today, phrased as figuring out ("work toward explaining why…"), never as a concept students will be told.
 - **Assessment:** how the teacher sees it (main lesson book entries, positions taken in concept formation, questions on the board) and any assessment-as-learning prompt (never scored). Never a quiz at Recall.
-- **Main Lesson:** the day's parts in rhythm order, each named: `Recall + concept formation (yesterday: …)` · `Reflection` · `Practice: …` · `New experience: …` · `Close: preview of tomorrow`. Day 1: `Link to previous block: …` instead of Recall.
+- **Main Lesson:** the day's parts in rhythm order, each named: `Recall + concept formation (yesterday: …)` · `Reflection` · `Practice: …` · `New experience: …` · `Close: preview of tomorrow`. Day 1: `Link to previous main lesson block: …` instead of Recall.
 - **Differentiation:** that session's UDL options.
 - **Preparation:** equipment, sources, setup for the new experience.
 

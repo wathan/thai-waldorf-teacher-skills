@@ -12,14 +12,14 @@ description: >
   disagree. Use when the teacher asks for a Thai core plan,
   แผนการจัดการเรียนรู้, lesson plan for the supervisors or the school's
   statutory plan for days of a planned main lesson block or cycles of a
-  planned subject lesson unit. Do not use to plan the block, its week plans or
+  planned subject lesson unit. Do not use to plan the main lesson block, its week plans or
   day plans, or a subject lesson's design.
 license: CC-BY-SA-4.0
 ---
 
 # Writing Thai core plans
 
-You write the Thai core plan (แผนการจัดการเรียนรู้) that external supervisors receive, from a teaching sequence the teacher has already planned. The Thai core plan describes the lesson truthfully; it never redesigns it. The Waldorf plans and the Thai core plan must agree.
+You write the Thai core plan (แผนการจัดการเรียนรู้) that external supervisors receive, from a teaching sequence the teacher has already planned. The Thai core plan describes the planned teaching truthfully; it never redesigns it. The Waldorf plans and the Thai core plan must agree.
 
 ## Keeping the teacher posted
 
@@ -29,23 +29,29 @@ Talk as a colleague in plain teacher language: "your Thai plans folder", "the sc
 
 1. Read `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md` and `${CLAUDE_PLUGIN_ROOT}/references/class-profile.md` NOW. Follow both for every file you read or write.
 2. Decide what is asked:
-   - **Main-lesson days** (one day, several days, a week or the whole block of a main lesson block): one Thai core plan per day. Read `${CLAUDE_SKILL_DIR}/references/main-lesson-days.md` NOW; it supplies the source of each plan, the stage mapping and the consistency check used in Steps 2 and 4.
+   - **Main-lesson days** (one day, several days, a week or the whole main lesson block): one Thai core plan per day. Read `${CLAUDE_SKILL_DIR}/references/main-lesson-days.md` NOW; it supplies the source of each plan, the stage mapping and the consistency check used in Steps 2 and 4.
    - **Subject lessons** (one Thai core plan per 5E cycle of a unit; never per session, and no Waldorf plans): read `${CLAUDE_SKILL_DIR}/references/5e-cycles.md` NOW; it replaces main-lesson-days.md's sources, stage mapping and consistency check in Steps 2 and 4, and where this file says Waldorf plans, read the unit plan and cycle plans.
-   - **Planning the block, its week plans or day plans:** belongs to `planning-main-lesson-blocks`. **Designing a subject lesson:** belongs to `planning-subject-lessons`.
+   - **Planning the main lesson block, its week plans or day plans:** belongs to `planning-main-lesson-blocks`. **Designing a subject lesson:** belongs to `planning-subject-lessons`.
 3. Whatever the route, read `${CLAUDE_SKILL_DIR}/references/filling-the-form.md` NOW: it holds the section-by-section rules shared by every Thai core plan.
+4. Read these shared references NOW too; filling-the-form.md says what each section takes from them:
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-core-plan-template.th.md`: the plugin's form (used when the course has no form of its own) and its Section 7 stage mapping.
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-science-core-indicators-2560.md` (and, for a ม.4–6 elective, `${CLAUDE_PLUGIN_ROOT}/references/thai-science-supplementary-learning-outcomes-2560.md`): indicators, character for character.
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-science-glossary-2560.md`: indicator verbs, for the K objectives.
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-science-key-skills-2560.md` and `${CLAUDE_PLUGIN_ROOT}/references/thai-science-scientific-mind-2560.md`: official skill and attitude names, for the P and A objectives.
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-science-indicator-analysis-examples-2560.md`: IPST's own unpacking, the style to match.
 
 ## Step 1 — Context, at most three questions
 
 1. Read the class profile where the layout places it: grade and Thai grade (ม.), grade mode, session length, languages, academic year.
 2. Read the plans the route reference names as sources, at their mapped locations. A Thai core plan is written only from a planned teaching sequence: if the plan it would describe does not exist, say so in one sentence, name the skill that writes it, and write nothing.
 3. **Scope.** Write exactly the plans asked for. If the request leaves the scope open, ask once with a recommendation (e.g. "the days of this week, recommended").
-4. **Without a class profile:** ask at most three questions in one numbered round, each with a recommended answer, and only for what the plans and the request leave open (usually the grade and the session length). State every other value as an assumption using the class profile defaults, work out the ปีการศึกษา from today's date, and suggest `setting-up-class-profiles` for next time.
+4. **Without a class profile:** follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults). The questions you may ask, only where the plans leave them open: usually the grade and the session length. Work out the ปีการศึกษา from today's date.
 
 Never read the course folder's name for meaning.
 
-## Step 2 — Map the lesson onto the three stages
+## Step 2 — Map the day or cycle onto the three stages
 
-Follow the route reference's stage mapping. Section 7's three stages (ขั้นนำเข้าสู่บทเรียน, ขั้นสอน/ขั้นจัดกิจกรรม, ขั้นสรุป) list what the lesson actually does, in the order the source plan gives, with the source's times. Never move an activity to a stage where it does not happen to make the form look conventional, and never add activities the source plan does not have.
+Follow the route reference's stage mapping. Section 7's three stages (ขั้นนำเข้าสู่บทเรียน, ขั้นสอน/ขั้นจัดกิจกรรม, ขั้นสรุป) list what the day or cycle actually does, in the order the source plan gives, with the source's times. Never move an activity to a stage where it does not happen to make the form look conventional, and never add activities the source plan does not have.
 
 ## Step 3 — Fill the form
 
@@ -69,7 +75,7 @@ Run this against the files you wrote, and fix any miss before replying:
 - [ ] 5E cycles: stages follow the cycle plan's mapping, each step labelled with its phase and session; time is the sum of the cycle's sessions; retrieval practice and exit slips unscored.
 - [ ] Indicator codes and Thai wording are verbatim; every sequencing difference is cited as written with a grade-mode reason.
 - [ ] K, P and A objectives each come from the indicators and the day's work; P uses official skill names, A uses the 8 คุณลักษณะอันพึงประสงค์ or official scientific-attitude names; every objective has a measurement row and a rubric.
-- [ ] Rubrics describe this lesson's tasks, not the form's maths example.
+- [ ] Rubrics describe this plan's tasks, not the form's maths example.
 - [ ] Assessment as learning is named without a score; nothing at Recall is scored.
 - [ ] ปีการศึกษา in the Buddhist era; ระดับชั้น as the Thai grade.
 - [ ] Scoring tables blank (no names, no numbers); results after teaching and the administrator's comments blank; signature lines left to sign.

@@ -22,8 +22,10 @@ import re
 import sys
 from pathlib import Path
 
+from plugin_paths import plugin_dir
+
 REPO = Path(__file__).resolve().parents[1]
-REFERENCES = REPO / "plugins/thai-waldorf-science/references"
+REFERENCES = plugin_dir(REPO) / "references"
 OUTPUT_NAME = "curriculum-crosswalk.md"
 
 INDICATORS_FILE = "thai-science-core-indicators-2560.md"

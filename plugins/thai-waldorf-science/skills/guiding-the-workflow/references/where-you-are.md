@@ -13,7 +13,7 @@ How to tell the teacher where they are in the design and teaching process, and w
 
 1. List the course folder, three levels deep, skipping hidden entries. Never read meaning into the folder's own name or mention it.
 2. **Nothing there** (empty, or only hidden files): stop here and give the fixed walkthrough (`walkthrough.md`). That is the fallback whenever there is no course to read.
-3. Read the top-level README's `## Plugin layout` table if there is one (see `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md`, Step 1). Its rows say where each concept lives; use them as written.
+3. Read the top-level README's `## Plugin layout` table if there is one (course-layout Step 1, read in Step 0). Its rows say where each concept lives; use them as written.
 4. **No layout table:** recognise files by the name and content cues in course-layout's Step 2 and by the file names the skills write (Step 2 below). Do not propose or record a layout here; the skill that next writes a file does that.
 
 ## Step 2: find each piece of work
@@ -46,7 +46,7 @@ Take the **first** row whose condition holds; that skill is the next step. The r
 |---|---|---|---|
 | 1 | No class profile | `setting-up-class-profiles` | describe the class (later skills can work without it, asking up to three questions) |
 | 2 | No standards map, and no block plan or unit plan yet | `mapping-curriculum` | the Thai indicators this sequence claims (optional; planning can start straight away and choose indicators itself) |
-| 3 | No block plan (main lesson block) or no unit plan (subject lesson) | `planning-main-lesson-blocks` or `planning-subject-lessons`, by the profile's kind | plan the block, or the subject lesson units |
+| 3 | No block plan (main lesson block) or no unit plan (subject lesson) | `planning-main-lesson-blocks` or `planning-subject-lessons`, by the profile's kind | plan the main lesson block, or the subject lesson units |
 | 4 | Main lesson block: a week in the block plan has no week plan | `planning-main-lesson-blocks` | the missing week plans |
 | 5 | The current week has no day plans (main lesson block), or the current unit has no cycle plans (subject lesson) | `planning-main-lesson-blocks` (day plans for that week, on request) or `planning-subject-lessons` | day plans for that week; the Thai core plans are written from them |
 | 6 | That week's days, or that unit's 5E cycles, have no Thai core plans | `writing-thai-core-plans` | Thai core plans for that week, or for that unit's cycles |

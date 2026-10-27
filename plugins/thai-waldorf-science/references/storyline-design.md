@@ -1,6 +1,8 @@
-# Storyline design for a main lesson block
+# Storyline design
 
-The storyline instructional model (Reiser et al., 2021) fitted to a Waldorf main lesson block. Students' questions about an anchoring phenomenon drive the block toward explanatory models; the teacher closes a few decisions deliberately and leaves the rest open.
+The storyline instructional model (Reiser et al., 2021) fitted to a Waldorf main lesson block. Students' questions about an anchoring phenomenon drive the main lesson block toward explanatory models; the teacher closes a few decisions deliberately and leaves the rest open.
+
+Shared by `planning-main-lesson-blocks` and `planning-subject-lessons`. For a subject lesson unit designed as a storyline, read "unit" for "main lesson block" and "cycle" for "unit"; that skill's storyline-units reference says how the rest fits weekly sessions and 5E cycles.
 
 ## Contents
 
@@ -13,7 +15,9 @@ The storyline instructional model (Reiser et al., 2021) fitted to a Waldorf main
 
 ## Anchoring phenomenon: candidates, never a choice
 
-The anchoring phenomenon is an observable event that opens the block and from which students' questions are elicited. Choosing it is a deliberate closure that belongs to the teacher. Offer candidates; the teacher chooses.
+The anchoring phenomenon is an observable event that opens the main lesson block and from which students' questions are elicited. Choosing it is a deliberate closure that belongs to the teacher. Offer candidates; the teacher chooses.
+
+**The anchor rule.** An anchor already chosen (in the request or the course's files) is used as given. When none is chosen, offer candidates as below and ask the teacher to choose. Never choose for them, never rank one as "the" pick, and never write a plan around a candidate the teacher has not chosen, even when asked to "just pick one": say plainly that this decision stays with them and that the plans follow as soon as they name one. Write no plan files while the anchor is open. The plan then says the teacher chose it.
 
 Offer three or four candidates. Each one:
 
@@ -21,14 +25,14 @@ Offer three or four candidates. Each one:
 - **is local or place-based**: something a class in Thailand meets, ideally near the school or in its region (the monsoon's arrival, a northern haze season, a flooded paddy, a mangrove edge, a limestone cave, a temple's weathered stone, the school pond);
 - **is ecological where it fits**: it shows living things and their surroundings acting on each other, or people's part in an Earth system;
 - **can carry awe and wonder**: something puzzling, beautiful or surprising enough that students want to explain it, not a worksheet scenario;
-- **reaches the block's indicators**: explaining it fully needs the target ideas, so the units can grow out of the class's questions about it;
+- **reaches the main lesson block's indicators**: explaining it fully needs the target ideas, so the units can grow out of the class's questions about it;
 - **fits the grade mode**: G9 What? (rich, exact observation of an opposition), G10 How? (polarities working in one system), G11 Why? (the invisible behind the visible), G12 Who? (synthesis across systems and the human place in them).
 
-Give each candidate one line on what students would encounter on day 1 and one on why it could carry this block. Mix the kinds (one close to the school, one regional, one seasonal or ecological) and add what each needs to stage (a site visit, the class's own data, a demonstration). Do not rank them or name a favourite; ask which one the teacher wants, or whether they have another in mind.
+Give each candidate one line on what students would encounter on day 1 and one on why it could carry this main lesson block, naming what in it is puzzling, beautiful or surprising. Mix the kinds (one close to the school, one regional, one seasonal or ecological) and add what each needs to stage (a site visit, the class's own data, a demonstration). Do not rank them or name a favourite; ask which one the teacher wants, or whether they have another in mind.
 
 ## Driving question and its authorship
 
-The driving question frames the whole block. Together with the anchoring phenomenon it is the highest-level curricular component, so whoever decides it shapes every later session. Its authorship is always stated, never assumed.
+The driving question frames the whole main lesson block. Together with the anchoring phenomenon it is the highest-level curricular component, so whoever decides it shapes every later session. Its authorship is always stated, never assumed.
 
 - Draft one driving question that the anchoring phenomenon makes students want to answer and that needs the target ideas to answer. Phrase it as a real question about the phenomenon ("Why does the first monsoon storm come so suddenly after weeks of haze?"), not as a topic or a learning objective.
 - State the authorship in one line. The usual default: *teacher-drafted, provisional; the class revisits it after building the driving question board on day 2 and may reword it.* Other honest options: *taken from the teacher's request*; *to be written by the class from the board* (the plan then shows the teacher's draft as a fallback only). Record which.
@@ -37,8 +41,8 @@ The driving question frames the whole block. Together with the anchoring phenome
 
 List them under two separate labels.
 
-- **Target ideas:** what the class must figure out during this block. Never taught beforehand. Write each as an idea the class works toward ("Air moves from where it is cooler and denser toward where it is warmer and lighter"), not as a fact to be delivered. Tie each to the unit where the class is expected to reach it, and to the Thai indicators it serves.
-- **Prerequisite ideas:** what the block assumes students already hold, from earlier blocks or earlier grades. Note where each comes from and a brief check at Recall on day 1 or 2 (an open question, never a quiz). If a prerequisite is likely missing for some students, plan how it is supplied before it is needed.
+- **Target ideas:** what the class must figure out during this main lesson block. Never taught beforehand. Write each as an idea the class works toward ("Air moves from where it is cooler and denser toward where it is warmer and lighter"), not as a fact to be delivered. Tie each to the unit where the class is expected to reach it, and to the Thai indicators it serves.
+- **Prerequisite ideas:** what the main lesson block assumes students already hold, from earlier blocks or earlier grades. Note where each comes from and a brief check at Recall on day 1 or 2 (an open question, never a quiz). If a prerequisite is likely missing for some students, plan how it is supplied before it is needed.
 
 Target ideas are not scripted answers. In the plans, concept formation works *toward* them through students' own positions; the plan never states them as what students will be told.
 

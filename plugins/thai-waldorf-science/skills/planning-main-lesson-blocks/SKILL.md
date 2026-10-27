@@ -11,7 +11,7 @@ description: >
   Zech) with storyline routines fitted to it, and light universal UDL options.
   Writes the Waldorf block plan and week plans into the course folder, and day
   plans on request. Use when the teacher asks to plan, design, draft or rework a
-  main lesson block (e.g. a meteorology or ecology block), its units, its week
+  main lesson block (e.g. on meteorology or ecology), its units, its week
   plans or its day plans. Do not use for
   subject lessons, Thai core plans, or a single standards map.
 license: CC-BY-SA-4.0
@@ -30,27 +30,24 @@ Talk as a colleague in plain teacher language: "your design folder", "the block 
 1. Read `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md` and `${CLAUDE_PLUGIN_ROOT}/references/class-profile.md` NOW. Follow both for every file you read or write.
 2. Decide what is asked:
    - **Block plan and week plans** (the default, also for "plan my block"): Steps 1–6 below, as a **fixed sequence** of units.
-   - **Anticipated route** (only when the teacher asks for it: interchangeable units arranged as the driving question board directs): read `${CLAUDE_SKILL_DIR}/references/anticipated-route.md` NOW. Steps 1–6 still apply; that reference replaces their fixed-order parts and says which week plans to write now. When the teacher reports the board's choice of the next unit, follow its rolling generation instead of planning the block again.
-   - **Day plans** (one day, one week or the whole block), in the two-day rhythm or, when the teacher asks, Rawson's four-day cycle: read `${CLAUDE_SKILL_DIR}/references/day-plans.md` NOW and follow it, after Step 1 and the block and week plans it needs. A whole-block document set is the block plan, week plans and every day plan; Thai core plans then go to `writing-thai-core-plans`.
+   - **Anticipated route** (only when the teacher asks for it: interchangeable units arranged as the driving question board directs): read `${CLAUDE_SKILL_DIR}/references/anticipated-route.md` NOW. Steps 1–6 still apply; that reference replaces their fixed-order parts and says which week plans to write now. When the teacher reports the board's choice of the next unit, follow its rolling generation instead of planning the main lesson block again. When the teacher then asks for that unit's day plans, take the day-plans route below as well.
+   - **Day plans** (one day, one week or the whole main lesson block), in the two-day rhythm or, when the teacher asks, Rawson's four-day cycle: read `${CLAUDE_SKILL_DIR}/references/day-plans.md` NOW and follow it, after Step 1 and the main lesson block and week plans it needs; its form is the course's own day form or the plugin's `${CLAUDE_PLUGIN_ROOT}/references/waldorf-plan-template-day.th.md`. A whole-block document set is the block plan, week plans and every day plan; Thai core plans then go to `writing-thai-core-plans`.
    - **Thai core plans:** belong to `writing-thai-core-plans`, after the block plan exists.
    - **A subject lesson:** belongs to `planning-subject-lessons`.
 
 ## Step 1 — Context, at most three questions
 
 1. Read the class profile where the layout places it: grade, grade mode, schedule (session length, days per week, weeks), learner variability, languages, academic year.
-2. Read what the course already holds for this block: an existing block plan or notes at the mapped locations (anchor, units, indicators the teacher has chosen). The teacher's decisions there stand unless they ask to change them.
-3. **Without a class profile:** ask at most three questions in one numbered round, each with a recommended answer, and only for what the request leaves open: the grade; the session length and count (days per week, weeks); and, if no anchoring phenomenon is chosen yet, the choice of anchor from your candidates (Step 2). The kind of teaching sequence is already known: a main lesson block. State every other value as an assumption using the class profile defaults (100-minute sessions, Monday to Friday, 3 weeks, Thai for instruction and student materials, the academic year in progress), and suggest `setting-up-class-profiles` for next time. When the teacher says to go ahead with defaults, ask nothing that has a default.
+2. Read what the course already holds for this main lesson block: an existing block plan or notes at the mapped locations (anchor, units, indicators the teacher has chosen). The teacher's decisions there stand unless they ask to change them.
+3. **Without a class profile:** follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults). The questions you may ask: the grade; the session length and count (days per week, weeks); and, if no anchoring phenomenon is chosen yet, the choice of anchor from your candidates (Step 2). The kind of teaching sequence is already known: a main lesson block.
 
 Never read the course folder's name for meaning.
 
 ## Step 2 — The anchoring phenomenon is the teacher's
 
-Read `${CLAUDE_SKILL_DIR}/references/storyline-design.md` NOW.
+Read `${CLAUDE_PLUGIN_ROOT}/references/storyline-design.md` NOW and follow its anchor rule: an anchor already chosen is used as given; otherwise offer three or four candidates as it describes and ask the teacher to choose. Never choose, never rank, and write no plan files while the anchor is open.
 
-- **Anchor already chosen** (in the request or the course's files): use it as given.
-- **Not chosen:** offer three or four candidates as the storyline-design reference describes, each with one line on why it could work, and ask the teacher to choose. Never choose for them, never rank one as "the" pick, and never write a plan around a candidate the teacher has not chosen, even when asked to "just pick one": say plainly that this decision stays with them and that the plans follow as soon as they name one. Write no plan files while the anchor is open.
-
-## Step 3 — Ground the block in the three frameworks
+## Step 3 — Ground the main lesson block in the three frameworks
 
 Read these NOW:
 
@@ -66,7 +63,7 @@ Follow the storyline-design reference: driving question with its authorship stat
 
 ## Step 5 — Lay the units across the two-day rhythm
 
-Read `${CLAUDE_SKILL_DIR}/references/two-day-rhythm.md` NOW and follow it for every week: block day 1 connects to the previous block in this subject; from day 2 each day opens with open-question Recall of yesterday's experience flowing into concept formation, then application, then today's new experience last, left un-analysed; the last day brings the block together. Fit the storyline routines and the light UDL options into each session as it describes.
+Read `${CLAUDE_SKILL_DIR}/references/two-day-rhythm.md` NOW and follow it for every week: block day 1 connects to the previous main lesson block in this subject; from day 2 each day opens with open-question Recall of yesterday's experience flowing into concept formation, then application, then today's new experience last, left un-analysed; the last day brings the main lesson block together. Fit the storyline routines and the light UDL options into each session as it describes.
 
 ## Step 6 — Write the block plan and week plans
 
@@ -88,7 +85,7 @@ Run this against the files you wrote, and fix any miss before replying:
 - [ ] Target ideas and prerequisite ideas are listed separately.
 - [ ] Units run in a fixed order, each marked fixed; the driving question board frames ideas, not order. (Anticipated route: that reference's checklist instead.)
 - [ ] Thai indicator codes and wording are verbatim; frameworks are not merged.
-- [ ] Day 1 links to the previous block in this subject; every later day opens with Recall of yesterday's experience flowing into concept formation.
+- [ ] Day 1 links to the previous main lesson block in this subject; every later day opens with Recall of yesterday's experience flowing into concept formation.
 - [ ] Recall is open questions, never a quiz or a test.
 - [ ] Concept formation is an individual position integrated into the class's understanding, never a predetermined concept stated as the answer.
 - [ ] No session discusses, analyses or explains that day's new experience; a reflection never follows New Content directly.

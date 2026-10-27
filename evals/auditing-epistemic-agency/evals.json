@@ -59,6 +59,21 @@
         "The reply mentions both the week 2 plan and the audit, with a short summary of what the audit found (e.g. where decisions are opened or closed, or any flag)",
         "The reply contains no file paths or tool names (Thai indicator codes and skill names are fine)"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Please audit week 1 of my meteorology block for epistemic agency and save it with my other audits.",
+      "expected_output": "One audit report in 40-evaluation/, in English, built from the block plan, the week 1 plan and the week 1 assessment plan in 30-assessment/. The class agreeing its own criteria for a good model of the storm on Thursday (day 4) appears only in the assessment plan; the audit reports it as an opening in the explanatory-model domain with reach into later sessions (the criteria are used for every storm model in the block). Friday's self-assessment against those criteria and the exit slip are assessment as learning, not counted as uptake or as a further opening. No plan or assessment plan is changed.",
+      "files": ["fixtures/meteorology-week-1-assessments"],
+      "expectations": [
+        "Exactly one new audit file exists inside 40-evaluation/ (besides its README.md); no audit was written anywhere else",
+        "The class agreeing its own criteria for a good model of the storm on Thursday (day 4), which appears only in 30-assessment/assessment-plan-week-1.md, is reported in the audit as an opening in the explanatory-model domain",
+        "The audit gives that criteria-setting opening a reach beyond day 4 (later sessions or the rest of the block)",
+        "Friday's self-assessment against the class's criteria and the day 5 exit slip are named as assessment as learning and not counted as uptake or as an additional opening",
+        "Day 3's concept formation (the teacher explains convection and students copy the given definition) is flagged as a scripted concept",
+        "10-design/block-plan.md, 10-design/week-1-plan.md, 30-assessment/assessment-plan-week-1.md, 00-admin/class-profile.md and README.md are unchanged",
+        "The reply contains no file paths or tool names"
+      ]
     }
   ]
 }

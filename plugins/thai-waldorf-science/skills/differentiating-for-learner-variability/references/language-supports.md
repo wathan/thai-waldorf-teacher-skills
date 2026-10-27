@@ -20,7 +20,7 @@ Read the class profile's language of instruction and language of student materia
 | Student materials in English | English academic register. For students learning in English as an additional language, add the Thai term (or the home language, as the teacher can provide) beside each key word. |
 | Bilingual | Both, side by side, Thai official terms first. |
 
-Thai scientific terms follow the official wording: read `${CLAUDE_PLUGIN_ROOT}/references/thai-science-glossary-2560.md` for indicator verbs (บรรยาย describe, อธิบาย explain with reasons and evidence, อภิปราย discuss) and use the indicator's own terms. Never name a student's home language unless the profile or teacher does.
+Thai scientific terms follow the official wording: take indicator verbs from the Thai science glossary read in Step 0 (บรรยาย describe, อธิบาย explain with reasons and evidence, อภิปราย discuss) and use the indicator's own terms. Never name a student's home language unless the profile or teacher does.
 
 ## Language demands
 
@@ -70,5 +70,5 @@ Write frames for this task's content (the actual variables and phenomenon), and 
 - A frame leaves the reasoning to the student: never fill in the cause, the evidence or the conclusion.
 - Do not turn frames into a gap-fill worksheet; offer them on a card or the board, used by choice.
 - Talk before writing: rehearse the explanation aloud with a partner, then write.
-- Fade over the block: fewer and lighter frames as the weeks go on; say in the plan when they fade.
+- Fade over the main lesson block: fewer and lighter frames as the weeks go on; say in the plan when they fade.
 - Scaffolds change the route, not the destination: no simpler question, fewer steps of reasoning, multiple-choice replacement of an explanation, or a different goal for students learning in an additional language.

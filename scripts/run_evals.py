@@ -26,8 +26,13 @@ expectation: the skill under test was invoked.
 
 Per case it writes <out>/<skill>/<timestamp>/eval-<id>/ with teacher/course/,
 transcript.jsonl, final_message.md and grading.json (skill-creator grader
-schema: expectations[{text, passed, evidence}] and summary). Exit status:
-0 all expectations passed, 1 some failed, 2 invalid case file or run error.
+schema: expectations[{text, passed, evidence}] and summary; passed is null
+for an expectation the grader did not grade). <out> defaults
+to thai-waldorf-evals/ in the system temp dir: outside the repo, so the run
+under test does not pick up the repo's CLAUDE.md. Exit status:
+0 all expectations passed, 1 some failed, 2 invalid case file or run error
+(including a grader that returned invalid JSON twice: those expectations
+are reported NOT GRADED, never as failed).
 
 Needs Claude credentials; not run in CI. Standard library only.
 """
@@ -39,12 +44,17 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
+from plugin_paths import plugin_dir
+
 REPO = Path(__file__).resolve().parents[1]
-DEFAULT_PLUGIN = REPO / "plugins/thai-waldorf-science"
+DEFAULT_PLUGIN = plugin_dir(REPO)
 DEFAULT_REPO_SKILLS = REPO / ".claude/skills"
+# Outside the repo: a run inside it would pick up the repo's CLAUDE.md.
+DEFAULT_OUT = Path(tempfile.gettempdir()) / "thai-waldorf-evals"
 EXECUTOR_TOOLS = "Read,Glob,Grep,Write,Edit,Skill"
 MAX_FILE_CHARS = 20000
 
@@ -227,15 +237,24 @@ def run_grader(args, case: dict, reply: str, course: Path, run_dir: Path) -> lis
     ]
     if args.grader_model:
         cmd += ["--model", args.grader_model]
-    proc = subprocess.run(
-        cmd, cwd=run_dir, env=child_env(), capture_output=True, text=True,
-        timeout=args.timeout,
-    )
-    (run_dir / "grader_output.json").write_text(proc.stdout, encoding="utf-8")
-    try:
-        verdicts = extract_json(json.loads(proc.stdout).get("result", ""))["expectations"]
-    except (ValueError, KeyError, TypeError, AttributeError):
-        verdicts = []
+    verdicts = None
+    for attempt in (1, 2):  # invalid JSON is retried once
+        proc = subprocess.run(
+            cmd, cwd=run_dir, env=child_env(), capture_output=True, text=True,
+            timeout=args.timeout,
+        )
+        (run_dir / f"grader_output-{attempt}.json").write_text(proc.stdout, encoding="utf-8")
+        try:
+            verdicts = extract_json(json.loads(proc.stdout).get("result", ""))["expectations"]
+            if not isinstance(verdicts, list):
+                raise TypeError("expectations is not a list")
+            break
+        except (ValueError, KeyError, TypeError, AttributeError):
+            verdicts = None
+    if verdicts is None:
+        return [{"text": text, "passed": None,
+                 "evidence": "not graded: the grader returned invalid JSON twice"}
+                for text in case["expectations"]]
     by_text = {v.get("text"): v for v in verdicts if isinstance(v, dict)}
     graded = []
     for i, text in enumerate(case["expectations"]):
@@ -243,7 +262,8 @@ def run_grader(args, case: dict, reply: str, course: Path, run_dir: Path) -> lis
         if verdict is None and i < len(verdicts) and isinstance(verdicts[i], dict):
             verdict = verdicts[i] if verdicts[i].get("text") not in case["expectations"] else None
         if verdict is None:
-            graded.append({"text": text, "passed": False, "evidence": "not graded"})
+            graded.append({"text": text, "passed": None,
+                           "evidence": "not graded: the grader gave no verdict for it"})
         else:
             graded.append(
                 {"text": text, "passed": verdict.get("passed") is True,
@@ -271,14 +291,16 @@ def run_case(args, skill_evals_dir: Path, case: dict, batch_dir: Path) -> dict:
     (run_dir / "final_message.md").write_text(reply, encoding="utf-8")
     expectations = [skill_expectation(args.skill, events)]
     expectations += run_grader(args, case, reply, course, run_dir)
-    passed = sum(e["passed"] for e in expectations)
+    passed = sum(e["passed"] is True for e in expectations)
+    not_graded = sum(e["passed"] is None for e in expectations)
     grading = {
         "eval_id": case["id"],
         "prompt": case["prompt"],
         "expectations": expectations,
         "summary": {
             "passed": passed,
-            "failed": len(expectations) - passed,
+            "failed": len(expectations) - passed - not_graded,
+            "not_graded": not_graded,
             "total": len(expectations),
             "pass_rate": round(passed / len(expectations), 3),
         },
@@ -316,7 +338,8 @@ def parse_args(argv):
     parser.add_argument("--plugin-dir", default=str(DEFAULT_PLUGIN))
     parser.add_argument("--repo-skills-dir", default=str(DEFAULT_REPO_SKILLS),
                         help="repo-only skills, used when the plugin lacks the skill")
-    parser.add_argument("--out", default=str(REPO / "evals-workspace"))
+    parser.add_argument("--out", default=str(DEFAULT_OUT),
+                        help="results folder (default: outside the repo, in the temp dir)")
     parser.add_argument("--claude", default="claude", help="claude executable")
     parser.add_argument("--model", help="model for the run under test")
     parser.add_argument("--grader-model", help="model for the grader")
@@ -344,7 +367,7 @@ def main(argv) -> int:
     except (CaseError, OSError) as exc:
         print(f"ERROR {exc}", file=sys.stderr)
         return 2
-    all_passed = True
+    all_passed, all_graded = True, True
     for case in cases:
         try:
             grading = run_case(args, skill_evals_dir, case, batch_dir)
@@ -353,11 +376,17 @@ def main(argv) -> int:
             return 2
         s = grading["summary"]
         all_passed &= s["failed"] == 0
-        print(f"eval-{case['id']}: {s['passed']}/{s['total']} passed")
+        all_graded &= s["not_graded"] == 0
+        line = f"eval-{case['id']}: {s['passed']}/{s['total']} passed"
+        print(line + (f", {s['not_graded']} NOT GRADED" if s["not_graded"] else ""))
         for e in grading["expectations"]:
-            if not e["passed"]:
+            if e["passed"] is None:
+                print(f"  NOT GRADED {e['text']}: {e['evidence']}")
+            elif not e["passed"]:
                 print(f"  FAIL {e['text']}: {e['evidence']}")
     print(f"results: {batch_dir}")
+    if not all_graded:
+        return 2
     return 0 if all_passed else 1
 
 

@@ -13,7 +13,7 @@ description: >
   asks for an agency audit, who decides what in a plan, or how to open a
   plan up, and after planning-main-lesson-blocks or planning-subject-lessons
   write plans (unless switched off). Do not use to plan, to write Thai core
-  plans or to judge a taught lesson.
+  plans or to judge a taught session.
 license: CC-BY-SA-4.0
 ---
 
@@ -37,13 +37,13 @@ Talk as a colleague in plain teacher language ("your week 1 plan", "your evaluat
 
 ## Step 1 — Read the design
 
-1. Read the plans at the layout's `block and week plans`, `unit plans` and `session plans` locations (or as given in the request): the plan being audited and the higher-level plan above it (block plan or unit plan), where the anchoring phenomenon, driving question and its authorship, target and prerequisite ideas, sequence (fixed sequence or anticipated route) and any stated closures live. Read only.
+1. Read the plans at the layout's `block and week plans`, `unit plans` and `session plans` locations (or as given in the request): the plan being audited and the higher-level plan above it (block plan or unit plan), where the anchoring phenomenon, driving question and its authorship, target and prerequisite ideas, sequence (fixed sequence or anticipated route) and any stated closures live. Also read what the layout's `assessments` location holds for the same sessions (assessment plans, block sheets): criteria the class sets there for a good model, explanation or evidence are an opening in the explanatory-model domain (audit-rules rule 4) on the session where the class sets them, and criteria handed out are a closure. Read only.
 2. Note the kind of teaching sequence (main lesson block in the two-day rhythm or four-day cycle; subject lesson in 5E inquiry or a storyline design) and list its sessions in order. The session is the unit of the report: a day in a week plan or day plan, a session in a cycle plan. With only a block plan or unit plan, report unit by unit and say that a session-level audit follows once week or cycle plans exist.
 3. Never read the class profile's learner details or student names into the audit; it is about the design, not students.
 
 ## Step 2 — Sequence-level decisions first
 
-Before the sessions, report the decisions made above session level, following audit-rules: the anchoring phenomenon (always a deliberate closure, reason: the teacher's choice that opens the sequence and from which students' questions are elicited; reach: the whole sequence), the driving question and its stated authorship, the sequence of units (fixed sequence: closure; anticipated route: the board's choice of the next unit is an opening), the target ideas (the destination is closed, the route of explanation is not) and the prerequisite ideas (closed, taught beforehand).
+Before the sessions, report the decisions made above session level, following audit-rules: the anchoring phenomenon (always a deliberate closure, reason: the teacher's choice that opens the sequence and from which students' questions are elicited; reach: the whole sequence), the driving question and its stated authorship, the sequence of units (fixed sequence: closure; anticipated route: the board's choice of the next unit is an opening), the target ideas (the destination is closed, reason: the indicators the sequence claims; the route of explanation is not) and the prerequisite ideas (closed, reason: taught beforehand so the class can build on them). Each of these closures carries its reason like any other.
 
 ## Step 3 — Session by session
 

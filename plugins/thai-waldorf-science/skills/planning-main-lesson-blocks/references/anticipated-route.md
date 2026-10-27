@@ -1,6 +1,6 @@
 # Anticipated route
 
-An anticipated route plans a storyline-based main lesson block as a set of units in an expected order, most of them interchangeable, arranged during the block as the driving question board directs. Only a few anchor points are fixed. Use it only when the teacher asks for it, by name or by asking for the class's questions to decide the order of units. The fixed sequence stays the default.
+An anticipated route plans a storyline-based main lesson block as a set of units in an expected order, most of them interchangeable, arranged during the main lesson block as the driving question board directs. Only a few anchor points are fixed. Use it only when the teacher asks for it, by name or by asking for the class's questions to decide the order of units. The fixed sequence stays the default.
 
 Everything in the storyline-design and two-day-rhythm references still holds. This file replaces only their fixed-sequence parts: units in a fixed order, the board framing ideas but not order, and New Content chosen in the fixed unit order.
 
@@ -64,7 +64,7 @@ When the teacher reports the board's choice of the next unit ("the class chose o
 2. **Write the week plan(s) for the chosen unit's days**, from that unit's prepared new experiences, in the two-day rhythm. Its first day opens with Recall of the previous unit's last experience, which bridges into the board's choice. If the unit ends mid-week, mark the remaining days of that week as waiting for the board's next choice; when that choice comes, fill those days in the same week plan, in place. Never fill days with an interchangeable unit the board has not chosen.
 3. **Keep what is behind.** Week plans for weeks already taught stay unchanged unless the teacher asks; a teacher's review notes in them are never rewritten.
 4. **Fixed units arrive by the calendar.** The calendar-bound segment goes on its day inside whichever unit is running. When the open positions are used up, the putting-pieces-together unit is written next without a board choice.
-5. **Day plans and Thai core plans for the chosen unit** are written only now, never for a unit the board has not chosen: day plans by following `${CLAUDE_SKILL_DIR}/references/day-plans.md` for the chosen unit's days when the teacher asks for them, Thai core plans by `writing-thai-core-plans`. Offer them in the reply; do not write them unasked.
+5. **Day plans and Thai core plans for the chosen unit** are written only now, never for a unit the board has not chosen: day plans through the skill's day-plans route (SKILL.md Step 0) for the chosen unit's days when the teacher asks for them, Thai core plans by `writing-thai-core-plans`. Offer them in the reply; do not write them unasked.
 
 If the teacher asks for plans of an interchangeable unit the board has not chosen, say that it is written once the board chooses it, and point to its preparation in the block plan, which is already complete.
 
@@ -108,7 +108,7 @@ If the course layout has a `unit plans` row, the preparation of each unit goes t
 
 Use these in place of the main checklist's fixed-order item; every other item still holds.
 
-- [ ] The teacher asked for an anticipated route; otherwise the block is a fixed sequence.
+- [ ] The teacher asked for an anticipated route; otherwise the main lesson block is a fixed sequence.
 - [ ] Every unit is listed in an expected order and marked fixed (anchor, calendar-bound or putting pieces together) or interchangeable.
 - [ ] Calendar-bound segments are pinned to their dates.
 - [ ] Every interchangeable unit has complete preparation (new experiences, equipment, sources, lead times) that works in any open position.

@@ -8,7 +8,8 @@ description: >
   gives a walkthrough of the whole process from class profile to preparing
   each session (the fixed walkthrough when the course folder is empty). Use
   whenever the teacher asks which skill does X or which skill to use for a
-  job, how the process works, where to start, where they are, what comes
+  job (including which skill gets them a named document, such as the
+  แผนการจัดการเรียนรู้ or a block plan), how the process works, where to start, where they are, what comes
   next, or "what now?". Do not use to plan, write or audit anything itself;
   hand off to the named skill instead.
 license: CC-BY-SA-4.0
@@ -26,7 +27,7 @@ Talk as a colleague in plain teacher language: no file paths, tool names or plug
 
 Decide which request this is, without announcing it:
 
-- **Where am I / what next** ("what now?", "what's next?", "where am I?", "what should I do next?"): read `${CLAUDE_SKILL_DIR}/references/where-you-are.md` NOW and follow it. It reads the course folder silently and names one next skill; with an empty course folder it falls back to the walkthrough.
+- **Where am I / what next** ("what now?", "what's next?", "where am I?", "what should I do next?"): read `${CLAUDE_SKILL_DIR}/references/where-you-are.md` and `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md` (Steps 1 and 2: the Plugin layout table and the name and content cues) NOW and follow where-you-are.md. It reads the course folder silently and names one next skill; with an empty course folder it falls back to the walkthrough: then read `${CLAUDE_SKILL_DIR}/references/walkthrough.md` too.
 - **Walkthrough** ("how does this work?", "where do I start?", a new user, or anything vague): read `${CLAUDE_SKILL_DIR}/references/walkthrough.md` NOW and give the walkthrough. If the course folder already holds work, add one closing line saying which step the teacher is at and the next skill (from where-you-are.md), instead of asking where they are.
 - **Which skill** ("which skill does X?", "how do I get a Thai core plan?"): answer from the skill map below in one or two sentences, naming the skill, what to ask for, and anything it needs first. If the job is out of scope, say so plainly (see the end of the map). Do not go through the course folder for this; answer straight away.
 - **Both**: answer the question first, then offer the walkthrough or the next step.
