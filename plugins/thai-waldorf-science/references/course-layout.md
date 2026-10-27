@@ -11,15 +11,16 @@ Shared by every skill that reads or writes files in a course folder (ADR-0002). 
 - [Step 3: propose and confirm](#step-3-propose-and-confirm)
 - [Step 4: record the mapping](#step-4-record-the-mapping)
 - [No recognisable structure](#no-recognisable-structure)
+- [Plan templates: the course's own come first](#plan-templates-the-courses-own-come-first)
 
 ## Rules
 
 - **The folder name is off limits.** Never read the course folder's own name for meaning (it is not the subject, grade or class), never mention it, never rename or move the folder. Work with paths relative to the folder.
-- **Stay inside the course folder.** The only file outside it any skill may read is a year plan, at a path the teacher gives.
+- **Stay inside the course folder.** The only file outside it a skill may touch is the year plan, at the path the class profile gives (see `year-plan.md`); only `setting-up-class-profiles` writes it. Plugin reference files are not course files and may always be read.
 - **Never rename, move or delete the teacher's files or folders.** New files go where the mapping says; existing files are only edited when they are the mapped file for a concept.
 - **Map only after confirmation.** Detection proposes; the teacher confirms or corrects; only then is the mapping recorded. A teacher who says up front that they accept the proposed layout has confirmed it.
 - **Read, don't guess again.** Once a mapping is recorded, skills use it as written, even where they would have chosen differently.
-- **Create on first write.** A mapped location that does not exist yet is created when a skill first writes there, not before.
+- **Create on first write.** A mapped location that does not exist yet is created when a skill first writes there, not before. The one exception is the default course template, which `setting-up-class-profiles` creates whole once the teacher confirms it.
 
 ## Concepts
 
@@ -28,7 +29,7 @@ Each concept has a fixed name, used verbatim in the mapping table. Locations may
 | Concept | What it holds | Usual area |
 |---|---|---|
 | class profile | The one class this teaching sequence is for (format: `class-profile.md` in this folder) | admin |
-| year plan | A pointer (path) to the teacher's year plan, which lives outside the course | admin |
+| year plan | Not mapped: the year plan lives outside the course, and its path is in the class profile's "Year plan" section | outside the course |
 | standards map | Thai indicators this teaching sequence claims; coverage | planning |
 | block and week plans | Waldorf block plan and week plans (main lesson blocks) | planning |
 | unit plans | Per unit: anchoring phenomenon, driving question and its authorship, target and prerequisite ideas, fixed or interchangeable | design |
@@ -40,7 +41,7 @@ Each concept has a fixed name, used verbatim in the mapping table. Locations may
 | driving question board | Record of the class's driving question board | delivery |
 | preparation notes | Day-before preparation, equipment and setup, risk notes | delivery |
 | resources | Equipment lists, sources, handouts, student materials | resources |
-| templates | Course-local plan templates | templates |
+| templates | Course-local plan templates, used before the plugin's (see [Plan templates](#plan-templates-the-courses-own-come-first)) | templates |
 
 ## Step 1: read the recorded layout
 
@@ -100,4 +101,37 @@ Locations are relative to the course folder, in backticks, without the course fo
 
 ## No recognisable structure
 
-When the folder is empty or nothing matches, propose the default course template's areas as the mapping: `admin/`, `planning/`, `design/`, `resources/`, `delivery/`, `assessment/`, `evaluation/`, `templates/`, with the concepts placed in their usual area from the [Concepts](#concepts) table (class profile at `admin/class-profile.md`). Filenames are suggestive, not binding. Confirm as in Step 3 and record as in Step 4; only `setting-up-class-profiles` creates the template's folders, and only after the teacher confirms.
+When the folder is empty or nothing matches, offer the teacher's **default course template**: eight areas, each a top-level folder.
+
+| Area | Holds (concepts) |
+|---|---|
+| `admin/` | class profile (`admin/class-profile.md`) |
+| `planning/` | standards map, block and week plans, Thai core plans |
+| `design/` | unit plans, session plans, differentiation |
+| `resources/` | resources |
+| `delivery/` | driving question board, preparation notes |
+| `assessment/` | assessments |
+| `evaluation/` | agency audit |
+| `templates/` | templates (the four plan templates, copied in) |
+
+Filenames are suggestive, not binding. Propose it as in Step 3: say in plain words that the folder is empty (or has no layout to follow) and list the eight areas with what each holds; ask "Use this layout? Recommended: yes." Record the mapping as in Step 4, one row per concept in the table above. Only `setting-up-class-profiles` creates the template, and only after the teacher confirms: every area folder at once (an area with nothing else to hold yet gets a one-line `README.md` saying what goes there), the class profile in admin, and the plan templates copied into `templates/`.
+
+## Plan templates: the course's own come first
+
+The plugin's four plan templates are its defaults:
+
+| Plan kind | Plugin template (in the plugin's `references/`) | Cues that a course file is this kind |
+|---|---|---|
+| Thai core plan | `thai-core-plan-template.th.md` | core plan, lesson plan, แผนการจัดการเรียนรู้, แผนการสอน |
+| block plan | `waldorf-plan-template-block.th.md` | block plan, แผนรายบล็อก, block |
+| week plan | `waldorf-plan-template-week.th.md` | week plan, แผนรายสัปดาห์, weekly |
+| day plan | `waldorf-plan-template-day.th.md` | day plan, แผนรายวัน, daily |
+
+Every skill that fills a plan does this first:
+
+1. Look in the location mapped to `templates` (Step 1; if none is mapped, there are no course templates). A file there is the course's template for a plan kind when its name or title carries that kind's cues.
+2. **Course template found → use it**, even when it differs from the plugin's: its headings, labels, order, language and placeholders exactly. Keep the plugin's content rules for that kind (e.g. indicators verbatim, never inventing student data) wherever the course template does not say otherwise; where they differ, the course template wins.
+3. **None found → use the plugin's template** for that kind.
+4. Say in one line which one you used ("your course's own block plan form" or "the plugin's block plan template").
+
+**Copying the templates in** (`setting-up-class-profiles` only): copy each plugin template into the templates location unchanged, under its plugin filename. Never overwrite or edit a file already there, and skip a plan kind the course already has its own template for; tell the teacher their own form is kept and will be used. When a found layout has no templates area, do not create one: tell the teacher the plugin's templates will be used and offer to copy them wherever they name.

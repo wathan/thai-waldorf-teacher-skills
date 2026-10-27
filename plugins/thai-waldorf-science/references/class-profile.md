@@ -16,7 +16,7 @@ The class profile describes one class for one teaching sequence. `setting-up-cla
 | Language of instruction | e.g. Thai, English | Thai |
 | Language of student materials | e.g. Thai, English, bilingual | same as instruction |
 | Academic year | CE years and the Buddhist-era ปีการศึกษา; optionally the term (ภาคเรียน) | the academic year in progress (below) |
-| Year plan | a path to the teacher's year plan outside the course, or none | none |
+| Year plan | the path to the teacher's year plan, which lives outside the course (format: `year-plan.md` in this folder), or none | none |
 
 **Academic year.** A Thai academic year starts in May. The ปีการศึกษา is the CE year in which it starts plus 543. From May 2026 to April 2027 the academic year is 2026–2027 = ปีการศึกษา 2569. Work it out from today's date; never hard-code it.
 
@@ -73,6 +73,8 @@ Last updated: 2026-10-27
 
 - None recorded.
 ```
+
+With a year plan, the Year plan section reads `- Path:` followed by the path in backticks as the teacher gave it (e.g. `../year-plan-2569.md`), instead of `- None recorded.`
 
 For a subject lesson, the Schedule section lists `Sessions per week`, `Session lengths` (each one) and `Weekly pattern` (which day each falls on), then `Length of the sequence`. Name the additional-language row after the actual language of instruction (e.g. "English as an additional language").
 
