@@ -7,9 +7,10 @@ description: >
   the teacher to choose, a driving question with its authorship stated, target
   and prerequisite ideas, units in a fixed sequence, the two-day rhythm (after
   Zech) with storyline routines fitted to it, and light universal UDL options.
-  Writes the Waldorf block plan and week plans into the course folder. Use when
-  the teacher asks to plan, design, draft or rework a main lesson block (e.g. a
-  meteorology or ecology block), its units or its week plans. Do not use for
+  Writes the Waldorf block plan and week plans into the course folder, and day
+  plans on request. Use when the teacher asks to plan, design, draft or rework a
+  main lesson block (e.g. a meteorology or ecology block), its units, its week
+  plans or its day plans. Do not use for
   subject lessons, Thai core plans, or a single standards map.
 license: CC-BY-SA-4.0
 ---
@@ -28,7 +29,7 @@ Talk as a colleague in plain teacher language: "your design folder", "the block 
 2. Decide what is asked:
    - **Block plan and week plans** (the default, also for "plan my block"): Steps 1–6 below, as a **fixed sequence** of units.
    - **Anticipated route** (interchangeable units arranged as the driving question board directs): not available in this version. Say so in one sentence, offer the fixed sequence, and keep the driving question board in it.
-   - **Day plans, the whole-block document set, or Rawson's four-day cycle:** not available in this version. Say so in one sentence and offer the block plan and week plans first (they are the first step in any case).
+   - **Day plans** (one day, one week or the whole block), in the two-day rhythm or, when the teacher asks, Rawson's four-day cycle: read `${CLAUDE_SKILL_DIR}/references/day-plans.md` NOW and follow it, after Step 1 and the block and week plans it needs. A whole-block document set is the block plan, week plans and every day plan; Thai core plans then go to `writing-thai-core-plans`.
    - **Thai core plans:** belong to `writing-thai-core-plans`, after the block plan exists.
    - **A subject lesson:** belongs to `planning-subject-lessons`.
 
@@ -89,7 +90,7 @@ Run this against the files you wrote, and fix any miss before replying:
 - [ ] Recall is open questions, never a quiz or a test.
 - [ ] Concept formation is an individual position integrated into the class's understanding, never a predetermined concept stated as the answer.
 - [ ] No session discusses, analyses or explains that day's new experience; a reflection never follows New Content directly.
-- [ ] No four-day cycle labels (E→R→C→A, concept formation two days later).
+- [ ] No four-day cycle labels (E→R→C→A, concept formation two days later) unless the teacher asked for the four-day cycle.
 - [ ] Every session carries light universal UDL options; one shared task every student can start; no ability tiers.
 - [ ] No student names or identifying details.
 - [ ] Files sit where the layout says; nothing renamed, moved or deleted.
