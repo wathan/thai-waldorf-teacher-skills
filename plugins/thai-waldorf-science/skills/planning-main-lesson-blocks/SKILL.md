@@ -45,10 +45,7 @@ Never read the course folder's name for meaning.
 
 ## Step 2 — The anchoring phenomenon is the teacher's
 
-Read `${CLAUDE_SKILL_DIR}/references/storyline-design.md` NOW.
-
-- **Anchor already chosen** (in the request or the course's files): use it as given.
-- **Not chosen:** offer three or four candidates as the storyline-design reference describes, each with one line on why it could work, and ask the teacher to choose. Never choose for them, never rank one as "the" pick, and never write a plan around a candidate the teacher has not chosen, even when asked to "just pick one": say plainly that this decision stays with them and that the plans follow as soon as they name one. Write no plan files while the anchor is open.
+Read `${CLAUDE_PLUGIN_ROOT}/references/storyline-design.md` NOW and follow its anchor rule: an anchor already chosen is used as given; otherwise offer three or four candidates as it describes and ask the teacher to choose. Never choose, never rank, and write no plan files while the anchor is open.
 
 ## Step 3 — Ground the block in the three frameworks
 

@@ -22,6 +22,7 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 | Output template: Waldorf | `waldorf-plan-template-day.th.md` | Planning one main-lesson day segment by segment (Rhythmic Time → Recall → Practice → New Content) |
 | Output template: Thai | `thai-core-plan-template.th.md` | Writing the school's statutory แผนการจัดการเรียนรู้ (K–P–A, สมรรถนะ, rubrics, sign-off) |
 | Course: layout | `course-layout.md` | Before reading or writing any file in a course folder: read the README's "Plugin layout" mapping, or detect, confirm and record one; before filling any plan template, prefer the course's own |
+| Design: storyline | `storyline-design.md` | Designing a storyline-based main lesson block or a storyline subject lesson unit: the anchor rule and candidates, driving question and its authorship, target and prerequisite ideas, units, the driving question board |
 | Course: class | `class-profile.md` | Reading or writing a class profile: fields, defaults, file format, academic year in CE and ปีการศึกษา, what to do without one |
 | Course: year | `year-plan.md` | Reading or writing the year plan (teaching sequences per grade and term, indicators claimed), which lives outside the course |
 

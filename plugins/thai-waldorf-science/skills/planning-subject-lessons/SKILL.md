@@ -30,7 +30,7 @@ Talk as a colleague in plain teacher language: "your design folder", "your unit 
 2. Read `${CLAUDE_SKILL_DIR}/references/5e-design.md` NOW: cycles, phase placement, explicit instruction, graded practice, retrieval practice and the two plan formats. It applies to every route below.
 3. Decide what is asked:
    - **A unit as 5E inquiry** (the default, also for "plan my next unit" or "a 5E lesson on …"): Steps 1–5.
-   - **A unit as a storyline design** (only when the teacher asks for a storyline, an anchoring phenomenon or a driving question board): also read `${CLAUDE_PLUGIN_ROOT}/skills/planning-main-lesson-blocks/references/storyline-design.md` (anchor, driving question, ideas, board) and `${CLAUDE_SKILL_DIR}/references/storyline-units.md` (how they fit a subject lesson's cycles and weekly pattern) NOW. Steps 1–5 still apply.
+   - **A unit as a storyline design** (only when the teacher asks for a storyline, an anchoring phenomenon or a driving question board): also read `${CLAUDE_PLUGIN_ROOT}/references/storyline-design.md` (the anchor rule, driving question, ideas, board) and `${CLAUDE_SKILL_DIR}/references/storyline-units.md` (how they fit a subject lesson's cycles and weekly pattern) NOW. Steps 1–5 still apply.
    - **One more cycle or a reworked cycle** in a unit already planned: Steps 1, 4 and 5 for that cycle; keep the unit plan's decisions.
    - **Thai core plans:** belong to `writing-thai-core-plans`, after the cycle plans exist. **A main lesson block:** belongs to `planning-main-lesson-blocks`.
 
@@ -55,7 +55,7 @@ Keep the three frameworks in their own wording; never merge them into one statem
 
 ## Step 3 — Design the unit
 
-Follow `5e-design.md`: one topic; target ideas and prerequisite ideas listed separately; one or more 5E cycles, each with its own question in students' terms, its indicators and its target ideas. With a storyline design, follow `storyline-units.md` too: the anchoring phenomenon is the teacher's (offer candidates if none is chosen, never choose, write no plan files while it is open), the driving question's authorship is stated, and the driving question board frames the cycles.
+Follow `5e-design.md`: one topic; target ideas and prerequisite ideas listed separately; one or more 5E cycles, each with its own question in students' terms, its indicators and its target ideas. With a storyline design, follow `storyline-units.md` too: storyline-design.md's anchor rule holds (offer candidates if none is chosen, never choose, write no plan files while it is open), the driving question's authorship is stated, and the driving question board frames the cycles.
 
 ## Step 4 — Place each cycle's phases on the weekly pattern
 

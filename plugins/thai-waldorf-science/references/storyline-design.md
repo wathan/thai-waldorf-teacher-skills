@@ -1,6 +1,8 @@
-# Storyline design for a main lesson block
+# Storyline design
 
-The storyline instructional model (Reiser et al., 2021) fitted to a Waldorf main lesson block. Students' questions about an anchoring phenomenon drive the block toward explanatory models; the teacher closes a few decisions deliberately and leaves the rest open.
+The storyline instructional model (Reiser et al., 2021) fitted to a Waldorf main lesson block. Students' questions about an anchoring phenomenon drive the main lesson block toward explanatory models; the teacher closes a few decisions deliberately and leaves the rest open.
+
+Shared by `planning-main-lesson-blocks` and `planning-subject-lessons`. For a subject lesson unit designed as a storyline, read "unit" for "main lesson block" and "cycle" for "unit"; that skill's storyline-units reference says how the rest fits weekly sessions and 5E cycles.
 
 ## Contents
 
@@ -13,7 +15,9 @@ The storyline instructional model (Reiser et al., 2021) fitted to a Waldorf main
 
 ## Anchoring phenomenon: candidates, never a choice
 
-The anchoring phenomenon is an observable event that opens the block and from which students' questions are elicited. Choosing it is a deliberate closure that belongs to the teacher. Offer candidates; the teacher chooses.
+The anchoring phenomenon is an observable event that opens the main lesson block and from which students' questions are elicited. Choosing it is a deliberate closure that belongs to the teacher. Offer candidates; the teacher chooses.
+
+**The anchor rule.** An anchor already chosen (in the request or the course's files) is used as given. When none is chosen, offer candidates as below and ask the teacher to choose. Never choose for them, never rank one as "the" pick, and never write a plan around a candidate the teacher has not chosen, even when asked to "just pick one": say plainly that this decision stays with them and that the plans follow as soon as they name one. Write no plan files while the anchor is open. The plan then says the teacher chose it.
 
 Offer three or four candidates. Each one:
 
