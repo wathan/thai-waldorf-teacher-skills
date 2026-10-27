@@ -34,6 +34,10 @@ _Avoid_: Lesson (when a single meeting is meant), period
 A teacher-supplied description of one class (grade, grade mode, schedule pattern, learner variability, language), kept with each teaching sequence that class takes, that skills read before planning. When absent, the teacher states the context in the request.
 _Avoid_: Class settings, roster
 
+**Plugin layout**:
+The section of a course folder's README that maps plugin concepts (class profile, unit plans, Thai core plans…) to the teacher's own files and folders. Proposed by detection, recorded only after the teacher confirms, then read by every skill instead of guessing again.
+_Avoid_: Folder structure, config, settings
+
 **Year plan**:
 A teacher-supplied list of a school year's teaching sequences per grade and term, with the Thai indicators each one claims. The basis for coverage checks.
 _Avoid_: Scope and sequence, curriculum map, timetable

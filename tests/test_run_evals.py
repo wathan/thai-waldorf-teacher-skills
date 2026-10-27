@@ -30,6 +30,9 @@ if "--plugin-dir" in args:
     Path("produced.md").write_text("FAKE-OUTPUT-MARKER\n")
     Path("seen-files.txt").write_text("\n".join(sorted(os.listdir("."))))
     events = [{{"type": "system", "subtype": "init"}}]
+    if os.environ.get("FAKE_STRING_MESSAGE"):
+        events.append({{"type": "system", "subtype": "notice",
+                        "message": "a plain-text notice, not a message object"}})
     if not os.environ.get("FAKE_NO_SKILL"):
         events.append({{"type": "assistant", "message": {{"content": [
             {{"type": "tool_use", "name": "Skill",
@@ -134,6 +137,11 @@ class RunEvalsTest(unittest.TestCase):
         self.assertEqual(self.run_runner(), 1)
         failed = [e["text"] for e in self.grading()["expectations"] if not e["passed"]]
         self.assertTrue(any("doing-things" in t for t in failed), failed)
+
+    def test_events_with_plain_text_message_are_tolerated(self):
+        os.environ["FAKE_STRING_MESSAGE"] = "1"
+        self.assertEqual(self.run_runner(), 0)
+        self.assertEqual(self.grading()["summary"]["failed"], 0)
 
     def test_case_selection_by_id(self):
         cases = json.loads((self.evals / "doing-things/evals.json").read_text())["evals"]
