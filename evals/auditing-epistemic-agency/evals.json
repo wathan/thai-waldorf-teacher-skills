@@ -57,7 +57,7 @@
         "Every decision reported as closed in the audit has a reason, or is flagged as a closure without a reason",
         "The audit file is in English",
         "The reply mentions both the week 2 plan and the audit, with a short summary of what the audit found (e.g. where decisions are opened or closed, or any flag)",
-        "The reply contains no file paths or tool names"
+        "The reply contains no file paths or tool names (Thai indicator codes and skill names are fine)"
       ]
     }
   ]

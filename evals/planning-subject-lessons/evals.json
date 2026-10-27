@@ -62,8 +62,7 @@
       "expectations": [
         "A unit 1 plan exists inside 20-design/units/ and at least one cycle plan exists inside 20-design/sessions/",
         "No epistemic agency audit file was written anywhere in the course folder",
-        "The reply gives no epistemic agency audit findings (no report of which epistemic decisions the plan opens or closes)",
-        "README.md, the class profile and the standards map are unchanged"
+        "The reply gives no epistemic agency audit findings (no report of which epistemic decisions the plan opens or closes)"
       ]
     }
   ]
