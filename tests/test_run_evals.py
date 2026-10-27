@@ -233,6 +233,16 @@ class RunEvalsTest(unittest.TestCase):
         self.assertFalse(self.out.exists() and any(self.out.rglob("transcript.jsonl")))
 
 
+class DefaultOutTest(unittest.TestCase):
+    def test_results_default_to_a_folder_outside_the_repo(self):
+        # Inside the repo, the run under test would pick up the repo's CLAUDE.md.
+        from run_evals import parse_args
+
+        out = Path(parse_args(["doing-things"]).out).resolve()
+        self.assertNotIn(ROOT.resolve(), [out, *out.parents])
+        self.assertIn(Path(tempfile.gettempdir()).resolve(), out.parents)
+
+
 class RepoEvalFilesTest(unittest.TestCase):
     """Every committed evals.json must load (no LLM calls)."""
 

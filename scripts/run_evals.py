@@ -26,7 +26,9 @@ expectation: the skill under test was invoked.
 
 Per case it writes <out>/<skill>/<timestamp>/eval-<id>/ with teacher/course/,
 transcript.jsonl, final_message.md and grading.json (skill-creator grader
-schema: expectations[{text, passed, evidence}] and summary). Exit status:
+schema: expectations[{text, passed, evidence}] and summary). <out> defaults
+to thai-waldorf-evals/ in the system temp dir: outside the repo, so the run
+under test does not pick up the repo's CLAUDE.md. Exit status:
 0 all expectations passed, 1 some failed, 2 invalid case file or run error.
 
 Needs Claude credentials; not run in CI. Standard library only.
@@ -39,12 +41,15 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_PLUGIN = REPO / "plugins/thai-waldorf-science"
 DEFAULT_REPO_SKILLS = REPO / ".claude/skills"
+# Outside the repo: a run inside it would pick up the repo's CLAUDE.md.
+DEFAULT_OUT = Path(tempfile.gettempdir()) / "thai-waldorf-evals"
 EXECUTOR_TOOLS = "Read,Glob,Grep,Write,Edit,Skill"
 MAX_FILE_CHARS = 20000
 
@@ -316,7 +321,8 @@ def parse_args(argv):
     parser.add_argument("--plugin-dir", default=str(DEFAULT_PLUGIN))
     parser.add_argument("--repo-skills-dir", default=str(DEFAULT_REPO_SKILLS),
                         help="repo-only skills, used when the plugin lacks the skill")
-    parser.add_argument("--out", default=str(REPO / "evals-workspace"))
+    parser.add_argument("--out", default=str(DEFAULT_OUT),
+                        help="results folder (default: outside the repo, in the temp dir)")
     parser.add_argument("--claude", default="claude", help="claude executable")
     parser.add_argument("--model", help="model for the run under test")
     parser.add_argument("--grader-model", help="model for the grader")

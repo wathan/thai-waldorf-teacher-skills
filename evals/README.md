@@ -19,6 +19,6 @@ uv run --no-project python scripts/run_evals.py <skill>            # all cases
 uv run --no-project python scripts/run_evals.py <skill> --case 2   # one case
 ```
 
-Options: `--model`, `--grader-model`, `--max-turns` (default 30), `--out` (default `evals-workspace/`, gitignored). Results per case land in `evals-workspace/<skill>/<timestamp>/eval-<id>/`: `teacher/course/` (the course folder after the run; anything written beside it stays in `teacher/`), `transcript.jsonl`, `final_message.md`, `grading.json`. Exit 0 = all passed, 1 = some failed, 2 = invalid case file or run error.
+Options: `--model`, `--grader-model`, `--max-turns` (default 30), `--out` (default `thai-waldorf-evals/` in the system temp dir, e.g. `/tmp/thai-waldorf-evals/`; keep it outside the repo, or the run under test picks up the repo's `CLAUDE.md`). Results per case land in `<out>/<skill>/<timestamp>/eval-<id>/`: `teacher/course/` (the course folder after the run; anything written beside it stays in `teacher/`), `transcript.jsonl`, `final_message.md`, `grading.json`. Exit 0 = all passed, 1 = some failed, 2 = invalid case file or run error.
 
 Needs Claude credentials and costs tokens, so it is not part of CI. `tests/test_run_evals.py` checks every committed `evals.json` loads, offline.
