@@ -5,14 +5,14 @@
 > **What this is:** Bottom level of the Waldorf planning chain: one main-lesson day, timed segment by segment. Its parent is a day row of `waldorf-plan-template-week.th.md`.
 >
 > **Agent use:**
-> - Keep the bilingual labels. Write cell content in Thai unless the teacher asks for English.
+> - Keep the bilingual labels. Write cell content in English by default, with Thai official terms (indicator codes and wording, skill and attitude names) verbatim; in Thai when the teacher asks. Student-facing wording follows the class profile's language of student materials.
 > - **Weekly Objectives** and **Key Skills** copy the parent weekly plan. Each segment's **Objective** must serve one of them.
 > - **Time:** clock times or minutes per segment. The total is ~90–100 min (Rawson P7).
 > - **Aspect of ML** rows are the form's default sequence. Meaning, from `rawson2021-generative-principles-upper-school.md` §2.4–2.5:
 >   - **Rhythmic Time:** attunement (verse, movement, recitation, mental arithmetic).
 >   - **Maths/Literacy:** a short skills strand. For upper-school science, use it for quantitative or scientific-writing practice tied to the block. Mark it `—` if unused.
->   - **Recall:** open-question reconstruction of *yesterday's* experience (not a quiz). It flows into concept formation for the experience before that.
->   - **Practice:** application of earlier concepts and individual or group work, differentiated at three levels.
+>   - **Recall:** open-question reconstruction of *yesterday's* experience (not a quiz). It flows straight into discussion and concept formation for that same experience (two-day rhythm, ADR-0003): each student takes an individual position, then the class integrates it into its shared understanding. This row covers recall and concept formation together.
+>   - **Practice:** application of earlier concepts and individual or group work: one shared task every student can start, with UDL options (tiers only as one option within UDL).
 >   - **New Content:** today's new experience. Leave it **un-analysed** until tomorrow's recall.
 > - Rows may be reordered or repeated when the lesson design needs it (e.g. New Content before Practice). Keep the row labels.
 > - **Homework** and **Review** are single cells covering the whole day. Write **Review** only from teacher-supplied reflections.

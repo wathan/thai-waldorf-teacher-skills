@@ -5,9 +5,10 @@
 > **What this is:** Middle level of the Waldorf planning chain: one week of a main-lesson block, planned day by day (Mon–Fri). Its parent is a row of `waldorf-plan-template-block.th.md`; each day row expands into `waldorf-plan-template-day.th.md`.
 >
 > **Agent use:**
-> - Keep the bilingual labels. Write cell content in Thai unless the teacher asks for English.
+> - Keep the bilingual labels. Write cell content in English by default, with Thai official terms (indicator codes and wording, skill and attitude names) verbatim; in Thai when the teacher asks. Student-facing wording follows the class profile's language of student materials.
 > - **Weekly Objectives** and **Key Skills** copy or refine the matching week row of the block plan. Name science Key Skills with the official Thai terms in `thai-science-key-skills-2560.md`.
-> - Plan the days as overlapping **experience → recall → concept → apply** cycles (Rawson §2.4): a new experience on day *n* is recalled on day *n*+1, conceptualised on *n*+2 and applied on *n*+3. Monday recalls the previous week (or the previous block in this subject on the block's first day).
+> - Plan the days in the **two-day rhythm** (after Zech; ADR-0003, Rawson §2.2 and §2.4): a new experience on day *n* is left un-analysed; on day *n*+1 its recall (open questions, never a quiz) flows straight into discussion and concept formation, then earlier concepts are applied and the day's new experience comes last. Monday recalls Friday's experience; the block's first day connects to the previous block in this subject instead of a recall. Rawson's four-day cycle (experience → recall → concept → apply over four days) only when the teacher asks for it.
+> - **Differentiation:** UDL first: light universal options for the whole class around one shared task; tiers only as one option within UDL.
 > - Every daily **Objectives** entry needs an **Assessment** entry in the same row.
 > - **Extra Main:** the form leaves this column undefined. Use it for main-lesson-book work, practice lessons or other extensions linked to the block. Leave it empty if there are none.
 > - **Review** (last row): written after teaching. Leave it blank unless the teacher supplies reflections. Never invent observations.
@@ -36,4 +37,4 @@
 **Review:** {{review}}
 ```
 
-Use `<br>` for line breaks inside a cell. In **Main Lesson**, label each part by its cycle role, e.g. `Recall E2 · Concept E1 · New E3`.
+Use `<br>` for line breaks inside a cell. In **Main Lesson**, name each part in rhythm order, e.g. `Recall + concept formation (yesterday: …) · Practice: … · New experience: … · Close`.

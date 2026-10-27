@@ -1,0 +1,65 @@
+{
+  "skill_name": "planning-main-lesson-blocks",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Please plan my meteorology main lesson block as a fixed sequence: the block plan and the week plans. The anchoring phenomenon and the three units are in my draft block plan. Write it now; I'll ask for day plans later.",
+      "expected_output": "The draft block plan in 10-design/ updated in place using the course's own block form from 90-templates/, plus three week plans in 10-design/. The teacher's anchor is kept; driving question with authorship stated; target and prerequisite ideas listed separately; Thai indicators ว 3.2 ม.6/10–12 verbatim; weeks follow the two-day rhythm with open-question Recall flowing into concept formation, questions elicited onto the driving question board at Recall, today's new experience last and never analysed the same day; day 1 connects to the previous G11 block; light UDL options in every session.",
+      "files": ["fixtures/custom-layout"],
+      "expectations": [
+        "The block plan is written in 10-design/block-plan.md (the existing draft, updated in place); no second block plan exists elsewhere, and README.md and the class profile are unchanged",
+        "Week plans for weeks 1, 2 and 3 exist inside 10-design/ (as separate files or as clearly separate week sections)",
+        "The block plan follows the course's own form from 90-templates/: it has the columns 'Storyline focus' and 'UDL options (for everyone)', not the default form's 'Differentiation: แผนสำหรับเด็กที่มีข้อจำกัด' column",
+        "The anchoring phenomenon is the teacher's: the arrival of the southwest monsoon over Chiang Mai; it is not replaced by another phenomenon",
+        "A driving question is given together with an explicit statement of who authored it (e.g. teacher-drafted, provisional until the class revisits it at the driving question board)",
+        "Target ideas and prerequisite ideas are listed separately, under their own labels",
+        "The units run in a fixed order (air on the move, ocean currents, putting it together: the monsoon), each marked or described as fixed",
+        "The Thai indicators appear with their official codes and Thai wording verbatim, including ว 3.2 ม.6/10 as exactly: อธิบายการหมุนเวียนของอากาศตามเขตละติจูด และผลที่มีต่อภูมิอากาศ",
+        "The week plans follow the two-day rhythm: from the second day on, each day opens with recall of the previous day's experience flowing into discussion and concept formation, and the day's new experience comes last, left un-analysed until the next day",
+        "Concept formation is framed as students taking an individual position that is then integrated into the class's understanding; no session scripts the concept as a predetermined answer students are told to reach",
+        "Recall is described as open questions about yesterday's experience; nowhere is Recall a quiz, test or set of closed questions with one right answer",
+        "No session analyses, discusses or explains that same day's new experience (closes preview tomorrow instead)",
+        "Students' questions are elicited at Recall onto the driving question board, and the plan says the board frames how ideas are approached but does not change the fixed order of units",
+        "Block day 1 connects to the previous block in this subject (the G11 atmosphere and light block) instead of a recall",
+        "Every week (or every session) carries light universal UDL options for the whole class rather than three ability levels or below/at/above tiers",
+        "The plans contain no four-day cycle labels such as E→R→C→A, 'Recall E2 · Concept E1' or concept formation two days after the experience",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Plan my G10 ecology main lesson block: block plan and week plans. I haven't picked an anchoring phenomenon. Just choose the best one for me and write the plans now, I trust you.",
+      "expected_output": "The skill does not choose the anchoring phenomenon. It offers several local, place-based or ecological candidates capable of awe and wonder (e.g. a Thai mangrove, rice paddies after the monsoon, a forest fire scar in the north), explains that this choice stays with the teacher, and asks which one to use. No block plan with a chosen anchor is written.",
+      "files": ["fixtures/default-template"],
+      "expectations": [
+        "The reply offers at least three candidate anchoring phenomena",
+        "The candidates are local, place-based or ecological phenomena that a class in Thailand could encounter, and at least one is described for its capacity to spark wonder or puzzlement",
+        "The skill does not pick one candidate as the anchor: the reply asks the teacher to choose (a short reason per candidate is fine, but no candidate is declared the chosen anchor)",
+        "The reply explains briefly that choosing the anchoring phenomenon stays with the teacher",
+        "No block plan or week plan with an anchoring phenomenon filled in was written; if any plan file exists, its anchoring phenomenon is explicitly marked as not yet chosen by the teacher",
+        "The reply asks at most three questions",
+        "The reply contains no file paths or tool names"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Plan a main lesson block on ecology for my G9 (ม.3) class. The anchoring phenomenon is the fish die-off in our school pond at the end of the hot season. I don't have a class profile yet. I accept whatever layout you propose for my folders, so write the block plan and week plans now with sensible defaults rather than asking me lots of questions.",
+      "expected_output": "With no class profile, the skill asks no more than three questions and states its assumptions (100-minute sessions, Monday to Friday, 3 weeks, Thai as language, G9 What? grade mode). It records the default layout in a new README Plugin layout section and writes the block plan and week plans in planning/, using the plugin's default forms, the teacher's anchor, the two-day rhythm, and ม.3 indicators from the crosswalk.",
+      "files": ["fixtures/empty"],
+      "expectations": [
+        "The reply asks at most three questions (zero is fine)",
+        "The assumptions are stated (in the reply or the plan): at least the session length (100 minutes), the weekly pattern or number of weeks, and the language",
+        "README.md has a 'Plugin layout' section whose 'block and week plans' row points to where the plans were written",
+        "A block plan and week plans exist in the planning area (e.g. planning/)",
+        "The anchoring phenomenon is the teacher's fish die-off in the school pond",
+        "The block plan names the G9 grade mode (What?)",
+        "Thai indicators are cited with official ม.3 codes in the format ว x.x ม.3/k and Thai wording, e.g. ว 1.1 ม.3/1 as exactly: อธิบายปฏิสัมพันธ์ขององค์ประกอบของระบบนิเวศที่ได้จากการสำรวจ",
+        "A driving question is given with its authorship stated",
+        "Target ideas and prerequisite ideas are listed separately",
+        "The week plans follow the two-day rhythm (recall of yesterday's experience flowing into concept formation, new experience last and left un-analysed) and Recall is never a quiz",
+        "The reply suggests setting up a class profile next time",
+        "No student names appear anywhere"
+      ]
+    }
+  ]
+}
