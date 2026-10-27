@@ -1,0 +1,63 @@
+{
+  "skill_name": "setting-up-class-profiles",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Set up a class profile for my G11 class.",
+      "expected_output": "The first interview round: numbered questions, each with a recommended answer, with grade mode Why, 100-minute main lesson sessions and the academic year in CE and ปีการศึกษา pre-filled; nothing written yet.",
+      "files": ["fixtures/empty"],
+      "expectations": [
+        "The reply asks numbered questions, and each question comes with a recommended answer the teacher can accept",
+        "The reply pre-fills the grade mode for G11 as Why without asking the teacher to supply it from scratch",
+        "The reply recommends 100-minute sessions for a main lesson block, or a week of one long and one short session for a subject lesson (at least one of these defaults appears)",
+        "The reply gives the academic year both as a CE year and as a Buddhist-era ปีการศึกษา (e.g. 2026–2027 and 2569)",
+        "The reply asks about only one class",
+        "No class profile file and no README were written to the course folder (the interview is not finished)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Please set up the class profile for this course. It's my G10 class (ม.4), 24 students, a three-week meteorology main lesson block: 100 minutes every morning, Monday to Friday. Taught in Thai, student materials in Thai. Two students have learning differences, one is learning Thai as an additional language, none need extension. Use this academic year. My folders are already organised the way I like them: look at them, and record where things go in the README. I accept your recommended answers for anything I haven't said and I confirm the layout you propose, so please write everything now without asking me again.",
+      "expected_output": "A layout mapping onto the existing numbered folders, recorded in a new 'Plugin layout' section of the existing README with the teacher's notes kept, and a class profile written in the admin folder; no default template imposed.",
+      "files": ["fixtures/custom-structure"],
+      "expectations": [
+        "README.md now contains a section headed 'Plugin layout' that maps plugin concepts (at least the class profile, plans and assessments) to locations in the existing folders '00 Admin', '01 Planning' or '02 Lessons', and '03 Assessment'",
+        "The teacher's original README content (the course notes about booking the roof and supervision dates) is still in README.md",
+        "A class profile file was written inside '00 Admin', and its location matches the class profile row of the 'Plugin layout' section",
+        "The class profile records grade G10 / ม.4, grade mode How, main lesson block, 100-minute sessions Monday to Friday for three weeks, Thai as the language of instruction and of student materials",
+        "The class profile records learner variability as counts only: 2 learning differences, 1 Thai as an additional language, 0 extension",
+        "The class profile records the academic year in CE (2026–2027 or 2026) and as ปีการศึกษา 2569",
+        "No new top-level areas from a default template (such as admin, planning, design, resources, delivery, evaluation or templates folders) were created alongside the teacher's own folders",
+        "None of the teacher's existing folders or files were renamed, moved or deleted, and the course folder itself is not referred to by its name in the reply or files"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Set up the class profile for my G12 (ม.6) class: a subject lesson, Science Practice, with one 100-minute and one 50-minute session a week this term, taught in English with student materials in English. 18 students. Somchai Rattanakul and Nok have dyslexia, Ploy and Kittipong are learning English as an additional language, and Mali needs extension work. My notes on each student are in the admin folder. Put the profile in admin and record the layout in a README. I accept your recommendations and confirm the layout, so go ahead and write it now.",
+      "expected_output": "A class profile in admin with needs as anonymised counts (2 learning differences, 2 EAL, 1 extension); no student names anywhere in what the skill writes or says; the teacher is told names were left out.",
+      "files": ["fixtures/student-names"],
+      "expectations": [
+        "A class profile file was written in the admin folder",
+        "The class profile records learner variability as counts: 2 learning differences (or dyslexia), 2 English as an additional language, 1 extension",
+        "None of the names Somchai, Rattanakul, Nok, Napat, Ploy, Kittipong or Mali (or the other surnames in the teacher's notes) appear in the class profile or in README.md",
+        "The final reply does not repeat any student name",
+        "The reply tells the teacher that student names were left out and only counts were recorded",
+        "The class profile records grade G12 / ม.6, grade mode Who, subject lesson with one 100-minute and one 50-minute session a week, English for instruction and student materials",
+        "README.md contains a 'Plugin layout' section whose class profile row points to the profile in admin"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Update my class profile: from next week the short session moves from Thursday to Friday and becomes 60 minutes, and a new student joined who is learning Thai as an additional language. Everything else stays the same. I confirm these changes, so please write them now.",
+      "expected_output": "The existing profile at admin/class-profile.md is updated in place (short session Friday, 60 minutes; Thai-as-additional-language count 2); no second profile; other values unchanged.",
+      "files": ["fixtures/existing-profile"],
+      "expectations": [
+        "admin/class-profile.md now says the short session is on Friday and lasts 60 minutes",
+        "admin/class-profile.md now records 2 students learning Thai as an additional language",
+        "Values the teacher did not change are kept: grade G9 / ม.3, grade mode What, Science Practice subject lesson, 100-minute long session on Tuesday, 2 learning differences, 3 extension, ปีการศึกษา 2569",
+        "There is exactly one class profile file in the course folder (no second or duplicate profile was created)",
+        "The 'Plugin layout' section of README.md still points the class profile to admin/class-profile.md and was not duplicated"
+      ]
+    }
+  ]
+}

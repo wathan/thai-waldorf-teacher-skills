@@ -21,6 +21,8 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 | Output template: Waldorf | `waldorf-plan-template-week.th.md` | Planning one block week day by day (Mon–Fri, E→R→C→A cycles) |
 | Output template: Waldorf | `waldorf-plan-template-day.th.md` | Planning one main-lesson day segment by segment (Rhythmic Time → Recall → Practice → New Content) |
 | Output template: Thai | `thai-core-plan-template.th.md` | Writing the school's statutory แผนการจัดการเรียนรู้ (K–P–A, สมรรถนะ, rubrics, sign-off) |
+| Course: layout | `course-layout.md` | Before reading or writing any file in a course folder: read the README's "Plugin layout" mapping, or detect, confirm and record one |
+| Course: class | `class-profile.md` | Reading or writing a class profile: fields, defaults, file format, academic year in CE and ปีการศึกษา, what to do without one |
 
 **Default chain for generating a G9–G12 science block:**
 1. **Grade mode:** read the macro file.
