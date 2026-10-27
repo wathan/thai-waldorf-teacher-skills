@@ -18,7 +18,7 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 | Meso: vocabulary (TH) | `thai-science-scientific-mind-2560.md` | Official Thai scientific-attitude names (9 + attitudes towards science) |
 | Output format (TH) | `thai-science-indicator-analysis-examples-2560.md` | Producing IPST-style three-column analyses (analysis → learning → assessment) |
 | Output template: Waldorf | `waldorf-plan-template-block.th.md` | Planning a whole block week by week (aims, assessable outcomes, weekly rows) |
-| Output template: Waldorf | `waldorf-plan-template-week.th.md` | Planning one block week day by day (Mon–Fri, E→R→C→A cycles) |
+| Output template: Waldorf | `waldorf-plan-template-week.th.md` | Planning one block week day by day (Mon–Fri, two-day rhythm) |
 | Output template: Waldorf | `waldorf-plan-template-day.th.md` | Planning one main-lesson day segment by segment (Rhythmic Time → Recall → Practice → New Content) |
 | Output template: Thai | `thai-core-plan-template.th.md` | Writing the school's statutory แผนการจัดการเรียนรู้ (K–P–A, สมรรถนะ, rubrics, sign-off) |
 | Course: layout | `course-layout.md` | Before reading or writing any file in a course folder: read the README's "Plugin layout" mapping, or detect, confirm and record one |
