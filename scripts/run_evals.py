@@ -131,9 +131,10 @@ def final_message(events: list) -> str:
 def skills_invoked(events: list) -> list:
     names = []
     for event in events:
-        content = (event.get("message") or {}).get("content") or []
+        message = event.get("message")
+        content = message.get("content") if isinstance(message, dict) else None
         for block in content if isinstance(content, list) else []:
-            if block.get("type") == "tool_use" and block.get("name") == "Skill":
+            if isinstance(block, dict) and block.get("type") == "tool_use" and block.get("name") == "Skill":
                 names.append(str((block.get("input") or {}).get("skill", "")))
     return names
 
