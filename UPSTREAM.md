@@ -107,6 +107,9 @@ Built in #11 (5E design, explicit instruction, graded practice, retrieval practi
 | gareth | skills/explicit-instruction/checking-for-understanding-protocol-designer | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content | firm |
 | gareth | skills/self-regulated-learning/metacognitive-prompt-library | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content | firm |
 | gareth | skills/memory-learning-science/retrieval-practice-generator | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content | firm |
+| gareth | skills/original-frameworks/single-point-rubric-designer | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content (unscored single-point rubric for self-assessment) | firm |
+
+Built in #14: hinge questions and misconception-based checks with routed responses (`references/assessment-for-learning.md`), metacognitive prompts, self- and peer assessment and single-point rubrics (`references/assessment-as-learning.md`), and the placement and channel rules (`references/placement-rules.md`). The gareth and k12 paths were not re-read when building (no access from the build session); their recorded commits stand until the maintainer reviews them.
 
 ## auditing-epistemic-agency
 
