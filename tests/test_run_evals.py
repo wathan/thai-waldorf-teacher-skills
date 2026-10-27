@@ -28,6 +28,11 @@ prompt = args[args.index("-p") + 1]
 if "--plugin-dir" in args:
     Path("produced.md").write_text("FAKE-OUTPUT-MARKER\n")
     Path("seen-files.txt").write_text("\n".join(sorted(os.listdir("."))))
+    if os.environ.get("FAKE_WRITE_OUTSIDE"):
+        # Like the real CLI: writing outside the working directory needs --add-dir.
+        added = [args[i + 1] for i, a in enumerate(args) if a == "--add-dir"]
+        if any(Path(d).resolve() == Path("..").resolve() for d in added):
+            Path("../year-plan.md").write_text("OUTSIDE-MARKER\n")
     events = [{{"type": "system", "subtype": "init"}}]
     if os.environ.get("FAKE_STRING_MESSAGE"):
         events.append({{"type": "system", "subtype": "notice",
@@ -42,7 +47,8 @@ if "--plugin-dir" in args:
         print(json.dumps(e))
 else:
     ok = (not os.environ.get("FAKE_GRADE_FAIL")
-          and "FAKE-OUTPUT-MARKER" in prompt and "FAKE-REPLY-MARKER" in prompt)
+          and "FAKE-OUTPUT-MARKER" in prompt and "FAKE-REPLY-MARKER" in prompt
+          and (not os.environ.get("FAKE_WRITE_OUTSIDE") or "OUTSIDE-MARKER" in prompt))
     texts = [line[2:] for line in prompt.splitlines() if line.startswith("- ")]
     grading = {{"expectations": [
         {{"text": t, "passed": ok, "evidence": "fake"}} for t in texts
@@ -121,10 +127,17 @@ class RunEvalsTest(unittest.TestCase):
 
     def test_case_runs_inside_a_copy_of_its_fixture_folder(self):
         self.run_runner()
-        seen = next(self.out.rglob("eval-1/course/seen-files.txt")).read_text()
+        seen = next(self.out.rglob("eval-1/teacher/course/seen-files.txt")).read_text()
         self.assertIn("class-profile.md", seen.split("\n"))
         fixture = self.evals / "doing-things/fixtures/with-profile"
         self.assertEqual(sorted(p.name for p in fixture.iterdir()), ["class-profile.md"])
+
+    def test_files_written_just_outside_the_course_are_graded(self):
+        # A year plan lives outside the course folder, at a path the teacher gives.
+        os.environ["FAKE_WRITE_OUTSIDE"] = "1"
+        self.assertEqual(self.run_runner(), 0)
+        self.assertEqual(self.grading()["summary"]["failed"], 0)
+        self.assertEqual(len(list(self.out.rglob("eval-1/*/year-plan.md"))), 1)
 
     def test_failed_expectation_exits_one(self):
         os.environ["FAKE_GRADE_FAIL"] = "1"
