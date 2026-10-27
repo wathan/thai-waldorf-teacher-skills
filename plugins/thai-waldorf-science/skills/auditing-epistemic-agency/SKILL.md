@@ -43,7 +43,7 @@ Talk as a colleague in plain teacher language ("your week 1 plan", "your evaluat
 
 ## Step 2 — Sequence-level decisions first
 
-Before the sessions, report the decisions made above session level, following audit-rules: the anchoring phenomenon (always a deliberate closure, reason: the teacher's choice that opens the sequence and from which students' questions are elicited; reach: the whole sequence), the driving question and its stated authorship, the sequence of units (fixed sequence: closure; anticipated route: the board's choice of the next unit is an opening), the target ideas (the destination is closed, the route of explanation is not) and the prerequisite ideas (closed, taught beforehand).
+Before the sessions, report the decisions made above session level, following audit-rules: the anchoring phenomenon (always a deliberate closure, reason: the teacher's choice that opens the sequence and from which students' questions are elicited; reach: the whole sequence), the driving question and its stated authorship, the sequence of units (fixed sequence: closure; anticipated route: the board's choice of the next unit is an opening), the target ideas (the destination is closed, reason: the indicators the sequence claims; the route of explanation is not) and the prerequisite ideas (closed, reason: taught beforehand so the class can build on them). Each of these closures carries its reason like any other.
 
 ## Step 3 — Session by session
 

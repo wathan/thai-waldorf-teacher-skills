@@ -28,7 +28,7 @@ Offer three or four candidates. Each one:
 - **reaches the main lesson block's indicators**: explaining it fully needs the target ideas, so the units can grow out of the class's questions about it;
 - **fits the grade mode**: G9 What? (rich, exact observation of an opposition), G10 How? (polarities working in one system), G11 Why? (the invisible behind the visible), G12 Who? (synthesis across systems and the human place in them).
 
-Give each candidate one line on what students would encounter on day 1 and one on why it could carry this main lesson block. Mix the kinds (one close to the school, one regional, one seasonal or ecological) and add what each needs to stage (a site visit, the class's own data, a demonstration). Do not rank them or name a favourite; ask which one the teacher wants, or whether they have another in mind.
+Give each candidate one line on what students would encounter on day 1 and one on why it could carry this main lesson block, naming what in it is puzzling, beautiful or surprising. Mix the kinds (one close to the school, one regional, one seasonal or ecological) and add what each needs to stage (a site visit, the class's own data, a demonstration). Do not rank them or name a favourite; ask which one the teacher wants, or whether they have another in mind.
 
 ## Driving question and its authorship
 
