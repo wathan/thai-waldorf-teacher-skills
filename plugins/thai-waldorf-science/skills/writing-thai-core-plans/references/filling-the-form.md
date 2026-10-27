@@ -23,7 +23,7 @@ Section-by-section rules for every Thai core plan, whatever the teaching sequenc
 
 ## 1. Standards and indicators
 
-- Copy สาระ, มาตรฐาน and each ตัวชี้วัด with its code (`ว x.x ม.n/k`) and Thai wording **character for character** from `${CLAUDE_PLUGIN_ROOT}/references/thai-science-core-indicators-2560.md` (ม.4–6 electives: `${CLAUDE_PLUGIN_ROOT}/references/thai-science-supplementary-learning-outcomes-2560.md`). Never paraphrase, shorten or translate an indicator.
+- Copy สาระ, มาตรฐาน and each ตัวชี้วัด with its code (`ว x.x ม.n/k`) and Thai wording **character for character** from `${CLAUDE_PLUGIN_ROOT}/references/thai-science-core-indicators-2560.md` (ม.4–6 electives: `${CLAUDE_PLUGIN_ROOT}/references/thai-science-supplementary-learning-outcomes-2560.md`). Never paraphrase, shorten or translate an indicator. A plan that lists only a code still gets the full wording, looked up there.
 - Use only indicators the teaching sequence claims (its block plan or standards map), and only those this plan's lesson actually works toward. A day that reaches part of an indicator still cites it whole; the objectives say which part.
 - **Sequencing difference:** an indicator assigned to another ม. grade than the class's is cited as written, followed by a short Thai note giving the indicator's grade and the grade-mode reason, taken from the block plan when it gives one (e.g. "หมายเหตุ: ตัวชี้วัดนี้กำหนดไว้ในระดับชั้น ม.6 นำมาจัดการเรียนรู้ในชั้น ม.5 เพราะ…"). Never drop or rewrite the indicator to hide the difference.
 

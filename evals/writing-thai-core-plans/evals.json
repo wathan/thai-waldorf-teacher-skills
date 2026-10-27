@@ -8,7 +8,7 @@
       "files": ["fixtures/days-written"],
       "expectations": [
         "Exactly one Thai core plan was written, inside 20-thai-plans/, for block day 2 (week 1, day 2); no plans for other days were written",
-        "The plan uses the Thai core plan form's headings, including 'จุดประสงค์การเรียนรู้', 'กิจกรรมการเรียนรู้', 'ขั้นนำเข้าสู่บทเรียน', 'ขั้นสอน/ขั้นจัดกิจกรรม', 'ขั้นสรุป' and 'การวัดและประเมินผล'",
+        "The plan follows the plugin's Thai core plan form: its numbered sections 1 to 9 are present and Section 7 has the three stage headings ขั้นนำเข้าสู่บทเรียน, ขั้นสอน/ขั้นจัดกิจกรรม and ขั้นสรุป",
         "ขั้นนำ (the introduction stage) holds the rhythmic opening and the recall of yesterday's monsoon storm through open questions; it contains no quiz or test",
         "ขั้นสอน (the teaching stage) holds, in the day plan's order: concept formation from the storm (students' own positions or sketch models compared by the class, questions onto the driving question board), the reflection, the practice, and the convection tank as the day's new experience",
         "ขั้นสรุป (the conclusion stage) does not explain, discuss or analyse the convection tank; it closes the lesson and says that tomorrow's recall starts from the tank",
