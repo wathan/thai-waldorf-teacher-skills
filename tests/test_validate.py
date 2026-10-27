@@ -307,6 +307,27 @@ class ValidatorTest(unittest.TestCase):
             write(self.plugin / rel, "x\n")
             self.assertReports("repo-only")
 
+    # --- repo-only skills (.claude/skills, never shipped) ---------------
+
+    def write_repo_only_skill(self, frontmatter_name="checking-stuff"):
+        write(
+            self.root / ".claude/skills/checking-stuff/SKILL.md",
+            SKILL_MD.replace("doing-things", frontmatter_name).replace(
+                "Read ${CLAUDE_PLUGIN_ROOT}/references/README.md first.", "Run the check."
+            ),
+        )
+
+    def test_repo_only_skill_is_validated_like_a_plugin_skill(self):
+        self.write_repo_only_skill(frontmatter_name="other-name")
+        write(self.root / "UPSTREAM.md", UPSTREAM_MD + "\n## checking-stuff\n\nNone.\n")
+        self.assertReports("does not match directory")
+
+    def test_repo_only_skill_needs_an_upstream_entry(self):
+        self.write_repo_only_skill()
+        self.assertReports("no '## checking-stuff' entry")
+        write(self.root / "UPSTREAM.md", UPSTREAM_MD + "\n## checking-stuff\n\nNone.\n")
+        self.assertEqual(validate(self.root), [])
+
     # --- the real repo --------------------------------------------------
 
     def test_this_repo_passes(self):

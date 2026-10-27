@@ -1,0 +1,48 @@
+{
+  "skill_name": "check-upstream",
+  "allowed_tools": ["Bash"],
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Check whether any of our skills have upstream changes worth reviewing. Use the recorded upstream state in upstream-state.json, not live GitHub.",
+      "expected_output": "A report naming plugin-wide, planning-main-lesson-blocks (k12 lesson-plan-creation: references/science.md and references/lesson-json.md) and mapping-curriculum (coverage-audit: SKILL.md and references/worked-examples.md) as affected, with every other source listed as up to date and guiding-the-workflow as having no upstream sources. No file is changed.",
+      "files": ["fixtures/record", "fixtures/state-changed"],
+      "expectations": [
+        "The reply says the comparison used the recorded upstream state (upstream-state.json), not live GitHub",
+        "The reply names planning-main-lesson-blocks as affected by a change to the k12 path plugin/skills/k12-lesson-plan-creation, and lists the changed files plugin/skills/k12-lesson-plan-creation/references/science.md and plugin/skills/k12-lesson-plan-creation/references/lesson-json.md",
+        "The reply names mapping-curriculum as affected by a change to skills/curriculum-alignment/coverage-audit, and lists the changed files skills/curriculum-alignment/coverage-audit/SKILL.md and skills/curriculum-alignment/coverage-audit/references/worked-examples.md",
+        "The reply does not list README.md, skills/curriculum-alignment/curriculum-crosswalk-v2/SKILL.md or skills/engineering/code-review/SKILL.md as changed files for any of our skills",
+        "The reply reports setting-up-class-profiles (grilling), writing-thai-core-plans and the curriculum-crosswalk source of mapping-curriculum as up to date",
+        "The reply says the plugin's skills and UPSTREAM.md were not changed and that merging is left to the maintainer",
+        "UPSTREAM.md in the course folder still records commit 31fd6dbb0c07cb50bb3ce7f62a4135a393bd0e8c for plugin/skills/k12-lesson-plan-creation and b4d93ab2f203c8b7d92488abc6917e01b049e148 for skills/curriculum-alignment/coverage-audit",
+        "plugins/thai-waldorf-science/skills/planning-main-lesson-blocks/SKILL.md still contains FIXTURE-SKILL-BODY-UNCHANGED and no other skill file was added"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Has anything changed upstream since I last reviewed? Check against the recorded upstream state file upstream-state.json.",
+      "expected_output": "Every recorded source is up to date; no skill has upstream changes worth reviewing; guiding-the-workflow has no upstream sources.",
+      "files": ["fixtures/record", "fixtures/state-unchanged"],
+      "expectations": [
+        "The reply says no skill has upstream changes worth reviewing",
+        "The reply reports the sources of setting-up-class-profiles, mapping-curriculum, planning-main-lesson-blocks and writing-thai-core-plans (and the plugin-wide k12 lesson-plan-creation source) as up to date",
+        "The reply does not present README.md, registry.json, skills/questioning-discussion/hinge-question-designer/SKILL.md or skills/engineering/code-review/SKILL.md as changes to review",
+        "The reply mentions guiding-the-workflow as having no upstream sources, or does not list it as affected",
+        "UPSTREAM.md in the course folder is unchanged: it still records 952cc158791caae0e34ee42f2b5a0a72ce837558 for skills/curriculum-alignment/curriculum-crosswalk"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Run the upstream check against upstream-state.json (recorded state, don't go to GitHub). I'm short on time, so tell me what needs my attention.",
+      "expected_output": "writing-thai-core-plans is affected (criterion-referenced-rubric-generator/SKILL.md changed); the k12 lesson-plan-creation commit 31fd6db could not be compared because it is no longer in the upstream history; everything else is up to date. Nothing is edited.",
+      "files": ["fixtures/record", "fixtures/state-rewritten"],
+      "expectations": [
+        "The reply names writing-thai-core-plans as affected and lists skills/curriculum-assessment/criterion-referenced-rubric-generator/SKILL.md as the changed file",
+        "The reply says the recorded k12 commit 31fd6db for plugin/skills/k12-lesson-plan-creation could not be compared because it is not in the upstream history (for example history was rewritten), and does not claim that source is up to date",
+        "The reply reports setting-up-class-profiles and mapping-curriculum as up to date",
+        "UPSTREAM.md in the course folder still records 5edef15c5f905a09cef002a2608748c4a44c3f5b for skills/curriculum-assessment/criterion-referenced-rubric-generator and 31fd6dbb0c07cb50bb3ce7f62a4135a393bd0e8c for plugin/skills/k12-lesson-plan-creation",
+        "plugins/thai-waldorf-science/skills/planning-main-lesson-blocks/SKILL.md still contains FIXTURE-SKILL-BODY-UNCHANGED"
+      ]
+    }
+  ]
+}

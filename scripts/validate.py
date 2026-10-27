@@ -6,7 +6,8 @@ Usage: uv run --no-project python scripts/validate.py [REPO_ROOT]
 Standard library only, so it runs offline and in CI without installs.
 Every plugin listed in .claude-plugin/marketplace.json is checked, and every
 skill directory under a plugin's skills/ is discovered automatically, so new
-skills need no change here.
+skills need no change here. Repo-only maintainer skills in .claude/skills/
+get the same SKILL.md and upstream-record checks.
 """
 
 import json
@@ -290,6 +291,11 @@ def skill_dirs(plugin_dir: Path) -> list:
     return sorted(p for p in skills.iterdir() if p.is_dir()) if skills.is_dir() else []
 
 
+def repo_only_skill_dirs(root: Path) -> list:
+    """Maintainer skills in .claude/skills (e.g. check-upstream): checked, never shipped."""
+    return skill_dirs(root / ".claude")
+
+
 def validate(repo_root) -> list:
     report = Report(Path(repo_root).resolve())
     check_licensing(report, report.root)
@@ -308,6 +314,9 @@ def validate(repo_root) -> list:
             check_skill(report, skill_dir)
             check_skill_paths(report, plugin_dir, skill_dir)
             all_skills.append(skill_dir)
+    for skill_dir in repo_only_skill_dirs(report.root):
+        check_skill(report, skill_dir)
+        all_skills.append(skill_dir)
     check_upstream(report, all_skills)
     return report.errors
 
