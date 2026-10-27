@@ -229,5 +229,5 @@ Source of the rhythm: `rawson2021-generative-principles-upper-school.md` §2.4�
 | Section 7 stage | Waldorf day element (`waldorf-plan-template-day.th.md`) |
 |---|---|
 | ขั้นนำเข้าสู่บทเรียน | Rhythmic Time (กิจกรรมวงกลม) + Recall of the previous day's experience (open questions, not a quiz) |
-| ขั้นสอน/ขั้นจัดกิจกรรม | Concept formation from earlier experience → New Content (new experience, left un-analysed) → Practice |
+| ขั้นสอน/ขั้นจัดกิจกรรม | Concept formation on yesterday's experience → reflection (assessment as learning, not scored) → Practice → New Content (today's new experience, left un-analysed), in the day plan's own order (two-day rhythm, ADR-0003) |
 | ขั้นสรุป | Close of the lesson. Do **not** analyse today's new experience here; state what tomorrow's recall will pick up. |

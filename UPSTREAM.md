@@ -77,8 +77,8 @@ No upstream sources: written fresh from spec #1 and the plugin's own skill set. 
 | Repo | Path | Commit last reviewed | Role | Status |
 |---|---|---|---|---|
 | gareth | skills/curriculum-assessment/competency-unpacker | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (K-P-A unpacking) | firm |
-| gareth | skills/curriculum-assessment/criterion-referenced-rubric-generator | 5edef15c5f905a09cef002a2608748c4a44c3f5b | content | firm |
-| gareth | skills/original-frameworks/single-point-rubric-designer | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content | firm |
+| gareth | skills/curriculum-assessment/criterion-referenced-rubric-generator | 5edef15c5f905a09cef002a2608748c4a44c3f5b | content (4-level rubrics) | firm |
+| gareth | skills/original-frameworks/single-point-rubric-designer | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content (unscored self-check for assessment as learning) | firm |
 
 ## differentiating-for-learner-variability
 
