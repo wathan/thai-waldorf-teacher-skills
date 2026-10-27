@@ -19,7 +19,7 @@
 
 ## The five phases
 
-Use the English names in plans and IPST's Thai names wherever Thai is written.
+Plans are in Thai by default, so use IPST's Thai names; in a plan written in English on request, use the English names. The formats below show the headings in English; write them in the plan's language.
 
 | Phase | IPST Thai name | What it does |
 |---|---|---|

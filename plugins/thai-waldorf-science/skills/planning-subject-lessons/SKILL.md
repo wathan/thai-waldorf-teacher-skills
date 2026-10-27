@@ -65,7 +65,7 @@ Follow `5e-design.md`. Lay the cycles over the actual sessions of the class prof
 
 1. **Where.** The unit plan goes to the layout's `unit plans` row; the cycle plans to the `session plans` row. A folder location gets `unit-01-plan.md` and `unit-01-cycle-01.md`, `unit-01-cycle-02.md`, … (two-digit unit and cycle numbers; continue the course's own naming if its files already use another); a file location holds the unit plan followed by one section per cycle. If a plan already exists there, update it in place and keep the teacher's decisions; never create a second one. With no row, run course-layout Steps 2–4 for these concepts (usual area: design) and write only after the teacher confirms (or has said up front they accept your proposal).
 2. **Which form.** If the templates location holds the course's own unit plan or session plan form (cues: unit plan, แผนหน่วย, 5E, session, lesson plan form), use it exactly: its headings, labels and order win, and the rules here still hold wherever it has a matching place. Otherwise use the formats in `5e-design.md`. Say in one line which one you used. Never write a Waldorf block, week or day plan for a subject lesson.
-3. **Language.** English by default, with Thai official terms (indicators, ปีการศึกษา, phase names where given in Thai) verbatim; student-facing wording (prompts, retrieval questions, exit slips) in the class profile's language of student materials.
+3. **Language.** Thai by default (English when the teacher asks), with Thai official terms (indicators, ปีการศึกษา, IPST's Thai phase names) verbatim; student-facing wording (prompts, retrieval questions, exit slips) in the class profile's language of student materials.
 
 Thai core plans are not written in this step.
 
