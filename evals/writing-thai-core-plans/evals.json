@@ -1,0 +1,64 @@
+{
+  "skill_name": "writing-thai-core-plans",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Please write the Thai core plan for day 2 of my meteorology block for the supervisors.",
+      "expected_output": "One แผนการจัดการเรียนรู้ for block day 2, written in 20-thai-plans/ (the layout's Thai core plans location) on the plugin's Thai core plan template (the course has no template of its own). It follows the week 1, day 2 day plan: ขั้นนำ holds Rhythmic Time and the open-question recall of the monsoon storm; ขั้นสอน holds concept formation with the driving question board, the reflection, the practice and the convection tank as the new experience; ขั้นสรุป only closes and previews tomorrow's recall, without analysing the tank. Indicators ว 3.2 ม.6/10 (and others the day serves) verbatim; K-P-A objectives unpacked from them with official skill and attitude names; rubrics rewritten for science; ปีการศึกษา 2569; scoring tables blank; reflection named as assessment as learning without a score. The Waldorf plans are untouched.",
+      "files": ["fixtures/days-written"],
+      "expectations": [
+        "Exactly one Thai core plan was written, inside 20-thai-plans/, for block day 2 (week 1, day 2); no plans for other days were written",
+        "The plan uses the Thai core plan form's headings, including 'จุดประสงค์การเรียนรู้', 'กิจกรรมการเรียนรู้', 'ขั้นนำเข้าสู่บทเรียน', 'ขั้นสอน/ขั้นจัดกิจกรรม', 'ขั้นสรุป' and 'การวัดและประเมินผล'",
+        "ขั้นนำ (the introduction stage) holds the rhythmic opening and the recall of yesterday's monsoon storm through open questions; it contains no quiz or test",
+        "ขั้นสอน (the teaching stage) holds, in the day plan's order: concept formation from the storm (students' own positions or sketch models compared by the class, questions onto the driving question board), the reflection, the practice, and the convection tank as the day's new experience",
+        "ขั้นสรุป (the conclusion stage) does not explain, discuss or analyse the convection tank; it closes the lesson and says that tomorrow's recall starts from the tank",
+        "Thai indicators appear with their official codes and Thai wording verbatim, including ว 3.2 ม.6/10 as exactly: อธิบายการหมุนเวียนของอากาศตามเขตละติจูด และผลที่มีต่อภูมิอากาศ",
+        "Objectives are split into K, P and A; the P objectives use official Thai skill names (such as การสังเกต or การสร้างแบบจำลอง) and the A objectives use official names from the 8 คุณลักษณะอันพึงประสงค์ or the Thai scientific attitudes (such as ความใจกว้าง or ความอยากรู้อยากเห็น)",
+        "Every K, P and A objective has a matching row in the measurement table, and the 4-level rubrics describe this science lesson's tasks (not the template's maths example about แบบฝึกทักษะ percentages)",
+        "The academic year is given as the Buddhist-era ปีการศึกษา 2569",
+        "The student scoring tables (แบบบันทึกคะแนน / แบบบันทึกการประเมินผล) have no student names and no scores filled in, and the post-teaching results (บันทึกผลหลังการสอน) are left blank",
+        "The reflection is named as assessment as learning (or self-assessment) in the measurement section without a score",
+        "The Waldorf block plan, week plans and day plans are unchanged",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Now the Thai core plan for day 3, please.",
+      "expected_output": "One Thai core plan for block day 3 in 20-thai-plans/. The day plan for day 3 has two problems the skill reports in its reply: the sea-breeze box (today's new experience) is explained the same day with a marked worksheet and a class discussion at the close, which breaks the two-day rhythm; and its parts add up to 120 minutes against a 100-minute session. The Thai core plan does not carry the same-day analysis into ขั้นสรุป, and the skill does not edit the Waldorf day plan without being asked; it offers to fix it.",
+      "files": ["fixtures/days-written"],
+      "expectations": [
+        "Exactly one Thai core plan was written, inside 20-thai-plans/, for block day 3",
+        "ขั้นนำ holds the open-question recall of yesterday's convection tank",
+        "ขั้นสรุป does not explain, discuss or analyse the sea-breeze box (the smoke's movement); it closes the lesson and previews tomorrow's recall",
+        "The reply reports that the day 3 day plan explains or discusses the sea-breeze box on the same day it is first experienced (the worksheet and the closing discussion), and says why this conflicts with the overnight rhythm",
+        "The reply reports that the day 3 day plan's timings add up to more than the 100-minute session (120 minutes)",
+        "The reply offers to fix the day plan (or asks how the teacher wants it fixed) rather than having silently changed it, and the day plan file is unchanged",
+        "The Thai core plan names no marked or scored test of the sea-breeze box on day 3, and states the measurement methods for K, P and A",
+        "Thai indicators appear with their official codes and Thai wording verbatim",
+        "The academic year is given as ปีการศึกษา 2569, and the scoring tables carry no student names or scores",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I need the Thai core plans for days 1 and 2 of my weather block. I haven't written day plans yet.",
+      "expected_output": "Two Thai core plans, for block days 1 and 2, in 30-core-plans/, on the course's own form from 90-templates/ (with its section จ on the sufficiency economy philosophy). Without day plans they follow the week 1 plan's rows, and the reply says so and offers day plans through the main-lesson planning skill. Day 1's ขั้นนำ links to the G10 Earth's energy block instead of a recall; its new experience (the Doi Suthep storm time-lapse) is left un-analysed. The ม.6 indicator ว 3.2 ม.6/8 is cited verbatim as a sequencing difference for this ม.5 class with a grade-mode (G11 Why?) justification.",
+      "files": ["fixtures/course-template"],
+      "expectations": [
+        "Two Thai core plans exist inside 30-core-plans/ (as separate files or clearly separate sections), one for block day 1 and one for block day 2, and no others",
+        "The plans follow the course's own form from 90-templates/: they include its section 'ความเชื่อมโยงกับหลักปรัชญาของเศรษฐกิจพอเพียง' and its lettered headings (ก. ตัวชี้วัด … ฉ. การวัดและประเมินผล)",
+        "The reply says that no day plans exist yet, that the Thai core plans follow the week plan, and suggests or offers writing the day plans",
+        "Day 1's ขั้นนำ connects to the previous block in this subject (G10 Earth's energy) rather than recalling anything",
+        "Day 1's new experience is the storm over Doi Suthep, and no part of the day 1 plan explains or analyses it; ขั้นสรุป previews tomorrow's recall",
+        "Day 2's ขั้นนำ holds the open-question recall of the storm, and day 2's ขั้นสรุป does not analyse the bottles (day 2's new experience)",
+        "The indicator ว 3.2 ม.6/8 is quoted exactly as: อธิบายการหมุนเวียนของอากาศ ที่เป็นผลมาจากความแตกต่างของความกดอากาศ",
+        "The plans note that ว 3.2 ม.6/8 belongs to ม.6 while the class is ม.5 (a sequencing difference) and justify it by the G11 grade mode (Why? / causes)",
+        "The class level is given as ม.5 and the academic year as ปีการศึกษา 2569",
+        "The scoring table has no student names and no scores filled in",
+        "The block plan, the week 1 plan, README.md and the course template are unchanged",
+        "No student names appear anywhere"
+      ]
+    }
+  ]
+}

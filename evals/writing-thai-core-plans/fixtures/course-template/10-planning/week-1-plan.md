@@ -1,0 +1,9 @@
+# Week 1 plan: Moving air
+
+| Day | Objectives | Main Lesson | Differentiation | Preparation |
+|---|---|---|---|---|
+| Mon (day 1) | Connect to the G10 energy block; meet the anchoring phenomenon | Link to previous block: what the class found about sunlight warming land and water in G10 · Preview of the journey · Practice: set up main lesson books · New experience: time-lapse of the storm building over Doi Suthep, with temperature readings from the city and the summit · Close: tomorrow starts from what you saw | Video plus printed stills; key words with pictures | Video, temperature printout |
+| Tue (day 2) | Work toward explaining what makes air move | Recall + concept formation (yesterday: the mountain storm) · students' questions onto the driving question board · Reflection · Practice: first sketch models of the storm · New experience: two sealed bottles, one warmed in the sun, opened under water · Close | Sketch or write recall; sentence starters | Bottles, basin of water |
+| Wed (day 3) | Work toward explaining the bottles | Recall + concept formation (yesterday: bottles) · Reflection · Practice: revise sketch models · New experience: smoke over a hot plate and over ice in a closed box · Close | Pair recall first; choice of diagram or text | Box, hot plate, ice, incense |
+| Thu (day 4) | Work toward explaining moving smoke | Recall + concept formation (yesterday: smoke box) · Reflection · Practice: pressure readings from two weather stations · New experience: valley and mountain breeze readings over one day · Close | Data as table and graph | Station data |
+| Fri (day 5) | Work toward explaining daily valley and mountain breezes | Recall + concept formation (yesterday: breeze readings) · Reflection · Practice: draw the day's breezes on a valley cross-section · New experience: a barometer carried up the stairwell · Close | Large diagrams; extension prompts | Barometer |
