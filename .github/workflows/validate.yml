@@ -1,0 +1,28 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests (validator and eval runner, no LLM calls)
+        run: python -m unittest discover tests -v
+      - name: Structure validator
+        run: python scripts/validate.py
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Claude Code plugin validate (manifest and marketplace, no LLM calls)
+        run: |
+          pnpm dlx @anthropic-ai/claude-code plugin validate --strict plugins/thai-waldorf-science
+          pnpm dlx @anthropic-ai/claude-code plugin validate --strict .
