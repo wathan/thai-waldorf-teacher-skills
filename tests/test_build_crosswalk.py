@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from build_crosswalk import build_crosswalk, main  # noqa: E402
+from build_crosswalk import REFERENCES, build_crosswalk, main  # noqa: E402
 
 INDICATORS = """# ตัวชี้วัด
 
@@ -361,7 +361,7 @@ class HeaderTest(CorpusTest):
 
 class CommittedCrosswalkTest(unittest.TestCase):
     def test_committed_crosswalk_matches_the_reference_corpus(self):
-        references = ROOT / "plugins/thai-waldorf-science/references"
+        references = REFERENCES
         committed = (references / "curriculum-crosswalk.md").read_text(encoding="utf-8")
         self.assertEqual(
             committed, build_crosswalk(references),

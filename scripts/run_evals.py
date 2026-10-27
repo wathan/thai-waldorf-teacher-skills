@@ -48,8 +48,10 @@ import tempfile
 import time
 from pathlib import Path
 
+from plugin_paths import plugin_dir
+
 REPO = Path(__file__).resolve().parents[1]
-DEFAULT_PLUGIN = REPO / "plugins/thai-waldorf-science"
+DEFAULT_PLUGIN = plugin_dir(REPO)
 DEFAULT_REPO_SKILLS = REPO / ".claude/skills"
 # Outside the repo: a run inside it would pick up the repo's CLAUDE.md.
 DEFAULT_OUT = Path(tempfile.gettempdir()) / "thai-waldorf-evals"
