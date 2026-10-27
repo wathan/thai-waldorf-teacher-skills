@@ -16,7 +16,7 @@ The year plan follows the plugin's year plan format (one section per grade, one 
 
 1. **Grades in scope** are the grades the year plan lists. Each one's indicator list is its ม. grade section in the crosswalk.
 2. **Covered:** every indicator claimed by at least one sequence, listed by the grade and term of the sequence that claims it.
-3. **Missing:** for each grade in scope, the indicators of that ม. grade no sequence in the year claims. An indicator claimed in another grade (a sequencing difference) counts as covered there; say where. List ว 4.1 and ว 4.2 (technology and computing) as their own group, noting that schools often teach them in a technology subject.
+3. **Missing:** for each grade in scope, the indicators of that ม. grade no sequence in the year claims. An indicator claimed in another grade (a sequencing difference) counts as covered there, including one taught earlier than its own ม. grade (confirmed by the maintainer); say where. List ว 4.1 and ว 4.2 (technology and computing) as their own group, noting that schools often teach them in a technology subject.
 4. **Duplicated:** an indicator claimed by two or more sequences, in any grade or term. Name every sequence. A duplicate is a fact to show, not an error: the teacher may revisit an indicator on purpose.
 5. **Sequencing differences:** an indicator whose ม. grade differs from the grade of the class that teaches it. For each, write a justification line from the crosswalk's grade bands (§1): the class's grade mode (question, capacity or motif) and why the indicator fits it, against the indicator's own grade and mode. If the year plan already gives a reason, keep the teacher's reason and add the grade modes. Mark drafted lines "draft: confirm or edit".
 
