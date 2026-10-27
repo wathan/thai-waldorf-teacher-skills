@@ -4,13 +4,15 @@ description: >
   Writes Thai core plans (แผนการจัดการเรียนรู้, Core Curriculum B.E. 2551
   layout) for external supervision of a Thai Waldorf upper-school science
   class (G9–G12 / ม.3–ม.6): one plan per main-lesson day, with ขั้นนำ /
-  ขั้นสอน / ขั้นสรุป filled from the Waldorf day, Thai indicators verbatim,
+  ขั้นสอน / ขั้นสรุป filled from the Waldorf day, or one plan per 5E cycle
+  of a subject lesson, with the stages as its design maps them; Thai indicators verbatim,
   K-P-A objectives unpacked from them, rubrics, official Thai skill and
   attitude names, the Buddhist-era ปีการศึกษา and blank scoring tables, and
-  reports where the Waldorf day plan and the Thai core plan disagree. Use when
-  the teacher asks for a Thai core plan, แผนการจัดการเรียนรู้, lesson plan for
-  the supervisors or the school's statutory plan for one or more days of a
-  planned main lesson block. Do not use to plan the block, its week plans or
+  reports where the plans it was written from and the Thai core plan
+  disagree. Use when the teacher asks for a Thai core plan,
+  แผนการจัดการเรียนรู้, lesson plan for the supervisors or the school's
+  statutory plan for days of a planned main lesson block or cycles of a
+  planned subject lesson unit. Do not use to plan the block, its week plans or
   day plans, or a subject lesson's design.
 license: CC-BY-SA-4.0
 ---
@@ -28,7 +30,7 @@ Talk as a colleague in plain teacher language: "your Thai plans folder", "the sc
 1. Read `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md` and `${CLAUDE_PLUGIN_ROOT}/references/class-profile.md` NOW. Follow both for every file you read or write.
 2. Decide what is asked:
    - **Main-lesson days** (one day, several days, a week or the whole block of a main lesson block): one Thai core plan per day. Read `${CLAUDE_SKILL_DIR}/references/main-lesson-days.md` NOW; it supplies the source of each plan, the stage mapping and the consistency check used in Steps 2 and 4.
-   - **Subject lessons** (one Thai core plan per 5E cycle): not available in this version. Say so in one sentence and offer nothing in its place.
+   - **Subject lessons** (one Thai core plan per 5E cycle of a unit; never per session, and no Waldorf plans): read `${CLAUDE_SKILL_DIR}/references/5e-cycles.md` NOW; it replaces main-lesson-days.md's sources, stage mapping and consistency check in Steps 2 and 4, and where this file says Waldorf plans, read the unit plan and cycle plans.
    - **Planning the block, its week plans or day plans:** belongs to `planning-main-lesson-blocks`. **Designing a subject lesson:** belongs to `planning-subject-lessons`.
 3. Whatever the route, read `${CLAUDE_SKILL_DIR}/references/filling-the-form.md` NOW: it holds the section-by-section rules shared by every Thai core plan.
 
@@ -54,16 +56,17 @@ Follow the route reference's stage mapping. Section 7's three stages (ขั้�
 
 ## Step 4 — Check consistency with the Waldorf plans
 
-Run the route reference's consistency check on every plan you wrote, against the plans it was written from. Never edit a Waldorf plan to make it agree, and never copy a problem into the Thai core plan: report each disagreement or rule break in the reply in plain words (which day, which part, what differs), say which way the Thai core plan follows, and offer to fix the Waldorf plan through `planning-main-lesson-blocks`.
+Run the route reference's consistency check on every plan you wrote, against the plans it was written from. Never edit a Waldorf plan to make it agree, and never copy a problem into the Thai core plan: report each disagreement or rule break in the reply in plain words (which day, which part, what differs), say which way the Thai core plan follows, and offer to fix the Waldorf plan through `planning-main-lesson-blocks` (a subject lesson's unit or cycle plan through `planning-subject-lessons`).
 
 ## Checklist before replying
 
 Run this against the files you wrote, and fix any miss before replying:
 
-- [ ] Exactly the plans asked for, one per main-lesson day, at the `Thai core plans` location; the course's own form if it has one, otherwise the plugin's, headings and labels kept.
+- [ ] Exactly the plans asked for, one per main-lesson day or one per 5E cycle, at the `Thai core plans` location; the course's own form if it has one, otherwise the plugin's, headings and labels kept.
 - [ ] Each stage lists what the source plan does there, in its order and with its times; nothing invented, nothing moved.
-- [ ] ขั้นสรุป never explains, discusses or analyses that day's new experience; it closes and says what tomorrow's recall picks up.
-- [ ] Recall in ขั้นนำ is open questions; a quiz or closed check in the day plan is reported, never scored.
+- [ ] Main-lesson days: ขั้นสรุป never explains, discusses or analyses that day's new experience; it closes and says what tomorrow's recall picks up.
+- [ ] Main-lesson days: recall in ขั้นนำ is open questions; a quiz or closed check in the day plan is reported, never scored.
+- [ ] 5E cycles: stages follow the cycle plan's mapping, each step labelled with its phase and session; time is the sum of the cycle's sessions; retrieval practice and exit slips unscored.
 - [ ] Indicator codes and Thai wording are verbatim; every sequencing difference is cited as written with a grade-mode reason.
 - [ ] K, P and A objectives each come from the indicators and the day's work; P uses official skill names, A uses the 8 คุณลักษณะอันพึงประสงค์ or official scientific-attitude names; every objective has a measurement row and a rubric.
 - [ ] Rubrics describe this lesson's tasks, not the form's maths example.
