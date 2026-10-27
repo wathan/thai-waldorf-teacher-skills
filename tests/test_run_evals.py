@@ -47,6 +47,12 @@ if "--plugin-dir" in args:
     for e in events:
         print(json.dumps(e))
 else:
+    calls = Path("grader-calls")
+    n = int(calls.read_text()) + 1 if calls.exists() else 1
+    calls.write_text(str(n))
+    if n <= int(os.environ.get("FAKE_GRADER_BAD", "0")):
+        print(json.dumps({{"type": "result", "result": "Sorry, here is my verdict: {{passed"}}))
+        sys.exit(0)
     ok = (not os.environ.get("FAKE_GRADE_FAIL")
           and "FAKE-OUTPUT-MARKER" in prompt and "FAKE-REPLY-MARKER" in prompt
           and (not os.environ.get("FAKE_WRITE_OUTSIDE") or "OUTSIDE-MARKER" in prompt))
@@ -163,6 +169,29 @@ class RunEvalsTest(unittest.TestCase):
         os.environ["FAKE_GRADE_FAIL"] = "1"
         self.assertEqual(self.run_runner(), 1)
         self.assertGreater(self.grading()["summary"]["failed"], 0)
+
+    def grader_calls(self) -> int:
+        return int(next(self.out.rglob("eval-1/grader-calls")).read_text())
+
+    def test_invalid_grader_json_is_retried_once(self):
+        os.environ["FAKE_GRADER_BAD"] = "1"
+        self.assertEqual(self.run_runner(), 0)
+        self.assertEqual(self.grader_calls(), 2)
+        self.assertEqual(self.grading()["summary"]["failed"], 0)
+
+    def test_grader_invalid_twice_is_reported_not_graded(self):
+        os.environ["FAKE_GRADER_BAD"] = "2"
+        # A grader failure is a run error, not a skill failure.
+        self.assertEqual(self.run_runner(), 2)
+        self.assertEqual(self.grader_calls(), 2)
+        grading = self.grading()
+        self.assertEqual(grading["summary"]["not_graded"], 1)
+        ungraded = [e for e in grading["expectations"]
+                    if e["text"] == "The reply gives the walkthrough"]
+        self.assertEqual(ungraded[0]["passed"], None)
+        self.assertIn("not graded", ungraded[0]["evidence"])
+        # The deterministic skill-invoked check is still graded.
+        self.assertEqual(grading["summary"]["passed"], 1)
 
     def test_skill_not_invoked_fails_the_case(self):
         os.environ["FAKE_NO_SKILL"] = "1"
