@@ -75,7 +75,7 @@ Read `${CLAUDE_SKILL_DIR}/references/two-day-rhythm.md` NOW and follow it for ev
 3. **What goes in.**
    - Block plan: a short *Storyline design* section above the form (anchoring phenomenon and who chose it, driving question and its authorship, target ideas, prerequisite ideas, the units in order each marked fixed, how the driving question board is used, grade mode, learning intentions, Thai indicators verbatim), then the form with one row per week.
    - Week plans: the form with one row per teaching day, each day's Main Lesson cell naming its rhythm parts in order (e.g. `Recall + concept formation (yesterday's …) · Reflection · Practice · New experience: … · Close`) and its Differentiation cell holding that session's UDL options.
-4. **Language.** English by default, with Thai official terms (indicators, ปีการศึกษา, form labels) verbatim; student-facing wording (recall questions, prompts) in the class profile's language of student materials. Keep each form's bilingual labels.
+4. **Language.** Thai by default (English when the teacher asks), with Thai official terms (indicators, ปีการศึกษา, form labels) verbatim; student-facing wording (recall questions, prompts) in the class profile's language of student materials. Keep each form's bilingual labels.
 
 Day plans and Thai core plans are not written in this step.
 

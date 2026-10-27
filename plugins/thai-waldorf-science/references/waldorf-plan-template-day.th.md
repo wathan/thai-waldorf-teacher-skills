@@ -5,7 +5,7 @@
 > **What this is:** Bottom level of the Waldorf planning chain: one main-lesson day, timed segment by segment. Its parent is a day row of `waldorf-plan-template-week.th.md`.
 >
 > **Agent use:**
-> - Keep the bilingual labels. Write cell content in English by default, with Thai official terms (indicator codes and wording, skill and attitude names) verbatim; in Thai when the teacher asks. Student-facing wording follows the class profile's language of student materials.
+> - Keep the bilingual labels. Write cell content in Thai by default, with Thai official terms (indicator codes and wording, skill and attitude names) verbatim; in English when the teacher asks. Student-facing wording follows the class profile's language of student materials.
 > - **Weekly Objectives** and **Key Skills** copy the parent weekly plan. Each segment's **Objective** must serve one of them.
 > - **Time:** clock times or minutes per segment. The total is ~90–100 min (Rawson P7).
 > - **Aspect of ML** rows are the form's default sequence. Meaning, from `rawson2021-generative-principles-upper-school.md` §2.4–2.5:
