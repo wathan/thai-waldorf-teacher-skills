@@ -1,0 +1,15 @@
+{
+  "name": "thai-waldorf-teacher-skills",
+  "description": "Planning and teaching skills for science in a Thai Waldorf upper school (G9–G12 / ม.3–ม.6).",
+  "owner": {
+    "name": "wathan"
+  },
+  "plugins": [
+    {
+      "name": "thai-waldorf-science",
+      "source": "./plugins/thai-waldorf-science",
+      "description": "Design and document main lesson blocks and subject lessons against Thai indicators, the Waldorf upper-school curriculum and PISA-adapted competencies.",
+      "category": "education"
+    }
+  ]
+}
