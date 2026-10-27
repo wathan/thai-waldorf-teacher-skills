@@ -78,7 +78,7 @@ Read `${CLAUDE_PLUGIN_ROOT}/references/year-plan.md` NOW for the year plan's for
 
 ## Step 7 — Write the year coverage report
 
-The report sits beside the course's standards map: in the same folder as the `standards map` location (or that folder itself, if the location is a folder), as `year-coverage.md`. With no standards map row, place the standards map first as in Step 3 (propose, confirm, record the row), then write the report beside where the map will go; do not write the map itself unless asked. Update an existing report for the same school year in place. Follow the template in the year coverage reference, then check before replying:
+The report sits beside the course's standards map: in the same folder as the `standards map` location (or that folder itself, if the location is a folder), as `year-coverage.md`. With no standards map row, place the standards map first as in Step 3 (propose, confirm, record the row), then write the report beside where the map will go; do not write the map itself unless asked. Update an existing report for the same school year in place. Write the report file directly, copying each code and its wording from the crosswalk rows you read; it needs no scripts or commands, even when the missing lists are long. Follow the template in the year coverage reference, then check before replying:
 
 - [ ] Covered indicators shown per grade and per term; missing per grade; duplicates name every sequence.
 - [ ] Every indicator: official code and Thai wording copied character for character from the crosswalk; year plan glosses never replace it.
