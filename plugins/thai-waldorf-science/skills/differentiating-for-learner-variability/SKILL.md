@@ -82,7 +82,10 @@ Run this against what you wrote and fix any miss:
 - [ ] Language supports are in the profile's language of student materials and include vocabulary tiers and sentence frames.
 - [ ] Shared content is written once.
 - [ ] The teacher's plan, class profile and README are unchanged (except a confirmed layout row).
+- [ ] The reply has no file paths and no student names; without a class profile it suggests setting one up.
 
 ## Reply
 
-A few sentences in teacher terms: what was written and where (or the plan in chat), the main barriers found, the one or two highest-impact design changes, any assumption, a line that names were left out (when the teacher gave any), and where specialist support is the honest next step.
+A few sentences in teacher terms: what was written and where (or the plan in chat), the main barriers found, the one or two highest-impact design changes, any assumption, a line that names were left out (when the teacher gave any), and where specialist support is the honest next step. Without a class profile, end by suggesting `setting-up-class-profiles` so next time the needs and language are already known.
+
+Say where in plain words ("in your design folder, as the week 2 differentiation plan"), never as a file path or folder path in backticks. Do not repeat the students' names or identifying details in the reply either; refer to "the students you mentioned".
