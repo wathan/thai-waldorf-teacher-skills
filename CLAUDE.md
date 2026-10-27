@@ -15,7 +15,7 @@ Single-context: root `GLOSSARY.md` + `docs/adr/`. See `docs/agents/domain.md`.
 ## Repo layout
 
 - Plugin `thai-waldorf-science` lives in `plugins/thai-waldorf-science/` (skills in `skills/<name>/`, shared corpus in `references/`); marketplace at `.claude-plugin/marketplace.json`. Only that folder ships.
-- Repo-only: `sources/` (PDFs, school forms), `archive/`, `evals/`, `scripts/`, `tests/`, `docs/`, `UPSTREAM.md`. Keep repo-root `LICENSE`/`NOTICE` and the plugin copies identical.
+- Repo-only: `sources/` (PDFs, school forms), `.claude/skills/` (repo-only skills such as check-upstream), `archive/`, `evals/`, `scripts/`, `tests/`, `docs/`, `UPSTREAM.md`. Keep repo-root `LICENSE`/`NOTICE` and the plugin copies identical.
 - Every new skill needs a `## <skill-name>` entry in `UPSTREAM.md` and `evals/<skill>/evals.json` (see `evals/README.md`).
 
 ## Checks
