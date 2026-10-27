@@ -5,7 +5,9 @@ description: >
   science class (G9–G12 / ม.3–ม.6): grade mode, learning intentions and Thai
   indicators from the curriculum crosswalk, candidate anchoring phenomena for
   the teacher to choose, a driving question with its authorship stated, target
-  and prerequisite ideas, units in a fixed sequence, the two-day rhythm (after
+  and prerequisite ideas, units in a fixed sequence (or, on request, an
+  anticipated route of fixed and interchangeable units chosen through the
+  driving question board), the two-day rhythm (after
   Zech) with storyline routines fitted to it, and light universal UDL options.
   Writes the Waldorf block plan and week plans into the course folder. Use when
   the teacher asks to plan, design, draft or rework a main lesson block (e.g. a
@@ -27,7 +29,7 @@ Talk as a colleague in plain teacher language: "your design folder", "the block 
 1. Read `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md` and `${CLAUDE_PLUGIN_ROOT}/references/class-profile.md` NOW. Follow both for every file you read or write.
 2. Decide what is asked:
    - **Block plan and week plans** (the default, also for "plan my block"): Steps 1–6 below, as a **fixed sequence** of units.
-   - **Anticipated route** (interchangeable units arranged as the driving question board directs): not available in this version. Say so in one sentence, offer the fixed sequence, and keep the driving question board in it.
+   - **Anticipated route** (only when the teacher asks for it: interchangeable units arranged as the driving question board directs): read `${CLAUDE_SKILL_DIR}/references/anticipated-route.md` NOW. Steps 1–6 still apply; that reference replaces their fixed-order parts and says which week plans to write now. When the teacher reports the board's choice of the next unit, follow its rolling generation instead of planning the block again.
    - **Day plans, the whole-block document set, or Rawson's four-day cycle:** not available in this version. Say so in one sentence and offer the block plan and week plans first (they are the first step in any case).
    - **Thai core plans:** belong to `writing-thai-core-plans`, after the block plan exists.
    - **A subject lesson:** belongs to `planning-subject-lessons`.
@@ -83,7 +85,7 @@ Run this against the files you wrote, and fix any miss before replying:
 - [ ] The anchoring phenomenon is the teacher's choice, and the plan says so.
 - [ ] The driving question's authorship is stated.
 - [ ] Target ideas and prerequisite ideas are listed separately.
-- [ ] Units run in a fixed order, each marked fixed; the driving question board frames ideas, not order.
+- [ ] Units run in a fixed order, each marked fixed; the driving question board frames ideas, not order. (Anticipated route: that reference's checklist instead.)
 - [ ] Thai indicator codes and wording are verbatim; frameworks are not merged.
 - [ ] Day 1 links to the previous block in this subject; every later day opens with Recall of yesterday's experience flowing into concept formation.
 - [ ] Recall is open questions, never a quiz or a test.
