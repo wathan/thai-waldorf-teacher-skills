@@ -1,0 +1,55 @@
+{
+  "skill_name": "preparing-to-teach",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I teach Monday of week 2 of my meteorology block tomorrow. Can you prepare me for it?",
+      "expected_output": "A short preparation note for week 2, day 6 in 30-delivery/prep/, built from the day plan: timings per part summing to 100 minutes; anticipated student responses and misconceptions for the Recall and concept formation on Friday's wind data, each paired with an open dialogic follow-up move that does not hand over the answer; for the cloud chamber and bottle pump (today's new experience) only moves that keep students observing and wondering, with no explaining; an equipment and setup list; risk notes for the warm water, matches and the pressurised bottle. The day plan and other files are unchanged; no student names.",
+      "files": ["fixtures/week-2-ready"],
+      "expectations": [
+        "Exactly one new preparation note exists inside 30-delivery/prep/, and it is for week 2, day 6 (Monday)",
+        "The note gives a time for each part of the session, matching the day plan's timings (10, 45, 25 and 20 minutes, 100 in all)",
+        "The note lists anticipated student responses or misconceptions about Friday's wind data and the April and July winds (for example that wind blows from where it is hot, or from the sea because the sea is cold)",
+        "Each anticipated response is paired with at least one dialogic follow-up move worded as the teacher would say it (such as revoicing, pressing for reasoning or evidence, inviting others to agree, disagree or add on)",
+        "No follow-up move evaluates the response ('good', 'not quite') or tells students the target idea; the moves keep the explanation with the students",
+        "For the cloud chamber and bottle pump (that day's new experience) the note offers no moves that explain or analyse it; any guidance there keeps students observing, drawing and wondering, with the discussion left for tomorrow's Recall",
+        "The note has an equipment and setup section naming the glass jar, warm water, matches, ice, the PET bottle with the bottle pump and the wind roses or map for Recall and Practice",
+        "The note has risk notes for the demonstration covering at least the warm water (scalds or spills), the matches or smoke, and the pressurised bottle (over-pumping, cap or bottle giving way, eye protection or distance)",
+        "The note is short enough to read the evening before: no more than about 600 words",
+        "The day plans, week plans, block plan, README.md and the class profile are unchanged",
+        "No student names appear anywhere",
+        "The reply is in plain teacher language with no file paths or tool names"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Please get me ready for Tuesday of week 2. Put the prep notes wherever you think best in my folder, I accept your suggestion.",
+      "expected_output": "With no preparation-notes row in the Plugin layout, the skill places notes in the existing delivery area (30-delivery/), records a 'preparation notes' row in the README's Plugin layout section and writes the week 2, day 7 note there. The note anticipates responses and misconceptions about yesterday's cloud chamber (cloud is smoke or steam, vapour is visible, water leaked through) with open dialogic moves, gives timings, equipment and setup, and risk notes for the fan near water. It warns that the day plan has students discuss why the pepper moves and fill in a worksheet on the same day as the fan-and-tray demo, proposes moving that to Wednesday's Recall and concept formation, and does not change the day plan.",
+      "files": ["fixtures/no-prep-location"],
+      "expectations": [
+        "README.md's Plugin layout section now has a 'preparation notes' row pointing to a location inside 30-delivery/, every earlier row is unchanged, and there is still only one Plugin layout section",
+        "Exactly one new preparation note for week 2, day 7 (Tuesday) exists at the location the new row gives",
+        "The note anticipates student responses or misconceptions about yesterday's cloud chamber (for example that the cloud is smoke or steam, that water vapour is visible, or that the water came through the glass from the ice) and pairs each with an open dialogic follow-up move",
+        "No follow-up move tells students the answer or evaluates a response as right or wrong",
+        "The note gives timings for the parts of the session and an equipment and setup list (tray, fan, pepper, towels, the photos or drawings from yesterday)",
+        "The note's risk notes cover using an electric fan next to a tray of water (keep the cable and plug away from the water, dry hands, wipe spills)",
+        "The reply or the note warns that discussing why the pepper moves and the worksheet on the same day as the fan-and-tray demo analyses that day's new experience, and proposes moving the discussion and worksheet to Wednesday's Recall and concept formation",
+        "The day plan for week 2, day 7 is unchanged (the skill offers a fix but does not edit it)",
+        "No student names appear anywhere"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Prepare me for Monday of week 3, please.",
+      "expected_output": "There is no day plan for week 3, day 11 (and no week 3 plan). The skill does not prepare from a guess: it says plainly that the session has no plan yet, offers to have the day plan written first (planning the block's day plans) or to work from what the teacher tells it about the session, and writes no preparation note.",
+      "files": ["fixtures/week-2-ready"],
+      "expectations": [
+        "The reply says plainly that there is no plan yet for Monday of week 3",
+        "The reply offers a way forward: writing the day plan first, or the teacher describing the session",
+        "No preparation note or other new file was written anywhere in the course folder",
+        "The reply does not invent the session's content as if it were planned (no anticipated responses, risk notes or equipment list for an imagined session)",
+        "The reply is in plain teacher language with no file paths or tool names"
+      ]
+    }
+  ]
+}
