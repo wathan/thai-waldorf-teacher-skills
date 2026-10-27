@@ -11,7 +11,7 @@ The shape of the day-before note, and how to fill its timings, equipment and set
 
 ## Shape
 
-Walk the session's own parts in teaching order, each part's name and time as a heading, every finding under the part it belongs to. Leave out a part with nothing to prepare (e.g. Maths/Literacy marked `—`). Keep to about 300–500 words.
+Walk the session's own parts in teaching order, each part's name and time as a heading, every finding under the part it belongs to. Leave out a part with nothing to prepare (e.g. Maths/Literacy marked `—`). Keep to at most 500 words.
 
 ```markdown
 # Preparation: Week 1, day 3 (Wed), ecology

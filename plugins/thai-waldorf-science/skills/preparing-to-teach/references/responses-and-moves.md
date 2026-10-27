@@ -21,7 +21,7 @@ Work from the plan, not from a generic topic list:
 - **Students' own questions** on the driving question board record; the session may be where some of them come back.
 - **Learner variability:** students learning in an additional language may give a correct idea in few or everyday words; plan a move that takes the idea seriously before the wording.
 
-For each part with talk in it, give two to four anticipated responses: at least one partly right, one misconception, and, at Recall, one "I don't remember" or a bare description.
+For each part with talk in it, give two or three anticipated responses: at least one partly right, one misconception, and, at Recall, one "I don't remember" or a bare description.
 
 ## The moves
 
@@ -58,7 +58,7 @@ Give each move as the teacher would say it, one or two sentences, and where usef
 
 ## Rules
 
-- No move evaluates ("Good", "Not quite", "Exactly").
+- No move evaluates ("Good", "Not quite", "Exactly"), openly or by confirming: revoice as the student's idea ("So you think the light made it grow?"), never as the teacher's agreement ("So the light matters.").
 - No move tells students the target idea or a predetermined concept, and no leading question that has only one acceptable answer.
 - Recall is never a quiz: no closed questions with one right answer.
 - At least one quieter channel per discussion part (write first, pairs, sketch) for students less sure in talk or in the language of instruction.

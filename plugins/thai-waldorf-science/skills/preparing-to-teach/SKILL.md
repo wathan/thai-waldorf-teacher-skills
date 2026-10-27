@@ -50,7 +50,7 @@ The note follows the plan as it stands; where same-day analysis is planned, the 
 Read `${CLAUDE_SKILL_DIR}/references/responses-and-moves.md` and `${CLAUDE_SKILL_DIR}/references/prep-note.md` NOW and follow them: the first for anticipated responses and their dialogic moves, the second for the note's shape, timings, equipment and setup, and risk notes.
 
 1. **Where.** Use the layout's `preparation notes` row. A folder location gets one file per session, named by week and day (`week-2-day-6-prep.md`; a subject lesson by its session, `session-4-prep.md`); a file location holds one section per session in order. If a note for that session already exists, update it in place and keep the teacher's own additions. With no `preparation notes` row, run course-layout Steps 2–4 for this concept only (usual area: delivery, beside the driving question board record if there is one) and write only after the teacher confirms (or has said up front they accept your proposal).
-2. **Short.** One page, about 300–500 words, never more than about 600: bullets and short tables, no prose paragraphs, nothing copied from the plan that the teacher does not need in the moment.
+2. **Short.** One page: at most 500 words, counted before you finish. Bullets and short tables, no prose paragraphs; at most three anticipated responses per part, one line per risk, one quieter-channel line per discussion part; nothing copied from the plan that the teacher does not need in the moment. Cut before adding.
 3. **Language.** English by default, Thai official terms verbatim. What the teacher will say to students (the moves) in the class profile's language of student materials.
 4. **Only this session.** Never write notes for sessions nobody asked for, and never write or change plans.
 
@@ -65,10 +65,10 @@ Run this against the note you wrote, and fix any miss before replying:
 - [ ] The day's new experience gets only noticing and wondering moves, never explaining.
 - [ ] Equipment and setup list everything the plan's Preparation cells need, plus what Recall needs from yesterday.
 - [ ] Every demonstration or experiment has risk notes: hazard, control, and what to do if it fails.
-- [ ] About 300–500 words, never more than about 600.
+- [ ] At most 500 words (count them).
 - [ ] No student names or identifying details.
 - [ ] The note sits where the layout says; no plan was changed; nothing renamed, moved or deleted.
 
 ## Reply
 
-A few sentences: which session the note is for and where it is in teacher terms, the one thing most worth rehearsing (usually the key Recall question or the riskiest step of a demonstration), and any Step 2 findings with their proposed fixes. Offer to adjust the note.
+A few sentences: which session the note is for and where it is in teacher terms ("in your delivery folder"; never a file name or path), the one thing most worth rehearsing (usually the key Recall question or the riskiest step of a demonstration), and any Step 2 findings with their proposed fixes. Offer to adjust the note.
