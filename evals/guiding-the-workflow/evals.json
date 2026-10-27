@@ -1,0 +1,50 @@
+{
+  "skill_name": "guiding-the-workflow",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a science teacher at a Thai Waldorf school and I've just installed the thai-waldorf-science plugin. How does the whole design and teaching process work, from start to finish?",
+      "expected_output": "The fixed walkthrough of the whole process in order, without first asking questions or looking for files, ending by asking where the teacher is.",
+      "files": ["fixtures/empty"],
+      "expectations": [
+        "The reply walks through the process in this order: describe the class (setting-up-class-profiles), map the curriculum (mapping-curriculum), plan a main lesson block or a subject lesson (planning-main-lesson-blocks / planning-subject-lessons), write the Thai core plan (writing-thai-core-plans), then differentiation, formative assessment and the epistemic agency audit, and finally preparing to teach (preparing-to-teach)",
+        "The reply names all of these skills: setting-up-class-profiles, mapping-curriculum, planning-main-lesson-blocks, planning-subject-lessons, writing-thai-core-plans, differentiating-for-learner-variability, planning-formative-assessment, auditing-epistemic-agency, preparing-to-teach",
+        "The reply gives the walkthrough straight away rather than asking clarifying questions first",
+        "The reply contains no file paths, tool names or other technical jargon aimed at developers (skill names are allowed)",
+        "The reply ends by asking where the teacher currently is in the process",
+        "No files were created in the course folder"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Which skill do I use to get the แผนการจัดการเรียนรู้ my supervisor wants for each main-lesson day?",
+      "expected_output": "A direct answer naming writing-thai-core-plans, noting it needs a planned teaching sequence.",
+      "files": ["fixtures/empty"],
+      "expectations": [
+        "The reply names writing-thai-core-plans as the skill for the job",
+        "The reply says a planned teaching sequence (e.g. a main lesson block plan) is needed first, or points to planning-main-lesson-blocks for that",
+        "The reply is short and direct (a few sentences or a brief list, not the full walkthrough)",
+        "No files were created in the course folder"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Which skill does each of these jobs? (a) describe my G10 class and its timetable; (b) explain how the whole process fits together; (c) check which Thai indicators my block covers; (d) plan a three-week meteorology main lesson block; (e) plan my weekly Science Practice lessons; (f) write the Thai core plan for supervisors; (g) adapt a plan for students with learning differences and EAL; (h) plan hinge questions and student self-assessment; (i) check whether my plan leaves any decisions to the students; (j) get ready to teach tomorrow's experiment.",
+      "expected_output": "One skill per job: (a) setting-up-class-profiles, (b) guiding-the-workflow, (c) mapping-curriculum, (d) planning-main-lesson-blocks, (e) planning-subject-lessons, (f) writing-thai-core-plans, (g) differentiating-for-learner-variability, (h) planning-formative-assessment, (i) auditing-epistemic-agency, (j) preparing-to-teach.",
+      "files": ["fixtures/empty"],
+      "expectations": [
+        "(a) is answered with setting-up-class-profiles",
+        "(b) is answered with guiding-the-workflow",
+        "(c) is answered with mapping-curriculum",
+        "(d) is answered with planning-main-lesson-blocks",
+        "(e) is answered with planning-subject-lessons",
+        "(f) is answered with writing-thai-core-plans",
+        "(g) is answered with differentiating-for-learner-variability",
+        "(h) is answered with planning-formative-assessment",
+        "(i) is answered with auditing-epistemic-agency",
+        "(j) is answered with preparing-to-teach",
+        "No files were created in the course folder"
+      ]
+    }
+  ]
+}
