@@ -46,4 +46,4 @@ Give the report in this order, keeping every skill, path, commit and file name e
 3. **Up to date:** every skill and source with no change since its recorded commit.
 4. **No upstream sources:** the skills that draw on none.
 
-Close by saying nothing was changed, and that after reviewing a path by hand the maintainer updates its commit in `UPSTREAM.md`.
+Close by saying plainly that no skill and not `UPSTREAM.md` were changed, that merging is left to the maintainer, and that after reviewing a path by hand they update its commit in `UPSTREAM.md`.

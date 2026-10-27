@@ -223,8 +223,9 @@ def check(record: Record, upstream) -> tuple:
         out.append("")
     if record.no_sources:
         out += ["## No upstream sources", "", "- " + ", ".join(record.no_sources), ""]
-    out.append("Nothing was changed. Merge by hand, then update the commit in UPSTREAM.md "
-               "for each path you reviewed.")
+    out.append("Nothing was changed: no skill and not UPSTREAM.md. Merging stays manual: "
+               "review the changed files, merge what you want by hand, then update the "
+               "commit in UPSTREAM.md for each path you reviewed.")
     return "\n".join(out) + "\n", 1 if (changed or problems) else 0
 
 
