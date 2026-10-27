@@ -179,7 +179,7 @@ class RunEvalsTest(unittest.TestCase):
         self.assertTrue((plugin / "skills/doing-things/scripts/tool.py").is_file())
         manifest = json.loads((plugin / ".claude-plugin/plugin.json").read_text())
         self.assertTrue(manifest["name"])
-        seen = next(self.out.rglob("eval-1/course/seen-files.txt")).read_text().split("\n")
+        seen = next(self.out.rglob("eval-1/teacher/course/seen-files.txt")).read_text().split("\n")
         self.assertNotIn("skills", seen)
 
     def test_unknown_skill_is_a_run_error(self):
