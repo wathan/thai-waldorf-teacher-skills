@@ -13,7 +13,7 @@ How to tell the teacher where they are in the design and teaching process, and w
 
 1. List the course folder, three levels deep, skipping hidden entries. Never read meaning into the folder's own name or mention it.
 2. **Nothing there** (empty, or only hidden files): stop here and give the fixed walkthrough (`walkthrough.md`). That is the fallback whenever there is no course to read.
-3. Read the top-level README's `## Plugin layout` table if there is one (see `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md`, Step 1). Its rows say where each concept lives; use them as written.
+3. Read the top-level README's `## Plugin layout` table if there is one (course-layout Step 1, read in Step 0). Its rows say where each concept lives; use them as written.
 4. **No layout table:** recognise files by the name and content cues in course-layout's Step 2 and by the file names the skills write (Step 2 below). Do not propose or record a layout here; the skill that next writes a file does that.
 
 ## Step 2: find each piece of work

@@ -1,6 +1,6 @@
 # Filling the Thai core plan form
 
-Section-by-section rules for every Thai core plan, whatever the teaching sequence. Section numbers follow the plugin's form, `${CLAUDE_PLUGIN_ROOT}/references/thai-core-plan-template.th.md`; with a course's own form, apply each rule to the matching place in it and skip rules with no place.
+Section-by-section rules for every Thai core plan, whatever the teaching sequence. Every file named here is one SKILL.md Step 0 has already had you read. Section numbers follow the plugin's form, `${CLAUDE_PLUGIN_ROOT}/references/thai-core-plan-template.th.md`; with a course's own form, apply each rule to the matching place in it and skip rules with no place.
 
 ## Contents
 

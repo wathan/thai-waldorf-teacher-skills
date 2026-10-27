@@ -33,6 +33,12 @@ Talk as a colleague in plain teacher language: "your Thai plans folder", "the sc
    - **Subject lessons** (one Thai core plan per 5E cycle of a unit; never per session, and no Waldorf plans): read `${CLAUDE_SKILL_DIR}/references/5e-cycles.md` NOW; it replaces main-lesson-days.md's sources, stage mapping and consistency check in Steps 2 and 4, and where this file says Waldorf plans, read the unit plan and cycle plans.
    - **Planning the block, its week plans or day plans:** belongs to `planning-main-lesson-blocks`. **Designing a subject lesson:** belongs to `planning-subject-lessons`.
 3. Whatever the route, read `${CLAUDE_SKILL_DIR}/references/filling-the-form.md` NOW: it holds the section-by-section rules shared by every Thai core plan.
+4. Read these shared references NOW too; filling-the-form.md says what each section takes from them:
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-core-plan-template.th.md`: the plugin's form (used when the course has no form of its own) and its Section 7 stage mapping.
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-science-core-indicators-2560.md` (and, for a ม.4–6 elective, `${CLAUDE_PLUGIN_ROOT}/references/thai-science-supplementary-learning-outcomes-2560.md`): indicators, character for character.
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-science-glossary-2560.md`: indicator verbs, for the K objectives.
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-science-key-skills-2560.md` and `${CLAUDE_PLUGIN_ROOT}/references/thai-science-scientific-mind-2560.md`: official skill and attitude names, for the P and A objectives.
+   - `${CLAUDE_PLUGIN_ROOT}/references/thai-science-indicator-analysis-examples-2560.md`: IPST's own unpacking, the style to match.
 
 ## Step 1 — Context, at most three questions
 

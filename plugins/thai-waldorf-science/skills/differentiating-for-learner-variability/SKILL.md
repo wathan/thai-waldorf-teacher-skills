@@ -28,7 +28,7 @@ Talk as a colleague in plain teacher language ("your week 2 plan", "your design 
 ## Step 0 — Route (silent)
 
 1. Read `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md` and `${CLAUDE_PLUGIN_ROOT}/references/class-profile.md` NOW. Follow both for every file you read or write.
-2. Read `${CLAUDE_SKILL_DIR}/references/udl-design.md` NOW, and `${CLAUDE_SKILL_DIR}/references/language-supports.md` before Step 5.
+2. Read `${CLAUDE_SKILL_DIR}/references/udl-design.md` NOW, and `${CLAUDE_SKILL_DIR}/references/language-supports.md` with `${CLAUDE_PLUGIN_ROOT}/references/thai-science-glossary-2560.md` (official indicator verbs for language supports) before Step 5.
 3. Decide what is asked:
    - **Adapt an existing plan** (block plan, week plan, day plan, subject lesson session, or a session the teacher describes in the request): Steps 1–7.
    - **No plan yet:** a main lesson block is planned by `planning-main-lesson-blocks`, a subject lesson by `planning-subject-lessons`. Say so in one sentence; differentiation follows once a plan exists.

@@ -20,7 +20,7 @@ Read the class profile's language of instruction and language of student materia
 | Student materials in English | English academic register. For students learning in English as an additional language, add the Thai term (or the home language, as the teacher can provide) beside each key word. |
 | Bilingual | Both, side by side, Thai official terms first. |
 
-Thai scientific terms follow the official wording: read `${CLAUDE_PLUGIN_ROOT}/references/thai-science-glossary-2560.md` for indicator verbs (บรรยาย describe, อธิบาย explain with reasons and evidence, อภิปราย discuss) and use the indicator's own terms. Never name a student's home language unless the profile or teacher does.
+Thai scientific terms follow the official wording: take indicator verbs from the Thai science glossary read in Step 0 (บรรยาย describe, อธิบาย explain with reasons and evidence, อภิปราย discuss) and use the indicator's own terms. Never name a student's home language unless the profile or teacher does.
 
 ## Language demands
 
