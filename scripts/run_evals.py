@@ -17,12 +17,13 @@ directory of a `claude -p` run with the plugin loaded via --plugin-dir. A
 skill not in the plugin is looked up in --repo-skills-dir (.claude/skills,
 repo-only) and loaded through a throwaway wrapper plugin. An optional
 top-level "allowed_tools" list adds executor tools (e.g. "Bash") for that
-skill's cases. A
-second `claude -p` call grades the reply and the files left in the course
-folder against the expectations. The runner adds one deterministic
+skill's cases. The course folder sits in an otherwise empty teacher folder
+that the run may also write to (a year plan lives outside the course). A
+second `claude -p` call grades the reply and the files left in both folders
+against the expectations. The runner adds one deterministic
 expectation: the skill under test was invoked.
 
-Per case it writes <out>/<skill>/<timestamp>/eval-<id>/ with course/,
+Per case it writes <out>/<skill>/<timestamp>/eval-<id>/ with teacher/course/,
 transcript.jsonl, final_message.md and grading.json (skill-creator grader
 schema: expectations[{text, passed, evidence}] and summary). Exit status:
 0 all expectations passed, 1 some failed, 2 invalid case file or run error.
@@ -110,6 +111,7 @@ def run_executor(args, case: dict, course: Path, run_dir: Path) -> list:
     cmd = [
         args.claude, "-p", case["prompt"],
         "--plugin-dir", str(Path(args.skill_plugin_dir).resolve()),
+        "--add-dir", str(course.parent.resolve()),
         "--output-format", "stream-json", "--verbose",
         "--max-turns", str(args.max_turns),
         "--allowedTools", ",".join([EXECUTOR_TOOLS, *args.extra_tools]),
@@ -152,9 +154,11 @@ def skills_invoked(events: list) -> list:
     return names
 
 
-def course_snapshot(course: Path) -> str:
+def course_snapshot(course: Path, skip: Path = None) -> str:
     parts = []
     for path in sorted(p for p in course.rglob("*") if p.is_file()):
+        if skip is not None and skip in path.parents:
+            continue
         rel = path.relative_to(course)
         try:
             text = path.read_text(encoding="utf-8")
@@ -186,6 +190,9 @@ Quote or point to the evidence for every verdict.
 ## Files in the course folder after the run
 {files}
 
+## Files outside the course folder after the run (paths relative to the folder holding the course, which is `course/`)
+{outside}
+
 Respond with only a JSON object, no prose:
 {{"expectations": [{{"text": "<expectation, verbatim>", "passed": true, "evidence": "..."}}]}}
 """
@@ -204,6 +211,8 @@ def run_grader(args, case: dict, reply: str, course: Path, run_dir: Path) -> lis
         expectations="\n".join(f"- {e}" for e in case["expectations"]),
         reply=reply or "(no reply)",
         files=course_snapshot(course),
+        outside=course_snapshot(course.parent, skip=course).replace(
+            "(the course folder is empty)", "(none)"),
     )
     cmd = [
         args.claude, "-p", prompt, "--output-format", "json", "--max-turns", "1",
@@ -248,7 +257,7 @@ def skill_expectation(skill: str, events: list) -> dict:
 
 def run_case(args, skill_evals_dir: Path, case: dict, batch_dir: Path) -> dict:
     run_dir = batch_dir / f"eval-{case['id']}"
-    course = run_dir / "course"
+    course = run_dir / "teacher" / "course"
     prepare_course(skill_evals_dir, case, course)
     events = run_executor(args, case, course, run_dir)
     reply = final_message(events)
