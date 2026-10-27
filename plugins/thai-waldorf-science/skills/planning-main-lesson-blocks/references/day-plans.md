@@ -23,7 +23,7 @@ How to write Waldorf day plans for a main lesson block on request, one day, one 
 
 - **Where.** Use the layout's `session plans` row. A folder location gets one file per day, `week-1-day-1.md`, `week-1-day-2.md`, …; a file location holds one section per day in order. If a day plan already exists there, update it in place and keep the teacher's decisions. With no `session plans` row, run course-layout Steps 2–4 for this concept only (usual area: design) and write after the teacher confirms (or has said up front they accept your proposal).
 - **Which form.** Course-layout's "Plan templates: the course's own come first" for the day plan: the course's own day form if the templates location has one (its rows and labels win), else the plugin's `${CLAUDE_PLUGIN_ROOT}/references/waldorf-plan-template-day.th.md`. Say in one line which one you used.
-- **Language.** As for the block and week plans: English by default, Thai official terms verbatim, student-facing wording (recall questions, prompts) in the class profile's language of student materials, the form's bilingual labels kept.
+- **Language.** As for the block and week plans: Thai by default (English when the teacher asks), Thai official terms verbatim, student-facing wording (recall questions, prompts) in the class profile's language of student materials, the form's bilingual labels kept.
 
 ## Filling the day form
 

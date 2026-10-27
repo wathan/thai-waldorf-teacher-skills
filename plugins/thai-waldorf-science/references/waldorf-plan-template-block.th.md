@@ -5,7 +5,7 @@
 > **What this is:** Top level of the Waldorf planning chain: one main-lesson **block** (one subject, ~3–4 weeks, ~90–100 min daily; Rawson P7), planned week by week. It breaks down into `waldorf-plan-template-week.th.md` (one per week), which breaks down into `waldorf-plan-template-day.th.md` (one per day).
 >
 > **Agent use:**
-> - Keep the bilingual labels. Write cell content in English by default, with Thai official terms (indicator codes and wording, skill and attitude names) verbatim; in Thai when the teacher asks. Student-facing wording follows the class profile's language of student materials.
+> - Keep the bilingual labels. Write cell content in Thai by default, with Thai official terms (indicator codes and wording, skill and attitude names) verbatim; in English when the teacher asks. Student-facing wording follows the class profile's language of student materials.
 > - **Block Aims:** trace to ≥1 domain and ≥1 potentiality in `waldorf-education-goals.md`, phrased in the grade mode from `waldorf-upper-school-macro-curriculum.md`.
 > - **Block Objectives and Assessable outcomes:** for science, draw on the grade's Sx.n / Ex.n in `waldorf-pisa-competencies-g9-g12.md`. Add the matching Thai indicator codes (`thai-science-core-indicators-2560.md`) in brackets when a Thai plan (`thai-core-plan-template.th.md`) will be produced. Each outcome states *how* learning is evidenced.
 > - **One row per week.** The form has 3 rows. Add a `สัปดาห์ที่ 4` row for a 4-week block.
