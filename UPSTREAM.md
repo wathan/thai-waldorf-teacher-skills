@@ -72,6 +72,8 @@ No upstream sources: written fresh from spec #1 and the plugin's own skill set. 
 | gareth | skills/explicit-instruction/practice-problem-sequence-designer | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (graded practice) | proposed |
 | gareth | skills/memory-learning-science/retrieval-practice-generator | 99984f00b6cdbb1c4fc64fcf0463d73896b1cd0a | content (short sessions) | proposed |
 
+Built in #11 (5E design, explicit instruction, graded practice, retrieval practice); the storyline option reuses this plugin's `planning-main-lesson-blocks` storyline design. The gareth paths were not re-read when building (no access from the build session), so they stay `proposed` at their recorded commits until the maintainer reviews them.
+
 ## writing-thai-core-plans
 
 | Repo | Path | Commit last reviewed | Role | Status |
