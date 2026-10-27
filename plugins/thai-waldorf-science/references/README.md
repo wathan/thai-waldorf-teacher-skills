@@ -12,6 +12,7 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 | Meso: source | `pisa-science-2025.md` | Age-15 PISA wording (OECD EN + IPST official TH) and lineage; never plan from this directly |
 | Meso: statutory (TH) | `thai-science-core-indicators-2560.md` | Official indicators and core content, P.1–M.6 (`ว x.x ชั้น/ข้อ`) |
 | Meso: statutory (TH) | `thai-science-supplementary-learning-outcomes-2560.md` | ม.4–6 science-track electives (biology, chemistry, physics, earth–astronomy–space) |
+| Meso: crosswalk | `curriculum-crosswalk.md` | Relating Thai indicators (ม.3–ม.6), Waldorf grade modes and PISA-adapted competencies side by side, with gaps explicit; *generated* from the indicators, glossary, macro and competency files |
 | Meso: vocabulary (TH) | `thai-science-glossary-2560.md` | Official meaning of indicator verbs (อธิบาย vs บรรยาย…) |
 | Meso: vocabulary (TH) | `thai-science-key-skills-2560.md` | Official Thai skill names: process skills, engineering design, computational thinking, 21st-century |
 | Meso: vocabulary (TH) | `thai-science-scientific-mind-2560.md` | Official Thai scientific-attitude names (9 + attitudes towards science) |
@@ -24,7 +25,7 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 **Default chain for generating a G9–G12 science block:**
 1. **Grade mode:** read the macro file.
 2. **Intentions:** pick a subset of the grade's PISA-adapted Sx.n.
-3. **Statutory anchors:** find the matching Thai indicators. Interpret their verbs via the glossary.
+3. **Statutory anchors:** find the matching Thai indicators in the crosswalk. Interpret their verbs via the glossary.
 4. **Justification:** state the domain(s) and potentialities they serve (goals file, §5 template).
 5. **Design:** apply the Rawson principles and run the §5 checklist.
 6. **Document:** when a Thai-facing write-up is needed, use the IPST three-column format with official skill and attitude names.
