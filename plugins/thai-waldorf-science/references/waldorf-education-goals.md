@@ -13,6 +13,15 @@
 
 ---
 
+## Contents
+
+- 1. The founding aim
+- 2. Three domains of purpose (Biesta, adopted by Bransby & Rawson)
+- 3. The twelve potentialities: what is developed
+- 4. The intended graduate (end of grade 12, ~age 18)
+- 5. Where the goals sit in the curriculum
+- 6. Glossary
+
 ## 1. The founding aim
 
 > “The question should not be: What does a human being need to know and be able to do for the social order that now exists? but rather: What capacities are latent in this human being, and what lies within that can be developed? Then it will be possible to bring ever new forces into the social order from the rising generations.” (Steiner 1919, cited in Bransby & Rawson 2021)

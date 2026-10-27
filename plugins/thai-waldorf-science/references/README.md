@@ -30,6 +30,4 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 6. **Document:** when a Thai-facing write-up is needed, use the IPST three-column format with official skill and attitude names.
 7. **Plan output:** fill block → week → day templates. Produce the Thai core plan when the school requires a statutory write-up.
 
-**Source PDFs** (verify against these before printing): `sources/rawson2021steiner.pdf`, `sources/สสวท2017ตัวชี้วัดและสาระการเรียนรู้แกนกลาง.pdf`, `sources/สสวท2017คู่มือการใช้หลักสูตรรายวิชาพื้นฐานวิทยาศาสตร.pdf`. The original school plan forms (`*.th.docx`) behind the four templates are also in `sources/`.
-
-**Originals** of the files before the agent-facing rewrite (2026-10-27): `../archive/references-original-2026-10-27/`.
+**Sources:** each file's header cites the document it was drawn from (the IPST PDFs, Rawson 2021, the school's original plan forms). Those source documents, and the originals of these files before the agent-facing rewrite (2026-10-27), are kept for verification in the source repository (github.com/wathan/thai-waldorf-teacher-skills, folders sources and archive) and do not ship with the plugin. A "sources/…" path in a file header refers to that repository.

@@ -18,6 +18,36 @@ developmental mode.
 
 ---
 
+## Contents
+
+- Use rules
+- Glossary
+- S1 — Explain phenomena scientifically
+- S2 — Construct and evaluate designs for scientific enquiry and interpret scientific data and evidence critically
+- S3 — Research, evaluate and use scientific information for decision making and action
+- E1 — Explain the impact of human interactions with Earth's systems
+- E2 — Make informed decisions to act based on evaluation of diverse sources of evidence and application of creative and systems thinking to regenerate and sustain the environment
+- E3 — Demonstrate respect for diverse perspectives, and hope, in seeking solutions to socio-ecological crises
+- S1 — Explain phenomena scientifically
+- S2 — Construct and evaluate designs for scientific enquiry and interpret scientific data and evidence critically
+- S3 — Research, evaluate and use scientific information for decision making and action
+- E1 — Explain the impact of human interactions with Earth's systems
+- E2 — Make informed decisions to act based on evaluation of diverse sources of evidence and application of creative and systems thinking to regenerate and sustain the environment
+- E3 — Demonstrate respect for diverse perspectives, and hope, in seeking solutions to socio-ecological crises
+- S1 — Explain phenomena scientifically
+- S2 — Construct and evaluate designs for scientific enquiry and interpret scientific data and evidence critically
+- S3 — Research, evaluate and use scientific information for decision making and action
+- E1 — Explain the impact of human interactions with Earth's systems
+- E2 — Make informed decisions to act based on evaluation of diverse sources of evidence and application of creative and systems thinking to regenerate and sustain the environment
+- E3 — Demonstrate respect for diverse perspectives, and hope, in seeking solutions to socio-ecological crises
+- S1 — Explain phenomena scientifically
+- S2 — Construct and evaluate designs for scientific enquiry and interpret scientific data and evidence critically
+- S3 — Research, evaluate and use scientific information for decision making and action
+- E1 — Explain the impact of human interactions with Earth's systems
+- E2 — Make informed decisions to act based on evaluation of diverse sources of evidence and application of creative and systems thinking to regenerate and sustain the environment
+- E3 — Demonstrate respect for diverse perspectives, and hope, in seeking solutions to socio-ecological crises
+- Upstream
+
 ## Use rules
 
 1. **Mode is predominance, not exclusivity.** Each grade has a predominant

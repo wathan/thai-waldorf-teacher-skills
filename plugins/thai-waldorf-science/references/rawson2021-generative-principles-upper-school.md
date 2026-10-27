@@ -10,6 +10,38 @@
 
 ---
 
+## Contents
+
+- 0. How to use generative principles
+- 1. Developmental frame for the upper school
+- 2. The learning process (core engine of all lesson design)
+  - 2.1 Seven phases of learning (P5, Fig. 2.2, p. 85)
+  - 2.2 Upper-school version (Zech 2018, cited pp. 97, 106)
+  - 2.3 Three stages of knowing (P10, pp. 106–107, 110–112)
+  - 2.4 Rhythm across days (P6, Fig. 2.3, pp. 95–96)
+  - 2.5 Within-lesson rhythm (P4, P11, pp. 81–82, 117–119)
+- 3. The principles: rule → upper-school design implications → check
+  - P1 The spiritual dimension is taken seriously (pp. 64–72)
+  - P2 Sense of coherence underlies healthy learning (pp. 72–75)
+  - P3 The teacher’s preparation shapes learning quality (pp. 75–79)
+  - P4 Readiness and time to learn (pp. 79–83)
+  - P5 Learning is rhythmical (pp. 83–94)
+  - P6 Learning processes are structured over time (pp. 94–98)
+  - P7 Block teaching strengthens dispositions (pp. 98–102)
+  - P8 Direct experience is the basis for learning (pp. 102–103)
+  - P9 Imagination through vivid pictorial description (pp. 103–105)
+  - P10 Phenomenology / symptomatology (pp. 105–116)
+  - P11 Teaching must be artistic (pp. 116–119)
+  - P12 Self-activity is essential (pp. 119–122)
+  - P13 Development of the senses (pp. 122–126)
+  - P14 The class is a learning community (pp. 132–135)
+  - P15 Assessment for learning (pp. 135–138)
+  - P17 Curriculum maps possible learning situations to developmental tasks (pp. 142–152)
+- 4. Subject-specific principles from the upper-school vignettes
+- 5. Generation checklist (apply to every block/lesson draft)
+- 6. Anti-patterns (what the principles rule out)
+- 7. Cross-references in this repo
+
 ## 0. How to use generative principles
 
 - They are **heuristics or “living theories”**, not a method or a script (p. 51). Use them to **plan, self-evaluate, evaluate schools, develop teachers and do research** (p. 51).

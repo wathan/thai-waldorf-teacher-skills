@@ -16,6 +16,17 @@ comparative / relational (*How?*) · **G11** analytical / evaluative (*Why?*) ·
 Tags: K Keep · D Deepen · S Shift · A Add. G9 Shifts run *downward* (into
 descriptive mode, below PISA's age-15 calibration); G12 Shifts run upward.
 
+## Contents
+
+- S1 — Explain phenomena scientifically
+- S2 — Enquiry design and data
+- S3 — Research and use information for decisions
+- E1 — Human interactions with Earth's systems
+- E2 — Informed decisions to regenerate
+- E3 — Respect and hope
+- Tallies
+- Vertical notes (G12 frozen — candidates to raise, not changes)
+
 ## S1 — Explain phenomena scientifically
 
 | # | PISA (age 15) | G9 | G10 | G11 | G12 |

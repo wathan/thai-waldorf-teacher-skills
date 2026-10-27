@@ -13,6 +13,24 @@
 > - **Content bullets** are the scope of required knowledge. They are not a teaching sequence and do not map one-to-one to indicators.
 > - **Worked example** of IPST's indicator → lesson → assessment analysis: `thai-science-indicator-analysis-examples-2560.md`.
 
+## Contents
+
+- สาระและมาตรฐาน
+- สาระที่ 1 วิทยาศาสตร์ชีวภาพ
+  - มาตรฐาน ว 1.1
+  - มาตรฐาน ว 1.2
+  - มาตรฐาน ว 1.3
+- สาระที่ 2 วิทยาศาสตร์กายภาพ
+  - มาตรฐาน ว 2.1
+  - มาตรฐาน ว 2.2
+  - มาตรฐาน ว 2.3
+- สาระที่ 3 วิทยาศาสตร์โลก และอวกาศ
+  - มาตรฐาน ว 3.1
+  - มาตรฐาน ว 3.2
+- สาระที่ 4 เทคโนโลยี
+  - มาตรฐาน ว 4.1
+  - มาตรฐาน ว 4.2
+
 ## สาระและมาตรฐาน
 
 - สาระที่ 1 วิทยาศาสตร์ชีวภาพ
