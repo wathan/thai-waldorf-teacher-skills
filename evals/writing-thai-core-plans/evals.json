@@ -86,7 +86,7 @@
       "files": ["fixtures/cycles-written"],
       "expectations": [
         "No Thai core plan was written anywhere in the course folder",
-        "The reply says unit 2 has not been planned yet and points to planning the subject lesson (planning-subject-lessons) first",
+        "The reply says unit 2 has not been planned yet and points to designing it first as a subject lesson (by naming planning-subject-lessons or in plain words, such as the subject lesson planning step)",
         "The reply does not send the teacher to plan a main lesson block",
         "No file in the course folder was changed"
       ]
