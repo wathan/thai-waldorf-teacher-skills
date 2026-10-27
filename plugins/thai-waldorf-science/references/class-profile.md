@@ -80,4 +80,8 @@ For a subject lesson, the Schedule section lists `Sessions per week`, `Session l
 
 ## When there is no class profile
 
-A planning skill without a profile asks at most three questions (grade, kind of teaching sequence, session length and count), states every other value as an assumption using the defaults above, and suggests `setting-up-class-profiles` for next time.
+Every skill that reads the class profile follows this rule when there is none; the skill names which values it may ask about.
+
+1. **At most three questions, in one numbered round**, each with a recommended answer, and only for what the request (and any plan the skill reads) leaves open. The usual ones: the grade, the kind of teaching sequence, the session length and count. Never ask what the request already answers; with enough in the request, ask nothing. When the teacher says to go ahead with defaults, ask nothing that has a default.
+2. **State every other value as an assumption**, using the defaults in the table above: in particular Thai for both the language of instruction and the language of student materials, and the academic year in progress worked out from today's date.
+3. **End that same reply**, whether it asks or proceeds, with one line suggesting `setting-up-class-profiles` for next time (e.g. "Setting up a class profile for this class with `setting-up-class-profiles` saves these questions next time.").

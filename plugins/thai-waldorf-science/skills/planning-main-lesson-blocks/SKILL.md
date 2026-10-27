@@ -39,7 +39,7 @@ Talk as a colleague in plain teacher language: "your design folder", "the block 
 
 1. Read the class profile where the layout places it: grade, grade mode, schedule (session length, days per week, weeks), learner variability, languages, academic year.
 2. Read what the course already holds for this block: an existing block plan or notes at the mapped locations (anchor, units, indicators the teacher has chosen). The teacher's decisions there stand unless they ask to change them.
-3. **Without a class profile:** ask at most three questions in one numbered round, each with a recommended answer, and only for what the request leaves open: the grade; the session length and count (days per week, weeks); and, if no anchoring phenomenon is chosen yet, the choice of anchor from your candidates (Step 2). The kind of teaching sequence is already known: a main lesson block. State every other value as an assumption using the class profile defaults (100-minute sessions, Monday to Friday, 3 weeks, Thai for instruction and student materials, the academic year in progress), and suggest `setting-up-class-profiles` for next time. When the teacher says to go ahead with defaults, ask nothing that has a default.
+3. **Without a class profile:** follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults). The questions you may ask: the grade; the session length and count (days per week, weeks); and, if no anchoring phenomenon is chosen yet, the choice of anchor from your candidates (Step 2). The kind of teaching sequence is already known: a main lesson block.
 
 Never read the course folder's name for meaning.
 

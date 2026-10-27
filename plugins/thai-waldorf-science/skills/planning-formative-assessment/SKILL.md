@@ -40,7 +40,7 @@ Talk as a colleague in plain teacher language ("your week 3 plan", "your assessm
 
 1. Read the class profile where the layout places it: grade and grade mode, kind of teaching sequence, learner variability, language of student materials.
 2. Read the plan the teacher names at the layout's `block and week plans`, `session plans` or `unit plans` location (or as given in the request), and the block or unit plan above it for the learning intention and target ideas. Read anything already at the `assessments` location (a block sheet's criteria are the criteria students know). Read only; never edit the teacher's plans.
-3. **Without a class profile:** ask at most three questions in one numbered round, each with a recommended answer, only for what the request leaves open. With enough in the request, ask nothing: state the assumptions (grade, kind of teaching sequence, language of student materials) and suggest `setting-up-class-profiles` for next time.
+3. **Without a class profile:** follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults). The questions you may ask, only where the plan leaves them open: the grade and the kind of teaching sequence. The language of student materials is the class profile default, Thai, stated as an assumption, unless the request or the plan's student-facing wording shows another.
 
 ## Step 2 — Check the plan against the placement rules
 
@@ -96,4 +96,4 @@ Run this against what you wrote and fix any miss:
 
 ## Reply
 
-A few sentences in teacher terms: what was planned and where (or the plan in chat), the flags found and their fixes, the key hinge question or check, how students will reflect and assess themselves (privately, unscored), and any assumption. Say where in plain words ("in your assessment folder, as the week 3 assessment plan"), never as a file path. Without a class profile, end by suggesting `setting-up-class-profiles`.
+A few sentences in teacher terms: what was planned and where (or the plan in chat), the flags found and their fixes, the key hinge question or check, how students will reflect and assess themselves (privately, unscored), and any assumption. Say where in plain words ("in your assessment folder, as the week 3 assessment plan"), never as a file path. Without a class profile, end with the one-line suggestion class-profile.md gives.

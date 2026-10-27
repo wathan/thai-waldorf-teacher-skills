@@ -39,7 +39,7 @@ Talk as a colleague in plain teacher language: "your Thai plans folder", "the sc
 1. Read the class profile where the layout places it: grade and Thai grade (ม.), grade mode, session length, languages, academic year.
 2. Read the plans the route reference names as sources, at their mapped locations. A Thai core plan is written only from a planned teaching sequence: if the plan it would describe does not exist, say so in one sentence, name the skill that writes it, and write nothing.
 3. **Scope.** Write exactly the plans asked for. If the request leaves the scope open, ask once with a recommendation (e.g. "the days of this week, recommended").
-4. **Without a class profile:** ask at most three questions in one numbered round, each with a recommended answer, and only for what the plans and the request leave open (usually the grade and the session length). State every other value as an assumption using the class profile defaults, work out the ปีการศึกษา from today's date, and suggest `setting-up-class-profiles` for next time.
+4. **Without a class profile:** follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults). The questions you may ask, only where the plans leave them open: usually the grade and the session length. Work out the ปีการศึกษา from today's date.
 
 Never read the course folder's name for meaning.
 

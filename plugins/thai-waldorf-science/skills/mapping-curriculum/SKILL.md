@@ -38,7 +38,7 @@ Read `${CLAUDE_PLUGIN_ROOT}/references/curriculum-crosswalk.md` NOW. It is the o
 1. **Layout first.** Read `${CLAUDE_PLUGIN_ROOT}/references/course-layout.md` NOW and follow it for every file you read or write in the course: it says where the class profile, plans and the standards map live, and how to detect, confirm and record a layout when none is recorded.
 2. **Class profile.** Read it where the layout places it, for grade, grade mode and kind of teaching sequence (format: `${CLAUDE_PLUGIN_ROOT}/references/class-profile.md`).
 3. **What the sequence claims.** Take the indicators from the teacher's request and from the course's existing plans (block plan, unit plans). If only a topic is given, offer candidates from the crosswalk for the class's ม. grade and list them as *proposed* in the map until the teacher confirms.
-4. **Missing context.** Without a class profile and without the grade in the request, ask at most three questions (grade; main lesson block or subject lesson; the topic or indicators) and state everything else as an assumption.
+4. **Missing context.** Without a class profile, follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults). The questions you may ask, only where the request leaves them open: the grade; main lesson block or subject lesson; the topic or indicators.
 
 ## Step 3 — Decide where the standards map goes
 

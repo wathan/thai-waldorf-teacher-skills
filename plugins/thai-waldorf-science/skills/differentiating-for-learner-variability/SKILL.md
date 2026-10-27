@@ -39,7 +39,7 @@ Talk as a colleague in plain teacher language ("your week 2 plan", "your design 
 1. Read the class profile where the layout places it: learner variability (anonymised counts and notes), language of instruction, language of student materials, grade and grade mode.
 2. Read the plan the teacher names at the layout's `block and week plans`, `session plans` or `unit plans` location (or as given in the request). Read only; never edit it.
 3. Copy the **core learning intention** word for word, with any Thai indicator verbatim. It is fixed: no support, option or adjustment may lower, narrow or replace it. Where the plan has no stated intention, take it from the block plan or ask the teacher (one question).
-4. **Without a class profile:** ask at most three questions in one numbered round, each with a recommended answer, only for what the request leaves open (the needs in the class, as anonymised counts; the language of student materials). With enough in the request, ask nothing: state the assumptions (Thai for instruction and student materials, the needs as described) and suggest `setting-up-class-profiles` for next time.
+4. **Without a class profile:** follow class-profile.md's "When there is no class profile" (at most three questions in one numbered round; every other value a stated assumption from its defaults, Thai for instruction and student materials). The questions you may ask: the needs in the class, as anonymised counts, and the language of student materials. With enough in the request, the needs are as described.
 
 ## Step 2 — Anonymise
 
@@ -86,6 +86,6 @@ Run this against what you wrote and fix any miss:
 
 ## Reply
 
-A few sentences in teacher terms: what was written and where (or the plan in chat), the main barriers found, the one or two highest-impact design changes, any assumption, a line that names were left out (when the teacher gave any), and where specialist support is the honest next step. Without a class profile, end by suggesting `setting-up-class-profiles` so next time the needs and language are already known.
+A few sentences in teacher terms: what was written and where (or the plan in chat), the main barriers found, the one or two highest-impact design changes, any assumption, a line that names were left out (when the teacher gave any), and where specialist support is the honest next step. Without a class profile, end with the one-line suggestion class-profile.md gives, so next time the needs and language are already known.
 
 Say where in plain words ("in your design folder, as the week 2 differentiation plan"), never as a file path or folder path in backticks. Do not repeat the students' names or identifying details in the reply either; refer to "the students you mentioned".
