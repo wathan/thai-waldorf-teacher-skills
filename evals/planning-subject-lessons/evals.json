@@ -53,6 +53,17 @@
         "No Waldorf block plan, week plan or day plan was written, and notes.md is unchanged",
         "No student names appear anywhere"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Quick draft, no audit this time: plan unit 1 of my Science Practice lessons, electric circuits, about three weeks.",
+      "expected_output": "The unit plan and its cycle plans are written as in case 1. Because the teacher switched the epistemic agency audit off for this request, no audit runs: no audit file is written and the reply gives no audit summary.",
+      "files": ["fixtures/science-practice"],
+      "expectations": [
+        "A unit 1 plan exists inside 20-design/units/ and at least one cycle plan exists inside 20-design/sessions/",
+        "No epistemic agency audit file was written anywhere in the course folder",
+        "The reply gives no epistemic agency audit findings (no report of which epistemic decisions the plan opens or closes)"
+      ]
     }
   ]
 }

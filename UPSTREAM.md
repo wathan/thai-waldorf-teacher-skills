@@ -118,6 +118,8 @@ Built in #14: hinge questions and misconception-based checks with routed respons
 | gareth | skills/questioning-discussion/discussion-protocol-selector | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (suggestions to open more) | proposed |
 | gareth | skills/questioning-discussion/dialogic-teaching-move-generator | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (suggestions to open more) | proposed |
 
+Built in #12. The audit itself (three decision domains after Ko & Krist, 2019; reach; closure reasons; the special rules) is written fresh from spec #1, the glossary and ADR-0003; the two gareth paths inform only `references/opening-more.md` and were not re-read when building, so they stay `proposed` at their recorded commits until the maintainer reviews them.
+
 ## preparing-to-teach
 
 | Repo | Path | Commit last reviewed | Role | Status |

@@ -1,0 +1,64 @@
+{
+  "skill_name": "auditing-epistemic-agency",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Can you audit week 1 of my meteorology block for epistemic agency? Save it with my other audits.",
+      "expected_output": "One audit report written in 40-evaluation/ (the layout's agency audit location), in English. It reads the block plan and the week 1 plan only and reports days 1–5 one by one across the investigation-aim, investigation-method and explanatory-model domains, saying for each decision whether the plan opens or closes it, the reach of each opening into later sessions, and a reason for every closure. The anchoring phenomenon (the monsoon storm over Chiang Mai, chosen by the teacher) is reported as a deliberate closure. The driving question board and the class's rewording of the driving question on day 2 are openings in the investigation-aim domain reaching the rest of the block. Day 3's concept formation, where the teacher explains convection and students copy a given definition, is flagged as a scripted concept: the explanatory-model domain is expected open there. The class-agreed criteria for a good model on day 4 count as an opening in the explanatory-model domain; the groups' own sea-breeze trials (planned day 4, run day 5) as an opening in the investigation-method domain reaching day 5. The day 5 exit slip is named as assessment as learning and not counted as uptake or as an opening. The report never claims what students actually did, and no plan is changed.",
+      "files": ["fixtures/meteorology-week-1"],
+      "expectations": [
+        "Exactly one new audit file exists inside 40-evaluation/ (besides its README.md); no audit was written anywhere else",
+        "10-design/block-plan.md, 10-design/week-1-plan.md, 00-admin/class-profile.md and README.md are unchanged",
+        "The audit file is written in English",
+        "The audit reports each of the five days of week 1 (day 1 to day 5) separately",
+        "For the sessions it reports, the audit addresses all three domains: investigation aim, investigation method and explanatory model",
+        "The anchoring phenomenon (the first monsoon storm over Chiang Mai) is reported as a closure that is deliberate, made by the teacher",
+        "Every decision reported as closed has a reason next to it (stated in the plan or given by the audit, e.g. the anchoring phenomenon, a prerequisite idea, safety or equipment, a fixed sequence); a closure with no defensible reason is flagged for the teacher rather than left without comment",
+        "The day 2 driving question board, or the class rewording the driving question, is reported as an opening in the investigation-aim domain whose reach extends beyond day 2 (to later sessions or the rest of the block)",
+        "Day 3's concept formation (the teacher explains convection and students copy the given definition) is flagged as a scripted concept, with the explanatory-model domain expected to be open during concept formation",
+        "The class agreeing its own criteria for a good model of the storm (day 4) is reported as an opening in the explanatory-model domain",
+        "The groups deciding which change to test in the sea-breeze box and planning their own trial (day 4, run on day 5) is reported as an opening in the investigation-method domain, with reach into day 5",
+        "The day 5 exit slip is identified as assessment as learning and is not counted as uptake or as an opening",
+        "Neither the audit nor the reply claims that students actually took up, used or enacted any opening; the audit speaks of what the plan or design opens, and if uptake is mentioned it says uptake can only be seen in teaching",
+        "The reply contains no file paths or tool names"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Can you run an agency audit on unit 1 of my Science Practice lessons? Just tell me here in chat, don't save anything. And give me some ideas to open session 3 up more: a few of my students hardly ever speak in whole-class discussion.",
+      "expected_output": "No file written or changed. In chat, a per-session audit of sessions 1–6 (both 5E cycles) across the three decision domains, with reach for openings and a reason for every closure. Explain-phase closures are listed with reasons: the terms voltage, current and resistance introduced by the teacher after the class compared its own graphs (session 3, reason from the unit plan: indicator ม.3/3), the explicit instruction on reading meters (session 3) and the teacher introducing V = IR from the class's statement plus the worked example (session 5). The students' own explanations of their graphs in Explain are noted as openings in the explanatory-model domain. Exit slips are assessment as learning, not uptake. For session 3, concrete dialogic moves (e.g. revoicing, pressing for evidence, inviting others, wait time) and at least one discussion protocol, including quieter channels such as writing or sketching first, pair talk before the class, or anonymous or written contributions. The plans are not rewritten.",
+      "files": ["fixtures/circuits-unit"],
+      "expectations": [
+        "No file was created or changed in the course folder",
+        "The reply reports the unit session by session, covering sessions 1 to 6 (or each session of both cycles)",
+        "The reply addresses all three domains: investigation aim, investigation method and explanatory model",
+        "The Explain-phase closures are listed with reasons, including the teacher introducing the terms voltage, current and resistance in session 3 and the teacher introducing V = IR (or the worked V = IR example) in session 5",
+        "The explicit instruction on reading a voltmeter and an ammeter in session 3 is reported as a closure with a reason (e.g. a measurement procedure students need, indicator ม.3/3, or safety and accuracy)",
+        "Groups presenting their own graphs and explanations in session 3 (or explaining the pattern in their own words in session 5) is reported as an opening in the explanatory-model domain",
+        "Every decision reported as closed has a reason, or is flagged as a closure without a reason for the teacher to decide",
+        "The exit slips are named as assessment as learning and not counted as uptake or as openings",
+        "For session 3 the reply offers concrete dialogic moves with example teacher wording (e.g. revoicing, pressing for reasoning or evidence, inviting others to add or disagree, wait time)",
+        "For session 3 the reply offers at least one named discussion protocol or structure (e.g. think-pair-share, a gallery walk of the graphs, a consensus discussion)",
+        "The suggestions include at least one quieter channel for students who rarely speak in whole-class discussion (e.g. writing or sketching first, pair talk before the class, sticky notes, a silent or written discussion, anonymous contributions)",
+        "The reply does not claim what students actually did or took up in class; it speaks of what the plan opens or closes",
+        "The reply contains no file paths or tool names"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Please write the week 2 plan for my meteorology block (ocean currents, as the block plan says).",
+      "expected_output": "planning-main-lesson-blocks writes the week 2 plan in 10-design/; then, because the teacher did not switch it off, the epistemic agency audit runs on what was just planned and writes an audit report into 40-evaluation/ covering week 2's days 6–10 across the three domains, with the anchoring phenomenon as a deliberate closure and a reason for every closure. The reply says what was written and gives a short summary of the audit's findings. Week 1 is not rewritten.",
+      "files": ["fixtures/meteorology-week-1"],
+      "expectations": [
+        "A week 2 plan exists inside 10-design/ (as week-2-plan.md or a clearly separate week 2 section) and 10-design/week-1-plan.md is unchanged",
+        "An audit file exists inside 40-evaluation/ (besides its README.md) covering the week 2 sessions (days 6 to 10), each reported separately",
+        "The audit addresses the investigation-aim, investigation-method and explanatory-model domains",
+        "The anchoring phenomenon is reported in the audit as a deliberate closure",
+        "Every decision reported as closed in the audit has a reason, or is flagged as a closure without a reason",
+        "The audit file is in English",
+        "The reply mentions both the week 2 plan and the audit, with a short summary of what the audit found (e.g. where decisions are opened or closed, or any flag)",
+        "The reply contains no file paths or tool names (Thai indicator codes and skill names are fine)"
+      ]
+    }
+  ]
+}

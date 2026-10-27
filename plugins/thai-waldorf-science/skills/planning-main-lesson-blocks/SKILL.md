@@ -99,6 +99,10 @@ Run this against the files you wrote, and fix any miss before replying:
 
 Then the generation checklist in `${CLAUDE_PLUGIN_ROOT}/references/rawson2021-generative-principles-upper-school.md` §5, read through the two-day rhythm: item 3 asks for overnight recall and concept formation the next day, not overlapping four-day cycles, and item 10's three levels become UDL options within one shared task.
 
+## Then the audit
+
+After writing any plan files, run `auditing-epistemic-agency` on what you wrote, unless the teacher switched it off for this request ("no audit", "skip the audit", "quick draft").
+
 ## Reply
 
-A few sentences: what was written and where in teacher terms, the anchor and the driving question with its authorship, any assumption made, and the next steps (day plans and Thai core plans on request; the epistemic agency audit once available).
+A few sentences: what was written and where in teacher terms, the anchor and the driving question with its authorship, any assumption made, the audit's short summary (unless switched off), and the next steps (day plans and Thai core plans on request).
