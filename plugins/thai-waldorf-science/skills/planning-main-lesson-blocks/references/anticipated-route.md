@@ -54,7 +54,7 @@ When the teacher first asks for an anticipated route, write:
 1. **The block plan:** the storyline design section with the sequence stated as an anticipated route, the units table with status and expected order, a *Unit preparation* section with every interchangeable unit prepared in full, an empty *Route so far* record, then the form. Rows of the form for weeks that hold interchangeable units say what is expected and that they are written once the board has chosen.
 2. **Week plans only for weeks wholly fixed in advance:** normally week 1 (the anchor unit). A week that holds an interchangeable unit is written later, by rolling generation. If the anchor unit ends mid-week, write its days and mark the rest of that week as waiting for the board's choice.
 
-Day plans and Thai core plans are not written now: for an anticipated route they are written only for units the board has chosen (below).
+Day plans and Thai core plans are not written now unless the teacher asks, and then only for the anchor unit's fixed days: for an anticipated route they are written only for fixed weeks and units the board has chosen (below). A whole-block document set for an anticipated route therefore covers the fixed weeks now and grows with each board choice.
 
 ## Rolling generation once the board has chosen
 
@@ -64,7 +64,7 @@ When the teacher reports the board's choice of the next unit ("the class chose o
 2. **Write the week plan(s) for the chosen unit's days**, from that unit's prepared new experiences, in the two-day rhythm. Its first day opens with Recall of the previous unit's last experience, which bridges into the board's choice. If the unit ends mid-week, mark the remaining days of that week as waiting for the board's next choice; when that choice comes, fill those days in the same week plan, in place. Never fill days with an interchangeable unit the board has not chosen.
 3. **Keep what is behind.** Week plans for weeks already taught stay unchanged unless the teacher asks; a teacher's review notes in them are never rewritten.
 4. **Fixed units arrive by the calendar.** The calendar-bound segment goes on its day inside whichever unit is running. When the open positions are used up, the putting-pieces-together unit is written next without a board choice.
-5. **Day plans and Thai core plans for the chosen unit** are written only now, never for a unit the board has not chosen: day plans by this skill when the teacher asks for them (as Step 0 directs), Thai core plans by `writing-thai-core-plans`. Offer them in the reply; do not write them unasked.
+5. **Day plans and Thai core plans for the chosen unit** are written only now, never for a unit the board has not chosen: day plans by following `${CLAUDE_SKILL_DIR}/references/day-plans.md` for the chosen unit's days when the teacher asks for them, Thai core plans by `writing-thai-core-plans`. Offer them in the reply; do not write them unasked.
 
 If the teacher asks for plans of an interchangeable unit the board has not chosen, say that it is written once the board chooses it, and point to its preparation in the block plan, which is already complete.
 
