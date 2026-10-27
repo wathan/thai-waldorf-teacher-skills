@@ -62,8 +62,8 @@
       "expectations": [
         "The reply says there is no class profile yet (the class has not been described)",
         "The reply names setting-up-class-profiles as the next step",
-        "The reply does not name any planning skill (planning-main-lesson-blocks, planning-subject-lessons) or writing-thai-core-plans as the next step",
-        "The reply contains no file paths, file names or folder names",
+        "The reply does not give a planning skill (planning-main-lesson-blocks, planning-subject-lessons) or writing-thai-core-plans as the next step (naming them as later steps is fine)",
+        "The reply contains no file paths, file names or names of specific folders (a general mention of the course folder is fine)",
         "No files were created, changed or removed in the course folder"
       ]
     },
@@ -82,7 +82,7 @@
         "The reply names mapping-curriculum as the next step (it may say this step is optional)",
         "The reply names planning-main-lesson-blocks as the planning step that follows, and does not point to planning-subject-lessons",
         "The reply does not tell the teacher to describe the class again or to run setting-up-class-profiles as the next step",
-        "The reply contains no file paths, file names or folder names",
+        "The reply contains no file paths, file names or names of specific folders (a general mention of the course folder is fine)",
         "No files were created, changed or removed in the course folder"
       ]
     },
@@ -98,7 +98,7 @@
         "The reply says there are no day plans yet",
         "The reply names planning-main-lesson-blocks for day plans (for week 1, or the first week) as the next step",
         "The reply mentions writing-thai-core-plans as a later step, not as something already done",
-        "The reply contains no file paths, file names or folder names",
+        "The reply contains no file paths, file names or names of specific folders (a general mention of the course folder is fine)",
         "No files were created, changed or removed in the course folder"
       ]
     },
@@ -113,7 +113,7 @@
         "The reply says the day plans for week 1 are done",
         "The reply names writing-thai-core-plans as the next step, for week 1's days",
         "The reply does not send the teacher back to setting-up-class-profiles or to plan the block again",
-        "The reply contains no file paths, file names or folder names",
+        "The reply contains no file paths, file names or names of specific folders (a general mention of the course folder is fine)",
         "No files were created, changed or removed in the course folder"
       ]
     },
@@ -129,7 +129,7 @@
         "The reply names preparing-to-teach as the next step, for the first session of week 1 (day 1, Monday)",
         "The reply does not tell the teacher to run auditing-epistemic-agency, writing-thai-core-plans, differentiating-for-learner-variability or planning-formative-assessment for week 1 again",
         "The reply mentions planning week 2 (day plans with planning-main-lesson-blocks) as a later step",
-        "The reply contains no file paths, file names or folder names",
+        "The reply contains no file paths, file names or names of specific folders (a general mention of the course folder is fine)",
         "No files were created, changed or removed in the course folder"
       ]
     }

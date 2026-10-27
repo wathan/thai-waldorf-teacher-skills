@@ -2,14 +2,15 @@
 name: guiding-the-workflow
 description: >
   Orients a Thai Waldorf upper-school science teacher (G9–G12 / ม.3–ม.6) in the
-  plugin's design and teaching process: reads the course folder (class
-  profile, layout, year plan pointer, existing plans) to say where the
-  teacher is and which skill comes next, gives a walkthrough of the whole
-  process from class profile to preparing each session (the fixed walkthrough
-  when the course folder is empty), and names which skill does a given job.
-  Use when the teacher asks how the process works, where to
-  start, what comes next, "what now?", or "which skill does X?". Do not use to
-  plan, write or audit anything itself; hand off to the named skill instead.
+  plugin's design and teaching process: names which skill does a given job,
+  says where the teacher is and which skill comes next from the course
+  folder (class profile, layout, year plan pointer, existing plans), and
+  gives a walkthrough of the whole process from class profile to preparing
+  each session (the fixed walkthrough when the course folder is empty). Use
+  whenever the teacher asks which skill does X or which skill to use for a
+  job, how the process works, where to start, where they are, what comes
+  next, or "what now?". Do not use to plan, write or audit anything itself;
+  hand off to the named skill instead.
 license: CC-BY-SA-4.0
 ---
 
