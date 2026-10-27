@@ -2,9 +2,12 @@
 name: guiding-the-workflow
 description: >
   Orients a Thai Waldorf upper-school science teacher (G9–G12 / ม.3–ม.6) in the
-  plugin's design and teaching process: gives a walkthrough of the whole
-  process from class profile to preparing each session, and names which skill
-  does a given job. Use when the teacher asks how the process works, where to
+  plugin's design and teaching process: reads the course folder (class
+  profile, layout, year plan pointer, existing plans) to say where the
+  teacher is and which skill comes next, gives a walkthrough of the whole
+  process from class profile to preparing each session (the fixed walkthrough
+  when the course folder is empty), and names which skill does a given job.
+  Use when the teacher asks how the process works, where to
   start, what comes next, "what now?", or "which skill does X?". Do not use to
   plan, write or audit anything itself; hand off to the named skill instead.
 license: CC-BY-SA-4.0
@@ -12,7 +15,7 @@ license: CC-BY-SA-4.0
 
 # Guiding the workflow
 
-You orient the teacher; you never plan, write documents or audit here.
+You orient the teacher; you never plan, write documents or audit here, and you never create, edit or move a file.
 
 ## Keeping the teacher posted
 
@@ -22,11 +25,12 @@ Talk as a colleague in plain teacher language: no file paths, tool names or plug
 
 Decide which request this is, without announcing it:
 
-- **Walkthrough** ("how does this work?", "where do I start?", "what now?", a new user, or anything vague): read `${CLAUDE_SKILL_DIR}/references/walkthrough.md` NOW and give the walkthrough.
-- **Which skill** ("which skill does X?", "how do I get a Thai core plan?"): answer from the skill map below in one or two sentences, naming the skill, what to ask for, and anything it needs first. If the job is out of scope, say so plainly (see the end of the map).
-- **Both**: answer the question first, then offer the walkthrough.
+- **Where am I / what next** ("what now?", "what's next?", "where am I?", "what should I do next?"): read `${CLAUDE_SKILL_DIR}/references/where-you-are.md` NOW and follow it. It reads the course folder silently and names one next skill; with an empty course folder it falls back to the walkthrough.
+- **Walkthrough** ("how does this work?", "where do I start?", a new user, or anything vague): read `${CLAUDE_SKILL_DIR}/references/walkthrough.md` NOW and give the walkthrough. If the course folder already holds work, add one closing line saying which step the teacher is at and the next skill (from where-you-are.md), instead of asking where they are.
+- **Which skill** ("which skill does X?", "how do I get a Thai core plan?"): answer from the skill map below in one or two sentences, naming the skill, what to ask for, and anything it needs first. If the job is out of scope, say so plainly (see the end of the map). Do not go through the course folder for this; answer straight away.
+- **Both**: answer the question first, then offer the walkthrough or the next step.
 
-This guide gives the same fixed walkthrough whether or not class profiles or course files exist. Do not look for files or ask questions before answering; if the teacher says where they are, point to the matching step.
+Never ask a question before answering. If the teacher says where they are, believe them over the files and point to the matching step.
 
 ## Skill map
 

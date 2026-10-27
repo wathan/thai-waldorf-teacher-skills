@@ -4,8 +4,10 @@
     {
       "id": 1,
       "prompt": "I'm a science teacher at a Thai Waldorf school and I've just installed the thai-waldorf-science plugin. How does the whole design and teaching process work, from start to finish?",
-      "expected_output": "The fixed walkthrough of the whole process in order, without first asking questions or looking for files, ending by asking where the teacher is.",
-      "files": ["fixtures/empty"],
+      "expected_output": "With an empty course folder, the fixed walkthrough of the whole process in order, without first asking questions, ending by asking where the teacher is.",
+      "files": [
+        "fixtures/empty"
+      ],
       "expectations": [
         "The reply walks through the process in this order: describe the class (setting-up-class-profiles), map the curriculum (mapping-curriculum), plan a main lesson block or a subject lesson (planning-main-lesson-blocks / planning-subject-lessons), write the Thai core plan (writing-thai-core-plans), then differentiation, formative assessment and the epistemic agency audit, and finally preparing to teach (preparing-to-teach)",
         "The reply names all of these skills: setting-up-class-profiles, mapping-curriculum, planning-main-lesson-blocks, planning-subject-lessons, writing-thai-core-plans, differentiating-for-learner-variability, planning-formative-assessment, auditing-epistemic-agency, preparing-to-teach",
@@ -19,7 +21,9 @@
       "id": 2,
       "prompt": "Which skill do I use to get the แผนการจัดการเรียนรู้ my supervisor wants for each main-lesson day?",
       "expected_output": "A direct answer naming writing-thai-core-plans, noting it needs a planned teaching sequence.",
-      "files": ["fixtures/empty"],
+      "files": [
+        "fixtures/empty"
+      ],
       "expectations": [
         "The reply names writing-thai-core-plans as the skill for the job",
         "The reply says a planned teaching sequence (e.g. a main lesson block plan) is needed first, or points to planning-main-lesson-blocks for that",
@@ -31,7 +35,9 @@
       "id": 3,
       "prompt": "Which skill does each of these jobs? (a) describe my G10 class and its timetable; (b) explain how the whole process fits together; (c) check which Thai indicators my block covers; (d) plan a three-week meteorology main lesson block; (e) plan my weekly Science Practice lessons; (f) write the Thai core plan for supervisors; (g) adapt a plan for students with learning differences and EAL; (h) plan hinge questions and student self-assessment; (i) check whether my plan leaves any decisions to the students; (j) get ready to teach tomorrow's experiment.",
       "expected_output": "One skill per job: (a) setting-up-class-profiles, (b) guiding-the-workflow, (c) mapping-curriculum, (d) planning-main-lesson-blocks, (e) planning-subject-lessons, (f) writing-thai-core-plans, (g) differentiating-for-learner-variability, (h) planning-formative-assessment, (i) auditing-epistemic-agency, (j) preparing-to-teach.",
-      "files": ["fixtures/empty"],
+      "files": [
+        "fixtures/empty"
+      ],
       "expectations": [
         "(a) is answered with setting-up-class-profiles",
         "(b) is answered with guiding-the-workflow",
@@ -44,6 +50,87 @@
         "(i) is answered with auditing-epistemic-agency",
         "(j) is answered with preparing-to-teach",
         "No files were created in the course folder"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "What now? What should I do next for this course?",
+      "expected_output": "The course folder holds only the teacher's own notes and no class profile: the reply says no class profile exists yet and names setting-up-class-profiles as the next step.",
+      "files": [
+        "fixtures/no-profile"
+      ],
+      "expectations": [
+        "The reply says there is no class profile yet (the class has not been described)",
+        "The reply names setting-up-class-profiles as the next step",
+        "The reply does not name any planning skill (planning-main-lesson-blocks, planning-subject-lessons) or writing-thai-core-plans as the next step",
+        "The reply contains no file paths, file names or folder names",
+        "No files were created, changed or removed in the course folder"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "I set up my class profile last week. What's next?",
+      "expected_output": "Profile only (G12 meteorology main lesson block): the reply recognises the profile and names mapping-curriculum as the next (optional) step, then planning-main-lesson-blocks.",
+      "files": [
+        "fixtures/profile-only"
+      ],
+      "teacher_files": [
+        "fixtures/year-plan"
+      ],
+      "expectations": [
+        "The reply shows it has read the class profile (mentions the G12 class, the meteorology main lesson block, or its three weeks)",
+        "The reply names mapping-curriculum as the next step (it may say this step is optional)",
+        "The reply names planning-main-lesson-blocks as the planning step that follows, and does not point to planning-subject-lessons",
+        "The reply does not tell the teacher to describe the class again or to run setting-up-class-profiles as the next step",
+        "The reply contains no file paths, file names or folder names",
+        "No files were created, changed or removed in the course folder"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Where am I with this block, and what should I do next?",
+      "expected_output": "Block plan, standards map and all three week plans done, no day plans: next is day plans for week 1 with planning-main-lesson-blocks; Thai core plans (writing-thai-core-plans) after that.",
+      "files": [
+        "fixtures/block-plan-done"
+      ],
+      "expectations": [
+        "The reply says the block plan and the week plans are done",
+        "The reply says there are no day plans yet",
+        "The reply names planning-main-lesson-blocks for day plans (for week 1, or the first week) as the next step",
+        "The reply mentions writing-thai-core-plans as a later step, not as something already done",
+        "The reply contains no file paths, file names or folder names",
+        "No files were created, changed or removed in the course folder"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "what now?",
+      "expected_output": "Day plans for week 1 exist but no Thai core plans: next is writing-thai-core-plans for week 1's days.",
+      "files": [
+        "fixtures/day-plans-done"
+      ],
+      "expectations": [
+        "The reply says the day plans for week 1 are done",
+        "The reply names writing-thai-core-plans as the next step, for week 1's days",
+        "The reply does not send the teacher back to setting-up-class-profiles or to plan the block again",
+        "The reply contains no file paths, file names or folder names",
+        "No files were created, changed or removed in the course folder"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "I think week 1 is all planned. What should I do next?",
+      "expected_output": "Week 1 fully planned, including Thai core plans, differentiation, formative assessment and a saved epistemic agency audit: next is preparing-to-teach for week 1, day 1 (Monday); after that, day plans for week 2.",
+      "files": [
+        "fixtures/audit-done"
+      ],
+      "expectations": [
+        "The reply recognises that week 1 has Thai core plans, differentiation, formative assessment and an epistemic agency audit",
+        "The reply names preparing-to-teach as the next step, for the first session of week 1 (day 1, Monday)",
+        "The reply does not tell the teacher to run auditing-epistemic-agency, writing-thai-core-plans, differentiating-for-learner-variability or planning-formative-assessment for week 1 again",
+        "The reply mentions planning week 2 (day plans with planning-main-lesson-blocks) as a later step",
+        "The reply contains no file paths, file names or folder names",
+        "No files were created, changed or removed in the course folder"
       ]
     }
   ]

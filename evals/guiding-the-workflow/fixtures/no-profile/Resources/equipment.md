@@ -1,0 +1,3 @@
+- glass tank, heater, food dye
+- sea-breeze box, incense
+- turntable, ball, chalk
