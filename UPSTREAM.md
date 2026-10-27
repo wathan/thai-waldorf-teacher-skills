@@ -119,8 +119,8 @@ Built in #11 (5E design, explicit instruction, graded practice, retrieval practi
 
 | Repo | Path | Commit last reviewed | Role | Status |
 |---|---|---|---|---|
-| k12 | plugin/skills/k12-lesson-prep | 281eb8d41fe2837d911541c9bbb870b58add804c | content | firm |
-| gareth | skills/questioning-discussion/dialogic-teaching-move-generator | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content | firm |
+| k12 | plugin/skills/k12-lesson-prep | 281eb8d41fe2837d911541c9bbb870b58add804c | content (short teacher-only note walking the session's own parts in teaching order; prepare from the actual plan, never a guess) | firm |
+| gareth | skills/questioning-discussion/dialogic-teaching-move-generator | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (talk-move types, matching the move to the response, no evaluating moves) | firm |
 
 ## check-upstream
 
