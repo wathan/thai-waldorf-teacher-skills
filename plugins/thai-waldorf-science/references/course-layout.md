@@ -53,7 +53,7 @@ Each concept has a fixed name, used verbatim in the mapping table. Locations may
 
 Only when no mapping is recorded.
 
-1. List the course folder's folders and files, three levels deep, skipping hidden entries. Read a file's first lines only when its name is ambiguous.
+1. List the course folder's folders and files, three levels deep, skipping hidden entries. Folders count even when empty. Read a file's first lines only when its name is ambiguous.
 2. Match each entry against the cues below, in English or Thai, ignoring case, numbering prefixes (`00 `, `01_`, `1.`) and separators.
 
 | Concept or area | Name cues | Content cues |
@@ -76,7 +76,7 @@ Only when no mapping is recorded.
 
 Show the teacher the proposed mapping as a short table in plain words: concept, where it would go, and why (the folder or file that suggested it). Mark rows that create something new. Ask one numbered question with a recommended answer: "Use this layout? Recommended: yes." Accept corrections row by row. Skip the question when the teacher has already said they accept the proposed layout.
 
-Propose only the concepts the current skill needs plus the obvious ones the folder already shows; other skills add rows when they need them.
+Propose the concepts the current skill needs plus a row for every area the folder already shows (e.g. an assessment folder → assessments); other skills add the remaining rows when they need them.
 
 ## Step 4: record the mapping
 

@@ -58,7 +58,9 @@ Before asking, fill in everything the teacher has already said and every default
 4. Academic year. Recommend the year in progress, given both ways (e.g. 2026–2027 / ปีการศึกษา 2569), and the term if relevant.
 5. Where things go: the layout proposal from course-layout Step 3, including where the class profile goes. Recommend the proposal. It depends on no other answer, so it belongs in this first round.
 
-When the grade is known already, state its grade mode in this round as a pre-filled value (G9 What, G10 How, G11 Why, G12 Who) and the schedule default for the likely kind, so the teacher sees them early.
+Every question carries a recommendation; never write "no recommendation". When nothing points either way, recommend the common case (e.g. a main lesson block) and say how to switch.
+
+Below the Round 1 questions, list the values already pre-filled so the teacher sees them early and only corrects what differs: the grade mode, once the grade is known (G9 What, G10 How, G11 Why, G12 Who), and the schedule default for each kind (main lesson block: 100-minute sessions, Monday to Friday, 3 weeks; subject lesson: one long 100-minute and one short 50-minute session a week).
 
 **Round 2 — rhythm and learners** (depends on Round 1)
 
