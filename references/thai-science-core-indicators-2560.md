@@ -1,6 +1,6 @@
 # ตัวชี้วัดและสาระการเรียนรู้แกนกลาง กลุ่มสาระการเรียนรู้วิทยาศาสตร์ (ฉบับปรับปรุง พ.ศ. 2560)
 
-> **Source:** สสวท./สพฐ., *ตัวชี้วัดและสาระการเรียนรู้แกนกลาง กลุ่มสาระการเรียนรู้วิทยาศาสตร์ (ฉบับปรับปรุง พ.ศ. ๒๕๖๐) ตามหลักสูตรแกนกลางการศึกษาขั้นพื้นฐาน พุทธศักราช ๒๕๕๑* (พิมพ์ครั้งที่ ๑, ๒๕๖๐), pp. ๑๓–๑๒๖. File: `สสวท2017ตัวชี้วัดและสาระการเรียนรู้แกนกลาง.pdf`.
+> **Source:** สสวท./สพฐ., *ตัวชี้วัดและสาระการเรียนรู้แกนกลาง กลุ่มสาระการเรียนรู้วิทยาศาสตร์ (ฉบับปรับปรุง พ.ศ. ๒๕๖๐) ตามหลักสูตรแกนกลางการศึกษาขั้นพื้นฐาน พุทธศักราช ๒๕๕๑* (พิมพ์ครั้งที่ ๑, ๒๕๖๐), pp. ๑๓–๑๒๖. File: `sources/สสวท2017ตัวชี้วัดและสาระการเรียนรู้แกนกลาง.pdf`.
 >
 > **Conventions:** Text verbatim from source (Thai numerals retained in body). Indicator codes added in Arabic numerals for search, official format `ว <มาตรฐาน> <ชั้น>/<ข้อ>` (e.g. `ว 1.1 ม.3/1`). Grades without indicators (marked “–” in source) omitted. Source tables do not map indicators to content bullets one-to-one; both lists given per grade. Line breaks joined from PDF layout — Thai has no reliable break signal, so a space at an original line break may occasionally be missing; equations re-typed in linear form.
 >

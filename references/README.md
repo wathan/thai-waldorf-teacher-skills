@@ -16,6 +16,10 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 | Meso: vocabulary (TH) | `thai-science-key-skills-2560.md` | Official Thai skill names: process skills, engineering design, computational thinking, 21st-century |
 | Meso: vocabulary (TH) | `thai-science-scientific-mind-2560.md` | Official Thai scientific-attitude names (9 + attitudes towards science) |
 | Output format (TH) | `thai-science-indicator-analysis-examples-2560.md` | Producing IPST-style three-column analyses (analysis → learning → assessment) |
+| Output template: Waldorf | `waldorf-plan-template-block.th.md` | Planning a whole block week by week (aims, assessable outcomes, weekly rows) |
+| Output template: Waldorf | `waldorf-plan-template-week.th.md` | Planning one block week day by day (Mon–Fri, E→R→C→A cycles) |
+| Output template: Waldorf | `waldorf-plan-template-day.th.md` | Planning one main-lesson day segment by segment (Rhythmic Time → Recall → Practice → New Content) |
+| Output template: Thai | `thai-core-plan-template.th.md` | Writing the school's statutory แผนการจัดการเรียนรู้ (K–P–A, สมรรถนะ, rubrics, sign-off) |
 
 **Default chain for generating a G9–G12 science block:**
 1. **Grade mode:** read the macro file.
@@ -24,7 +28,8 @@ Load only what the task needs. The files are arranged by curriculum layer (Brans
 4. **Justification:** state the domain(s) and potentialities they serve (goals file, §5 template).
 5. **Design:** apply the Rawson principles and run the §5 checklist.
 6. **Document:** when a Thai-facing write-up is needed, use the IPST three-column format with official skill and attitude names.
+7. **Plan output:** fill block → week → day templates. Produce the Thai core plan when the school requires a statutory write-up.
 
-**Source PDFs** (verify against these before printing): `rawson2021steiner.pdf`, `สสวท2017ตัวชี้วัดและสาระการเรียนรู้แกนกลาง.pdf`, `สสวท2017คู่มือการใช้หลักสูตรรายวิชาพื้นฐานวิทยาศาสตร.pdf`.
+**Source PDFs** (verify against these before printing): `sources/rawson2021steiner.pdf`, `sources/สสวท2017ตัวชี้วัดและสาระการเรียนรู้แกนกลาง.pdf`, `sources/สสวท2017คู่มือการใช้หลักสูตรรายวิชาพื้นฐานวิทยาศาสตร.pdf`. The original school plan forms (`*.th.docx`) behind the four templates are also in `sources/`.
 
 **Originals** of the files before the agent-facing rewrite (2026-10-27): `../archive/references-original-2026-10-27/`.

@@ -1,6 +1,6 @@
 # Generative Principles for Upper-School Instructional Design (Rawson 2021)
 
-> **Source:** Martyn Rawson, *Steiner Waldorf Pedagogy in Schools: A Critical Introduction* (Routledge, 2021). Main sources: Part 2 “Generative principles of teaching and learning” (pp. 50–131) and Part 3 “Communities of learning” (pp. 132–157); also Part 1, pp. 42–45 (developmental phases). Page numbers are the book’s printed pages. File: `rawson2021steiner.pdf`.
+> **Source:** Martyn Rawson, *Steiner Waldorf Pedagogy in Schools: A Critical Introduction* (Routledge, 2021). Main sources: Part 2 “Generative principles of teaching and learning” (pp. 50–131) and Part 3 “Communities of learning” (pp. 132–157); also Part 1, pp. 42–45 (developmental phases). Page numbers are the book’s printed pages. File: `sources/rawson2021steiner.pdf`.
 >
 > **What this is:** A distillation, not a transcription. It keeps what an agent needs to *generate and check* upper-school (grades 9–12, ages ~15–18; Thai ม.3–ม.6) blocks and lessons. Short quotes are marked “…” with page numbers. Points carried from earlier grades are kept only where they still govern upper-school design.
 >

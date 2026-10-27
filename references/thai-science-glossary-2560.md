@@ -1,6 +1,6 @@
 # อภิธานศัพท์ — ตัวชี้วัดกลุ่มสาระการเรียนรู้วิทยาศาสตร์ (ฉบับปรับปรุง พ.ศ. 2560)
 
-> **Source:** สสวท./สพฐ., *ตัวชี้วัดและสาระการเรียนรู้แกนกลาง กลุ่มสาระการเรียนรู้วิทยาศาสตร์ (ฉบับปรับปรุง พ.ศ. ๒๕๖๐)*, อภิธานศัพท์, pp. ๒๓๘–๒๔๖ (PDF pp. 245–253). File: `สสวท2017ตัวชี้วัดและสาระการเรียนรู้แกนกลาง.pdf`.
+> **Source:** สสวท./สพฐ., *ตัวชี้วัดและสาระการเรียนรู้แกนกลาง กลุ่มสาระการเรียนรู้วิทยาศาสตร์ (ฉบับปรับปรุง พ.ศ. ๒๕๖๐)*, อภิธานศัพท์, pp. ๒๓๘–๒๔๖ (PDF pp. 245–253). File: `sources/สสวท2017ตัวชี้วัดและสาระการเรียนรู้แกนกลาง.pdf`.
 >
 > **Use:** Official meanings of the action verbs and technical terms used in indicators (ตัวชี้วัด) — e.g. what counts as `อธิบาย` vs `บรรยาย` when writing or assessing against `ว x.x ชั้น/ข้อ`. Text verbatim; spaces at original line breaks may occasionally be missing. Companion to `thai-science-core-indicators-2560.md`.
 >

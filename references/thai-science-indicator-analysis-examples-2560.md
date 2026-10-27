@@ -1,6 +1,6 @@
 # ตัวอย่างการวิเคราะห์ตัวชี้วัด (Indicator Analysis Examples)
 
-> **Source:** สสวท., *คู่มือการใช้หลักสูตรรายวิชาพื้นฐานวิทยาศาสตร์ ระดับมัธยมศึกษาตอนปลาย กลุ่มสาระการเรียนรู้วิทยาศาสตร์ (ฉบับปรับปรุง พ.ศ. ๒๕๖๐)*, ส่วนที่ ๒ การวิเคราะห์ตัวชี้วัด. Physics: printed pp. ๑๒๙–๑๓๐ (PDF pp. 138–139). Earth and space science: printed pp. ๑๖๗–๑๖๘ (PDF pp. 176–177). File: `สสวท2017คู่มือการใช้หลักสูตรรายวิชาพื้นฐานวิทยาศาสตร.pdf`.
+> **Source:** สสวท., *คู่มือการใช้หลักสูตรรายวิชาพื้นฐานวิทยาศาสตร์ ระดับมัธยมศึกษาตอนปลาย กลุ่มสาระการเรียนรู้วิทยาศาสตร์ (ฉบับปรับปรุง พ.ศ. ๒๕๖๐)*, ส่วนที่ ๒ การวิเคราะห์ตัวชี้วัด. Physics: printed pp. ๑๒๙–๑๓๐ (PDF pp. 138–139). Earth and space science: printed pp. ๑๖๗–๑๖๘ (PDF pp. 176–177). File: `sources/สสวท2017คู่มือการใช้หลักสูตรรายวิชาพื้นฐานวิทยาศาสตร.pdf`.
 >
 > **Format:** IPST analyses each indicator in a three-column table: **(1) การวิเคราะห์ตัวชี้วัด** (what the indicator demands, by domain: knowledge, skills (science process and 21st-century), scientific mind) → **(2) แนวทางการจัดการเรียนรู้** (a suggested lesson sequence) → **(3) แนวทางการวัดและประเมิน** (evidence for each domain). Earth and space pages head columns 1 and 3 with “ผลการเรียนรู้” where physics has “ตัวชี้วัด”. Both forms kept.
 >
