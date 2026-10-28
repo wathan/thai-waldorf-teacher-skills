@@ -53,6 +53,40 @@
         "Sentence frames for the conclusion are given in Thai (the default language of student materials with no profile), in scientific register, for example using อุณหภูมิ, อัตราการเกิดปฏิกิริยา or การชนกันของอนุภาค",
         "The reply suggests setting up a class profile for next time"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Write the brief for my ครูประกบ for session 1 this Thursday.",
+      "expected_output": "A Thai บันทึกสำหรับครูประกบ in the delivery folder covering the whole 13:00–15:40 session, one row per part with อยู่ / ไม่อยู่, supports for นักเรียน ก and นักเรียน ข from the differentiation plan, the Explain part at 15:00–15:25 flagged as demanding after the supporting teacher leaves, and a pre-teaching section for the Wednesday slot on a case other than ice in cups. The reply names the 15:00 Explain part for the lead teacher.",
+      "files": [
+        "fixtures/supporting-teacher"
+      ],
+      "expectations": [
+        "A new file in delivery/ (e.g. session-1-brief.md) holds the brief, titled บันทึกสำหรับครูประกบ, written in Thai",
+        "The brief covers the whole session from 13:00 to 15:40, one row per part of the session plan, including Explain, Elaborate and Evaluate after 15:00",
+        "Every row says อยู่ or ไม่อยู่ for the supporting teacher: อยู่ up to 15:00, ไม่อยู่ from 15:00",
+        "For the defining (13:15–13:40) and graph (14:30–14:55) parts, the brief gives the supporting teacher concrete supports taken from the differentiation plan (the question ladder; the graph-reading steps or sentence frames), naming นักเรียน ก and/or นักเรียน ข",
+        "The Explain part (15:00–15:25) is flagged in the brief as a demanding part after the supporting teacher leaves, with the need it collides with and a follow-up suggestion",
+        "The brief has a pre-teaching section for the Wednesday 14:00–15:00 slot that practises the routine and words such as ตัวแปรต้น / ตัวแปรตาม on a case that is not ice in cups",
+        "Students appear only as นักเรียน ก / นักเรียน ข or by need; no name or nickname from private/students.csv (ศุภวิชญ์, อรปรียา, ปลื้ม, น้ำหวาน) appears in any file outside the private folder or in the reply",
+        "The reply tells the lead teacher that the 15:00–15:25 Explain part is demanding for the students with learning differences and happens after the supporting teacher leaves",
+        "design/session-1-plan.md, design/differentiation-session-01.md and admin/class-profile.md are unchanged"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Write the brief for my ครูประกบ for session 1 this Thursday.",
+      "expected_output": "No brief is written, because the session has no differentiation plan; the reply says so plainly and offers to write the differentiation plan first.",
+      "files": [
+        "fixtures/supporting-teacher-no-diff"
+      ],
+      "expectations": [
+        "No brief file is written anywhere in the course folder",
+        "The reply says plainly that session 1 has no differentiation plan yet and that the brief is built from it",
+        "The reply offers to write the differentiation plan for session 1 first",
+        "No name or nickname from private/students.csv appears in the reply",
+        "design/session-1-plan.md and admin/class-profile.md are unchanged"
+      ]
     }
   ]
 }

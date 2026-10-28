@@ -4,14 +4,15 @@ description: >
   Adapts an existing plan for a Thai Waldorf upper-school science class
   (G9–G12 / ม.3–ม.6) to its learner variability, UDL-first: anticipates access
   barriers, removes them by design around one shared task every student can
-  start (several ways in, room to extend), then adds targeted supports for the
-  anonymised needs in the class profile, then individual adjustments. Analyses
-  language demands and gives vocabulary tiers and sentence frames for Thai
-  scientific register or an additional language, as the profile's language
-  setting indicates, always keeping the core learning intention. Writes one
-  differentiation plan with shared content written once. Use when the teacher
-  asks to differentiate, adapt, scaffold or add UDL options, language supports
-  or extension to a block plan, week plan, day plan or subject lesson session.
+  start, then adds targeted supports for the anonymised needs in the class
+  profile, then individual adjustments. Gives vocabulary tiers and sentence
+  frames for Thai scientific register or an additional language, always
+  keeping the core learning intention. Writes one differentiation plan, and on
+  request a Thai supporting-teacher brief (บันทึกสำหรับครูประกบ) for one
+  session that flags the demanding parts after the supporting teacher leaves.
+  Use when the teacher asks to differentiate, adapt, scaffold or add UDL
+  options, language supports or extension to a block, week, day or subject
+  lesson session plan, or for a brief for the supporting teacher (ครูประกบ).
   Do not use to plan a new main lesson block or subject lesson, or to write
   Thai core plans.
 license: CC-BY-SA-4.0
@@ -31,6 +32,7 @@ Talk as a colleague in plain teacher language ("your week 2 plan", "your design 
 2. Read `${CLAUDE_SKILL_DIR}/references/udl-design.md` NOW, and `${CLAUDE_SKILL_DIR}/references/language-supports.md` with `${CLAUDE_PLUGIN_ROOT}/references/thai-science-glossary-2560.md` (official indicator verbs for language supports) before Step 5.
 3. Decide what is asked:
    - **Adapt an existing plan** (block plan, week plan, day plan, subject lesson session, or a session the teacher describes in the request): Steps 1–7.
+   - **Supporting-teacher brief** (บันทึกสำหรับครูประกบ) for one session: read `${CLAUDE_SKILL_DIR}/references/supporting-teacher-brief.md` NOW and follow it in place of Steps 3–6 and the Reply; Steps 1–2 and the checklist still apply. One session per request; for several, write the first and offer the rest.
    - **No plan yet:** a main lesson block is planned by `planning-main-lesson-blocks`, a subject lesson by `planning-subject-lessons`. Say so in one sentence; differentiation follows once a plan exists.
    - **Thai core plan:** `writing-thai-core-plans` writes it; you may adapt the main lesson block or session it is written from.
 
@@ -43,7 +45,7 @@ Talk as a colleague in plain teacher language ("your week 2 plan", "your design 
 
 ## Step 2 — Anonymise
 
-Supports name needs, never students. When the teacher's request names a student or gives an identifying detail (a name, nickname, initials, an arrival date, a country singled out for one child), do not write it anywhere. Translate it into the need it stands for ("one student with attention needs", "students new to English") and tell the teacher in one line that names and identifying details were left out of the plan. Use only needs from the class profile or the request; never invent a need or a student detail.
+Supports name needs, never students. When the teacher's request names a student or gives an identifying detail (a name, nickname, initials, an arrival date, a country singled out for one child), do not write it anywhere. Translate it into the need it stands for ("one student with attention needs", "students new to English") and tell the teacher in one line that names and identifying details were left out of the plan. Use only needs from the class profile or the request; never invent a need or a student detail. The class profile's student codes (`นักเรียน ก`, `นักเรียน ข`…) are not identifying and may be used, in the supporting-teacher brief above all; never write or guess who a code stands for, and never open a private folder (course-layout Rules).
 
 ## Step 3 — Anticipate barriers first
 
@@ -83,6 +85,7 @@ Run this against what you wrote and fix any miss:
 - [ ] Shared content is written once.
 - [ ] The teacher's plan, class profile and README are unchanged (except a confirmed layout row).
 - [ ] The reply has no file paths and no student names; without a class profile it suggests setting one up.
+- [ ] **Brief only:** written from an existing differentiation plan (none → no brief, offer the plan); in Thai; the whole session with อยู่ / ไม่อยู่ on every row; students by code or need only; every demanding part after the supporting teacher leaves marked ⚠ in the brief and named in the reply; pre-teaching section only when the profile records a slot, on a case other than the session's phenomenon; at most two A4 pages.
 
 ## Reply
 
