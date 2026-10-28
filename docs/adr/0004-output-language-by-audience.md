@@ -4,6 +4,8 @@ A file the plugin writes defaults to Thai when it will be shared with someone ot
 
 This narrows spec #1's "plans in English by default": the teacher writes and supervisors read the shared documents in Thai, while working files stay in the language the teacher and agents plan in.
 
+Narrowed by ADR-0005: preparation notes, run sheets and supporting-teacher briefs are delivery documents and default to Thai.
+
 ## Consequences
 
 - Each skill states which side of the rule its outputs fall on; a new skill decides by asking who besides the teacher will read the file.

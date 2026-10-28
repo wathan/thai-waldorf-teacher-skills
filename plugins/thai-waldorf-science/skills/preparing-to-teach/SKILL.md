@@ -1,14 +1,17 @@
 ---
 name: preparing-to-teach
 description: >
-  Writes a short day-before preparation note for one planned session of a Thai
-  Waldorf upper-school science class (G9–G12 / ม.3–ม.6): timings per part,
-  anticipated student responses and misconceptions each paired with a dialogic
-  follow-up move, equipment and setup, and risk notes for demonstrations and
-  experiments, built from the session's day plan (or 5E session plan) and placed
-  where the course layout puts preparation notes. Use when the teacher asks to
-  prepare for, get ready for or run through tomorrow's or a named session. Do
-  not use to plan or change a session, main lesson block or subject lesson, or to write assessments.
+  Writes a short day-before preparation note (บันทึกเตรียมสอน, in Thai) for
+  one planned session of a Thai Waldorf upper-school science class (G9–G12 /
+  ม.3–ม.6): timings per part, anticipated student responses and
+  misconceptions each paired with a dialogic follow-up move, equipment and
+  setup, and risk notes for demonstrations and experiments, built from the
+  session's day plan (or 5E session plan). On request also writes a one-page
+  run sheet (ใบลำดับการสอน) to keep at hand while teaching: clock times,
+  parts, cue lines and materials. Use when the teacher asks to prepare for,
+  get ready for or run through tomorrow's or a named session, or for a run
+  sheet. Do not use to plan or change a session, main lesson block or subject
+  lesson, or to write assessments.
 license: CC-BY-SA-4.0
 ---
 
@@ -28,6 +31,10 @@ Talk as a colleague in plain teacher language: "your day plan", "your delivery f
    - **A Waldorf day plan** of a main lesson block (two-day rhythm, or Rawson's four-day cycle when the plan uses it): the default.
    - **A 5E session** of a subject lesson: the same note; parts follow the session's phases.
    - **No plan for that session:** go to Step 1, item 4.
+4. Decide what to write:
+   - **A preparation note** (prepare me, get me ready, run through): Steps 1–3. The default.
+   - **A run sheet** (ใบลำดับการสอน, running order, something to keep on the desk): Steps 1–2, then read `${CLAUDE_SKILL_DIR}/references/run-sheet.md` NOW and write the run sheet as it says instead of Step 3. Write no preparation note unless the teacher also asked for one.
+   - **Both:** the preparation note first, then the run sheet from it.
 
 ## Step 1 — Read the plan and what surrounds it
 
@@ -52,7 +59,7 @@ Read `${CLAUDE_SKILL_DIR}/references/responses-and-moves.md` and `${CLAUDE_SKILL
 
 1. **Where.** Use the layout's `preparation notes` row. A folder location gets one file per session, named by week and day (`week-2-day-6-prep.md`; a subject lesson by its session, `session-4-prep.md`); a file location holds one section per session in order. If a note for that session already exists, update it in place and keep the teacher's own additions. With no `preparation notes` row, run course-layout Steps 2–4 for this concept only (usual area: delivery, beside the driving question board record if there is one) and write only after the teacher confirms (or has said up front they accept your proposal).
 2. **Short.** One page: at most 500 words, counted before you finish. Bullets and short tables, no prose paragraphs; at most three anticipated responses per part, one line per risk, one quieter-channel line per discussion part; nothing copied from the plan that the teacher does not need in the moment. Cut before adding.
-3. **Language.** English by default, Thai official terms verbatim. What the teacher will say to students (the moves) in the class profile's language of student materials.
+3. **Language.** Thai by default (ADR-0005: delivery documents are printed and read by other adults), titled `บันทึกเตรียมสอน`; English when the teacher asks. Updating an existing note: keep the language it is written in unless the teacher asks to convert it. Thai official terms verbatim either way. What the teacher will say to students (the moves) in the class profile's language of student materials.
 4. **Only this session.** Never write notes for sessions nobody asked for, and never write or change plans.
 
 ## Checklist before replying
@@ -67,9 +74,11 @@ Run this against the note you wrote, and fix any miss before replying:
 - [ ] Equipment and setup list everything the plan's Preparation cells need, plus what Recall needs from yesterday.
 - [ ] Every demonstration or experiment has risk notes: hazard, control, and what to do if it fails.
 - [ ] At most 500 words (count them).
+- [ ] In Thai, titled บันทึกเตรียมสอน, unless the teacher asked for English or an existing note was already in English.
+- [ ] **Run sheet only:** one page; columns เวลา | ช่วง | สัญญาณ/คำพูดหลัก | สื่อและอุปกรณ์; clock times when the plan has them; 👥 on every row the supporting teacher is present for (none when none is recorded); no reasoning or anticipated responses; built from the plan alone is said in the reply.
 - [ ] No student names or identifying details.
 - [ ] The note sits where the layout says; no plan was changed; nothing renamed, moved or deleted.
 
 ## Reply
 
-A few sentences: which session the note is for and where it is in teacher terms ("in your delivery folder"; never a file name or path), the one thing most worth rehearsing (usually the key Recall question or the riskiest step of a demonstration), any Step 2 findings with their proposed fixes, and any assumption made without a class profile (with the one-line suggestion class-profile.md gives). Offer to adjust the note.
+A few sentences: which session the note is for and where it is in teacher terms ("in your delivery folder"; never a file name or path), the one thing most worth rehearsing (usually the key Recall question or the riskiest step of a demonstration), any Step 2 findings with their proposed fixes, and any assumption made without a class profile (with the one-line suggestion class-profile.md gives). Offer to adjust the note. For a run sheet: which session and where, any timing mismatch, and whether it was built without a preparation note.
