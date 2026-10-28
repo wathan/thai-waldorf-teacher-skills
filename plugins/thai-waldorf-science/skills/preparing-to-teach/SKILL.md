@@ -9,9 +9,10 @@ description: >
   session's day plan (or 5E session plan). On request also writes a one-page
   run sheet (ใบลำดับการสอน) to keep at hand while teaching: clock times,
   parts, cue lines and materials. Use when the teacher asks to prepare for,
-  get ready for or run through tomorrow's or a named session, or for a run
-  sheet. Do not use to plan or change a session, main lesson block or subject
-  lesson, or to write assessments.
+  get ready for or run through tomorrow's or a named session, to add to or
+  change a preparation note, or for a run sheet. Do not use to plan or
+  change a session, main lesson block or subject lesson, or to write
+  assessments.
 license: CC-BY-SA-4.0
 ---
 

@@ -1,0 +1,45 @@
+{
+  "skill_name": "exporting-documents",
+  "allowed_tools": ["Bash"],
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Export my session 1 prep note as HTML so I can print it on A4.",
+      "expected_output": "An HTML copy of the session 1 preparation note beside it in the delivery folder, marked as Thai, A4, Sarabun; HTML recorded as the course's delivery format in the Plugin layout; the note itself unchanged; the reply says where the copy is and how to print it.",
+      "files": ["fixtures/course"],
+      "expectations": [
+        "delivery/session-1-prep.html exists beside delivery/session-1-prep.md",
+        "The HTML copy has lang=\"th\", an A4 @page rule and a Sarabun / TH Sarabun New font stack",
+        "The HTML copy carries the note's content: its title, the Engage table with the student responses and moves as an HTML table, and the equipment checklist as ☐ items",
+        "delivery/session-1-prep.md is unchanged",
+        "README.md's Plugin layout section now has the line 'Delivery format: HTML' after the table, and the rest of the README is unchanged",
+        "The reply says where the copy is in plain teacher terms and how to print it (open in a browser, print to A4), with no file paths or commands"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Can I get my session 1 plan as a Word document to send to the head of department?",
+      "expected_output": "An HTML copy of the session 1 plan beside it, because Word copies come in the next version; the reply says so in one line; the recorded delivery format stays HTML.",
+      "files": ["fixtures/format-recorded"],
+      "expectations": [
+        "design/session-1-plan.html exists beside design/session-1-plan.md and carries the plan's table of times and phases",
+        "No .docx file was written",
+        "The reply says plainly that Word copies are not available yet (next version) and that an HTML copy was made instead, which can be printed or saved as PDF from the browser",
+        "README.md still says 'Delivery format: HTML' and is otherwise unchanged",
+        "design/session-1-plan.md is unchanged"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Export my session 1 prep note again.",
+      "expected_output": "The existing HTML copy was edited after export, so it is left as it is; the reply warns that those changes would be lost and asks whether to overwrite it from the note.",
+      "files": ["fixtures/edited-copy"],
+      "expectations": [
+        "delivery/session-1-prep.html still contains the line 'EDITED IN THE BROWSER: bring the spare balance from the store room.'",
+        "The reply warns that the existing copy was changed after it was exported and that overwriting would lose those changes",
+        "The reply asks whether to overwrite the copy from the preparation note, with a recommended answer",
+        "delivery/session-1-prep.md is unchanged"
+      ]
+    }
+  ]
+}

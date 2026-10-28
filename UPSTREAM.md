@@ -7,7 +7,7 @@ The plugin's skills are written fresh, not forked (ADR-0001). This record lists,
 - [Format](#format)
 - [Upstream repositories](#upstream-repositories)
 - [Plugin-wide](#plugin-wide)
-- Skills: [setting-up-class-profiles](#setting-up-class-profiles) · [guiding-the-workflow](#guiding-the-workflow) · [mapping-curriculum](#mapping-curriculum) · [planning-main-lesson-blocks](#planning-main-lesson-blocks) · [planning-subject-lessons](#planning-subject-lessons) · [writing-thai-core-plans](#writing-thai-core-plans) · [differentiating-for-learner-variability](#differentiating-for-learner-variability) · [planning-formative-assessment](#planning-formative-assessment) · [auditing-epistemic-agency](#auditing-epistemic-agency) · [preparing-to-teach](#preparing-to-teach)
+- Skills: [setting-up-class-profiles](#setting-up-class-profiles) · [guiding-the-workflow](#guiding-the-workflow) · [mapping-curriculum](#mapping-curriculum) · [planning-main-lesson-blocks](#planning-main-lesson-blocks) · [planning-subject-lessons](#planning-subject-lessons) · [writing-thai-core-plans](#writing-thai-core-plans) · [differentiating-for-learner-variability](#differentiating-for-learner-variability) · [planning-formative-assessment](#planning-formative-assessment) · [auditing-epistemic-agency](#auditing-epistemic-agency) · [preparing-to-teach](#preparing-to-teach) · [exporting-documents](#exporting-documents)
 - Repo-only: [check-upstream](#check-upstream)
 - [Pending confirmation](#pending-confirmation)
 
@@ -126,6 +126,13 @@ Built in #12. The audit itself (three decision domains after Ko & Krist, 2019; r
 |---|---|---|---|---|
 | k12 | plugin/skills/k12-lesson-prep | 281eb8d41fe2837d911541c9bbb870b58add804c | content (short teacher-only note walking the session's own parts in teaching order; prepare from the actual plan, never a guess) | firm |
 | gareth | skills/questioning-discussion/dialogic-teaching-move-generator | b8efa77fe34cc0c7206086a6acc3303bd4045da4 | content (talk-move types, matching the move to the response, no evaluating moves) | firm |
+
+## exporting-documents
+
+| Repo | Path | Commit last reviewed | Role | Status |
+|---|---|---|---|---|
+| k12 | plugin/skills/k12-lesson-differentiation/rendering/docx.md | 281eb8d41fe2837d911541c9bbb870b58add804c | structural (one source rendered to printable copies by a bundled script; copies never edited directly, re-rendered instead; loud failure, never a silent fallback to chat) | firm |
+| k12 | plugin/skills/k12-lesson-differentiation/scripts | 281eb8d41fe2837d911541c9bbb870b58add804c | structural (renderer shape only; written fresh, since the source here is markdown, not lesson JSON) | firm |
 
 ## check-upstream
 

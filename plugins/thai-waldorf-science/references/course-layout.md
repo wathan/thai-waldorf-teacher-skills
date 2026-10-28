@@ -84,6 +84,8 @@ Propose the concepts the current skill needs plus a row for every area the folde
 
 Write or update the `## Plugin layout` section of the top-level README, creating `README.md` if there is none. Keep every other line of the README exactly as it was; append the section at the end if it is new; if it exists, edit rows in place and never add a second section.
 
+One setting may follow the table in the same section: `Delivery format: HTML` (or `docx`, `Claude Docs`), the format the teacher chose for printable copies, written only by `exporting-documents` after the teacher chooses.
+
 ```markdown
 ## Plugin layout
 
