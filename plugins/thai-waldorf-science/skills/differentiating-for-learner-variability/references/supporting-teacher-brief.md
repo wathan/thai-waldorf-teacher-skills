@@ -15,7 +15,7 @@ How to write บันทึกสำหรับครูประกบ: a not
 
 1. **Differentiation plan.** Find the one covering this session at the layout's `differentiation` location. None: say plainly that the brief rests on the differentiation plan's barriers and supports, offer to write that plan first, and write no brief. A plan for the whole teaching sequence or week counts if it covers this session.
 2. **Session plan.** Read it at the `session plans` location for the parts, their order and times. Read only.
-3. **Run sheet.** If one exists for this session at the `preparation notes` location, take the times from it; else from the session plan.
+3. **Run sheet.** If one exists for this session at the `delivery documents` location, take the times from it; else from the session plan.
 4. **Class profile.** Read the Schedule's `Supporting teacher` and `Pre-teaching slot` lines and the learner variability codes.
    - **No supporting teacher recorded and none in the request:** ask one question: when are they in the room, and what do they do? Recommend "the whole session, supporting the students with learning differences".
    - **No codes:** write the brief by need ("นักเรียนที่มีความต้องการด้านการอ่าน") and end the reply with one line suggesting codes be added to the class profile (`setting-up-class-profiles`) so the brief can say who gets which support.
@@ -71,7 +71,7 @@ Only when the class profile records a pre-teaching slot. Heading `ช่วง�
 
 ## Where and how long
 
-- **Where.** The layout's `preparation notes` location, one file per session, named like the session's preparation note with `-brief` (`session-1-brief.md`, `week-2-day-6-brief.md`). An existing brief for the session is updated in place, keeping the teacher's own additions. With no `preparation notes` row, run course-layout Steps 2–4 for that concept only (usual area: delivery) and write after the teacher confirms.
+- **Where.** The layout's `delivery documents` location, one file per session, named like the session's preparation note with `-brief` (`session-1-brief.md`, `week-2-day-6-brief.md`). An existing brief for the session is updated in place, keeping the teacher's own additions. With no `delivery documents` row, run course-layout Steps 2–4 for that concept only (usual area: delivery) and write after the teacher confirms.
 - **How long.** At most two A4 pages: about 600 Thai words, table included. Cut supporting detail before cutting a row; never drop a ⚠ part.
 - **Read-only elsewhere.** Never edit the session plan, the differentiation plan, the run sheet or the class profile.
 

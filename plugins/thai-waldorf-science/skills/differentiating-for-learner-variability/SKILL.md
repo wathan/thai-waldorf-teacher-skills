@@ -4,15 +4,15 @@ description: >
   Adapts an existing plan for a Thai Waldorf upper-school science class
   (G9–G12 / ม.3–ม.6) to its learner variability, UDL-first: anticipates access
   barriers, removes them by design around one shared task every student can
-  start, then adds targeted supports for the anonymised needs in the class
-  profile, then individual adjustments. Gives vocabulary tiers and sentence
-  frames for Thai scientific register or an additional language, always
+  start (several ways in, room to extend), then adds targeted supports for the anonymised needs in the class
+  profile, then individual adjustments. Analyses language demands and
+  gives vocabulary tiers and sentence frames for Thai scientific register or an additional language, always
   keeping the core learning intention. Writes one differentiation plan, and on
   request a Thai supporting-teacher brief (บันทึกสำหรับครูประกบ) for one
   session that flags the demanding parts after the supporting teacher leaves.
   Use when the teacher asks to differentiate, adapt, scaffold or add UDL
   options, language supports or extension to a block, week, day or subject
-  lesson session plan, or for a brief for the supporting teacher (ครูประกบ).
+  lesson session plan, or for a ครูประกบ brief.
   Do not use to plan a new main lesson block or subject lesson, or to write
   Thai core plans.
 license: CC-BY-SA-4.0

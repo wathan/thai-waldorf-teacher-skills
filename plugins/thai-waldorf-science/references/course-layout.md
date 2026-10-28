@@ -40,7 +40,7 @@ Each concept has a fixed name, used verbatim in the mapping table. Locations may
 | assessments | Assessment for learning and assessment as learning | assessment |
 | agency audit | Epistemic agency audit reports | evaluation |
 | driving question board | Record of the class's driving question board | delivery |
-| preparation notes | Day-before preparation, equipment and setup, risk notes | delivery |
+| delivery documents | Preparation notes, run sheets and supporting-teacher briefs, one file each per session | delivery |
 | resources | Equipment lists, sources, handouts, student materials | resources |
 | templates | Course-local plan templates, used before the plugin's (see [Plan templates](#plan-templates-the-courses-own-come-first)) | templates |
 
@@ -48,7 +48,7 @@ Each concept has a fixed name, used verbatim in the mapping table. Locations may
 
 1. Look for a README at the course folder's top level (`README.md`, any case; also `readme.md`, `README.th.md`).
 2. If it has a `## Plugin layout` section, use its table. Do not detect again.
-3. If a concept the skill needs is missing from the table, run Steps 2–4 for that concept only and add one row.
+3. If a concept the skill needs is missing from the table, run Steps 2–4 for that concept only and add one row. A row named `preparation notes` (the earlier name) is the `delivery documents` row: read it as such and leave its name as the teacher has it.
 4. If a mapped location has been renamed or removed by the teacher, say so plainly and ask where that concept now lives; update the row once confirmed.
 
 ## Step 2: detect a layout
@@ -112,7 +112,7 @@ When the folder is empty or nothing matches, offer the teacher's **default cours
 | `planning/` | standards map, block and week plans, Thai core plans |
 | `design/` | unit plans, session plans, differentiation |
 | `resources/` | resources |
-| `delivery/` | driving question board, preparation notes |
+| `delivery/` | driving question board, delivery documents |
 | `assessment/` | assessments |
 | `evaluation/` | agency audit |
 | `templates/` | templates (the four plan templates, copied in) |

@@ -21,7 +21,7 @@ You turn a document the teacher already has into a copy they can print or share.
 
 ## Keeping the teacher posted
 
-Talk as a colleague in plain teacher language: "a printable copy next to your week 2 plan", "open it in your browser and print to A4", never script names, commands or file paths. Use the glossary terms exactly: Waldorf plan, Thai core plan, preparation note, run sheet, supporting-teacher brief.
+Talk as a colleague in plain teacher language: "a printable copy next to your week 2 plan", "open it in your browser and print to A4", never script names, commands or file paths. Use the glossary terms exactly: Waldorf plan, Thai core plan, delivery document, preparation note, run sheet, supporting-teacher brief, exported copy. A teacher may say "prep note"; you say "preparation note".
 
 ## Step 0 — Route (silent)
 
@@ -53,13 +53,13 @@ python3 "${CLAUDE_SKILL_DIR}/scripts/render_html.py" "<path to the document>"
 
 It writes the copy beside the source with the same name and `.html`, and prints a JSON report: `out`, `written`, `edited_copy`, `unsupported`. Never open or edit the copy afterwards; to change the copy, change the source (through the skill that writes it) and export again.
 
-- **Exit 3, `edited_copy: true`:** the existing copy was changed after it was exported (for example edited in the browser or Word), and was left as it is. Tell the teacher those changes would be lost, and ask: "Overwrite it from your plan? Recommended: yes, if the plan has everything you want." On yes, run again with `--force`. On no, leave it.
-- **Exit 1, or `python3` not found:** say plainly that no copy was made and why, in one line. Never paste the document into the chat as a stand-in.
+- **Exit 3, `edited_copy: true`:** the existing copy was changed after it was exported (for example edited in the browser or Word), or was made by hand rather than by this skill, and was left as it is. Tell the teacher those changes would be lost, and ask: "Overwrite it from your plan? Recommended: yes, if the plan has everything you want." On yes, run again with `--force`. On no, leave it.
+- **Exit 1** (the report has an `error`), **or `python3` not found:** say plainly that no copy was made and why, in one line. Never paste the document into the chat as a stand-in.
 - **`unsupported` not empty:** those parts (a quote, a link, a code block, a picture, a nested list…) were kept as plain text. Name them in the reply in plain words.
 
 ## Step 4 — Reply
 
-A few lines: which document, where the copy is in teacher terms ("next to your session 1 prep note"), how to print it (open it in a browser, print, A4, margins as set), any parts kept as plain text, and the format recorded if you just asked. When several documents were exported, one line each.
+A few lines: which document, where the copy is in teacher terms ("next to your session 1 preparation note"), how to print it (open it in a browser, print, A4, margins as set), any parts kept as plain text, and the format recorded if you just asked. When several documents were exported, one line each.
 
 ## Checklist before replying
 

@@ -11,7 +11,7 @@ How to write ใบลำดับการสอน: one A4 page for one sessio
 ## Sources
 
 1. **The session plan** (day plan or 5E session): parts, order, timings, materials. Read only.
-2. **The session's preparation note**, if one exists at the `preparation notes` location: the key cue line per part (the opening Recall question, the hold-don't-correct line, the hard stop) and the setup checklist. With no preparation note, build from the plan alone and say so in the reply; never write a preparation note the teacher did not ask for.
+2. **The session's preparation note**, if one exists at the `delivery documents` location: the key cue line per part (the opening Recall question, the hold-don't-correct line, the hard stop) and the setup checklist. With no preparation note, build from the plan alone and say so in the reply; never write a preparation note the teacher did not ask for.
 3. **The class profile:** the session length, and the `Supporting teacher` line for the presence marker.
 
 ## Shape
@@ -47,4 +47,4 @@ How to write ใบลำดับการสอน: one A4 page for one sessio
 - Same read-only plan check as the preparation note: when the parts do not add up to the session length, show the plan's times and report the mismatch in the reply.
 - No reasoning, no anticipated responses, no risk explanations; a safety-critical action (teacher pours only, gloves on) may appear as a cue line.
 - No student names or identifying details.
-- **Where:** the layout's `preparation notes` location, named like the preparation note with `-run-sheet` (`session-1-run-sheet.md`, `week-2-day-6-run-sheet.md`); a file location gets a section after that session's note. Update an existing run sheet in place, keeping the teacher's own additions.
+- **Where:** the layout's `delivery documents` location, named like the preparation note with `-run-sheet` (`session-1-run-sheet.md`, `week-2-day-6-run-sheet.md`); a file location gets a section after that session's note. Update an existing run sheet in place, keeping the teacher's own additions.

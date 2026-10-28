@@ -170,5 +170,40 @@ class RenderTest(unittest.TestCase):
         self.assertEqual(self.cli(self.dir / "missing.md")[0], 1)
         self.assertEqual(self.cli(self.doc("x", name="plan.txt"))[0], 1)
 
+
+    def test_all_six_heading_levels(self):
+        _, html = self.html("##### ระดับห้า\n\n###### ระดับหก\n")
+        self.assertIn("<h5>ระดับห้า</h5>", html)
+        self.assertIn("<h6>ระดับหก</h6>", html)
+
+    def test_br_breaks_a_line_anywhere_and_other_raw_html_is_reported(self):
+        result, html = self.html("บรรทัดหนึ่ง<br>บรรทัดสอง\n\nคำ <u>ขีดเส้น</u>\n")
+        self.assertIn("<p>บรรทัดหนึ่ง<br>บรรทัดสอง</p>", html)
+        self.assertIn("&lt;u&gt;ขีดเส้น&lt;/u&gt;", html)
+        self.assertEqual(result.unsupported, ["raw HTML"])
+
+    def test_strikethrough_footnotes_and_indented_code_are_reported(self):
+        result, html = self.html(
+            "ไม่ใช้ ~~ผ้าแห้ง~~ แล้ว[^1]\n\n[^1]: เปลี่ยนเมื่อ 28 ต.ค.\n\n    โค้ดเยื้อง\n"
+        )
+        self.assertEqual(result.unsupported, ["code block", "footnote", "strikethrough"])
+        self.assertIn("~~ผ้าแห้ง~~", html)
+        self.assertIn("โค้ดเยื้อง", html)
+
+    def test_cli_reports_a_copy_that_cannot_be_written_as_json(self):
+        source = self.doc("# แผน\n")
+        source.with_suffix(".html").mkdir()
+        code, report = self.cli(source)
+        self.assertEqual(code, 1)
+        self.assertIn("error", report)
+
+    def test_cli_reports_a_source_that_is_not_utf8_as_json(self):
+        source = self.dir / "plan.md"
+        source.write_bytes(b"\xff\xfe plan saved as UTF-16")
+        code, report = self.cli(source)
+        self.assertEqual(code, 1)
+        self.assertIn("error", report)
+
+
 if __name__ == "__main__":
     unittest.main()

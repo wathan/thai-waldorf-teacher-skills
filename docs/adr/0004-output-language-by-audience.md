@@ -1,10 +1,8 @@
 # Output language follows the audience
 
-A file the plugin writes defaults to Thai when it will be shared with someone other than the teacher and the agents, and to English when only the teacher and the agents read it. Shared: Waldorf plans (block, week, day; read by colleagues and the school), 5E unit plans and cycle plans of a subject lesson (read by colleagues and the school, like Waldorf plans), Thai core plans (external supervision), the course standards map and year coverage report (shown to supervisors). Teacher-and-agent only: class profile, course README "Plugin layout", differentiation plan, agency audit, formative assessment plan, preparation notes. The teacher can ask for the other language for any file. Thai official terms (indicator codes and wording, skill and attitude names, ปีการศึกษา) are quoted verbatim in either language, and student-facing material follows the class profile's language of student materials.
+A file the plugin writes defaults to Thai when it will be shared with someone other than the teacher and the agents, and to English when only the teacher and the agents read it. Shared: Waldorf plans (block, week, day; read by colleagues and the school), 5E unit plans and cycle plans of a subject lesson (read by colleagues and the school, like Waldorf plans), Thai core plans (external supervision), the course standards map and year coverage report (shown to supervisors). Teacher-and-agent only: class profile, course README "Plugin layout", differentiation plan, agency audit, formative assessment plan, and preparation notes until ADR-0005 made them delivery documents in Thai. The teacher can ask for the other language for any file. Thai official terms (indicator codes and wording, skill and attitude names, ปีการศึกษา) are quoted verbatim in either language, and student-facing material follows the class profile's language of student materials.
 
 This narrows spec #1's "plans in English by default": the teacher writes and supervisors read the shared documents in Thai, while working files stay in the language the teacher and agents plan in.
-
-Narrowed by ADR-0005: preparation notes, run sheets and supporting-teacher briefs are delivery documents and default to Thai.
 
 ## Consequences
 

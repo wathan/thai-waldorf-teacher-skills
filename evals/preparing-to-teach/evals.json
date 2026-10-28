@@ -100,6 +100,36 @@
         "The reply says the run sheet was built from the day plan alone, without a preparation note",
         "The day plans and the class profile are unchanged"
       ]
+    },
+    {
+      "id": 7,
+      "prompt": "Prepare me for session 1 on Thursday. Write the note in English this time, please; a visiting colleague will read it.",
+      "expected_output": "A new preparation note for session 1 in the delivery folder, written in English (English headings), with the moves students hear still in Thai.",
+      "files": [
+        "fixtures/no-note"
+      ],
+      "expectations": [
+        "Exactly one new preparation note for session 1 exists in delivery/",
+        "The note's title and headings are in English (e.g. 'Preparation', 'Equipment and setup', 'Risk notes'), not บันทึกเตรียมสอน",
+        "The lines the teacher says to students (the moves) are in Thai, the class profile's language of student materials",
+        "The note follows the session plan's parts in order with their times from 13:00 to 15:40 (a part with nothing to prepare, such as the five-minute changeover, may be left out)",
+        "design/session-1-plan.md and admin/class-profile.md are unchanged"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Make me a run sheet for session 1 on Thursday.",
+      "expected_output": "A Thai run sheet following the plan's times as written, which run to 15:55 although the session ends at 15:40; the reply reports the 15-minute overrun and proposes a fix, and the plan is not changed.",
+      "files": [
+        "fixtures/overrun"
+      ],
+      "expectations": [
+        "A new run sheet for session 1 exists in delivery/, titled ใบลำดับการสอน and written in Thai",
+        "The run sheet shows the plan's times as written, including Elaborate 15:25–15:45 and Evaluate 15:45–15:55",
+        "The reply reports that the plan runs to 15:55, 15 minutes past the 15:40 end of the session, and proposes where to cut",
+        "The reply says the run sheet was built from the plan alone, without a preparation note",
+        "design/session-1-plan.md is unchanged (still runs to 15:55)"
+      ]
     }
   ]
 }

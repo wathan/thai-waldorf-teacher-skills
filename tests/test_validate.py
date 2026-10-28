@@ -257,6 +257,15 @@ class ValidatorTest(unittest.TestCase):
         write(self.plugin / "skills/doing-things/references/local.md", "# Local\n")
         self.assertEqual(validate(self.root), [])
 
+    def test_skill_with_a_bundled_script_is_accepted(self):
+        self.set_frontmatter(
+            "name: doing-things\ndescription: Does things. Use when asked.",
+            body='Run `python3 "${CLAUDE_SKILL_DIR}/scripts/do_it.py"`\n',
+        )
+        self.assertReports("scripts/do_it.py")
+        write(self.plugin / "skills/doing-things/scripts/do_it.py", "print('done')\n")
+        self.assertEqual(validate(self.root), [])
+
     # --- upstream record ------------------------------------------------
 
     def test_skill_without_upstream_entry_is_reported(self):

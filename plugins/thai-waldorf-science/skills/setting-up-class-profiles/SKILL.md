@@ -3,18 +3,18 @@ name: setting-up-class-profiles
 description: >
   Sets up or updates the class profile for one class of a Thai Waldorf
   upper-school science teacher (G9–G12 / ม.3–ม.6) through a round-by-round
-  interview with recommended answers: grade and grade mode, main lesson block
-  or subject lesson, schedule, learner variability as anonymised counts with
-  optional student codes, any supporting teacher (ครูประกบ), languages, and
-  the academic year in CE and ปีการศึกษา. Detects the course
-  folder's layout, proposes where plugin files go and records the confirmed
-  mapping in the course README; in an empty folder, creates the
-  default course template once the teacher confirms. Copies the plugin's
-  four plan templates into the course, and optionally records a year plan
-  outside the course. Use when the teacher wants to describe a class, set up
-  or change a class profile, start a new course folder, add the plan
-  templates, record a year plan, or tell the plugin where things live. Do
-  not use to plan a main lesson block, subject lesson or session.
+  interview: grade and grade mode, main lesson block or subject lesson,
+  schedule, learner variability as anonymised counts with optional student
+  codes, any supporting teacher (ครูประกบ), languages, and the academic year
+  in CE and ปีการศึกษา. Detects the course folder's layout, proposes where
+  plugin files go and records the confirmed mapping in the course README; in
+  an empty folder, creates the default course template once the teacher
+  confirms. Copies the four plan templates into the course, and optionally
+  records a year plan (teaching sequences per grade and term, with claimed
+  Thai indicators) outside the course. Use when the teacher wants to describe
+  a class, set up or change a class profile, start a new course folder, add
+  the plan templates, record a year plan, or tell the plugin where things
+  live. Do not use to plan a main lesson block, subject lesson or session.
 license: CC-BY-SA-4.0
 ---
 

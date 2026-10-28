@@ -16,7 +16,7 @@ import html
 import json
 import re
 import sys
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
 PAGE = """<!doctype html>
@@ -33,7 +33,7 @@ PAGE = """<!doctype html>
          font-size: 11pt; line-height: 1.5; }}
   h1 {{ font-size: 16pt; margin: 0 0 6pt; }}
   h2 {{ font-size: 13pt; margin: 12pt 0 4pt; border-bottom: 1px solid #999; }}
-  h3, h4 {{ font-size: 11.5pt; margin: 10pt 0 4pt; }}
+  h3, h4, h5, h6 {{ font-size: 11.5pt; margin: 10pt 0 4pt; }}
   p {{ margin: 0 0 6pt; }}
   table {{ width: 100%; border-collapse: collapse; margin: 0 0 8pt; font-size: 10pt; }}
   th, td {{ border: 1px solid #555; padding: 3pt 4pt; text-align: left; vertical-align: top; }}
@@ -51,7 +51,7 @@ PAGE = """<!doctype html>
 </html>
 """
 
-HEADING = re.compile(r"^(#{1,4})\s+(.*?)\s*#*\s*$")
+HEADING = re.compile(r"^(#{1,6})\s+(.*?)\s*#*\s*$")
 
 
 @dataclass
@@ -62,14 +62,21 @@ class Result:
     unsupported: list = field(default_factory=list)
 
 
+WRITTEN, FAILED, EDITED_COPY_KEPT = 0, 1, 3  # exit codes
+
 BOLD = re.compile(r"\*\*(?=\S)(.+?)(?<=\S)\*\*|__(?=\S)(.+?)(?<=\S)__")
 ITALIC = re.compile(r"(?<![\w*])\*(?=\S)(.+?)(?<=\S)\*(?![\w*])|(?<![\w_])_(?=\S)(.+?)(?<=\S)_(?![\w_])")
+BR = re.compile(r"<br\s*/?>", re.I)
 
 
 def inline(text: str) -> str:
-    text = html.escape(text, quote=False)
-    text = BOLD.sub(lambda m: f"<strong>{m.group(1) or m.group(2)}</strong>", text)
-    return ITALIC.sub(lambda m: f"<em>{m.group(1) or m.group(2)}</em>", text)
+    """Escape one line of text, keeping bold, italic and <br> line breaks."""
+    parts = []
+    for part in BR.split(text):
+        part = html.escape(part, quote=False)
+        part = BOLD.sub(lambda m: f"<strong>{m.group(1) or m.group(2)}</strong>", part)
+        parts.append(ITALIC.sub(lambda m: f"<em>{m.group(1) or m.group(2)}</em>", part))
+    return "<br>".join(parts)
 
 
 TASK = re.compile(r"^[-*+]\s+\[([ xX])\]\s+(.*)$")
@@ -77,15 +84,14 @@ BULLET = re.compile(r"^[-*+]\s+(.*)$")
 NUMBERED = re.compile(r"^\d+[.)]\s+(.*)$")
 TABLE_ROW = re.compile(r"^\|.*\|$")
 TABLE_RULE = re.compile(r"^\|(\s*:?-+:?\s*\|)+$")
-BR = re.compile(r"<br\s*/?>", re.I)
 
 
 def cells(row: str) -> list:
     return [cell.strip() for cell in row.strip()[1:-1].split("|")]
 
 
-def cell_html(text: str) -> str:
-    return "<br>".join(inline(part) for part in BR.split(text))
+def table_row(tag: str, row: list) -> str:
+    return "<tr>" + "".join(f"<{tag}>{inline(cell)}</{tag}>" for cell in row) + "</tr>"
 
 
 class Blocks:
@@ -95,6 +101,9 @@ class Blocks:
         self.html, self.para, self.items, self.rows = [], [], [], []
         self.list_tag, self.list_open = "", ""
 
+    def open(self) -> bool:
+        return bool(self.para or self.items or self.rows)
+
     def flush(self):
         if self.para:
             self.html.append(f"<p>{inline(' '.join(self.para))}</p>")
@@ -102,11 +111,19 @@ class Blocks:
             self.html.append("\n".join([self.list_open, *self.items, f"</{self.list_tag}>"]))
         if self.rows:
             head, *body = self.rows
-            row = lambda tag, r: "<tr>" + "".join(f"<{tag}>{cell_html(c)}</{tag}>" for c in r) + "</tr>"
             self.html.append("\n".join(
-                ["<table>", f"<thead>{row('th', head)}</thead>", "<tbody>",
-                 *(row("td", r) for r in body), "</tbody>", "</table>"]))
+                ["<table>", f"<thead>{table_row('th', head)}</thead>", "<tbody>",
+                 *(table_row("td", r) for r in body), "</tbody>", "</table>"]))
         self.para, self.items, self.rows = [], [], []
+
+    def heading(self, level, text):
+        self.flush()
+        self.html.append(f"<h{level}>{inline(text)}</h{level}>")
+
+    def text(self, line):
+        if self.items or self.rows:
+            self.flush()
+        self.para.append(line)
 
     def item(self, tag, opening, text):
         if self.para or self.rows or (self.items and self.list_open != opening):
@@ -126,12 +143,18 @@ class Blocks:
 
 
 FENCE = re.compile(r"^(```|~~~)")
+INDENTED = re.compile(r"^( {4}|\t)\S")
 QUOTE = re.compile(r"^>")
 RULE = re.compile(r"^(-{3,}|\*{3,}|_{3,})$")
 NESTED = re.compile(r"^(\s{2,}|\t)([-*+]|\d+[.)])\s+")
-IMAGE = re.compile(r"!\[[^\]]*\]\([^)]*\)")
-LINK = re.compile(r"(?<!!)\[[^\]]+\]\([^)]*\)")
-CODE = re.compile(r"`[^`]+`")
+INLINE_UNSUPPORTED = (
+    ("image", re.compile(r"!\[[^\]]*\]\([^)]*\)")),
+    ("link", re.compile(r"(?<!!)\[[^\]]+\]\([^)]*\)")),
+    ("inline code", re.compile(r"`[^`]+`")),
+    ("strikethrough", re.compile(r"~~.+?~~")),
+    ("footnote", re.compile(r"\[\^[^\]]+\]")),
+)
+RAW_HTML = re.compile(r"</?[A-Za-z][^>]*>")
 
 
 def plain(text: str) -> str:
@@ -153,19 +176,20 @@ def to_html(markdown: str) -> tuple[str, str, list]:
         if in_fence:
             blocks.raw(line)
             continue
-        for name, pattern in (("image", IMAGE), ("link", LINK), ("inline code", CODE)):
+        for name, pattern in INLINE_UNSUPPORTED:
             if pattern.search(line):
                 found.add(name)
+        if RAW_HTML.search(BR.sub("", line)):
+            found.add("raw HTML")
         heading = HEADING.match(line)
         task = TASK.match(stripped)
         bullet = BULLET.match(stripped)
         numbered = NUMBERED.match(stripped)
         if heading:
-            blocks.flush()
             level, text = len(heading.group(1)), heading.group(2)
             if level == 1 and not title:
                 title = text
-            blocks.html.append(f"<h{level}>{inline(text)}</h{level}>")
+            blocks.heading(level, text)
         elif TABLE_ROW.match(stripped):
             blocks.row(stripped)
         elif QUOTE.match(stripped):
@@ -186,10 +210,11 @@ def to_html(markdown: str) -> tuple[str, str, list]:
                 blocks.item("ol", "<ol>", inline(numbered.group(1)))
         elif not stripped:
             blocks.flush()
+        elif INDENTED.match(line) and not blocks.open():
+            found.add("code block")
+            blocks.raw(stripped)
         else:
-            if blocks.items or blocks.rows:
-                blocks.flush()
-            blocks.para.append(stripped)
+            blocks.text(stripped)
     blocks.flush()
     return title, "\n".join(blocks.html), sorted(found)
 
@@ -204,7 +229,8 @@ def digest(page: str) -> str:
 
 
 def edited_since_export(copy: Path) -> bool:
-    """True when the copy no longer matches the digest it was exported with."""
+    """True when the copy no longer matches the digest it was exported with
+    (edited after export, or never made by this renderer)."""
     page = copy.read_text(encoding="utf-8", errors="replace")
     recorded = DIGEST.search(page)
     return not recorded or recorded.group(2) != digest(page)
@@ -212,7 +238,6 @@ def edited_since_export(copy: Path) -> bool:
 
 def render(source: Path, force: bool = False) -> Result:
     """Write SOURCE's HTML copy beside it, unless the copy was edited and not forced."""
-    source = Path(source)
     out = source.with_suffix(".html")
     title, body, unsupported = to_html(source.read_text(encoding="utf-8"))
     if out.exists() and not force and edited_since_export(out):
@@ -222,19 +247,28 @@ def render(source: Path, force: bool = False) -> Result:
     return Result(out=out, unsupported=unsupported)
 
 
+def report(fields: dict) -> None:
+    print(json.dumps(fields, ensure_ascii=False))
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Render a course markdown document to an A4 HTML copy beside it.")
     parser.add_argument("source", type=Path)
     parser.add_argument("--force", action="store_true", help="overwrite a copy edited since export")
     args = parser.parse_args(argv)
     if args.source.suffix.lower() != ".md" or not args.source.is_file():
-        print(json.dumps({"error": f"not a markdown file: {args.source}"}, ensure_ascii=False))
-        return 1
-    result = render(args.source, force=args.force)
-    print(json.dumps({"out": str(result.out), "written": result.written,
-                      "edited_copy": result.edited_copy, "unsupported": result.unsupported},
-                     ensure_ascii=False))
-    return 3 if result.edited_copy else 0
+        report({"error": f"not a markdown file: {args.source}"})
+        return FAILED
+    try:
+        result = render(args.source, force=args.force)
+    except UnicodeDecodeError:
+        report({"error": f"not UTF-8 text: {args.source}"})
+        return FAILED
+    except OSError as exc:
+        report({"error": f"could not write the copy: {exc}"})
+        return FAILED
+    report({**asdict(result), "out": str(result.out)})
+    return EDITED_COPY_KEPT if result.edited_copy else WRITTEN
 
 
 if __name__ == "__main__":
