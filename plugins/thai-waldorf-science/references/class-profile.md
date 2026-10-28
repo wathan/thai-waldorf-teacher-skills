@@ -2,6 +2,12 @@
 
 The class profile describes one class for one teaching sequence. `setting-up-class-profiles` writes it; every other skill reads it from the location the course README's "Plugin layout" section gives for the concept `class profile` (see `course-layout.md`). Each course keeps its own copy.
 
+## Contents
+
+- [Fields](#fields)
+- [File format](#file-format)
+- [When there is no class profile](#when-there-is-no-class-profile)
+
 ## Fields
 
 | Field | Values | Default |
@@ -12,7 +18,8 @@ The class profile describes one class for one teaching sequence. `setting-up-cla
 | Kind of teaching sequence | main lesson block, or subject lesson (one per course folder) | none: always ask |
 | Name | the teaching sequence's own subject (a main lesson block is named by its subject, e.g. meteorology) | ask; never taken from the folder name |
 | Schedule | main lesson block: session length, days per week, number of weeks; subject lesson: sessions per week, each session's length and day, length of the sequence | main lesson block: 100 minutes, Monday–Friday, 3 weeks (2–4); subject lesson: one long (100 min) and one short (50 min) session a week, for one term |
-| Learner variability | anonymised counts per need (see below) | ask |
+| Supporting teacher | when a supporting teacher (ครูประกบ) is in the room (e.g. 13:00–15:00, or the whole session) and what they do; optionally a pre-teaching slot (day and time, and what it is for) | none |
+| Learner variability | anonymised counts per need, and optionally one code per student with a learning difference (see below) | ask |
 | Language of instruction | e.g. Thai, English | Thai |
 | Language of student materials | e.g. Thai, English, bilingual | same as instruction |
 | Academic year | CE years and the Buddhist-era ปีการศึกษา; optionally the term (ภาคเรียน) | the academic year in progress (below) |
@@ -21,6 +28,10 @@ The class profile describes one class for one teaching sequence. `setting-up-cla
 **Academic year.** A Thai academic year starts in May. The ปีการศึกษา is the CE year in which it starts plus 543. From May 2026 to April 2027 the academic year is 2026–2027 = ปีการศึกษา 2569. Work it out from today's date; never hard-code it.
 
 **Learner variability.** Counts only, by need: learning differences (e.g. dyslexia, attention), the language of instruction as an additional language, extension, other access needs (physical, sensory, health), each with an optional short note about the kind of need. Never names, nicknames, initials, student numbers, photos, or details that single out one student (e.g. "the boy from Myanmar who arrived in June").
+
+**Student codes.** Optional, and only for students with learning differences, so that a supporting-teacher brief can say which support goes to whom. One code per student, `นักเรียน ก`, `นักเรียน ข`, `นักเรียน ค`… in Thai alphabet order, assigned in the order the teacher lists the needs, never derived from a name or initial. Each code carries that student's need in plain words (no identifying detail). The number of codes equals the learning-differences count. Only the teacher knows which student a code stands for; no plugin file links a code to a name. A profile without codes stays valid; codes are added when the teacher first wants a brief.
+
+**Private folders.** A course may keep a student roster or similar in a private folder (see course-layout.md, Rules). Never read it to fill the profile, never take codes or counts from it.
 
 ## File format
 
@@ -72,6 +83,17 @@ Last updated: 2026-10-27
 ## Year plan
 
 - None recorded.
+```
+
+With a supporting teacher, the Schedule section adds `- Supporting teacher:` (when they are in the room and what they do, e.g. "13:00–15:00; supports the students with learning differences, not lab assistance") and, if there is one, `- Pre-teaching slot:` (day, time and purpose, e.g. "Wednesday 14:00–15:00; routine and language on a different case, never the session's phenomenon"). Without one, leave both lines out.
+
+With student codes, the Learner variability section adds a second table after the counts:
+
+```markdown
+| Code | Need |
+|---|---|
+| นักเรียน ก | reading-related: decoding long words |
+| นักเรียน ข | reading-related: slow written output |
 ```
 
 With a year plan, the Year plan section reads `- Path:` followed by the path in backticks as the teacher gave it (e.g. `../year-plan-2569.md`), instead of `- None recorded.`

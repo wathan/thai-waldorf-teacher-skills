@@ -17,6 +17,7 @@ Shared by every skill that reads or writes files in a course folder (ADR-0002). 
 
 - **The folder name is off limits.** Never read the course folder's own name for meaning (it is not the subject, grade or class), never mention it, never rename or move the folder. Work with paths relative to the folder.
 - **Stay inside the course folder.** The only file outside it a skill may touch is the year plan, at the path the class profile gives (see `year-plan.md`); only `setting-up-class-profiles` writes it. Plugin reference files are not course files and may always be read.
+- **Private folders are off limits.** A folder inside the course named `private` (any case, at any depth), or one the course's ignore rules (`.gitignore`) mark as private, holds things such as a student roster. Never read, list, search or mention it or anything in it, never copy from it, and leave it out of detection and of the mapping.
 - **Never rename, move or delete the teacher's files or folders.** New files go where the mapping says; existing files are only edited when they are the mapped file for a concept.
 - **Map only after confirmation.** Detection proposes; the teacher confirms or corrects; only then is the mapping recorded. A teacher who says up front that they accept the proposed layout has confirmed it.
 - **Read, don't guess again.** Once a mapping is recorded, skills use it as written, even where they would have chosen differently.
@@ -39,7 +40,7 @@ Each concept has a fixed name, used verbatim in the mapping table. Locations may
 | assessments | Assessment for learning and assessment as learning | assessment |
 | agency audit | Epistemic agency audit reports | evaluation |
 | driving question board | Record of the class's driving question board | delivery |
-| preparation notes | Day-before preparation, equipment and setup, risk notes | delivery |
+| delivery documents | Preparation notes, run sheets and supporting-teacher briefs, one file each per session | delivery |
 | resources | Equipment lists, sources, handouts, student materials | resources |
 | templates | Course-local plan templates, used before the plugin's (see [Plan templates](#plan-templates-the-courses-own-come-first)) | templates |
 
@@ -47,14 +48,14 @@ Each concept has a fixed name, used verbatim in the mapping table. Locations may
 
 1. Look for a README at the course folder's top level (`README.md`, any case; also `readme.md`, `README.th.md`).
 2. If it has a `## Plugin layout` section, use its table. Do not detect again.
-3. If a concept the skill needs is missing from the table, run Steps 2–4 for that concept only and add one row.
+3. If a concept the skill needs is missing from the table, run Steps 2–4 for that concept only and add one row. A row named `preparation notes` (the earlier name) is the `delivery documents` row: read it as such and leave its name as the teacher has it.
 4. If a mapped location has been renamed or removed by the teacher, say so plainly and ask where that concept now lives; update the row once confirmed.
 
 ## Step 2: detect a layout
 
 Only when no mapping is recorded.
 
-1. List the course folder's folders and files, three levels deep, skipping hidden entries. Folders count even when empty. Read a file's first lines only when its name is ambiguous.
+1. List the course folder's folders and files, three levels deep, skipping hidden entries and private folders. Folders count even when empty. Read a file's first lines only when its name is ambiguous.
 2. Match each entry against the cues below, in English or Thai, ignoring case, numbering prefixes (`00 `, `01_`, `1.`) and separators.
 
 | Concept or area | Name cues | Content cues |
@@ -83,6 +84,8 @@ Propose the concepts the current skill needs plus a row for every area the folde
 
 Write or update the `## Plugin layout` section of the top-level README, creating `README.md` if there is none. Keep every other line of the README exactly as it was; append the section at the end if it is new; if it exists, edit rows in place and never add a second section.
 
+One setting may follow the table in the same section: `Delivery format: HTML` (or `docx`, `Claude Docs`), the format the teacher chose for printable copies, written only by `exporting-documents` after the teacher chooses.
+
 ```markdown
 ## Plugin layout
 
@@ -109,7 +112,7 @@ When the folder is empty or nothing matches, offer the teacher's **default cours
 | `planning/` | standards map, block and week plans, Thai core plans |
 | `design/` | unit plans, session plans, differentiation |
 | `resources/` | resources |
-| `delivery/` | driving question board, preparation notes |
+| `delivery/` | driving question board, delivery documents |
 | `assessment/` | assessments |
 | `evaluation/` | agency audit |
 | `templates/` | templates (the four plan templates, copied in) |

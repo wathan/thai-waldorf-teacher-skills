@@ -135,3 +135,29 @@ _Avoid_: Lesson plan (unqualified), OBEC plan
 **Waldorf plan**:
 The school's internal main-lesson planning documents at three scales: block plan (แผนรายบล็อก), week plan (แผนรายสัปดาห์), and day plan (แผนรายวัน).
 _Avoid_: Steiner plan, ML plan
+
+## Delivery documents
+
+**Delivery document**:
+A document for teaching one session rather than planning it: the preparation note, the run sheet and the supporting-teacher brief. Written in Thai, printed, and read by other adults as well as the teacher.
+_Avoid_: Prep notes (for all three), handouts
+
+**Preparation note** (บันทึกเตรียมสอน):
+A one-page run-through of one planned session, read the evening before: anticipated student responses with dialogic moves, timings, equipment and setup, and risk notes. Never changes the plan.
+_Avoid_: Prep note, prep sheet, lesson notes
+
+**Run sheet** (ใบลำดับการสอน):
+A one-page running order of one session, kept at hand while teaching: clock times, parts, cue lines and materials per part, with no reasoning. Built from the session plan and its preparation note.
+_Avoid_: Timeline, agenda, lesson outline
+
+**Supporting teacher** (ครูประกบ):
+An adult in the room for some or all of a session who supports the students with learning differences, not the class or the equipment.
+_Avoid_: Teaching assistant, TA, co-teacher, shadow teacher
+
+**Supporting-teacher brief** (บันทึกสำหรับครูประกบ):
+A note for the supporting teacher about one whole session: what happens when, which supports to give at each part, what to watch for, and when to step in or step back. It also marks the parts after the supporting teacher leaves, flagging the demanding ones so follow-up with the students can be planned. Students are named only by anonymised code, or by need when the class has no codes.
+_Avoid_: Handover, TA notes
+
+**Exported copy**:
+A printable copy of a plan or delivery document, made from it in the delivery format the teacher chose for the course. Never edited itself: when the document changes, the copy is made again.
+_Avoid_: Printout (for the file), export (as a noun), version

@@ -32,7 +32,7 @@ Check each concept at its mapped location (or by cues), opening a file's first l
 | Differentiation | differentiation | `differentiation-week-1.md`, … | `differentiating-for-learner-variability` |
 | Formative assessment | assessments | `assessment-plan-week-1.md`, … | `planning-formative-assessment` |
 | Epistemic agency audit | agency audit | `agency-audit-week-1.md`, `agency-audit-block.md`, … | `auditing-epistemic-agency` |
-| Preparation notes | preparation notes | `week-1-day-1-prep.md`, `session-4-prep.md`, … | `preparing-to-teach` |
+| Preparation notes | delivery documents | `week-1-day-1-prep.md`, `session-4-prep.md`, … | `preparing-to-teach` |
 
 From the class profile read only: the kind of teaching sequence (main lesson block or subject lesson), its name, grade, length (weeks or term) and the year plan pointer. If the profile points to a year plan, you may check that file exists; read nothing else outside the course folder.
 

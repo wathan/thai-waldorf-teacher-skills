@@ -11,47 +11,47 @@ The shape of the day-before note, and how to fill its timings, equipment and set
 
 ## Shape
 
-Walk the session's own parts in teaching order, each part's name and time as a heading, every finding under the part it belongs to. Leave out a part with nothing to prepare (e.g. Maths/Literacy marked `—`). Keep to at most 500 words.
+Walk the session's own parts in teaching order, each part's name and time as a heading, every finding under the part it belongs to. Leave out a part with nothing to prepare (e.g. Maths/Literacy marked `—`). Keep to at most 500 words. Thai by default (the headings below); an English note uses the same shape with English headings (Rehearse first, Equipment and setup, Risk notes).
 
 ```markdown
-# Preparation: Week 1, day 3 (Wed), ecology
+# บันทึกเตรียมสอน: สัปดาห์ที่ 1 วันที่ 3 (พุธ) นิเวศวิทยา
 
-From the day plan for week 1, day 3. 100 minutes.
+จากแผนรายวันของสัปดาห์ที่ 1 วันที่ 3 · 100 นาที
 
-**Rehearse first:** the opening Recall question, and lighting the burner under the pond-water flask.
+**ซ้อมก่อน:** คำถามเปิดช่วงทบทวน และการจุดตะเกียงใต้ขวดน้ำจากบ่อ
 
-## Rhythmic Time (10 min)
-- Verse on the board before students arrive.
+## กิจกรรมวงกลม (10 นาที)
+- เขียนบทกลอนบนกระดานก่อนนักเรียนเข้าห้อง
 
-## Recall and concept formation (45 min): yesterday's pond-water samples
-Working toward (not told): living things in a pond depend on each other and on the water's conditions.
+## ทบทวนและสร้างความคิดรวบยอด (45 นาที): ตัวอย่างน้ำจากบ่อเมื่อวาน
+มุ่งสู่ (ไม่บอก): สิ่งมีชีวิตในบ่อพึ่งพากันและพึ่งสภาพน้ำ
 
-| Students may say | Move | Say |
+| นักเรียนอาจพูด | วิธีตอบ | พูดว่า |
 |---|---|---|
-| "The fish died because the water was dirty." | Press for evidence | "What did you see in the samples that fits 'dirty'? What else could it be?" |
+| "ปลาตายเพราะน้ำสกปรก" | ขอหลักฐาน | "เห็นอะไรในตัวอย่างที่บอกว่า 'สกปรก' มีสาเหตุอื่นได้ไหม" |
 | … | … | … |
 
-- Quieter channel: everyone sketches their position before pairs.
-- Watch the clock: start the reflection by minute 50.
+- ช่องทางสำหรับคนเงียบ: ทุกคนร่างความคิดของตัวเองก่อนจับคู่
+- ดูเวลา: เริ่มเขียนสะท้อนคิดภายในนาทีที่ 50
 
-## Practice (25 min)
-- Stuck: "Pick one creature from your drawing. What does it need?"
-- Done early: "What would change for it in the hot season?"
+## ช่วงทำงาน (25 นาที)
+- ติด: "เลือกสัตว์หนึ่งตัวจากภาพของเธอ มันต้องการอะไร"
+- เสร็จเร็ว: "ฤดูร้อนจะเปลี่ยนอะไรสำหรับมัน"
 
-## New experience (20 min): warming pond water, left un-analysed
-- Likely: "Why are bubbles coming out?" Say: "Write that question down; we start there tomorrow."
+## เรื่องใหม่ (20 นาที): อุ่นน้ำจากบ่อ ไม่วิเคราะห์วันนี้
+- อาจถาม: "ทำไมมีฟองออกมา" พูดว่า: "จดคำถามนั้นไว้ พรุ่งนี้เราเริ่มจากตรงนั้น"
 
-## Equipment and setup
-- [ ] Flask, tripod, gauze, burner, pond water collected this morning, …
-- [ ] Dry run of the heating this afternoon.
+## อุปกรณ์และการเตรียม
+- [ ] ขวดรูปชมพู่ ขาตั้ง ตะแกรง ตะเกียง น้ำจากบ่อที่ตักเช้านี้ …
+- [ ] ซ้อมอุ่นน้ำบ่ายนี้
 
-## Risk notes
-- Burner and hot glass: teacher only; heat-proof mat; students one metre back; let glass cool before moving.
+## ข้อควรระวัง
+- ตะเกียงและแก้วร้อน: ครูทำเท่านั้น มีแผ่นกันความร้อน นักเรียนอยู่ห่างหนึ่งเมตร รอแก้วเย็นก่อนย้าย
 - …
-- If no bubbles show: …
+- ถ้าไม่มีฟอง: …
 ```
 
-Headings for a 5E session use its phases. A note "from your description" says so under the title.
+Headings for a 5E session use its phases. A note "from your description" says so under the title (จากคำอธิบายของคุณ).
 
 ## Timings
 
