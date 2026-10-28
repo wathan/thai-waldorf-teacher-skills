@@ -17,6 +17,7 @@ Shared by every skill that reads or writes files in a course folder (ADR-0002). 
 
 - **The folder name is off limits.** Never read the course folder's own name for meaning (it is not the subject, grade or class), never mention it, never rename or move the folder. Work with paths relative to the folder.
 - **Stay inside the course folder.** The only file outside it a skill may touch is the year plan, at the path the class profile gives (see `year-plan.md`); only `setting-up-class-profiles` writes it. Plugin reference files are not course files and may always be read.
+- **Private folders are off limits.** A folder inside the course named `private` (any case, at any depth), or one the course's ignore rules (`.gitignore`) mark as private, holds things such as a student roster. Never read, list, search or mention it or anything in it, never copy from it, and leave it out of detection and of the mapping.
 - **Never rename, move or delete the teacher's files or folders.** New files go where the mapping says; existing files are only edited when they are the mapped file for a concept.
 - **Map only after confirmation.** Detection proposes; the teacher confirms or corrects; only then is the mapping recorded. A teacher who says up front that they accept the proposed layout has confirmed it.
 - **Read, don't guess again.** Once a mapping is recorded, skills use it as written, even where they would have chosen differently.
@@ -54,7 +55,7 @@ Each concept has a fixed name, used verbatim in the mapping table. Locations may
 
 Only when no mapping is recorded.
 
-1. List the course folder's folders and files, three levels deep, skipping hidden entries. Folders count even when empty. Read a file's first lines only when its name is ambiguous.
+1. List the course folder's folders and files, three levels deep, skipping hidden entries and private folders. Folders count even when empty. Read a file's first lines only when its name is ambiguous.
 2. Match each entry against the cues below, in English or Thai, ignoring case, numbering prefixes (`00 `, `01_`, `1.`) and separators.
 
 | Concept or area | Name cues | Content cues |

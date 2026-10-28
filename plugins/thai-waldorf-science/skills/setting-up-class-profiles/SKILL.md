@@ -4,13 +4,13 @@ description: >
   Sets up or updates the class profile for one class of a Thai Waldorf
   upper-school science teacher (G9–G12 / ม.3–ม.6) through a round-by-round
   interview with recommended answers: grade and grade mode, main lesson block
-  or subject lesson, schedule, learner variability as anonymised counts,
-  languages, and the academic year in CE and ปีการศึกษา. Detects the course
-  folder's existing layout, proposes where plugin files go and records the
-  confirmed mapping in the course README; in an empty folder, creates the
+  or subject lesson, schedule, learner variability as anonymised counts with
+  optional student codes, any supporting teacher (ครูประกบ), languages, and
+  the academic year in CE and ปีการศึกษา. Detects the course
+  folder's layout, proposes where plugin files go and records the confirmed
+  mapping in the course README; in an empty folder, creates the
   default course template once the teacher confirms. Copies the plugin's
   four plan templates into the course, and optionally records a year plan
-  (teaching sequences per grade and term, with claimed Thai indicators)
   outside the course. Use when the teacher wants to describe a class, set up
   or change a class profile, start a new course folder, add the plan
   templates, record a year plan, or tell the plugin where things live. Do
@@ -31,7 +31,8 @@ Talk as a colleague in plain teacher language: say "your admin folder" or "the c
 - Never write a student's name, nickname, initials, student number or any detail that singles out one student into the profile, the README or any other file, and never repeat one in a reply.
 - When the teacher gives names (in the request or in files you see), turn them into counts per need, and tell the teacher once, briefly: names were left out and only counts were recorded.
 - If the teacher asks you to record names or a class list, decline and offer counts instead.
-- Leave the teacher's own files that contain names untouched; just do not copy from them.
+- Leave the teacher's own files that contain names untouched; just do not copy from them. Private folders (a student roster, for example) are never opened at all (course-layout Rules).
+- Student codes (`นักเรียน ก`, `นักเรียน ข`…) are not names: assign them in Thai alphabet order as the teacher lists the needs, never from a name or initial, and never ask or record who a code stands for.
 
 ## Step 0 — Route (silent)
 
@@ -74,12 +75,14 @@ Below the Round 1 questions, list the values already pre-filled so the teacher s
 8. Schedule. Main lesson block: recommend 100-minute sessions, Monday to Friday, 3 weeks. Subject lesson: recommend one long (100 min) and one short (50 min) session a week for the term, and ask which days.
 9. Class size.
 10. Learner variability, as counts: learning differences, the language of instruction as an additional language, extension, other access needs. Say up front that you only need numbers, not names.
+   - When the count of learning differences is above zero, offer codes: "Give each of these students a code (นักเรียน ก, ข…) with their need, so a brief for a supporting teacher can say who gets which support? Recommended: yes if a supporting teacher works with them, otherwise not now." On yes, ask for one short need per student, in plain words.
+11. Supporting teacher (ครูประกบ): is one in the room for this class, when (the whole session or part of it, e.g. 13:00–15:00), and what do they do? Is there a pre-teaching slot (day, time, purpose)? Recommend "none" unless the teacher mentioned one.
 
 **Round 3 — year plan** (only if the teacher wants one; it depends only on question 6, so ask it alongside Round 2; follow `year-plan.md`)
 
-11. Where to keep it. Recommend the folder that holds this course, as `../year-plan-<ปีการศึกษา>.md`; if a year plan is already there, say you will add to it.
-12. Teaching sequences per grade and term. Recommend this course's teaching sequence as the first row (its grade, its kind, the current term) and ask for the rest.
-13. Indicators each sequence claims, as Thai codes (`ว 2.3 ม.3/1`). Recommend, for each sequence, the codes from `${CLAUDE_PLUGIN_ROOT}/references/thai-science-core-indicators-2560.md` whose content matches its subject for that ม. grade, marked as suggestions; or "none yet, to come from mapping-curriculum".
+12. Where to keep it. Recommend the folder that holds this course, as `../year-plan-<ปีการศึกษา>.md`; if a year plan is already there, say you will add to it.
+13. Teaching sequences per grade and term. Recommend this course's teaching sequence as the first row (its grade, its kind, the current term) and ask for the rest.
+14. Indicators each sequence claims, as Thai codes (`ว 2.3 ม.3/1`). Recommend, for each sequence, the codes from `${CLAUDE_PLUGIN_ROOT}/references/thai-science-core-indicators-2560.md` whose content matches its subject for that ม. grade, marked as suggestions; or "none yet, to come from mapping-curriculum".
 
 **Final check.** Show a short summary of the profile and layout and ask "Shall I write this? Recommended: yes." Skip it when the teacher has already confirmed.
 
@@ -104,7 +107,8 @@ Below the Round 1 questions, list the values already pre-filled so the teacher s
 ## Checklist before replying
 
 - [ ] One class only; one profile file, at the mapped location.
-- [ ] No names or identifying details in any file written or in the reply.
+- [ ] No names or identifying details in any file written or in the reply; no private folder opened.
+- [ ] Student codes, if any, in Thai alphabet order, one per learning-differences count, each with a need and nothing that identifies the student.
 - [ ] Grade, grade mode, kind, schedule, counts, both languages, CE and ปีการศึกษา all present.
 - [ ] README's other content unchanged; exactly one "Plugin layout" section.
 - [ ] Nothing renamed, moved or deleted; the folder name never used.
