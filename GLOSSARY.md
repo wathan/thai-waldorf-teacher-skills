@@ -135,3 +135,21 @@ _Avoid_: Lesson plan (unqualified), OBEC plan
 **Waldorf plan**:
 The school's internal main-lesson planning documents at three scales: block plan (แผนรายบล็อก), week plan (แผนรายสัปดาห์), and day plan (แผนรายวัน).
 _Avoid_: Steiner plan, ML plan
+
+## Delivery documents
+
+**Preparation note**:
+A one-page run-through of one planned session, read the evening before: anticipated student responses with dialogic moves, timings, equipment and setup, and risk notes. Never changes the plan.
+_Avoid_: Prep sheet, lesson notes
+
+**Run sheet**:
+A one-page running order of one session, kept at hand while teaching: clock times, parts, cue lines and materials per part, with no reasoning. Built from the session plan and its preparation note.
+_Avoid_: Timeline, agenda, lesson outline
+
+**Supporting teacher** (ครูประกบ):
+An adult in the room for some or all of a session who supports the students with learning differences, not the class or the equipment.
+_Avoid_: Teaching assistant, TA, co-teacher, shadow teacher
+
+**Supporting-teacher brief**:
+A note for the supporting teacher about one whole session: what happens when, which supports to give at each part, what to watch for, and when to step in or step back. It also marks the parts after the supporting teacher leaves, flagging the demanding ones so follow-up with the students can be planned. Students are named only by anonymised code.
+_Avoid_: Handover, TA notes
