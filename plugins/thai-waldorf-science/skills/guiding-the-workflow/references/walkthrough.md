@@ -24,9 +24,11 @@ Each course folder holds one teaching sequence for one class: a main lesson bloc
 
 7. **Audit epistemic agency** — `auditing-epistemic-agency`. Runs after any plan unless switched off, or on its own: reports session by session which epistemic decisions (investigation aim, investigation method, explanatory model) the plan opens or closes, with reasons. It reads the plan only and never rewrites it; ask it for discussion protocols and dialogic moves to open more.
 
-8. **Prepare to teach** — `preparing-to-teach`. The day before a session: anticipated student responses and misconceptions paired with dialogic follow-ups, timings, equipment and setup, risk notes.
+8. **Prepare to teach** — `preparing-to-teach`. The day before a session: a preparation note (บันทึกเตรียมสอน) with anticipated student responses and misconceptions paired with dialogic follow-ups, timings, equipment and setup, risk notes; on request, a one-page run sheet (ใบลำดับการสอน) to keep at hand while teaching. When a supporting teacher (ครูประกบ) works with the class, `differentiating-for-learner-variability` writes their brief (บันทึกสำหรับครูประกบ) for the session from its differentiation plan, flagging the demanding parts after they leave. These delivery documents are in Thai.
 
-Steps 5–7 can be run in any order once a plan exists; step 4 can follow step 3 at once or wait until the plan settles. For an anticipated route, steps 3–4 roll forward as the driving question board chooses each next unit.
+9. **Print or share** — `exporting-documents`. Any plan or delivery document as an A4 exported copy beside it (HTML, printed from the browser; Word and Claude Docs in the next version). Copies are made again whenever the document changes, never edited by hand.
+
+Steps 5–7 can be run in any order once a plan exists; the brief in step 8 needs step 5 for that session, and step 9 can follow any document; step 4 can follow step 3 at once or wait until the plan settles. For an anticipated route, steps 3–4 roll forward as the driving question board chooses each next unit.
 
 ## Close
 
