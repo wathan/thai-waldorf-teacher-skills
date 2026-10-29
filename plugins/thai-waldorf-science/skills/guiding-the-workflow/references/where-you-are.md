@@ -33,10 +33,13 @@ Check each concept at its mapped location (or by cues), opening a file's first l
 | Formative assessment | assessments | `assessment-plan-week-1.md`, … | `planning-formative-assessment` |
 | Epistemic agency audit | agency audit | `agency-audit-week-1.md`, `agency-audit-block.md`, … | `auditing-epistemic-agency` |
 | Preparation notes | delivery documents | `week-1-day-1-prep.md`, `session-4-prep.md`, … | `preparing-to-teach` |
+| Run sheets | delivery documents | `week-1-day-1-run-sheet.md`, `session-4-run-sheet.md`, … | `preparing-to-teach` |
+| Supporting-teacher briefs | delivery documents | `week-1-day-1-brief.md`, `session-4-brief.md`, … | `differentiating-for-learner-variability` |
+| Exported copies | beside any document | the document's name with `.html` | `exporting-documents` |
 
 From the class profile read only: the kind of teaching sequence (main lesson block or subject lesson), its name, grade, length (weeks or term) and the year plan pointer. If the profile points to a year plan, you may check that file exists; read nothing else outside the course folder.
 
-Work goes forward **week by week** (main lesson block) or **unit by unit** (subject lesson). For rows 5–10 below, the **current week** (or unit) is the earliest one that still has a session without a preparation note: that is where the teacher is, even when its plans are all written. A later week becomes current only once every session of the earlier week has a preparation note.
+Work goes forward **week by week** (main lesson block) or **unit by unit** (subject lesson). For rows 5–10 below, the **current week** (or unit) is the earliest one that still has a session without a preparation note: that is where the teacher is, even when its plans are all written. Run sheets, briefs and exported copies are not preparation notes and never make a session count as prepared. A later week becomes current only once every session of the earlier week has a preparation note.
 
 ## Step 3: choose the next step
 
@@ -62,6 +65,7 @@ Notes on the order:
 - **Anticipated route** (the block plan marks units interchangeable): weeks after the current unit are planned only once the driving question board has chosen the next unit; rows 4–9 apply to units already chosen.
 - Do not jump ahead to planning the next week while the current week's sessions still need preparing: preparing comes first, the next week's day plans come after. When the last week is prepared, say the sequence is fully planned.
 - If the profile points to a year plan, mention once that `mapping-curriculum` can check the whole year's coverage; never let it replace the next step.
+- **Delivery around row 10** (never the next step on their own, always "after that" or offered alongside): when the class profile records a supporting teacher and the session to prepare has no brief, offer the supporting-teacher brief (`differentiating-for-learner-variability`, from that session's differentiation plan); offer a run sheet (`preparing-to-teach`) once the session has a preparation note; and offer `exporting-documents` for printable copies of the session's delivery documents or of plans the teacher shares.
 
 ## Step 4: reply
 

@@ -132,6 +132,55 @@
         "The reply contains no file paths, file names or names of specific folders (a general mention of the course folder is fine)",
         "No files were created, changed or removed in the course folder"
       ]
+    },
+    {
+      "id": 9,
+      "prompt": "ใช้สกิลไหนทำใบลำดับการสอนสำหรับคาบพรุ่งนี้ครับ",
+      "expected_output": "preparing-to-teach writes the run sheet (ใบลำดับการสอน) for one session on request, from the session plan and its preparation note if there is one.",
+      "files": ["fixtures/empty"],
+      "expectations": [
+        "The reply names preparing-to-teach as the skill for the run sheet (ใบลำดับการสอน)",
+        "The reply says it needs the session's plan, and uses the preparation note if there is one",
+        "The reply does not name exporting-documents or differentiating-for-learner-variability as the skill that writes the run sheet",
+        "No files were created in the course folder"
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Which skill writes the brief for my supporting teacher for Thursday's session?",
+      "expected_output": "differentiating-for-learner-variability writes the supporting-teacher brief (บันทึกสำหรับครูประกบ) for one session, from that session's differentiation plan.",
+      "files": ["fixtures/empty"],
+      "expectations": [
+        "The reply names differentiating-for-learner-variability as the skill that writes the supporting-teacher brief",
+        "The reply says the brief is built from the session's differentiation plan, so that plan is needed first",
+        "The reply does not name preparing-to-teach as the skill that writes the brief",
+        "No files were created in the course folder"
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "How do I print this plan? I want a copy on paper for the staff meeting.",
+      "expected_output": "exporting-documents makes an A4 copy beside the plan to print from the browser; HTML now, Word and Claude Docs in the next version.",
+      "files": ["fixtures/empty"],
+      "expectations": [
+        "The reply names exporting-documents as the skill to ask",
+        "The reply says the teacher gets a printable A4 copy (HTML, printed from the browser)",
+        "The reply does not tell the teacher to plan or rewrite anything first",
+        "No files were created in the course folder"
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "what now?",
+      "expected_output": "Week 1 fully planned: next is preparing-to-teach for week 1, day 1 (Monday). Alongside or after it, since a supporting teacher works with the class, the supporting-teacher brief for that session from differentiating-for-learner-variability, a run sheet on request, and exporting-documents for printable copies; planning week 2 comes later.",
+      "files": ["fixtures/supporting-teacher"],
+      "expectations": [
+        "The reply names preparing-to-teach as the next step, for week 1, day 1 (Monday)",
+        "The reply offers a supporting-teacher brief for that session from differentiating-for-learner-variability, after or alongside the preparation, not as the main next step",
+        "The reply mentions a run sheet or printable copies (exporting-documents) as a later or optional step",
+        "The reply contains no file paths, file names or names of specific folders",
+        "No files were created, changed or removed in the course folder"
+      ]
     }
   ]
 }
